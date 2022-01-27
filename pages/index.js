@@ -1,9 +1,10 @@
-import Layout from '../components/layout'
-import { attributes, html } from '../content/home.md'
+import Layout from "../components/layout";
+import { attributes, html } from "../content/home.md";
 
 const Home = () => (
   <Layout>
     <h1>{attributes.title}</h1>
+    <h2>=hey</h2>
     <div dangerouslySetInnerHTML={{ __html: html }} />
     <style jsx>{`
       h1,
@@ -12,6 +13,6 @@ const Home = () => (
       }
     `}</style>
   </Layout>
-)
+);
 
-export default Home
+export default Home;
