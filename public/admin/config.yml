@@ -10,6 +10,18 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - label: "Header"
+        name: "header"
+        file: "content/header.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "Footer"
+        name: "footer"
+        file: "content/footer.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Téléphone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
       - label: "Home"
         name: "home"
         file: "content/home.md"
