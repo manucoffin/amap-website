@@ -1,5 +1,7 @@
 # AMAP Website
 
-### Generate types from Netlify Config file
+### Config
 
-1. Run the command `./node_modules/netlify-ts/bin/run public/admin/config.yml`
+Only the `config.yml` file should be edited.
+
+To export the config, run the command `yarn gen:config`
