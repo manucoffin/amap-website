@@ -1,0 +1,87 @@
+.root {
+  position: relative;
+  width: auto;
+  height: auto;
+  background: var(--token-WNBJHso-i);
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: row;
+  transition-property: all;
+  transition-duration: 0.2s;
+  border-radius: 3px;
+  padding: 5px 15px;
+  border: 1px none var(--token-5wRFei0Vr);
+}
+.rootradius_stadium {
+  border-radius: 100px;
+}
+.rootborder_outlined {
+  background: none;
+  border-style: solid;
+  border-color: var(--token-WNBJHso-i);
+}
+.rootborder_link {
+  background: none;
+  border-style: none;
+  border-color: var(--token-WNBJHso-i);
+}
+.root:hover {
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--token-a3sQNIQBO);
+}
+.rootborder_outlined:hover {
+  background: none;
+  border-color: var(--token-a3sQNIQBO);
+}
+.rootborder_link:hover {
+  background: none;
+}
+.root:active {
+  background: var(--token-pf4RLfMl0);
+}
+.rootborder_outlined:active {
+  background: none;
+  border-color: var(--token-pf4RLfMl0);
+}
+.rootborder_link:active {
+  background: none;
+  border-color: var(--token-pf4RLfMl0);
+}
+.root:disabled {
+  background: #bfbfbf;
+}
+.rootborder_outlined:disabled {
+  background: none;
+  border-color: var(--token-5wRFei0Vr);
+}
+.rootborder_link:disabled {
+  background: none;
+}
+.slotTargetChildren {
+  font-family: var(--token-5iF75TGQk);
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.slotTargetChildrenborder_outlined {
+  color: var(--token-WNBJHso-i);
+}
+.slotTargetChildrenborder_link {
+  color: var(--token-WNBJHso-i);
+}
+.rootborder_outlined:hover .slotTargetChildrenborder_outlined {
+  color: var(--token-a3sQNIQBO);
+}
+.rootborder_link:hover .slotTargetChildrenborder_link {
+  color: var(--token-a3sQNIQBO);
+}
+.rootborder_outlined:active .slotTargetChildrenborder_outlined {
+  color: var(--token-pf4RLfMl0);
+}
+.rootborder_outlined:disabled .slotTargetChildrenborder_outlined {
+  color: var(--token-5wRFei0Vr);
+}
+.rootborder_link:disabled .slotTargetChildrenborder_link {
+  color: var(--token-5wRFei0Vr);
+}
