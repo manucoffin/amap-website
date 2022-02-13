@@ -1,0 +1,278 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "7CzphteDn95cERg7nN7EAF",
+      "projectApiToken": "A5wQiGDsOydP108OyrpzprfEAPORSBOjSn28mmIg7lYoCafNHa05kze1qvlvneHooAJr2qkatyirwzMa6hEQw",
+      "projectName": "AMAP website",
+      "version": "latest",
+      "cssFilePath": "plasmic/amap_website/plasmic_amap_website.module.css",
+      "components": [
+        {
+          "id": "K4zY1Z6RTV",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "dTKTvnUQf8",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicHeader.tsx",
+          "importSpec": {
+            "modulePath": "Header.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "GklD1g5Wgw",
+          "name": "News",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicNews.tsx",
+          "importSpec": {
+            "modulePath": "../pages/actus.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicNews.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "QMj3hEcFdK",
+          "name": "Contracts",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicContracts.tsx",
+          "importSpec": {
+            "modulePath": "../pages/contrats.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicContracts.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "3e8PB83RLm",
+          "name": "Article",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicArticle.tsx",
+          "importSpec": {
+            "modulePath": "../pages/article.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicArticle.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "6mDHqpDUxe",
+          "name": "Contact",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicContact.tsx",
+          "importSpec": {
+            "modulePath": "../pages/contact.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicContact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "ln-1hqOKZ9u",
+          "name": "LinkButton",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicLinkButton.tsx",
+          "importSpec": {
+            "modulePath": "LinkButton.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicLinkButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "6y2iAxc2rc",
+          "name": "ListItem",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicListItem.tsx",
+          "importSpec": {
+            "modulePath": "ListItem.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicListItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "uZnVkj7Gzvz",
+          "name": "AmapDescriptionBlock",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicAmapDescriptionBlock.tsx",
+          "importSpec": {
+            "modulePath": "AmapDescriptionBlock.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicAmapDescriptionBlock.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "8XNt3BOtDt",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "1jPR-7rOPe",
+          "name": "Sitemap",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicSitemap.tsx",
+          "importSpec": {
+            "modulePath": "../pages/sitemap.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicSitemap.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "OWIENifDVhJ",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "gY1crScWzn",
+          "name": "HeaderNav",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicHeaderNav.tsx",
+          "importSpec": {
+            "modulePath": "headerMenu/HeaderNav.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicHeaderNav.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "VyblBdnCPp",
+          "name": "SiteLogo",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicSiteLogo.tsx",
+          "importSpec": {
+            "modulePath": "SiteLogo.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicSiteLogo.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "RvQEfXJy0",
+          "name": "DropIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Drop.tsx"
+        },
+        {
+          "id": "4dg6R0H3i",
+          "name": "CheckIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Check.tsx"
+        },
+        {
+          "id": "E5VKiMd8l",
+          "name": "StadiumsvgIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Stadiumsvg.tsx"
+        },
+        {
+          "id": "PCaQsxt1j",
+          "name": "MailIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Mail.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "7q2ShsRLo",
+          "name": "ivory_bg",
+          "filePath": "../public/plasmic/amap_website/images/ivoryBg.svg"
+        },
+        {
+          "id": "070V2DH0j",
+          "name": "footer_bg",
+          "filePath": "../public/plasmic/amap_website/images/footerBg.svg"
+        },
+        {
+          "id": "09ExT-Vbr",
+          "name": "vegetables",
+          "filePath": "../public/plasmic/amap_website/images/vegetables.jpeg"
+        },
+        {
+          "id": "553M2BQ3s",
+          "name": "colibri.png",
+          "filePath": "../public/plasmic/amap_website/images/colibripng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "HABl5zeVufY",
+        "name": "Screen",
+        "projectId": "7CzphteDn95cERg7nN7EAF",
+        "contextFilePath": "plasmic/amap_website/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.170",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.170/dist/plasmic.schema.json"
+}

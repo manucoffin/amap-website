@@ -1,12 +1,11 @@
 /* eslint-disable */
 /* tslint:disable */
 
-export interface Header {
-  title: string;
-}
-
-export interface Footer {
-  title: string;
+export interface FooterDuSite {
+  address: string;
+  postcode: string;
+  city: string;
+  schedule: string;
   phone: string;
   email: string;
 }
