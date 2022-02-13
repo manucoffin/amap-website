@@ -37,7 +37,6 @@ import Header from "../../Header"; // plasmic-import: dTKTvnUQf8/component
 import LinkButton from "../../LinkButton"; // plasmic-import: ln-1hqOKZ9u/component
 import AmapDescriptionBlock from "../../AmapDescriptionBlock"; // plasmic-import: uZnVkj7Gzvz/component
 import ListItem from "../../ListItem"; // plasmic-import: 6y2iAxc2rc/component
-import Footer from "../../Footer"; // plasmic-import: OWIENifDVhJ/component
 
 import { useScreenVariants as useScreenVariantshaBl5ZeVufY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: HABl5zeVufY/globalVariant
 
@@ -67,7 +66,6 @@ export type PlasmicHomepage__OverridesType = {
   columns?: p.Flex<"div">;
   sectionHistoireAmap?: p.Flex<"div">;
   colibrisImg?: p.Flex<typeof p.PlasmicImg>;
-  footer?: p.Flex<typeof Footer>;
 };
 
 export interface DefaultHomepageProps {}
@@ -478,12 +476,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </div>
           ) : null}
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </p.Stack>
       </div>
     </React.Fragment>
@@ -499,8 +491,7 @@ const PlasmicDescendants = {
     "sectionAmapDescription",
     "columns",
     "sectionHistoireAmap",
-    "colibrisImg",
-    "footer"
+    "colibrisImg"
   ],
   header: ["header"],
   h1: ["h1"],
@@ -508,8 +499,7 @@ const PlasmicDescendants = {
   sectionAmapDescription: ["sectionAmapDescription", "columns"],
   columns: ["columns"],
   sectionHistoireAmap: ["sectionHistoireAmap", "colibrisImg"],
-  colibrisImg: ["colibrisImg"],
-  footer: ["footer"]
+  colibrisImg: ["colibrisImg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -523,7 +513,6 @@ type NodeDefaultElementType = {
   columns: "div";
   sectionHistoireAmap: "div";
   colibrisImg: typeof p.PlasmicImg;
-  footer: typeof Footer;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -590,7 +579,6 @@ export const PlasmicHomepage = Object.assign(
     columns: makeNodeComponent("columns"),
     sectionHistoireAmap: makeNodeComponent("sectionHistoireAmap"),
     colibrisImg: makeNodeComponent("colibrisImg"),
-    footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

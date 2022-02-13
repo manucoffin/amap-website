@@ -8,10 +8,17 @@ import {
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 import { LinkWrapper } from "components";
+import { Footer } from "lib/netlify-types";
 
-export interface FooterProps extends DefaultFooterProps {}
+export interface FooterProps extends DefaultFooterProps {
+  data: Footer;
+}
 
-function Footer_(props: FooterProps, ref: HTMLElementRefOf<"div">) {
+function Footer_(
+  { data, ...props }: FooterProps,
+  ref: HTMLElementRefOf<"div">
+) {
+  console.log(props);
   return (
     <PlasmicFooter
       {...props}
@@ -19,6 +26,12 @@ function Footer_(props: FooterProps, ref: HTMLElementRefOf<"div">) {
       homeLink={{ render: LinkWrapper }}
       sitemapLink={{ render: LinkWrapper }}
       legalLink={{ render: LinkWrapper }}
+      address={data.address}
+      postCode={data.postcode}
+      city={data.city}
+      phoneNumber={data.phone}
+      email={data.email}
+      schedule={data.schedule}
     />
   );
 }

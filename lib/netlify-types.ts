@@ -1,7 +1,7 @@
 /* eslint-disable */
 /* tslint:disable */
 
-export interface FooterDuSite {
+export interface Footer {
   address: string;
   postcode: string;
   city: string;

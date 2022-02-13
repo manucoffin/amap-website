@@ -12,7 +12,7 @@ collections:
   - name: "components"
     label: "Informations générales"
     files:
-      - label: "Footer du site"
+      - label: "Footer"
         name: "footer"
         file: "content/footer.md"
         fields:

@@ -50,9 +50,24 @@ export type PlasmicFooter__VariantsArgs = {};
 type VariantPropType = keyof PlasmicFooter__VariantsArgs;
 export const PlasmicFooter__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicFooter__ArgsType = {};
+export type PlasmicFooter__ArgsType = {
+  phoneNumber?: React.ReactNode;
+  email?: React.ReactNode;
+  schedule?: React.ReactNode;
+  address?: React.ReactNode;
+  postCode?: React.ReactNode;
+  city?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicFooter__ArgsType;
-export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
+export const PlasmicFooter__ArgProps = new Array<ArgPropType>(
+  "phoneNumber",
+  "email",
+  "schedule",
+  "address",
+  "postCode",
+  "city"
+);
 
 export type PlasmicFooter__OverridesType = {
   footer?: p.Flex<"footer">;
@@ -65,6 +80,12 @@ export type PlasmicFooter__OverridesType = {
 };
 
 export interface DefaultFooterProps {
+  phoneNumber?: React.ReactNode;
+  email?: React.ReactNode;
+  schedule?: React.ReactNode;
+  address?: React.ReactNode;
+  postCode?: React.ReactNode;
+  city?: React.ReactNode;
   className?: string;
 }
 
@@ -148,40 +169,80 @@ function PlasmicFooter__RenderFunc(props: {
         </div>
 
         <div className={classNames(projectcss.all, sty.column__mFf3K)}>
-          <div className={classNames(projectcss.all, sty.freeBox__azqzi)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__pZLrk
-              )}
-            >
-              {"Distribution de Légumes"}
-            </div>
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__jxPc2
-              )}
-            >
-              {
-                "Tous les jeudis de 18h à 20h\n\n26 rue Grandmaison\n49800 Brain sur l’Authion"
-              }
-            </div>
-          </div>
-        </div>
-
-        <div className={classNames(projectcss.all, sty.column___4XhX0)}>
           <div
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__i7PwG
+              sty.text__pZLrk
             )}
           >
-            {"Tel. 02 34 56 78 90\namap-goutte-eau@mail.fr"}
+            {"Distribution de Légumes"}
+          </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__jxPc2)}>
+            {p.renderPlasmicSlot({
+              defaultContents: "Tous les jeudis de 18h à 20h",
+              value: args.schedule,
+              className: classNames(sty.slotTargetSchedule)
+            })}
+          </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__krf4F)}>
+            {p.renderPlasmicSlot({
+              defaultContents: "26 rue Grandmaison",
+              value: args.address,
+              className: classNames(sty.slotTargetAddress)
+            })}
+          </div>
+
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__lqfLt)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "49800",
+                value: args.postCode,
+                className: classNames(sty.slotTargetPostCode)
+              })}
+
+              <div className={classNames(projectcss.all, sty.freeBox__cdTq1)}>
+                {p.renderPlasmicSlot({
+                  defaultContents: " Brain sur l’Authion",
+                  value: args.city,
+                  className: classNames(sty.slotTargetCity)
+                })}
+              </div>
+            </div>
+          ) : null}
+        </div>
+
+        <div className={classNames(projectcss.all, sty.column___4XhX0)}>
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__rdFqS)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__i7PwG
+                )}
+              >
+                {"Tel."}
+              </div>
+
+              <div className={classNames(projectcss.all, sty.freeBox__adtRy)}>
+                {p.renderPlasmicSlot({
+                  defaultContents: "02 34 56 78 90",
+                  value: args.phoneNumber,
+                  className: classNames(sty.slotTargetPhoneNumber)
+                })}
+              </div>
+            </div>
+          ) : null}
+
+          <div className={classNames(projectcss.all, sty.freeBox__v9Xbw)}>
+            {p.renderPlasmicSlot({
+              defaultContents: "amap-goutte-eau@mail.fr",
+              value: args.email,
+              className: classNames(sty.slotTargetEmail)
+            })}
           </div>
         </div>
 

@@ -253,25 +253,6 @@
   min-width: 0;
   padding: 0px;
 }
-.freeBox__azqzi {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__azqzi {
-    justify-content: flex-start;
-    align-items: center;
-    align-self: auto;
-  }
-}
 .text__pZLrk {
   position: relative;
   width: 100%;
@@ -289,18 +270,61 @@
     text-align: center;
   }
 }
-.text__jxPc2 {
+.freeBox__jxPc2 {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-family: var(--token-5iF75TGQk);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: var(--token-L5ZvEOVLJ);
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .text__jxPc2 {
+  .freeBox__jxPc2 {
+    justify-content: center;
+  }
+}
+.slotTargetSchedule {
+  font-family: var(--token-5iF75TGQk);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotTargetSchedule {
     text-align: center;
   }
+}
+.freeBox__krf4F {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: auto;
+}
+.slotTargetAddress {
+  font-family: var(--token-5iF75TGQk);
+}
+.freeBox__lqfLt {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.slotTargetPostCode {
+  font-family: var(--token-5iF75TGQk);
+}
+.freeBox__cdTq1 {
+  position: relative;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.slotTargetCity {
+  font-family: var(--token-5iF75TGQk);
 }
 .column___4XhX0 {
   display: flex;
@@ -314,19 +338,78 @@
   min-width: 0;
   padding: 0px;
 }
-.text__i7PwG {
+.freeBox__rdFqS {
+  display: flex;
   position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.text__i7PwG {
+  width: auto;
   height: auto;
   max-width: 800px;
   font-weight: 700;
   font-family: var(--token-5iF75TGQk);
   font-size: 20px;
   color: #535353;
-  min-width: 0;
+  margin-right: var(--token-eReirMpIv);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__i7PwG {
+    text-align: center;
+  }
+}
+.freeBox__adtRy {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__adtRy {
+    justify-content: center;
+  }
+}
+.slotTargetPhoneNumber {
+  font-family: var(--token-5iF75TGQk);
+  font-size: 20px;
+  font-weight: 700;
+  color: #535353;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotTargetPhoneNumber {
+    text-align: center;
+  }
+}
+.freeBox__v9Xbw {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__v9Xbw {
+    justify-content: center;
+  }
+}
+.slotTargetEmail {
+  font-family: var(--token-5iF75TGQk);
+  font-size: 20px;
+  font-weight: 700;
+  color: #535353;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotTargetEmail {
     text-align: center;
   }
 }

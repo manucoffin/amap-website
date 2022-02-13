@@ -492,6 +492,3 @@
 .colibrisImg > .__wab_img-spacer > img {
   object-fit: cover;
 }
-.footer:global(.__wab_instance) {
-  position: relative;
-}
