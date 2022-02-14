@@ -1,12 +1,8 @@
 import * as React from "react";
-import {
-  PlasmicContactForm,
-  DefaultContactFormProps,
-} from "../plasmic/amap_website/PlasmicContactForm";
+import { DefaultContactFormProps } from "../plasmic/amap_website/PlasmicContactForm";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 import { useState } from "react";
-import { CheckCircleIcon, PhoneIcon, MailIcon } from "@heroicons/react/outline";
-import clsx from "clsx";
+import { CheckCircleIcon } from "@heroicons/react/outline";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { InputContainer } from "./InputContainer";
 import { Button } from "components/ui";
