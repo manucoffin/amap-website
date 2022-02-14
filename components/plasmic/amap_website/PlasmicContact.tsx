@@ -33,6 +33,10 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Header from "../../Header"; // plasmic-import: dTKTvnUQf8/component
+import ContactForm from "../../contact/ContactForm"; // plasmic-import: tUvxVYleeL/component
+
+import { useScreenVariants as useScreenVariantshaBl5ZeVufY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: HABl5zeVufY/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -45,13 +49,34 @@ export type PlasmicContact__VariantsArgs = {};
 type VariantPropType = keyof PlasmicContact__VariantsArgs;
 export const PlasmicContact__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicContact__ArgsType = {};
+export type PlasmicContact__ArgsType = {
+  phoneNumber?: React.ReactNode;
+  email?: React.ReactNode;
+  schedule?: React.ReactNode;
+  address?: React.ReactNode;
+  postCode?: React.ReactNode;
+  city?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicContact__ArgsType;
-export const PlasmicContact__ArgProps = new Array<ArgPropType>();
+export const PlasmicContact__ArgProps = new Array<ArgPropType>(
+  "phoneNumber",
+  "email",
+  "schedule",
+  "address",
+  "postCode",
+  "city"
+);
 
 export type PlasmicContact__OverridesType = {
   root?: p.Flex<"div">;
+  header?: p.Flex<typeof Header>;
   h1?: p.Flex<"h1">;
+  columns?: p.Flex<"div">;
+  contactForm?: p.Flex<typeof ContactForm>;
+  contactInfos?: p.Flex<"div">;
+  addressInfos?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultContactProps {}
@@ -64,6 +89,10 @@ function PlasmicContact__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantshaBl5ZeVufY()
+  });
 
   return (
     <React.Fragment>
@@ -91,18 +120,219 @@ function PlasmicContact__RenderFunc(props: {
             sty.root
           )}
         >
-          <h1
-            data-plasmic-name={"h1"}
-            data-plasmic-override={overrides.h1}
-            className={classNames(
-              projectcss.all,
-              projectcss.h1,
-              projectcss.__wab_text,
-              sty.h1
-            )}
-          >
-            {"Contact form"}
-          </h1>
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
+          />
+
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__grGkp)}>
+              <h1
+                data-plasmic-name={"h1"}
+                data-plasmic-override={overrides.h1}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1
+                )}
+              >
+                {"Laissez nous un petit mot"}
+              </h1>
+
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"columns"}
+                data-plasmic-override={overrides.columns}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns)}
+              >
+                <div className={classNames(projectcss.all, sty.column__uhw41)}>
+                  <ContactForm
+                    data-plasmic-name={"contactForm"}
+                    data-plasmic-override={overrides.contactForm}
+                    className={classNames("__wab_instance", sty.contactForm)}
+                  />
+                </div>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.column__jdIze)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__jpPn8
+                    )}
+                  >
+                    {"Vous pouvez également nous contacter :"}
+                  </div>
+
+                  {true ? (
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"contactInfos"}
+                      data-plasmic-override={overrides.contactInfos}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.contactInfos)}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___9W2Z
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__rAyWu
+                            )}
+                          >
+                            {"Par téléphone au"}
+                          </div>
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__azpD0
+                            )}
+                          >
+                            {p.renderPlasmicSlot({
+                              defaultContents: "02 34 34 34 34",
+                              value: args.phoneNumber,
+                              className: classNames(sty.slotTargetPhoneNumber)
+                            })}
+                          </div>
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__tQ04
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__t975S
+                          )}
+                        >
+                          {"Par email à"}
+                        </div>
+
+                        {p.renderPlasmicSlot({
+                          defaultContents: "amap-goutte-eau@test.fr",
+                          value: args.email,
+                          className: classNames(sty.slotTargetEmail)
+                        })}
+                      </div>
+                    </p.Stack>
+                  ) : null}
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ulc9U
+                    )}
+                  >
+                    {"Ou bien venez directement à notre rencontre..."}
+                  </div>
+
+                  {true ? (
+                    <div
+                      data-plasmic-name={"addressInfos"}
+                      data-plasmic-override={overrides.addressInfos}
+                      className={classNames(projectcss.all, sty.addressInfos)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___8B6Fb
+                        )}
+                      >
+                        {p.renderPlasmicSlot({
+                          defaultContents: "Tous les lundis de 18h à 20h",
+                          value: args.schedule,
+                          className: classNames(sty.slotTargetSchedule)
+                        })}
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___56PE
+                        )}
+                      >
+                        {p.renderPlasmicSlot({
+                          defaultContents: "12 rue Grandmaison",
+                          value: args.address,
+                          className: classNames(sty.slotTargetAddress)
+                        })}
+                      </div>
+
+                      {true ? (
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__uAy7D
+                          )}
+                        >
+                          {p.renderPlasmicSlot({
+                            defaultContents: "12345",
+                            value: args.postCode,
+                            className: classNames(sty.slotTargetPostCode)
+                          })}
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__lSiAk
+                            )}
+                          >
+                            {p.renderPlasmicSlot({
+                              defaultContents: "Ville sur l'authion",
+                              value: args.city,
+                              className: classNames(sty.slotTargetCity)
+                            })}
+                          </div>
+                        </p.Stack>
+                      ) : null}
+                    </div>
+                  ) : null}
+
+                  <p.PlasmicImg
+                    data-plasmic-name={"img"}
+                    data-plasmic-override={overrides.img}
+                    alt={""}
+                    className={classNames(sty.img)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"90%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/amap_website/images/vegetablesBatch.jpeg",
+                      fullWidth: 4096,
+                      fullHeight: 3072,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </p.Stack>
+              </p.Stack>
+            </div>
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -110,15 +340,36 @@ function PlasmicContact__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1"],
-  h1: ["h1"]
+  root: [
+    "root",
+    "header",
+    "h1",
+    "columns",
+    "contactForm",
+    "contactInfos",
+    "addressInfos",
+    "img"
+  ],
+  header: ["header"],
+  h1: ["h1"],
+  columns: ["columns", "contactForm", "contactInfos", "addressInfos", "img"],
+  contactForm: ["contactForm"],
+  contactInfos: ["contactInfos"],
+  addressInfos: ["addressInfos"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  header: typeof Header;
   h1: "h1";
+  columns: "div";
+  contactForm: typeof ContactForm;
+  contactInfos: "div";
+  addressInfos: "div";
+  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -178,7 +429,13 @@ export const PlasmicContact = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    header: makeNodeComponent("header"),
     h1: makeNodeComponent("h1"),
+    columns: makeNodeComponent("columns"),
+    contactForm: makeNodeComponent("contactForm"),
+    contactInfos: makeNodeComponent("contactInfos"),
+    addressInfos: makeNodeComponent("addressInfos"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicContact
     internalVariantProps: PlasmicContact__VariantProps,

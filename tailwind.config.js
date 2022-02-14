@@ -31,7 +31,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Montserrat"],
+        sans: ["Josefin Sans"],
+        serif: ["Aleo"],
       },
     },
   },

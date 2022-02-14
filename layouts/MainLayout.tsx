@@ -4,14 +4,15 @@ import { Footer as FooterData } from "lib/netlify-types";
 
 interface Props extends React.PropsWithoutRef<JSX.IntrinsicElements["main"]> {
   footerData: FooterData;
+  minimalFooter?: boolean;
 }
 
-export const MainLayout = ({ footerData, ...props }: Props) => {
+export const MainLayout = ({ footerData, minimalFooter, ...props }: Props) => {
   return (
     <>
       <main {...props} />
 
-      <Footer data={footerData} />
+      <Footer data={footerData} minimal={minimalFooter} />
     </>
   );
 };

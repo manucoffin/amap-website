@@ -128,7 +128,6 @@
   font-weight: 700;
   text-align: center;
   font-size: 30px;
-  margin-top: 0px;
   margin-bottom: var(--token-63kTP6Ueu);
   position: relative;
   width: 100%;
@@ -405,6 +404,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  background: none;
   min-width: 0;
   padding: var(--token-7R6fY6Np7) 0px;
 }
@@ -414,7 +414,6 @@
   font-weight: 700;
   text-align: center;
   font-size: 30px;
-  margin-top: 0px;
   margin-bottom: var(--token-63kTP6Ueu);
   width: 100%;
   height: auto;

@@ -18,7 +18,6 @@ function Footer_(
   { data, ...props }: FooterProps,
   ref: HTMLElementRefOf<"div">
 ) {
-  console.log(props);
   return (
     <PlasmicFooter
       {...props}
@@ -26,6 +25,7 @@ function Footer_(
       homeLink={{ render: LinkWrapper }}
       sitemapLink={{ render: LinkWrapper }}
       legalLink={{ render: LinkWrapper }}
+      creditsLink={{ render: LinkWrapper }}
       address={data.address}
       postCode={data.postcode}
       city={data.city}
