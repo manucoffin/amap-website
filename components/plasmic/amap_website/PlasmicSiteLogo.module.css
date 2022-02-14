@@ -28,8 +28,8 @@
   object-fit: cover;
   max-width: 100%;
   color: var(--token-WNBJHso-i);
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   flex-shrink: 0;
 }
 .text {
@@ -40,4 +40,5 @@
   font-family: var(--token-5iF75TGQk);
   font-weight: 700;
   align-self: center;
+  font-size: 20px;
 }

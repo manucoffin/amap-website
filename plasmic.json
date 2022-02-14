@@ -29,19 +29,6 @@
       "cssFilePath": "plasmic/amap_website/plasmic_amap_website.module.css",
       "components": [
         {
-          "id": "K4zY1Z6RTV",
-          "name": "Button",
-          "type": "managed",
-          "projectId": "7CzphteDn95cERg7nN7EAF",
-          "renderModuleFilePath": "plasmic/amap_website/PlasmicButton.tsx",
-          "importSpec": {
-            "modulePath": "Button.tsx"
-          },
-          "cssFilePath": "plasmic/amap_website/PlasmicButton.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "dTKTvnUQf8",
           "name": "Header",
           "type": "managed",
@@ -209,6 +196,19 @@
           "cssFilePath": "plasmic/amap_website/PlasmicSiteLogo.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "tUvxVYleeL",
+          "name": "ContactForm",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicContactForm.tsx",
+          "importSpec": {
+            "modulePath": "contact/ContactForm.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicContactForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -253,6 +253,21 @@
           "id": "553M2BQ3s",
           "name": "colibri.png",
           "filePath": "../public/plasmic/amap_website/images/colibripng.png"
+        },
+        {
+          "id": "hG1o4gpFu",
+          "name": "Screenshot 2022-02-14 at 09.56.17.png",
+          "filePath": "../public/plasmic/amap_website/images/screenshot20220214At095617Png.png"
+        },
+        {
+          "id": "e6E4SsM13",
+          "name": "vegetables batch",
+          "filePath": "../public/plasmic/amap_website/images/vegetablesBatch.jpeg"
+        },
+        {
+          "id": "wcb4-KtvC",
+          "name": "fruits bg",
+          "filePath": "../public/plasmic/amap_website/images/fruitsBg.jpeg"
         }
       ],
       "indirect": false,

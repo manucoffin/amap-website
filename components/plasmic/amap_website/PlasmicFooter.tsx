@@ -44,11 +44,18 @@ import sty from "./PlasmicFooter.module.css"; // plasmic-import: OWIENifDVhJ/css
 import DropIcon from "./icons/PlasmicIcon__Drop"; // plasmic-import: RvQEfXJy0/icon
 import MailIcon from "./icons/PlasmicIcon__Mail"; // plasmic-import: PCaQsxt1j/icon
 
-export type PlasmicFooter__VariantMembers = {};
+export type PlasmicFooter__VariantMembers = {
+  minimal: "minimal";
+};
 
-export type PlasmicFooter__VariantsArgs = {};
+export type PlasmicFooter__VariantsArgs = {
+  minimal?: SingleBooleanChoiceArg<"minimal">;
+};
+
 type VariantPropType = keyof PlasmicFooter__VariantsArgs;
-export const PlasmicFooter__VariantProps = new Array<VariantPropType>();
+export const PlasmicFooter__VariantProps = new Array<VariantPropType>(
+  "minimal"
+);
 
 export type PlasmicFooter__ArgsType = {
   phoneNumber?: React.ReactNode;
@@ -77,6 +84,8 @@ export type PlasmicFooter__OverridesType = {
   homeLink?: p.Flex<"a"> & Partial<LinkProps>;
   sitemapLink?: p.Flex<"a"> & Partial<LinkProps>;
   legalLink?: p.Flex<"a"> & Partial<LinkProps>;
+  creditsLink?: p.Flex<"a"> & Partial<LinkProps>;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultFooterProps {
@@ -86,6 +95,7 @@ export interface DefaultFooterProps {
   address?: React.ReactNode;
   postCode?: React.ReactNode;
   city?: React.ReactNode;
+  minimal?: SingleBooleanChoiceArg<"minimal">;
   className?: string;
 }
 
@@ -113,178 +123,189 @@ function PlasmicFooter__RenderFunc(props: {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_tokens,
-        sty.footer
+        sty.footer,
+        { [sty.footerminimal]: hasVariant(variants, "minimal", "minimal") }
       )}
     >
-      <p.Stack
-        as={"div"}
-        data-plasmic-name={"columns"}
-        data-plasmic-override={overrides.columns}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.columns)}
-      >
-        <div className={classNames(projectcss.all, sty.column__haRo)}>
-          <div
-            data-plasmic-name={"logo"}
-            data-plasmic-override={overrides.logo}
-            className={classNames(projectcss.all, sty.logo)}
-          >
-            <DropIcon
-              className={classNames(projectcss.all, sty.svg__ilU9L)}
-              role={"img"}
-            />
+      {(hasVariant(variants, "minimal", "minimal") ? true : true) ? (
+        <p.Stack
+          as={"div"}
+          data-plasmic-name={"columns"}
+          data-plasmic-override={overrides.columns}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.columns, {
+            [sty.columnsminimal]: hasVariant(variants, "minimal", "minimal")
+          })}
+        >
+          <div className={classNames(projectcss.all, sty.column__haRo)}>
+            <div
+              data-plasmic-name={"logo"}
+              data-plasmic-override={overrides.logo}
+              className={classNames(projectcss.all, sty.logo)}
+            >
+              <DropIcon
+                className={classNames(projectcss.all, sty.svg__ilU9L)}
+                role={"img"}
+              />
 
-            <div className={classNames(projectcss.all, sty.freeBox__pT7Tv)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__zrsXw
-                )}
-              >
-                {"AMAP"}
-              </div>
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__dDwWv
-                )}
-              >
-                {"de la"}
-              </div>
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___4BdA
-                )}
-              >
-                {"Goutte d'Eau"}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={classNames(projectcss.all, sty.column__mFf3K)}>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__pZLrk
-            )}
-          >
-            {"Distribution de Légumes"}
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox__jxPc2)}>
-            {p.renderPlasmicSlot({
-              defaultContents: "Tous les jeudis de 18h à 20h",
-              value: args.schedule,
-              className: classNames(sty.slotTargetSchedule)
-            })}
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox__krf4F)}>
-            {p.renderPlasmicSlot({
-              defaultContents: "26 rue Grandmaison",
-              value: args.address,
-              className: classNames(sty.slotTargetAddress)
-            })}
-          </div>
-
-          {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox__lqfLt)}>
-              {p.renderPlasmicSlot({
-                defaultContents: "49800",
-                value: args.postCode,
-                className: classNames(sty.slotTargetPostCode)
-              })}
-
-              <div className={classNames(projectcss.all, sty.freeBox__cdTq1)}>
-                {p.renderPlasmicSlot({
-                  defaultContents: " Brain sur l’Authion",
-                  value: args.city,
-                  className: classNames(sty.slotTargetCity)
-                })}
-              </div>
-            </div>
-          ) : null}
-        </div>
-
-        <div className={classNames(projectcss.all, sty.column___4XhX0)}>
-          {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox__rdFqS)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__i7PwG
-                )}
-              >
-                {"Tel."}
-              </div>
-
-              <div className={classNames(projectcss.all, sty.freeBox__adtRy)}>
-                {p.renderPlasmicSlot({
-                  defaultContents: "02 34 56 78 90",
-                  value: args.phoneNumber,
-                  className: classNames(sty.slotTargetPhoneNumber)
-                })}
-              </div>
-            </div>
-          ) : null}
-
-          <div className={classNames(projectcss.all, sty.freeBox__v9Xbw)}>
-            {p.renderPlasmicSlot({
-              defaultContents: "amap-goutte-eau@mail.fr",
-              value: args.email,
-              className: classNames(sty.slotTargetEmail)
-            })}
-          </div>
-        </div>
-
-        <div className={classNames(projectcss.all, sty.column__jTjFf)}>
-          <p.PlasmicLink
-            data-plasmic-name={"contactFormLink"}
-            data-plasmic-override={overrides.contactFormLink}
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              sty.contactFormLink
-            )}
-            component={Link}
-            href={"/contact" as const}
-            platform={"nextjs"}
-          >
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__caP)}>
-                <MailIcon
-                  className={classNames(projectcss.all, sty.svg__vcC8K)}
-                  role={"img"}
-                />
+              <div className={classNames(projectcss.all, sty.freeBox__pT7Tv)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__zrsXw
+                  )}
+                >
+                  {"AMAP"}
+                </div>
 
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__auqT
+                    sty.text__dDwWv
                   )}
                 >
-                  {"FORMULAIRE\nDE CONTACT"}
+                  {"de la"}
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___4BdA
+                  )}
+                >
+                  {"Goutte d'Eau"}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={classNames(projectcss.all, sty.column__mFf3K)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__pZLrk
+              )}
+            >
+              {"Distribution de Légumes"}
+            </div>
+
+            <div className={classNames(projectcss.all, sty.freeBox__jxPc2)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "Tous les jeudis de 18h à 20h",
+                value: args.schedule,
+                className: classNames(sty.slotTargetSchedule)
+              })}
+            </div>
+
+            <div className={classNames(projectcss.all, sty.freeBox__krf4F)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "26 rue Grandmaison",
+                value: args.address,
+                className: classNames(sty.slotTargetAddress)
+              })}
+            </div>
+
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__lqfLt)}>
+                {p.renderPlasmicSlot({
+                  defaultContents: "49800",
+                  value: args.postCode,
+                  className: classNames(sty.slotTargetPostCode)
+                })}
+
+                <div className={classNames(projectcss.all, sty.freeBox__cdTq1)}>
+                  {p.renderPlasmicSlot({
+                    defaultContents: " Brain sur l’Authion",
+                    value: args.city,
+                    className: classNames(sty.slotTargetCity)
+                  })}
                 </div>
               </div>
             ) : null}
-          </p.PlasmicLink>
-        </div>
-      </p.Stack>
+          </div>
+
+          <div className={classNames(projectcss.all, sty.column___4XhX0)}>
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__rdFqS)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__i7PwG
+                  )}
+                >
+                  {"Tel."}
+                </div>
+
+                <div className={classNames(projectcss.all, sty.freeBox__adtRy)}>
+                  {p.renderPlasmicSlot({
+                    defaultContents: "02 34 56 78 90",
+                    value: args.phoneNumber,
+                    className: classNames(sty.slotTargetPhoneNumber)
+                  })}
+                </div>
+              </div>
+            ) : null}
+
+            <div className={classNames(projectcss.all, sty.freeBox__v9Xbw)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "amap-goutte-eau@mail.fr",
+                value: args.email,
+                className: classNames(sty.slotTargetEmail)
+              })}
+            </div>
+          </div>
+
+          <div className={classNames(projectcss.all, sty.column__jTjFf)}>
+            <p.PlasmicLink
+              data-plasmic-name={"contactFormLink"}
+              data-plasmic-override={overrides.contactFormLink}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.contactFormLink
+              )}
+              component={Link}
+              href={"/contact" as const}
+              platform={"nextjs"}
+            >
+              {true ? (
+                <div className={classNames(projectcss.all, sty.freeBox__caP)}>
+                  <MailIcon
+                    className={classNames(projectcss.all, sty.svg__vcC8K)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__auqT
+                    )}
+                  >
+                    {"FORMULAIRE\nDE CONTACT"}
+                  </div>
+                </div>
+              ) : null}
+            </p.PlasmicLink>
+          </div>
+        </p.Stack>
+      ) : null}
 
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox___7CGho)}
+        className={classNames(projectcss.all, sty.freeBox___7CGho, {
+          [sty.freeBoxminimal___7CGho8Pz46]: hasVariant(
+            variants,
+            "minimal",
+            "minimal"
+          )
+        })}
       >
         <p.PlasmicLink
           data-plasmic-name={"homeLink"}
@@ -348,7 +369,7 @@ function PlasmicFooter__RenderFunc(props: {
             sty.legalLink
           )}
           component={Link}
-          href={"https://www.plasmic.app/" as const}
+          href={"/mentions-legales" as const}
           platform={"nextjs"}
         >
           {"Mentions légales"}
@@ -365,17 +386,19 @@ function PlasmicFooter__RenderFunc(props: {
         </div>
 
         <p.PlasmicLink
+          data-plasmic-name={"creditsLink"}
+          data-plasmic-override={overrides.creditsLink}
           className={classNames(
             projectcss.all,
             projectcss.a,
             projectcss.__wab_text,
-            sty.link__gxK
+            sty.creditsLink
           )}
           component={Link}
-          href={"https://www.plasmic.app/" as const}
+          href={"/credits" as const}
           platform={"nextjs"}
         >
-          {"Gérer les cookies"}
+          {"Crédits"}
         </p.PlasmicLink>
 
         <div
@@ -389,11 +412,13 @@ function PlasmicFooter__RenderFunc(props: {
         </div>
 
         <p.PlasmicLink
+          data-plasmic-name={"link"}
+          data-plasmic-override={overrides.link}
           className={classNames(
             projectcss.all,
             projectcss.a,
             projectcss.__wab_text,
-            sty.link___3Kk4N
+            sty.link
           )}
           component={Link}
           href={"https://teide.tech" as const}
@@ -415,14 +440,18 @@ const PlasmicDescendants = {
     "contactFormLink",
     "homeLink",
     "sitemapLink",
-    "legalLink"
+    "legalLink",
+    "creditsLink",
+    "link"
   ],
   columns: ["columns", "logo", "contactFormLink"],
   logo: ["logo"],
   contactFormLink: ["contactFormLink"],
   homeLink: ["homeLink"],
   sitemapLink: ["sitemapLink"],
-  legalLink: ["legalLink"]
+  legalLink: ["legalLink"],
+  creditsLink: ["creditsLink"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -435,6 +464,8 @@ type NodeDefaultElementType = {
   homeLink: "a";
   sitemapLink: "a";
   legalLink: "a";
+  creditsLink: "a";
+  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -500,6 +531,8 @@ export const PlasmicFooter = Object.assign(
     homeLink: makeNodeComponent("homeLink"),
     sitemapLink: makeNodeComponent("sitemapLink"),
     legalLink: makeNodeComponent("legalLink"),
+    creditsLink: makeNodeComponent("creditsLink"),
+    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,
