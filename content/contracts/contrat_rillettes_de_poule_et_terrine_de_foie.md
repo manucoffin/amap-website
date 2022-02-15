@@ -1,5 +1,5 @@
 ---
-title: Contrat rillettes de poule et terrine de foie
+title: Contrat rillettes de poule et terrine de foie 2
 description: >-
   Contrat rillettes de poules et terrines de foie
 
