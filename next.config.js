@@ -1,4 +1,7 @@
-module.exports = {
+const withPlugins = require("next-compose-plugins");
+const optimizedImages = require("next-optimized-images");
+
+const nextConfig = {
   reactStrictMode: true,
   // pageExtensions: ["page.tsx", "page.ts"],
   webpack: (configuration) => {
@@ -9,3 +12,16 @@ module.exports = {
     return configuration;
   },
 };
+
+// More infos about plugin configuration here:
+// https://github.com/cyrilwanner/next-optimized-images
+const nextOptimizedImagesPlugin = [
+  optimizedImages,
+  {
+    optipng: {
+      optimizationLevel: 3,
+    },
+  },
+];
+
+module.exports = withPlugins([nextOptimizedImagesPlugin], nextConfig);
