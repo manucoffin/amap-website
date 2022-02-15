@@ -5,7 +5,6 @@ import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { InputContainer } from "./InputContainer";
 import { Button } from "components/ui";
-// import vegetablesRingImg from "static/images/vegetables_ring.png";
 
 type RequestState = "IDLE" | "LOADING" | "SUCCESS" | "ERROR";
 
@@ -40,25 +39,9 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
     setRequestState("LOADING");
 
     try {
-      // const formData = new FormData();
-
-      // formData.append()
-      // "form-name": "contact"
-
-      // for (const key in data) {
-      //   if (key === "field") {
-      //     formData.append(key, data[key][1]);
-      //   } else {
-      //     formData.append(key, data[key]);
-      //   }
-      // }
-
-      console.log(data);
-
       const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        // body: new URLSearchParams(formData as any).toString(),
         body: encode({ "form-name": "contact", ...data }),
       });
 

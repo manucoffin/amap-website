@@ -1,9 +1,12 @@
 backend:
+  # Uncomment these lines to make the backend work locally
   name: github
   repo: "Teide-Technologies/amap-website"
   branch: main
+  # name: git-gateway
 cms_manual_init: true
-media_folder: public/static/images
+media_folder: public/static/uploads
+public_folder: "/static/uploads"
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -39,6 +42,21 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
+  - name: "contracts"
+    label: "Contrats"
+    folder: "content/contracts"
+    create: true
+    fields:
+      - { label: "Nom du contrat", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Document",
+          name: "document_path",
+          widget: "file",
+          media_folder: "/{{media_folder}}/files",
+          public_folder: "{{public_folder}}/files",
+          media_library: { allow_multiple: false },
+        }
   - label: "Blog"
     name: "blog"
     folder: "content/blogPosts"

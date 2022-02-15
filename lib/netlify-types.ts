@@ -20,6 +20,12 @@ export interface About {
   date: string;
 }
 
+export interface Contrats {
+  title: string;
+  description: string;
+  document_path: any;
+}
+
 export interface Blog {
   title: string;
   date: string;
