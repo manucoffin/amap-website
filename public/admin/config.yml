@@ -3,7 +3,7 @@ backend:
   repo: "Teide-Technologies/amap-website"
   branch: main
 cms_manual_init: true
-media_folder: public/static/img
+media_folder: public/static/images
 slug:
   encoding: "ascii"
   clean_accents: true

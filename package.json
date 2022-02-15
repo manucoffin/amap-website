@@ -16,8 +16,11 @@
     "@plasmicapp/react-web": "^0.2.91",
     "clsx": "^1.1.1",
     "gray-matter": "^4.0.3",
+    "imagemin-optipng": "^8.0.0",
     "netlify-cms-app": "^2.15.65",
     "next": "latest",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.27.0"

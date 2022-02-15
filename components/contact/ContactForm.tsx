@@ -2,11 +2,10 @@ import * as React from "react";
 import { DefaultContactFormProps } from "../plasmic/amap_website/PlasmicContactForm";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 import { useState } from "react";
-import { CheckCircleIcon } from "@heroicons/react/outline";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { InputContainer } from "./InputContainer";
 import { Button } from "components/ui";
-import Image from "next/image";
+// import vegetablesRingImg from "static/images/vegetables_ring.png";
 
 type RequestState = "IDLE" | "LOADING" | "SUCCESS" | "ERROR";
 
@@ -85,9 +84,9 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
       <input type="hidden" name="form-name" value="contact" />
 
       {requestState === "SUCCESS" ? (
-        <div className="relative h-[400px] flex items-center">
+        <div className="h-[400px] flex items-center bg-[url('/static/images/vegetables_ring.png')] bg-contain bg-no-repeat bg-center">
           <div className="flex flex-col items-center w-full">
-            <span className="relative z-10 w-full text-center justify-center text-3xl">
+            <span className="w-full text-center justify-center text-3xl">
               Merci !
             </span>
 
@@ -97,13 +96,6 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
               au plus vite...
             </span>
           </div>
-          <Image
-            src="/static/img/vegetables_ring.png"
-            alt="Couronne de fruits et légumes"
-            className="absolute inset-0"
-            objectFit="contain"
-            layout="fill"
-          />
         </div>
       ) : (
         <>
