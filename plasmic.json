@@ -260,14 +260,14 @@
           "filePath": "../public/plasmic/amap_website/images/screenshot20220214At095617Png.png"
         },
         {
-          "id": "e6E4SsM13",
-          "name": "vegetables batch",
-          "filePath": "../public/plasmic/amap_website/images/vegetablesBatch.jpeg"
-        },
-        {
           "id": "wcb4-KtvC",
           "name": "fruits bg",
           "filePath": "../public/plasmic/amap_website/images/fruitsBg.jpeg"
+        },
+        {
+          "id": "X_N3uxi-c",
+          "name": "paperplane.svg",
+          "filePath": "../public/plasmic/amap_website/images/paperplanesvg.svg"
         }
       ],
       "indirect": false,

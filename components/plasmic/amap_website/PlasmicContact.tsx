@@ -72,11 +72,11 @@ export type PlasmicContact__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
   h1?: p.Flex<"h1">;
+  img?: p.Flex<typeof p.PlasmicImg>;
   columns?: p.Flex<"div">;
   contactForm?: p.Flex<typeof ContactForm>;
   contactInfos?: p.Flex<"div">;
   addressInfos?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultContactProps {}
@@ -128,18 +128,62 @@ function PlasmicContact__RenderFunc(props: {
 
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__grGkp)}>
-              <h1
-                data-plasmic-name={"h1"}
-                data-plasmic-override={overrides.h1}
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__jImQ)}
+                >
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1
+                    )}
+                  >
+                    {"Contactez nous"}
+                  </h1>
+
+                  <p.PlasmicImg
+                    data-plasmic-name={"img"}
+                    data-plasmic-override={overrides.img}
+                    alt={""}
+                    className={classNames(sty.img)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "md")
+                        ? ("100px" as const)
+                        : ("50px" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/amap_website/images/paperplanesvg.svg",
+                      fullWidth: 300,
+                      fullHeight: 128,
+                      aspectRatio: 2.34335
+                    }}
+                  />
+                </p.Stack>
+              ) : null}
+
+              <div
                 className={classNames(
                   projectcss.all,
-                  projectcss.h1,
                   projectcss.__wab_text,
-                  sty.h1
+                  sty.text__yQPy6
                 )}
               >
-                {"Laissez nous un petit mot"}
-              </h1>
+                {
+                  "Vous avez des questions sur le fonctionnement de l'AMAP ? Ou tout simplement une remarque ? Laissez nous un petit mot !"
+                }
+              </div>
 
               <p.Stack
                 as={"div"}
@@ -309,26 +353,6 @@ function PlasmicContact__RenderFunc(props: {
                       ) : null}
                     </div>
                   ) : null}
-
-                  <p.PlasmicImg
-                    data-plasmic-name={"img"}
-                    data-plasmic-override={overrides.img}
-                    alt={""}
-                    className={classNames(sty.img)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"90%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/amap_website/images/vegetablesBatch.jpeg",
-                      fullWidth: 4096,
-                      fullHeight: 3072,
-                      aspectRatio: undefined
-                    }}
-                  />
                 </p.Stack>
               </p.Stack>
             </div>
@@ -344,19 +368,19 @@ const PlasmicDescendants = {
     "root",
     "header",
     "h1",
+    "img",
     "columns",
     "contactForm",
     "contactInfos",
-    "addressInfos",
-    "img"
+    "addressInfos"
   ],
   header: ["header"],
   h1: ["h1"],
-  columns: ["columns", "contactForm", "contactInfos", "addressInfos", "img"],
+  img: ["img"],
+  columns: ["columns", "contactForm", "contactInfos", "addressInfos"],
   contactForm: ["contactForm"],
   contactInfos: ["contactInfos"],
-  addressInfos: ["addressInfos"],
-  img: ["img"]
+  addressInfos: ["addressInfos"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -365,11 +389,11 @@ type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
   h1: "h1";
+  img: typeof p.PlasmicImg;
   columns: "div";
   contactForm: typeof ContactForm;
   contactInfos: "div";
   addressInfos: "div";
-  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -431,11 +455,11 @@ export const PlasmicContact = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     h1: makeNodeComponent("h1"),
+    img: makeNodeComponent("img"),
     columns: makeNodeComponent("columns"),
     contactForm: makeNodeComponent("contactForm"),
     contactInfos: makeNodeComponent("contactInfos"),
     addressInfos: makeNodeComponent("addressInfos"),
-    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicContact
     internalVariantProps: PlasmicContact__VariantProps,

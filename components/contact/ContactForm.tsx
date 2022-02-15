@@ -6,6 +6,7 @@ import { CheckCircleIcon } from "@heroicons/react/outline";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { InputContainer } from "./InputContainer";
 import { Button } from "components/ui";
+import Image from "next/image";
 
 type RequestState = "IDLE" | "LOADING" | "SUCCESS" | "ERROR";
 
@@ -18,6 +19,14 @@ type FormValues = {
 export interface ContactFormProps extends DefaultContactFormProps {}
 
 function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   const [requestState, setRequestState] = useState<RequestState>("IDLE");
 
   const {
@@ -32,22 +41,26 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
     setRequestState("LOADING");
 
     try {
-      const formData = new FormData();
+      // const formData = new FormData();
 
-      for (const key in data) {
-        if (key === "field") {
-          formData.append(key, data[key][1]);
-        } else {
-          formData.append(key, data[key]);
-        }
-      }
+      // formData.append()
+      // "form-name": "contact"
 
-      console.log(formData);
+      // for (const key in data) {
+      //   if (key === "field") {
+      //     formData.append(key, data[key][1]);
+      //   } else {
+      //     formData.append(key, data[key]);
+      //   }
+      // }
+
+      console.log(data);
 
       const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as any).toString(),
+        // body: new URLSearchParams(formData as any).toString(),
+        body: encode({ "form-name": "contact", ...data }),
       });
 
       if (!response.ok) throw new Error("An error occured");
@@ -62,19 +75,35 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
   return (
     <form
       className="font-sans w-full"
-      id="contact-form"
       name="contact"
       method="POST"
       netlify-honeypot="bot-field"
       data-netlify="true"
       onSubmit={handleSubmit(onSubmit)}
     >
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="contact" />
+
       {requestState === "SUCCESS" ? (
-        <div className="flex flex-col md:flex-row items-center justify-center my-32">
-          <CheckCircleIcon className="w-24 h-24 mb-4 md:mb-0 md:mr-10 text-green-500"></CheckCircleIcon>
-          <span className="text-xl">
-            Merci de votre message, nous reviendrons vers vous au plus vite !
-          </span>
+        <div className="relative h-[400px] flex items-center">
+          <div className="flex flex-col items-center w-full">
+            <span className="relative z-10 w-full text-center justify-center text-3xl">
+              Merci !
+            </span>
+
+            <span className="text-center">
+              On revient vers vous
+              <br />
+              au plus vite...
+            </span>
+          </div>
+          <Image
+            src="/static/img/vegetables_ring.png"
+            alt="Couronne de fruits et légumes"
+            className="absolute inset-0"
+            objectFit="contain"
+            layout="fill"
+          />
         </div>
       ) : (
         <>
@@ -86,7 +115,10 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
             />
           </InputContainer>
 
-          <InputContainer label="Email" error={errors.email?.message}>
+          <InputContainer
+            label="Votre adresse email"
+            error={errors.email?.message}
+          >
             <input
               {...register("email", { required: "Ce champs est requis" })}
               className="block w-full bg-gray-200 text-base px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none focus:outline-none focus:border focus:border-blue-500"
