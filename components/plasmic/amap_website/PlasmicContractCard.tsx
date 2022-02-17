@@ -39,7 +39,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_amap_website.module.css"; // plasmic-import: 7CzphteDn95cERg7nN7EAF/projectcss
 import sty from "./PlasmicContractCard.module.css"; // plasmic-import: cmMrWuVRF8/css
 
-import InfoIcon from "./icons/PlasmicIcon__Info"; // plasmic-import: ZMjzg7GYb/icon
 import DownloadDocumentIcon from "./icons/PlasmicIcon__DownloadDocument"; // plasmic-import: ytp-msYPk/icon
 
 export type PlasmicContractCard__VariantMembers = {};
@@ -51,23 +50,27 @@ export const PlasmicContractCard__VariantProps = new Array<VariantPropType>();
 export type PlasmicContractCard__ArgsType = {
   title?: React.ReactNode;
   icon?: React.ReactNode;
+  description?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicContractCard__ArgsType;
 export const PlasmicContractCard__ArgProps = new Array<ArgPropType>(
   "title",
-  "icon"
+  "icon",
+  "description"
 );
 
 export type PlasmicContractCard__OverridesType = {
   root?: p.Flex<"div">;
-  infosButton?: p.Flex<"button">;
   downloadButton?: p.Flex<"div">;
+  svg?: p.Flex<"svg">;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultContractCardProps {
   title?: React.ReactNode;
   icon?: React.ReactNode;
+  description?: React.ReactNode;
   className?: string;
 }
 
@@ -131,60 +134,52 @@ function PlasmicContractCard__RenderFunc(props: {
               className: classNames(sty.slotTargetTitle)
             })}
           </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__dk3Vb)}>
+            {p.renderPlasmicSlot({
+              defaultContents: "Ici la description",
+              value: args.description,
+              className: classNames(sty.slotTargetDescription)
+            })}
+          </div>
         </p.Stack>
       ) : null}
       {true ? (
         <div className={classNames(projectcss.all, sty.freeBox__tFmn)}>
           {true ? (
             <p.Stack
-              as={"button"}
-              data-plasmic-name={"infosButton"}
-              data-plasmic-override={overrides.infosButton}
-              hasGap={true}
-              className={classNames(
-                projectcss.all,
-                projectcss.button,
-                sty.infosButton
-              )}
-            >
-              <InfoIcon
-                className={classNames(projectcss.all, sty.svg__cd4R)}
-                role={"img"}
-              />
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___9DmSe
-                )}
-              >
-                {"Infos"}
-              </div>
-            </p.Stack>
-          ) : null}
-          {true ? (
-            <p.Stack
               as={"div"}
-              data-plasmic-name={"downloadButton"}
-              data-plasmic-override={overrides.downloadButton}
               hasGap={true}
-              className={classNames(projectcss.all, sty.downloadButton)}
+              className={classNames(projectcss.all, sty.freeBox__ikG1E)}
             >
-              <DownloadDocumentIcon
-                className={classNames(projectcss.all, sty.svg__kLx5A)}
-                role={"img"}
-              />
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"downloadButton"}
+                  data-plasmic-override={overrides.downloadButton}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.downloadButton)}
+                >
+                  <DownloadDocumentIcon
+                    data-plasmic-name={"svg"}
+                    data-plasmic-override={overrides.svg}
+                    className={classNames(projectcss.all, sty.svg)}
+                    role={"img"}
+                  />
 
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__rvxla
-                )}
-              >
-                {"Télécharger"}
-              </div>
+                  <div
+                    data-plasmic-name={"text"}
+                    data-plasmic-override={overrides.text}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text
+                    )}
+                  >
+                    {"Télécharger"}
+                  </div>
+                </p.Stack>
+              ) : null}
             </p.Stack>
           ) : null}
         </div>
@@ -194,17 +189,19 @@ function PlasmicContractCard__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "infosButton", "downloadButton"],
-  infosButton: ["infosButton"],
-  downloadButton: ["downloadButton"]
+  root: ["root", "downloadButton", "svg", "text"],
+  downloadButton: ["downloadButton", "svg", "text"],
+  svg: ["svg"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  infosButton: "button";
   downloadButton: "div";
+  svg: "svg";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -264,8 +261,9 @@ export const PlasmicContractCard = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    infosButton: makeNodeComponent("infosButton"),
     downloadButton: makeNodeComponent("downloadButton"),
+    svg: makeNodeComponent("svg"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicContractCard
     internalVariantProps: PlasmicContractCard__VariantProps,

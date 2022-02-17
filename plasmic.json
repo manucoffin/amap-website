@@ -222,6 +222,19 @@
           "cssFilePath": "plasmic/amap_website/PlasmicContractCard.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "8--1DojQth",
+          "name": "Hoverable",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicHoverable.tsx",
+          "importSpec": {
+            "modulePath": "Hoverable.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicHoverable.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -281,11 +294,6 @@
           "id": "hG1o4gpFu",
           "name": "Screenshot 2022-02-14 at 09.56.17.png",
           "filePath": "../public/plasmic/amap_website/images/screenshot20220214At095617Png.png"
-        },
-        {
-          "id": "wcb4-KtvC",
-          "name": "fruits bg",
-          "filePath": "../public/plasmic/amap_website/images/fruitsBg.jpeg"
         },
         {
           "id": "X_N3uxi-c",
