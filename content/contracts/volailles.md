@@ -1,4 +1,5 @@
 ---
+id: contract-BnZS5Z6Q0
 title: Volailles
 description: Si les bêtes à plumes vous tentent, sautez sur vos plumiers, encre
   et outils divers et complétez ce contrat que vous apporterez rapidement lors
