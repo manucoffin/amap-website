@@ -71,8 +71,8 @@ export const PlasmicContact__ArgProps = new Array<ArgPropType>(
 export type PlasmicContact__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
-  h1?: p.Flex<"h1">;
   img?: p.Flex<typeof p.PlasmicImg>;
+  h1?: p.Flex<"h1">;
   columns?: p.Flex<"div">;
   contactForm?: p.Flex<typeof ContactForm>;
   contactInfos?: p.Flex<"div">;
@@ -134,19 +134,6 @@ function PlasmicContact__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__jImQ)}
                 >
-                  <h1
-                    data-plasmic-name={"h1"}
-                    data-plasmic-override={overrides.h1}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1
-                    )}
-                  >
-                    {"Contactez nous"}
-                  </h1>
-
                   <p.PlasmicImg
                     data-plasmic-name={"img"}
                     data-plasmic-override={overrides.img}
@@ -170,6 +157,19 @@ function PlasmicContact__RenderFunc(props: {
                       aspectRatio: 2.34335
                     }}
                   />
+
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1
+                    )}
+                  >
+                    {"Contactez nous"}
+                  </h1>
                 </p.Stack>
               ) : null}
 
@@ -367,16 +367,16 @@ const PlasmicDescendants = {
   root: [
     "root",
     "header",
-    "h1",
     "img",
+    "h1",
     "columns",
     "contactForm",
     "contactInfos",
     "addressInfos"
   ],
   header: ["header"],
-  h1: ["h1"],
   img: ["img"],
+  h1: ["h1"],
   columns: ["columns", "contactForm", "contactInfos", "addressInfos"],
   contactForm: ["contactForm"],
   contactInfos: ["contactInfos"],
@@ -388,8 +388,8 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
-  h1: "h1";
   img: typeof p.PlasmicImg;
+  h1: "h1";
   columns: "div";
   contactForm: typeof ContactForm;
   contactInfos: "div";
@@ -454,8 +454,8 @@ export const PlasmicContact = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    h1: makeNodeComponent("h1"),
     img: makeNodeComponent("img"),
+    h1: makeNodeComponent("h1"),
     columns: makeNodeComponent("columns"),
     contactForm: makeNodeComponent("contactForm"),
     contactInfos: makeNodeComponent("contactInfos"),

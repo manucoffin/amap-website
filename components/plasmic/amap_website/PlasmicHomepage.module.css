@@ -90,7 +90,8 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: url("/plasmic/amap_website/images/ivoryBg.svg") top 50% left 50% / cover no-repeat;
+  background: linear-gradient(#ffffffb3, #ffffffb3),
+    url("/plasmic/amap_website/images/_718Jpg.jpeg") top 50% left 50% / cover repeat;
   margin-top: calc(0px + 0px) !important;
   min-width: 0;
 }

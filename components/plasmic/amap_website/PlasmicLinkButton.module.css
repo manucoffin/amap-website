@@ -22,10 +22,12 @@
   border-style: none;
   border-color: var(--token-WNBJHso-i);
 }
-.text {
+.freeBox {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
+  display: flex;
+  flex-direction: row;
   min-width: 0;
 }

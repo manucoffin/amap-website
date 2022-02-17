@@ -12,7 +12,7 @@ import clsx from "clsx";
 export interface LinkButtonProps extends DefaultLinkButtonProps {}
 
 function LinkButton_(
-  { href, label, radius, size, type, ...props }: LinkButtonProps,
+  { children, href, radius, size, type, ...props }: LinkButtonProps,
   ref: HTMLElementRefOf<"a">
 ) {
   return (
@@ -38,7 +38,7 @@ function LinkButton_(
           `rounded-${radius}`
         )}
       >
-        {label}
+        {children}
       </a>
     </Link>
   );

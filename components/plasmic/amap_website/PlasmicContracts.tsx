@@ -33,6 +33,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Header from "../../Header"; // plasmic-import: dTKTvnUQf8/component
+
+import { useScreenVariants as useScreenVariantshaBl5ZeVufY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: HABl5zeVufY/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -45,12 +48,17 @@ export type PlasmicContracts__VariantsArgs = {};
 type VariantPropType = keyof PlasmicContracts__VariantsArgs;
 export const PlasmicContracts__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicContracts__ArgsType = {};
+export type PlasmicContracts__ArgsType = {
+  contracts?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicContracts__ArgsType;
-export const PlasmicContracts__ArgProps = new Array<ArgPropType>();
+export const PlasmicContracts__ArgProps = new Array<ArgPropType>("contracts");
 
 export type PlasmicContracts__OverridesType = {
   root?: p.Flex<"div">;
+  header?: p.Flex<typeof Header>;
+  img?: p.Flex<typeof p.PlasmicImg>;
   h1?: p.Flex<"h1">;
 };
 
@@ -64,6 +72,10 @@ function PlasmicContracts__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantshaBl5ZeVufY()
+  });
 
   return (
     <React.Fragment>
@@ -91,18 +103,117 @@ function PlasmicContracts__RenderFunc(props: {
             sty.root
           )}
         >
-          <h1
-            data-plasmic-name={"h1"}
-            data-plasmic-override={overrides.h1}
-            className={classNames(
-              projectcss.all,
-              projectcss.h1,
-              projectcss.__wab_text,
-              sty.h1
-            )}
-          >
-            {"Contrats"}
-          </h1>
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
+          />
+
+          <div className={classNames(projectcss.all, sty.freeBox__lmwJe)}>
+            {(hasVariant(globalVariants, "screen", "md") ? true : true) ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__tixoX)}
+              >
+                <p.PlasmicImg
+                  data-plasmic-name={"img"}
+                  data-plasmic-override={overrides.img}
+                  alt={""}
+                  className={classNames(sty.img)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "md")
+                      ? ("100px" as const)
+                      : ("100px" as const)
+                  }
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "md")
+                      ? ("auto" as const)
+                      : ("auto" as const)
+                  }
+                  loading={
+                    hasVariant(globalVariants, "screen", "md")
+                      ? ("lazy" as const)
+                      : ("lazy" as const)
+                  }
+                  src={
+                    hasVariant(globalVariants, "screen", "md")
+                      ? {
+                          src: "/plasmic/amap_website/images/paperplanesvg.svg",
+                          fullWidth: 300,
+                          fullHeight: 128,
+                          aspectRatio: 2.34335
+                        }
+                      : {
+                          src: "/plasmic/amap_website/images/contractsvg.svg",
+                          fullWidth: 122,
+                          fullHeight: 150,
+                          aspectRatio: 0.811248
+                        }
+                  }
+                />
+
+                <h1
+                  data-plasmic-name={"h1"}
+                  data-plasmic-override={overrides.h1}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "md")
+                    ? "Contactez nous"
+                    : "Adhésion et Contrats"}
+                </h1>
+              </p.Stack>
+            ) : null}
+
+            <div className={classNames(projectcss.all, sty.freeBox__frs9T)}>
+              {p.renderPlasmicSlot({
+                defaultContents: (
+                  <React.Fragment>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__l8Oml)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__iSeip)}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___5XtG3
+                      )}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__lvvaf)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__zBlix)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__se0Cf)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__lomGb)}
+                    />
+                  </React.Fragment>
+                ),
+                value: args.contracts
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -110,7 +221,9 @@ function PlasmicContracts__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1"],
+  root: ["root", "header", "img", "h1"],
+  header: ["header"],
+  img: ["img"],
   h1: ["h1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -118,6 +231,8 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  header: typeof Header;
+  img: typeof p.PlasmicImg;
   h1: "h1";
 };
 
@@ -178,6 +293,8 @@ export const PlasmicContracts = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    header: makeNodeComponent("header"),
+    img: makeNodeComponent("img"),
     h1: makeNodeComponent("h1"),
 
     // Metadata about props expected for PlasmicContracts

@@ -209,6 +209,19 @@
           "cssFilePath": "plasmic/amap_website/PlasmicContactForm.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "cmMrWuVRF8",
+          "name": "ContractCard",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicContractCard.tsx",
+          "importSpec": {
+            "modulePath": "ContractCard.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicContractCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -231,6 +244,16 @@
           "id": "PCaQsxt1j",
           "name": "MailIcon",
           "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Mail.tsx"
+        },
+        {
+          "id": "ytp-msYPk",
+          "name": "DownloadDocumentIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__DownloadDocument.tsx"
+        },
+        {
+          "id": "ZMjzg7GYb",
+          "name": "InfoIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Info.tsx"
         }
       ],
       "images": [
@@ -268,6 +291,21 @@
           "id": "X_N3uxi-c",
           "name": "paperplane.svg",
           "filePath": "../public/plasmic/amap_website/images/paperplanesvg.svg"
+        },
+        {
+          "id": "lvrWGkWAO",
+          "name": "718.jpg",
+          "filePath": "../public/plasmic/amap_website/images/_718Jpg.jpeg"
+        },
+        {
+          "id": "LPJbHOgER",
+          "name": "contract.svg",
+          "filePath": "../public/plasmic/amap_website/images/contractsvg.svg"
+        },
+        {
+          "id": "ew3_sq0iJ",
+          "name": "chicken.svg",
+          "filePath": "../public/plasmic/amap_website/images/chickensvg.svg"
         }
       ],
       "indirect": false,

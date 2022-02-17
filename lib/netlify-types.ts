@@ -23,6 +23,7 @@ export interface About {
 export interface Contrats {
   title: string;
   description: string;
+  image_path: string;
   document_path: any;
 }
 

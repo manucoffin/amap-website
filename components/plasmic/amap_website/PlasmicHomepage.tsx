@@ -144,11 +144,12 @@ function PlasmicHomepage__RenderFunc(props: {
                   data-plasmic-override={overrides.scrollDownButton}
                   className={classNames("__wab_instance", sty.scrollDownButton)}
                   href={"#qu-est-ce-qu-une-amap" as const}
-                  label={"Découvrir l'Amap" as const}
                   radius={"normal" as const}
                   size={"lg" as const}
                   type={"outlined" as const}
-                />
+                >
+                  {"Découvrir l'AMAP"}
+                </LinkButton>
               </div>
             </div>
           ) : null}

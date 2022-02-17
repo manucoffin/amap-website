@@ -50,11 +50,21 @@ collections:
       - { label: "Nom du contrat", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - {
+          label: "Image",
+          name: "image_path",
+          widget: "image",
+          media_folder: "/{{media_folder}}/images",
+          public_folder: "{{public_folder}}/images",
+          choose_url: false,
+          media_library: { allow_multiple: false },
+        }
+      - {
           label: "Document",
           name: "document_path",
           widget: "file",
           media_folder: "/{{media_folder}}/files",
           public_folder: "{{public_folder}}/files",
+          choose_url: false,
           media_library: { allow_multiple: false },
         }
   - label: "Blog"
