@@ -1,4 +1,5 @@
 ---
+id: contract-Qwe8IsLik
 title: Rillettes de poule et terrine de foie
 description: >-
   Contrat rillettes de poules et terrines de foie
