@@ -5,14 +5,9 @@ import {
 } from "./plasmic/amap_website/PlasmicContractCard";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 import Image from "next/image";
-import {
-  DocumentDownloadIcon,
-  InformationCircleIcon,
-  XCircleIcon,
-} from "@heroicons/react/outline";
+import { DocumentDownloadIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 import clsx from "clsx";
-import { truncateText } from "lib/utils";
 
 export interface ContractCardProps extends DefaultContractCardProps {
   title: string;
@@ -41,7 +36,7 @@ function ContractCard_(
         <div className="flex flex-col">
           <div
             className={clsx(
-              "transition-[max-height] duration-[1000ms] overflow-hidden shadow",
+              "transition-[max-height] duration-[1000ms] overflow-hidden",
               {
                 "max-h-5 truncate": !isInfosVisible,
               },

@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^1.4.3",
     "@heroicons/react": "^1.0.5",
+    "@ncwidgets/id": "^0.9.0",
     "@plasmicapp/loader-nextjs": "^1.0.61",
     "@plasmicapp/react-web": "^0.2.91",
     "clsx": "^1.1.1",

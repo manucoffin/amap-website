@@ -21,6 +21,7 @@ export interface About {
 }
 
 export interface Contrats {
+  id: any;
   title: string;
   description: string;
   image_path: string;

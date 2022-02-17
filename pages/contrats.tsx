@@ -1,5 +1,5 @@
 import ContractCard from "components/ContractCard";
-import { getAllContracts } from "lib/contracts";
+import { Contract, getAllContracts } from "lib/contracts";
 import { Contrats } from "lib/netlify-types";
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import * as React from "react";
@@ -24,7 +24,7 @@ const ContractsPage: NextPage<
 };
 
 export const getStaticProps: GetStaticProps<{
-  contracts: Contrats[];
+  contracts: Contract[];
 }> = () => {
   const contracts = getAllContracts();
 
