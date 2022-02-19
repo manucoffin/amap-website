@@ -34,18 +34,17 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: dTKTvnUQf8/component
-import LinkButton from "../../LinkButton"; // plasmic-import: ln-1hqOKZ9u/component
+import AmapAdvantageBlock from "../../AmapAdvantageBlock"; // plasmic-import: IPO3E1dkvS/component
 import AmapDescriptionBlock from "../../AmapDescriptionBlock"; // plasmic-import: uZnVkj7Gzvz/component
 import ListItem from "../../ListItem"; // plasmic-import: 6y2iAxc2rc/component
-
-import { useScreenVariants as useScreenVariantshaBl5ZeVufY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: HABl5zeVufY/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_amap_website.module.css"; // plasmic-import: 7CzphteDn95cERg7nN7EAF/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 8XNt3BOtDt/css
 
-import StadiumsvgIcon from "./icons/PlasmicIcon__Stadiumsvg"; // plasmic-import: E5VKiMd8l/icon
+import ArrowDownsvgIcon from "./icons/PlasmicIcon__ArrowDownsvg"; // plasmic-import: vwon0ZYL0/icon
+import BrushIcon from "./icons/PlasmicIcon__Brush"; // plasmic-import: 7RNqhMDlZ/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 
@@ -61,11 +60,12 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
   h1?: p.Flex<"h1">;
-  scrollDownButton?: p.Flex<typeof LinkButton>;
-  sectionAmapDescription?: p.Flex<"div">;
+  scrollDownButton?: p.Flex<"a"> & Partial<LinkProps>;
+  sectionAvantages?: p.Flex<"div">;
+  sectionCommentCaMarche?: p.Flex<"div">;
+  sectionValeurs?: p.Flex<"div">;
+  h2?: p.Flex<"h2">;
   columns?: p.Flex<"div">;
-  sectionHistoireAmap?: p.Flex<"div">;
-  colibrisImg?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultHomepageProps {}
@@ -78,10 +78,6 @@ function PlasmicHomepage__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
-
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantshaBl5ZeVufY()
-  });
 
   return (
     <React.Fragment>
@@ -136,40 +132,245 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.h1
                   )}
                 >
-                  {"Des paniers bio\nqui font vivre\nles agriculteurs locaux"}
+                  <React.Fragment>
+                    <React.Fragment>{"Des paniers "}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"bio"}
+                    </span>
+                    <React.Fragment>{"\npour soutenir\nles "}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"producteurs locaux"}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </h1>
 
-                <LinkButton
+                <p.PlasmicLink
                   data-plasmic-name={"scrollDownButton"}
                   data-plasmic-override={overrides.scrollDownButton}
-                  className={classNames("__wab_instance", sty.scrollDownButton)}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.scrollDownButton
+                  )}
+                  component={Link}
                   href={"#qu-est-ce-qu-une-amap" as const}
-                  radius={"normal" as const}
-                  size={"lg" as const}
-                  type={"outlined" as const}
+                  platform={"nextjs"}
                 >
                   {"Découvrir l'AMAP"}
-                </LinkButton>
+                </p.PlasmicLink>
+
+                <ArrowDownsvgIcon
+                  className={classNames(projectcss.all, sty.svg__ttGn0)}
+                  role={"img"}
+                />
               </div>
             </div>
           ) : null}
+
+          <div
+            data-plasmic-name={"sectionAvantages"}
+            data-plasmic-override={overrides.sectionAvantages}
+            className={classNames(projectcss.all, sty.sectionAvantages)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__z4F0F
+              )}
+            >
+              {"Pourquoi adhérer à une AMAP ?"}
+            </div>
+
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__oPxo6)}
+            >
+              <AmapAdvantageBlock
+                className={classNames(
+                  "__wab_instance",
+                  sty.amapAdvantageBlock__zh6ZX
+                )}
+              />
+
+              <AmapAdvantageBlock
+                className={classNames(
+                  "__wab_instance",
+                  sty.amapAdvantageBlock__h8O0P
+                )}
+                description={
+                  "En achetant les produits à l’avance, vous assurez une sécurité financière pour les producteurs, ce qui leur permet de pouvoir gérer les aléas de la production plus sereinement."
+                }
+                image={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___2JKn)}
+                    displayHeight={"128px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"128px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/amap_website/images/supportIcon.png",
+                      fullWidth: 256,
+                      fullHeight: 256,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                title={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__vEYzo
+                    )}
+                  >
+                    {"Pour les producteurs"}
+                  </div>
+                }
+              />
+
+              <AmapAdvantageBlock
+                className={classNames(
+                  "__wab_instance",
+                  sty.amapAdvantageBlock__gomOy
+                )}
+                description={
+                  "Les paniers permettent de réduire les emballages, et donc de produire moins de déchets.\nDe plus, en favorisant les circuits court, on limite les émissions de CO2 liées au transport."
+                }
+                image={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__bGruj)}
+                    displayHeight={"128px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"128px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/amap_website/images/earthOrganicIcon.png",
+                      fullWidth: 256,
+                      fullHeight: 256,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                title={"Pour l’environnement"}
+              />
+
+              <AmapAdvantageBlock
+                className={classNames(
+                  "__wab_instance",
+                  sty.amapAdvantageBlock__iQnGn
+                )}
+                description={
+                  "Contrairement aux allées froides et sans âme des supermarchés, la distribution des paniers se fait un cadre chaleureux et convivial, qui permet de renouer le lien entre le producteur et les consommateurs."
+                }
+                image={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___5Sdbo)}
+                    displayHeight={"128px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"128px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/amap_website/images/handshakeIcon.png",
+                      fullWidth: 256,
+                      fullHeight: 256,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                title={"Pour Le lien social"}
+              />
+
+              <AmapAdvantageBlock
+                className={classNames(
+                  "__wab_instance",
+                  sty.amapAdvantageBlock__krZPh
+                )}
+                description={
+                  "En réduisant les intermédiaires, on peut réduire le coût du panier, tout en ayant un prix juste pour le producteur. C’est pourquoi le rapport qualité/prix des paniers est excellent !"
+                }
+                image={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__dj2Ni)}
+                    displayHeight={"128px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"128px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/amap_website/images/pigWalletIcon.png",
+                      fullWidth: 256,
+                      fullHeight: 256,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                title={"Pour le porte monnaie"}
+              />
+            </p.Stack>
+          </div>
+
+          <div
+            data-plasmic-name={"sectionCommentCaMarche"}
+            data-plasmic-override={overrides.sectionCommentCaMarche}
+            className={classNames(projectcss.all, sty.sectionCommentCaMarche)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__bAjAh
+              )}
+            >
+              {"Comment ça marche ?"}
+            </div>
+
+            <div className={classNames(projectcss.all, sty.freeBox__m5KB9)} />
+          </div>
+
           {true ? (
             <div
-              data-plasmic-name={"sectionAmapDescription"}
-              data-plasmic-override={overrides.sectionAmapDescription}
-              className={classNames(projectcss.all, sty.sectionAmapDescription)}
+              data-plasmic-name={"sectionValeurs"}
+              data-plasmic-override={overrides.sectionValeurs}
+              className={classNames(projectcss.all, sty.sectionValeurs)}
               id={"qu-est-ce-qu-une-amap" as const}
             >
               <div className={classNames(projectcss.all, sty.freeBox__zUc5V)}>
                 <h2
+                  data-plasmic-name={"h2"}
+                  data-plasmic-override={overrides.h2}
                   className={classNames(
                     projectcss.all,
                     projectcss.h2,
                     projectcss.__wab_text,
-                    sty.h2__recme
+                    sty.h2
                   )}
                 >
-                  {"Qu'est-ce qu'une AMAP?"}
+                  {"Les valeurs des AMAP"}
                 </h2>
 
                 <div
@@ -185,7 +386,107 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.amapDescriptionBlock__w4Wd0
                       )}
-                    />
+                      title={
+                        <React.Fragment>
+                          <BrushIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__aQwh4
+                            )}
+                            role={"img"}
+                          />
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__fZjx
+                            )}
+                          >
+                            {"Solidarité"}
+                          </div>
+                        </React.Fragment>
+                      }
+                    >
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          sty.li__jDq5G
+                        )}
+                      >
+                        <ListItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.listItem__qvw38
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__yXr6H
+                            )}
+                          >
+                            {
+                              "Soutien des consommateurs aux producteurs dans les aléas de la production"
+                            }
+                          </div>
+                        </ListItem>
+                      </li>
+
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          sty.li__it9PC
+                        )}
+                      >
+                        <ListItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.listItem__bAmgX
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__ydtI1
+                            )}
+                          >
+                            {
+                              "Accompagnement du producteur à l’autonomie, c’est-à-dire la capacité à être maître de ses choix"
+                            }
+                          </div>
+                        </ListItem>
+                      </li>
+
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          sty.li___3Wbqr
+                        )}
+                      >
+                        <ListItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.listItem__h3C7
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__smUE
+                            )}
+                          >
+                            {"Appui à l’agriculture paysanne locale"}
+                          </div>
+                        </ListItem>
+                      </li>
+                    </AmapDescriptionBlock>
                   </div>
 
                   <div
@@ -196,12 +497,12 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.amapDescriptionBlock__i2I0A
                       )}
-                      slot={
+                      title={
                         <React.Fragment>
-                          <StadiumsvgIcon
+                          <BrushIcon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__fDbZi
+                              sty.svg__oGhlr
                             )}
                             role={"img"}
                           />
@@ -210,14 +511,13 @@ function PlasmicHomepage__RenderFunc(props: {
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__nwj5X
+                              sty.text__rPcTa
                             )}
                           >
-                            {"2"}
+                            {"Équité"}
                           </div>
                         </React.Fragment>
                       }
-                      slot2={"Écologique"}
                     >
                       <li
                         className={classNames(
@@ -232,9 +532,17 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.listItem__uRg0U
                           )}
                         >
-                          {
-                            "Une production respectueuse de la nature, de l’environnement et de l’animal"
-                          }
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__pp0Gg
+                            )}
+                          >
+                            {
+                              "Définition à chaque saison d’un prix équitable entre consommateurs et producteur"
+                            }
+                          </div>
                         </ListItem>
                       </li>
 
@@ -251,7 +559,17 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.listItem__edDZu
                           )}
                         >
-                          {"L’appui à l’agriculture paysanne locale"}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__aak6H
+                            )}
+                          >
+                            {
+                              "Formalisation et respect des contrats entre consommateurs et producteur"
+                            }
+                          </div>
                         </ListItem>
                       </li>
 
@@ -268,9 +586,44 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.listItem__t0TuQ
                           )}
                         >
-                          {
-                            "Une production de dimension humaine adaptée aux types de culture et d’élevage"
-                          }
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__jbVWn
+                            )}
+                          >
+                            {
+                              "Respect des normes sociales par rapport aux employés de l’exploitation, y compris le personnel temporaire"
+                            }
+                          </div>
+                        </ListItem>
+                      </li>
+
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          sty.li__cOwJz
+                        )}
+                      >
+                        <ListItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.listItem__tfM9R
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___1RGdu
+                            )}
+                          >
+                            {
+                              "Aucun intermédiaire entre producteur et consommateurs, pas de produits achetés et revendus par le producteur sans accord des consommateurs"
+                            }
+                          </div>
                         </ListItem>
                       </li>
                     </AmapDescriptionBlock>
@@ -284,12 +637,12 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.amapDescriptionBlock__baYiN
                       )}
-                      slot={
+                      title={
                         <React.Fragment>
-                          <StadiumsvgIcon
+                          <BrushIcon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__fTxY
+                              sty.svg__xbMB
                             )}
                             role={"img"}
                           />
@@ -298,14 +651,13 @@ function PlasmicHomepage__RenderFunc(props: {
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__ev3O
+                              sty.text__vgPmS
                             )}
                           >
-                            {"3"}
+                            {"Qualité"}
                           </div>
                         </React.Fragment>
                       }
-                      slot2={"Qualitative"}
                     >
                       <li
                         className={classNames(
@@ -320,9 +672,98 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.listItem__gWhmR
                           )}
                         >
-                          {
-                            "Information fréquente du consommateur sur les produits"
-                          }
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__xhl5L
+                            )}
+                          >
+                            {
+                              "Qualité des produits : gustative, sanitaire, environnementale"
+                            }
+                          </div>
+                        </ListItem>
+                      </li>
+
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          sty.li__uTdm1
+                        )}
+                      >
+                        <ListItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.listItem__sj1Zw
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__cgQhH
+                            )}
+                          >
+                            {
+                              "Production respectueuse de la nature, de l’environnement et de l’animal"
+                            }
+                          </div>
+                        </ListItem>
+                      </li>
+
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          sty.li__uR0I
+                        )}
+                      >
+                        <ListItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.listItem__ody9J
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__cGzrY
+                            )}
+                          >
+                            {
+                              "Information fréquente du consommateur sur les produits"
+                            }
+                          </div>
+                        </ListItem>
+                      </li>
+
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          sty.li__dExx
+                        )}
+                      >
+                        <ListItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.listItem__hbA0C
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__lSuz7
+                            )}
+                          >
+                            {
+                              "Recherche de la transparence dans les actes d’achat, de production, de transformation et de vente des produits agricoles"
+                            }
+                          </div>
                         </ListItem>
                       </li>
 
@@ -339,9 +780,17 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.listItem__gakyC
                           )}
                         >
-                          {
-                            "Une bonne qualité des produits : gustative, sanitaire, environnementale"
-                          }
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__c0Bjv
+                            )}
+                          >
+                            {
+                              "Production de dimension humaine adaptée aux types de culture et d’élevage"
+                            }
+                          </div>
                         </ListItem>
                       </li>
                     </AmapDescriptionBlock>
@@ -355,12 +804,12 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.amapDescriptionBlock__irrx1
                       )}
-                      slot={
+                      title={
                         <React.Fragment>
-                          <StadiumsvgIcon
+                          <BrushIcon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__iPi0E
+                              sty.svg__dGj1
                             )}
                             role={"img"}
                           />
@@ -369,14 +818,13 @@ function PlasmicHomepage__RenderFunc(props: {
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__geKqb
+                              sty.text__zLAxi
                             )}
                           >
-                            {"4"}
+                            {"Lien Social"}
                           </div>
                         </React.Fragment>
                       }
-                      slot2={"Sociale"}
                     >
                       <li
                         className={classNames(
@@ -391,9 +839,15 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.listItem__olym6
                           )}
                         >
-                          {
-                            "Respect des normes sociales par rapport aux employés de l’exploitation, y compris le personnel temporaire"
-                          }
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___7DUd1
+                            )}
+                          >
+                            {"Proximité du producteur et des consommateurs"}
+                          </div>
                         </ListItem>
                       </li>
 
@@ -410,71 +864,50 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.listItem___8LJ5
                           )}
                         >
-                          {
-                            "Une sensibilisation des adhérents de l’AMAP aux particularités de l’agriculture paysanne"
-                          }
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__agRkQ
+                            )}
+                          >
+                            {
+                              "Participation active des consommateurs à l’AMAP favorisée notamment par la responsabilisation du maximum d’adhérents"
+                            }
+                          </div>
+                        </ListItem>
+                      </li>
+
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          sty.li__dvJyz
+                        )}
+                      >
+                        <ListItem
+                          className={classNames(
+                            "__wab_instance",
+                            sty.listItem__wuVyi
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__sk5Cs
+                            )}
+                          >
+                            {
+                              "Sensibilisation des adhérents de l’AMAP aux particularités de l’agriculture paysanne"
+                            }
+                          </div>
                         </ListItem>
                       </li>
                     </AmapDescriptionBlock>
                   </div>
                 </div>
               </div>
-            </div>
-          ) : null}
-          {true ? (
-            <div
-              data-plasmic-name={"sectionHistoireAmap"}
-              data-plasmic-override={overrides.sectionHistoireAmap}
-              className={classNames(projectcss.all, sty.sectionHistoireAmap)}
-            >
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2__n6W2
-                )}
-              >
-                {"L'AMAP de la Goutte d'Eau"}
-              </h2>
-
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___7K26)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___5A7T1
-                  )}
-                >
-                  {
-                    'Tout commence par un terrible incendie dans la jungle. Tous les animaux sont impuissants, tétanisés par l’ampleur des dégâts. Le lion, roi des animaux, conduit dignement son peuple en sécurité de l’autre côté du fleuve. De là, les animaux regardent, impuissants et malheureux, brûler leur "maison" et leur "garde-manger".\n\nSeul, un petit colibri va et vient, sans relâche, de la berge du fleuve à la forêt en flammes,de la forêt en flammes à la berge du fleuve. Il transporte à chaque fois une goutte d’eau dans son bec.\n\n" Hé ! lui crie le tatou, que fais-tu ? Tu ne crois pas qu’à toi tout seul, tu vas pouvoir éteindre un incendie pareil ? "\n"Non, lui répond le colibri mais\n\n"J’aurai fait ma part !"\n\nNée le 8 mars 2006, l’AMAP de la Goutte d’Eau, au travers de ses adhérents - producteurs et consommateurs - tente de faire sa part dans les objectifs qui sont les siens et espère que toutes les petites gouttes d’eau ruisselant de par le monde feront un jour déborder le vase !'
-                  }
-                </div>
-
-                <p.PlasmicImg
-                  data-plasmic-name={"colibrisImg"}
-                  data-plasmic-override={overrides.colibrisImg}
-                  alt={"Image d'un colibri" as const}
-                  className={classNames(sty.colibrisImg)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/amap_website/images/colibripng.png",
-                    fullWidth: 400,
-                    fullHeight: 400,
-                    aspectRatio: undefined
-                  }}
-                />
-              </p.Stack>
             </div>
           ) : null}
         </p.Stack>
@@ -489,18 +922,20 @@ const PlasmicDescendants = {
     "header",
     "h1",
     "scrollDownButton",
-    "sectionAmapDescription",
-    "columns",
-    "sectionHistoireAmap",
-    "colibrisImg"
+    "sectionAvantages",
+    "sectionCommentCaMarche",
+    "sectionValeurs",
+    "h2",
+    "columns"
   ],
   header: ["header"],
   h1: ["h1"],
   scrollDownButton: ["scrollDownButton"],
-  sectionAmapDescription: ["sectionAmapDescription", "columns"],
-  columns: ["columns"],
-  sectionHistoireAmap: ["sectionHistoireAmap", "colibrisImg"],
-  colibrisImg: ["colibrisImg"]
+  sectionAvantages: ["sectionAvantages"],
+  sectionCommentCaMarche: ["sectionCommentCaMarche"],
+  sectionValeurs: ["sectionValeurs", "h2", "columns"],
+  h2: ["h2"],
+  columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -509,11 +944,12 @@ type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
   h1: "h1";
-  scrollDownButton: typeof LinkButton;
-  sectionAmapDescription: "div";
+  scrollDownButton: "a";
+  sectionAvantages: "div";
+  sectionCommentCaMarche: "div";
+  sectionValeurs: "div";
+  h2: "h2";
   columns: "div";
-  sectionHistoireAmap: "div";
-  colibrisImg: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -576,10 +1012,11 @@ export const PlasmicHomepage = Object.assign(
     header: makeNodeComponent("header"),
     h1: makeNodeComponent("h1"),
     scrollDownButton: makeNodeComponent("scrollDownButton"),
-    sectionAmapDescription: makeNodeComponent("sectionAmapDescription"),
+    sectionAvantages: makeNodeComponent("sectionAvantages"),
+    sectionCommentCaMarche: makeNodeComponent("sectionCommentCaMarche"),
+    sectionValeurs: makeNodeComponent("sectionValeurs"),
+    h2: makeNodeComponent("h2"),
     columns: makeNodeComponent("columns"),
-    sectionHistoireAmap: makeNodeComponent("sectionHistoireAmap"),
-    colibrisImg: makeNodeComponent("colibrisImg"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

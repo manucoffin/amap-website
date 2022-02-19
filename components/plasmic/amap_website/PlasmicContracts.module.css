@@ -156,6 +156,35 @@
     letter-spacing: normal;
   }
 }
+.freeBox__bvlp9 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: var(--token-eReirMpIv);
+  min-width: 0;
+  padding: 0px;
+}
+.searchInput:global(.__wab_instance) {
+  position: relative;
+  width: auto;
+}
+.svg__zxhbr {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__swC0N {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
 .freeBox__frs9T {
   display: grid;
   position: relative;

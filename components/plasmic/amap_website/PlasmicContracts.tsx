@@ -34,6 +34,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: dTKTvnUQf8/component
+import TextInput from "../../TextInput"; // plasmic-import: 4PfogoODGJ2/component
 
 import { useScreenVariants as useScreenVariantshaBl5ZeVufY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: HABl5zeVufY/globalVariant
 
@@ -41,6 +42,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_amap_website.module.css"; // plasmic-import: 7CzphteDn95cERg7nN7EAF/projectcss
 import sty from "./PlasmicContracts.module.css"; // plasmic-import: QMj3hEcFdK/css
+
+import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: gdJwUI3W1pr/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: wAr9MNE9ViX/icon
 
 export type PlasmicContracts__VariantMembers = {};
 
@@ -60,6 +64,7 @@ export type PlasmicContracts__OverridesType = {
   header?: p.Flex<typeof Header>;
   img?: p.Flex<typeof p.PlasmicImg>;
   h1?: p.Flex<"h1">;
+  searchInput?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultContractsProps {}
@@ -174,6 +179,17 @@ function PlasmicContracts__RenderFunc(props: {
               </p.Stack>
             ) : null}
 
+            <div className={classNames(projectcss.all, sty.freeBox__bvlp9)}>
+              <TextInput
+                data-plasmic-name={"searchInput"}
+                data-plasmic-override={overrides.searchInput}
+                className={classNames("__wab_instance", sty.searchInput)}
+                name={"" as const}
+                placeholder={"Rechercher un contrat..." as const}
+                showStartIcon={true}
+              />
+            </div>
+
             <div className={classNames(projectcss.all, sty.freeBox__frs9T)}>
               {p.renderPlasmicSlot({
                 defaultContents: (
@@ -221,10 +237,11 @@ function PlasmicContracts__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "img", "h1"],
+  root: ["root", "header", "img", "h1", "searchInput"],
   header: ["header"],
   img: ["img"],
-  h1: ["h1"]
+  h1: ["h1"],
+  searchInput: ["searchInput"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -234,6 +251,7 @@ type NodeDefaultElementType = {
   header: typeof Header;
   img: typeof p.PlasmicImg;
   h1: "h1";
+  searchInput: typeof TextInput;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -296,6 +314,7 @@ export const PlasmicContracts = Object.assign(
     header: makeNodeComponent("header"),
     img: makeNodeComponent("img"),
     h1: makeNodeComponent("h1"),
+    searchInput: makeNodeComponent("searchInput"),
 
     // Metadata about props expected for PlasmicContracts
     internalVariantProps: PlasmicContracts__VariantProps,

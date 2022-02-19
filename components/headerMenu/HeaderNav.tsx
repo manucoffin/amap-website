@@ -16,7 +16,7 @@ function HeaderNav_(props: HeaderNavProps, ref: HTMLElementRefOf<"div">) {
   return (
     <nav
       {...props}
-      className={clsx(props.className, "font-sans font-semibold")}
+      className={clsx(props.className, "font-sans font-semibold text-xl")}
     >
       <DesktopMenu />
       <MobileMenu />

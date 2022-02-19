@@ -5,17 +5,25 @@ import { getFooter } from "lib/footer";
 import { Footer } from "lib/netlify-types";
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import * as React from "react";
+import { useState } from "react";
 import { PlasmicContracts } from "../components/plasmic/amap_website/PlasmicContracts";
 
 const ContractsPage: NextPage<
   InferGetStaticPropsType<typeof getStaticProps>
 > = ({ contracts, footerData }) => {
+  function filterContracts(contract: Contract) {
+    return contract.title.toLowerCase().includes(filter.toLowerCase());
+  }
+
+  const [filter, setFilter] = useState("");
+
   return (
     <MainLayout footerData={footerData}>
       <PlasmicContracts
-        contracts={contracts.map((contract) => (
+        searchInput={{ onChange: (e) => setFilter(e.target.value) }}
+        contracts={contracts.filter(filterContracts).map((contract) => (
           <ContractCard
-            key={contract.title}
+            key={contract.id}
             documentUrl={contract.document_path}
             imageUrl={contract.image_path}
             title={contract.title}

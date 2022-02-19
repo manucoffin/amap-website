@@ -11,7 +11,7 @@ export const MobileMenu = ({ ...props }) => {
       {({ open }) => {
         return (
           <>
-            <Menu.Button className="grid w-16 h-full place-items-center">
+            <Menu.Button>
               <MenuIcon className="w-6 h-6 ml-auto text-blue-700" />
             </Menu.Button>
 

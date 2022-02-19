@@ -6,7 +6,7 @@ export const DesktopMenu = ({ ...props }) => {
     <ul className="flex-row gap-12 items-stretch hidden h-full md:flex">
       <li>
         <Link href="/actus">
-          <A href="/actus" className="hover:text-blue-500 transition">
+          <A href="/actus">
             <span>Actus</span>
           </A>
         </Link>
@@ -14,9 +14,7 @@ export const DesktopMenu = ({ ...props }) => {
 
       <li>
         <Link href="/contrats">
-          <A href="/contrats" className="hover:text-blue-500 transition">
-            <span>Contrats / Adhésions</span>
-          </A>
+          <A href="/contrats">Contrats / Adhésions</A>
         </Link>
       </li>
 
@@ -24,7 +22,7 @@ export const DesktopMenu = ({ ...props }) => {
         <Link href="/contact">
           <A
             href="/contact"
-            className="border p-2 border-blue-700 rounded hover:text-blue-500 hover:border-blue-500"
+            className="border p-2 border-gray-500 rounded hover:no-underline hover:border-blue-500"
           >
             <span>Nous contacter</span>
           </A>

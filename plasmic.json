@@ -235,6 +235,33 @@
           "cssFilePath": "plasmic/amap_website/PlasmicHoverable.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "4PfogoODGJ2",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "IPO3E1dkvS",
+          "name": "AmapAdvantageBlock",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicAmapAdvantageBlock.tsx",
+          "importSpec": {
+            "modulePath": "AmapAdvantageBlock.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicAmapAdvantageBlock.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -267,28 +294,43 @@
           "id": "ZMjzg7GYb",
           "name": "InfoIcon",
           "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Info.tsx"
+        },
+        {
+          "id": "gdJwUI3W1pr",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "wAr9MNE9ViX",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "7RNqhMDlZ",
+          "name": "BrushIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Brush.tsx"
+        },
+        {
+          "id": "o3u0eLkve",
+          "name": "BannerIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Banner.tsx"
+        },
+        {
+          "id": "6nNIVk6Ac",
+          "name": "WaterDropFatIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__WaterDropFat.tsx"
+        },
+        {
+          "id": "vwon0ZYL0",
+          "name": "ArrowDownsvgIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__ArrowDownsvg.tsx"
         }
       ],
       "images": [
         {
-          "id": "7q2ShsRLo",
-          "name": "ivory_bg",
-          "filePath": "../public/plasmic/amap_website/images/ivoryBg.svg"
-        },
-        {
           "id": "070V2DH0j",
           "name": "footer_bg",
           "filePath": "../public/plasmic/amap_website/images/footerBg.svg"
-        },
-        {
-          "id": "09ExT-Vbr",
-          "name": "vegetables",
-          "filePath": "../public/plasmic/amap_website/images/vegetables.jpeg"
-        },
-        {
-          "id": "553M2BQ3s",
-          "name": "colibri.png",
-          "filePath": "../public/plasmic/amap_website/images/colibripng.png"
         },
         {
           "id": "hG1o4gpFu",
@@ -301,11 +343,6 @@
           "filePath": "../public/plasmic/amap_website/images/paperplanesvg.svg"
         },
         {
-          "id": "lvrWGkWAO",
-          "name": "718.jpg",
-          "filePath": "../public/plasmic/amap_website/images/_718Jpg.jpeg"
-        },
-        {
           "id": "LPJbHOgER",
           "name": "contract.svg",
           "filePath": "../public/plasmic/amap_website/images/contractsvg.svg"
@@ -314,6 +351,46 @@
           "id": "ew3_sq0iJ",
           "name": "chicken.svg",
           "filePath": "../public/plasmic/amap_website/images/chickensvg.svg"
+        },
+        {
+          "id": "nXmgALh3J",
+          "name": "home_bg",
+          "filePath": "../public/plasmic/amap_website/images/homeBg.png"
+        },
+        {
+          "id": "7Euuq2iGy",
+          "name": "concrete_texture",
+          "filePath": "../public/plasmic/amap_website/images/concreteTexture.png"
+        },
+        {
+          "id": "0zNkFQtfl",
+          "name": "support_icon",
+          "filePath": "../public/plasmic/amap_website/images/supportIcon.png"
+        },
+        {
+          "id": "Atb8lDYde",
+          "name": "handshake_icon",
+          "filePath": "../public/plasmic/amap_website/images/handshakeIcon.png"
+        },
+        {
+          "id": "mxppxBo9h",
+          "name": "pig_wallet_icon",
+          "filePath": "../public/plasmic/amap_website/images/pigWalletIcon.png"
+        },
+        {
+          "id": "VKenCM4B9",
+          "name": "vegetables_basket_icon",
+          "filePath": "../public/plasmic/amap_website/images/vegetablesBasketIcon.png"
+        },
+        {
+          "id": "SGxyaG374",
+          "name": "earth_organic_icon",
+          "filePath": "../public/plasmic/amap_website/images/earthOrganicIcon.png"
+        },
+        {
+          "id": "CBpJsBfb3",
+          "name": "banner_green",
+          "filePath": "../public/plasmic/amap_website/images/bannerGreen.svg"
         }
       ],
       "indirect": false,

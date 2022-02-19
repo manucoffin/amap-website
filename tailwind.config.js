@@ -8,16 +8,24 @@ module.exports = {
       colors: {
         white: "#FFFFFF",
         black: "#000000",
+        green: {
+          100: "#F3FFDF",
+          300: "#D7DFAB",
+          500: "#9AAB49",
+        },
         blue: {
-          300: "#32A6E7",
+          100: "#A3CDD2",
+          300: "#7BB8D3",
           500: "#2589C1",
-          700: "#004F7B",
+          700: "#15454D",
+          // 300: "#32A6E7",
+          // 700: "#004F7B",
         },
         gray: {
           200: "#EFEFEF",
           300: "#DDDDDD",
           400: "#868686",
-          500: "#404040",
+          500: "#535353",
           800: "#404040",
         },
         aquamarine: {
@@ -31,7 +39,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Josefin Sans"],
+        sans: ["Amatic SC"],
+        // sans: ["Josefin Sans"],
         serif: ["Aleo"],
       },
     },
