@@ -44,6 +44,8 @@ import projectcss from "./plasmic_amap_website.module.css"; // plasmic-import: 7
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 8XNt3BOtDt/css
 
 import ArrowDownsvgIcon from "./icons/PlasmicIcon__ArrowDownsvg"; // plasmic-import: vwon0ZYL0/icon
+import DottedLineIcon from "./icons/PlasmicIcon__DottedLine"; // plasmic-import: yxDDmV5N_/icon
+import DottedLine2Icon from "./icons/PlasmicIcon__DottedLine2"; // plasmic-import: bDG5ZCgOH/icon
 import BrushIcon from "./icons/PlasmicIcon__Brush"; // plasmic-import: 7RNqhMDlZ/icon
 
 export type PlasmicHomepage__VariantMembers = {};
@@ -64,7 +66,6 @@ export type PlasmicHomepage__OverridesType = {
   sectionAvantages?: p.Flex<"div">;
   sectionCommentCaMarche?: p.Flex<"div">;
   sectionValeurs?: p.Flex<"div">;
-  h2?: p.Flex<"h2">;
   columns?: p.Flex<"div">;
 };
 
@@ -180,15 +181,16 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.sectionAvantages}
             className={classNames(projectcss.all, sty.sectionAvantages)}
           >
-            <div
+            <h2
               className={classNames(
                 projectcss.all,
+                projectcss.h2,
                 projectcss.__wab_text,
-                sty.text__z4F0F
+                sty.h2__z4F0F
               )}
             >
               {"Pourquoi adhérer à une AMAP ?"}
-            </div>
+            </h2>
 
             <p.Stack
               as={"div"}
@@ -339,17 +341,120 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.sectionCommentCaMarche}
             className={classNames(projectcss.all, sty.sectionCommentCaMarche)}
           >
-            <div
+            <h2
               className={classNames(
                 projectcss.all,
+                projectcss.h2,
                 projectcss.__wab_text,
-                sty.text__bAjAh
+                sty.h2__bAjAh
               )}
             >
               {"Comment ça marche ?"}
-            </div>
+            </h2>
 
-            <div className={classNames(projectcss.all, sty.freeBox__m5KB9)} />
+            <div className={classNames(projectcss.all, sty.freeBox__m5KB9)}>
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__wso7)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__rheQ5)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__pzLsd
+                      )}
+                    >
+                      {"1"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__gPmse
+                      )}
+                    >
+                      {
+                        "Je signe un contrat qui m’engage à acheter les produits de mon choix pour une période donnée."
+                      }
+                    </div>
+                  </p.Stack>
+
+                  <DottedLineIcon
+                    className={classNames(projectcss.all, sty.svg__rJutr)}
+                    role={"img"}
+                  />
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__rrAdi)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__yfUPp
+                      )}
+                    >
+                      {
+                        "De son côté, le producteur s’engage à assurer la livraison des paniers au prix fixé dans le  contrat."
+                      }
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__nXa00
+                      )}
+                    >
+                      {"2"}
+                    </div>
+                  </p.Stack>
+
+                  <DottedLine2Icon
+                    className={classNames(projectcss.all, sty.svg__hxxRp)}
+                    role={"img"}
+                  />
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox___1Iy6R)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__rdHxr
+                      )}
+                    >
+                      {"3"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___9WRy
+                      )}
+                    >
+                      {
+                        "Chaque semaine, je vais récupérer mon panier sur le lieu de distribution."
+                      }
+                    </div>
+                  </p.Stack>
+                </p.Stack>
+              ) : null}
+            </div>
           </div>
 
           {true ? (
@@ -361,13 +466,11 @@ function PlasmicHomepage__RenderFunc(props: {
             >
               <div className={classNames(projectcss.all, sty.freeBox__zUc5V)}>
                 <h2
-                  data-plasmic-name={"h2"}
-                  data-plasmic-override={overrides.h2}
                   className={classNames(
                     projectcss.all,
                     projectcss.h2,
                     projectcss.__wab_text,
-                    sty.h2
+                    sty.h2__recme
                   )}
                 >
                   {"Les valeurs des AMAP"}
@@ -925,7 +1028,6 @@ const PlasmicDescendants = {
     "sectionAvantages",
     "sectionCommentCaMarche",
     "sectionValeurs",
-    "h2",
     "columns"
   ],
   header: ["header"],
@@ -933,8 +1035,7 @@ const PlasmicDescendants = {
   scrollDownButton: ["scrollDownButton"],
   sectionAvantages: ["sectionAvantages"],
   sectionCommentCaMarche: ["sectionCommentCaMarche"],
-  sectionValeurs: ["sectionValeurs", "h2", "columns"],
-  h2: ["h2"],
+  sectionValeurs: ["sectionValeurs", "columns"],
   columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -948,7 +1049,6 @@ type NodeDefaultElementType = {
   sectionAvantages: "div";
   sectionCommentCaMarche: "div";
   sectionValeurs: "div";
-  h2: "h2";
   columns: "div";
 };
 
@@ -1015,7 +1115,6 @@ export const PlasmicHomepage = Object.assign(
     sectionAvantages: makeNodeComponent("sectionAvantages"),
     sectionCommentCaMarche: makeNodeComponent("sectionCommentCaMarche"),
     sectionValeurs: makeNodeComponent("sectionValeurs"),
-    h2: makeNodeComponent("h2"),
     columns: makeNodeComponent("columns"),
 
     // Metadata about props expected for PlasmicHomepage

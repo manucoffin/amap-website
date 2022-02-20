@@ -324,6 +324,16 @@
           "id": "vwon0ZYL0",
           "name": "ArrowDownsvgIcon",
           "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__ArrowDownsvg.tsx"
+        },
+        {
+          "id": "yxDDmV5N_",
+          "name": "DottedLineIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__DottedLine.tsx"
+        },
+        {
+          "id": "bDG5ZCgOH",
+          "name": "DottedLine2Icon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__DottedLine2.tsx"
         }
       ],
       "images": [
@@ -391,6 +401,16 @@
           "id": "CBpJsBfb3",
           "name": "banner_green",
           "filePath": "../public/plasmic/amap_website/images/bannerGreen.svg"
+        },
+        {
+          "id": "njAFYOK7N",
+          "name": "grid-bg",
+          "filePath": "../public/plasmic/amap_website/images/gridBg.svg"
+        },
+        {
+          "id": "sqdcX4zXt",
+          "name": "image",
+          "filePath": "../public/plasmic/amap_website/images/image.png"
         }
       ],
       "indirect": false,
