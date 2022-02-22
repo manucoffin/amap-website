@@ -338,16 +338,6 @@
       ],
       "images": [
         {
-          "id": "hG1o4gpFu",
-          "name": "Screenshot 2022-02-14 at 09.56.17.png",
-          "filePath": "../public/plasmic/amap_website/images/screenshot20220214At095617Png.png"
-        },
-        {
-          "id": "X_N3uxi-c",
-          "name": "paperplane.svg",
-          "filePath": "../public/plasmic/amap_website/images/paperplanesvg.svg"
-        },
-        {
           "id": "LPJbHOgER",
           "name": "contract.svg",
           "filePath": "../public/plasmic/amap_website/images/contractsvg.svg"
@@ -406,6 +396,36 @@
           "id": "sqdcX4zXt",
           "name": "paper-texture",
           "filePath": "../public/plasmic/amap_website/images/paperTexture.png"
+        },
+        {
+          "id": "PqLMirF7G",
+          "name": "banner_blue",
+          "filePath": "../public/plasmic/amap_website/images/bannerBlue.svg"
+        },
+        {
+          "id": "G1_mGRy4J",
+          "name": "banner_melon",
+          "filePath": "../public/plasmic/amap_website/images/bannerMelon.svg"
+        },
+        {
+          "id": "HL9pnPeF_",
+          "name": "banner_yellow",
+          "filePath": "../public/plasmic/amap_website/images/bannerYellow.svg"
+        },
+        {
+          "id": "oXTk2hZTy",
+          "name": "phone_icon",
+          "filePath": "../public/plasmic/amap_website/images/phoneIcon.png"
+        },
+        {
+          "id": "yZk6Q1MeA",
+          "name": "paper_plane_icon",
+          "filePath": "../public/plasmic/amap_website/images/paperPlaneIcon.png"
+        },
+        {
+          "id": "4sgvQ7H4d",
+          "name": "map_icon",
+          "filePath": "../public/plasmic/amap_website/images/mapIcon.png"
         }
       ],
       "indirect": false,

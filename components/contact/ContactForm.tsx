@@ -67,7 +67,7 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
       <input type="hidden" name="form-name" value="contact" />
 
       {requestState === "SUCCESS" ? (
-        <div className="h-[400px] flex items-center bg-[url('/static/images/vegetables_ring.png')] bg-contain bg-no-repeat bg-center">
+        <div className="h-[400px] flex items-center bg-contain bg-no-repeat bg-center">
           <div className="flex flex-col items-center w-full">
             <span className="w-full text-center justify-center text-3xl">
               Merci !

@@ -10,7 +10,20 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <MainLayout footerData={footerData} minimalFooter>
       <PlasmicContact
-        email={footerData.email}
+        email={{
+          render: (props, Component) => (
+            <a href={`mailto:${footerData.email}`} className={props.className}>
+              {footerData.email}
+            </a>
+          ),
+        }}
+        phone={{
+          render: (props, Component) => (
+            <a href={`tel:${footerData.phone}`} className={props.className}>
+              {footerData.phone}
+            </a>
+          ),
+        }}
         address={footerData.address}
         postCode={footerData.postcode}
         city={footerData.city}

@@ -145,21 +145,12 @@ function PlasmicContracts__RenderFunc(props: {
                       ? ("lazy" as const)
                       : ("lazy" as const)
                   }
-                  src={
-                    hasVariant(globalVariants, "screen", "md")
-                      ? {
-                          src: "/plasmic/amap_website/images/paperplanesvg.svg",
-                          fullWidth: 300,
-                          fullHeight: 128,
-                          aspectRatio: 2.34335
-                        }
-                      : {
-                          src: "/plasmic/amap_website/images/contractsvg.svg",
-                          fullWidth: 122,
-                          fullHeight: 150,
-                          aspectRatio: 0.811248
-                        }
-                  }
+                  src={{
+                    src: "/plasmic/amap_website/images/contractsvg.svg",
+                    fullWidth: 122,
+                    fullHeight: 150,
+                    aspectRatio: 0.811248
+                  }}
                 />
 
                 <h1

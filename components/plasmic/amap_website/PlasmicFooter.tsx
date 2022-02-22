@@ -287,7 +287,7 @@ function PlasmicFooter__RenderFunc(props: {
                       sty.text__auqT
                     )}
                   >
-                    {"FORMULAIRE\nDE CONTACT"}
+                    {"DISCUTEZ\nAVEC NOUS !"}
                   </div>
                 </div>
               ) : null}

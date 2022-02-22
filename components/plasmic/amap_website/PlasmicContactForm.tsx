@@ -86,12 +86,6 @@ function PlasmicContactForm__RenderFunc(props: {
       displayMinWidth={"0" as const}
       displayWidth={"auto" as const}
       loading={"lazy" as const}
-      src={{
-        src: "/plasmic/amap_website/images/screenshot20220214At095617Png.png",
-        fullWidth: 1168,
-        fullHeight: 596,
-        aspectRatio: undefined
-      }}
     />
   ) as React.ReactElement | null;
 }

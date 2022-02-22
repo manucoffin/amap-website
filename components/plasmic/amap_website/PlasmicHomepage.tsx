@@ -168,7 +168,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.scrollDownButton
                   )}
                   component={Link}
-                  href={"#qu-est-ce-qu-une-amap" as const}
+                  href={"#pourquoi-adherer" as const}
                   platform={"nextjs"}
                 >
                   {"Découvrir l'AMAP"}
@@ -186,6 +186,7 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-name={"sectionAvantages"}
             data-plasmic-override={overrides.sectionAvantages}
             className={classNames(projectcss.all, sty.sectionAvantages)}
+            id={"pourquoi-adherer" as const}
           >
             <h2
               className={classNames(

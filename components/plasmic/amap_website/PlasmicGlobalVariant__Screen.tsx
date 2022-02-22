@@ -4,7 +4,7 @@
 /* prettier-ignore-start */
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
-export type ScreenValue = "md" | "lg" | "xl";
+export type ScreenValue = "md" | "lg" | "xl" | "sm";
 export const ScreenContext = React.createContext<ScreenValue[] | undefined>(
   "PLEASE_RENDER_INSIDE_PROVIDER" as any
 );
@@ -25,6 +25,7 @@ export const useScreenVariants = p.createUseScreenVariants(true, {
   md: "(min-width:0px) and (max-width:768px)",
   lg: "(max-width:1024px)",
   xl: "(max-width:1280px)",
+  sm: "(max-width:640px)",
 });
 
 export default ScreenContext;

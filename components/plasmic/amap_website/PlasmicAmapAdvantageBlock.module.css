@@ -4,6 +4,7 @@
   width: 400px;
   height: auto;
   position: relative;
+  max-width: 100vw;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -17,6 +18,11 @@
 .root > :global(.__wab_flex-container) > picture > img,
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: var(--token-eReirMpIv);
+}
+@media (max-width: 640px) {
+  .root {
+    width: 100vw;
+  }
 }
 .img__e1SOt {
   position: relative;
@@ -51,6 +57,11 @@
   color: var(--token-B133__sIH);
   text-align: center;
 }
+@media (max-width: 640px) {
+  .slotTargetTitle {
+    font-size: 30px;
+  }
+}
 .freeBox__e3E4B {
   position: relative;
   width: 100%;
@@ -60,6 +71,12 @@
   display: flex;
   flex-direction: row;
   min-width: 0;
+}
+@media (max-width: 640px) {
+  .freeBox__e3E4B {
+    padding-left: var(--token-eReirMpIv);
+    padding-right: var(--token-eReirMpIv);
+  }
 }
 .slotTargetDescription {
   font-family: var(--token-ongjxvNd3);
