@@ -7,7 +7,7 @@
   overflow-x: hidden;
   justify-content: flex-start;
   align-items: center;
-  background: none;
+  background: url("/plasmic/amap_website/images/concreteTexture.png") top 50% left 50% / contain repeat;
   min-width: 0;
   min-height: 0;
 }
@@ -77,8 +77,8 @@
     align-items: center;
     margin-left: calc(0px - 0px);
     width: calc(100% + 0px);
-    margin-top: calc(0px - var(--token-L5ZvEOVLJ));
-    height: calc(100% + var(--token-L5ZvEOVLJ));
+    margin-top: calc(0px - var(--token-2zjFq4DPV));
+    height: calc(100% + var(--token-2zjFq4DPV));
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -91,7 +91,7 @@
     > picture
     > img {
     margin-left: 0px;
-    margin-top: var(--token-L5ZvEOVLJ);
+    margin-top: var(--token-2zjFq4DPV);
   }
 }
 .img {
@@ -127,14 +127,14 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .h1 {
     max-width: 100%;
-    margin-top: calc(0px + var(--token-L5ZvEOVLJ)) !important;
+    margin-top: calc(0px + var(--token-2zjFq4DPV)) !important;
   }
 }
 .text__yQPy6 {
   position: relative;
   width: 100%;
   height: auto;
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   margin-bottom: var(--token-2zjFq4DPV);
   min-width: 0;
 }
@@ -329,7 +329,7 @@
   height: auto;
   max-width: 800px;
   font-weight: 400;
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   font-size: 20px;
   color: #535353;
   margin: 0px var(--token-xmbQtwPzW) 0px 0px;
@@ -347,7 +347,7 @@
   }
 }
 .slotTargetPhoneNumber {
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   font-size: 20px;
   font-weight: 700;
   color: #535353;
@@ -373,13 +373,13 @@
   width: auto;
   height: auto;
   max-width: 800px;
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   font-weight: 500;
   font-size: 20px;
   margin: 0px var(--token-xmbQtwPzW) 0px 0px;
 }
 .slotTargetEmail {
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   font-size: 20px;
   font-weight: 700;
   color: #535353;
@@ -433,7 +433,7 @@
   }
 }
 .slotTargetSchedule {
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   font-size: 20px;
 }
 .freeBox___56PE {
@@ -451,7 +451,7 @@
   }
 }
 .slotTargetAddress {
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   font-size: 20px;
 }
 .freeBox__uAy7D {
@@ -494,7 +494,7 @@
   }
 }
 .slotTargetPostCode {
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   font-size: 20px;
 }
 .freeBox__lSiAk {
@@ -504,6 +504,6 @@
   flex-direction: row;
 }
 .slotTargetCity {
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   font-size: 20px;
 }

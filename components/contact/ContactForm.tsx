@@ -85,7 +85,7 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
           <InputContainer label="Votre nom" error={errors.name?.message}>
             <input
               {...register("name", { required: "Ce champs est requis" })}
-              className="block w-full bg-gray-200 text-base px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none focus:outline-none focus:border focus:border-blue-500"
+              className="block w-full bg-white text-base px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none focus:outline-none focus:border focus:border-blue-500"
               type="text"
             />
           </InputContainer>
@@ -96,7 +96,7 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
           >
             <input
               {...register("email", { required: "Ce champs est requis" })}
-              className="block w-full bg-gray-200 text-base px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none focus:outline-none focus:border focus:border-blue-500"
+              className="block w-full bg-white text-base px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none focus:outline-none focus:border focus:border-blue-500"
               type="email"
             />
           </InputContainer>
@@ -104,7 +104,7 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
           <InputContainer label="Message" error={errors.message?.message}>
             <textarea
               {...register("message", { required: "Ce champs est requis" })}
-              className="block w-full bg-gray-200 text-base h-48 px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none resize-none no-resize focus:outline-none focus:border focus:border-blue-500"
+              className="block w-full bg-white text-base h-48 px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none resize-none no-resize focus:outline-none focus:border focus:border-blue-500"
             />
           </InputContainer>
 

@@ -43,6 +43,25 @@ const CreditsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       >
         Shake hands icons created by smashingstocks - Flaticon
       </a>
+
+      {/* Contact */}
+      <a
+        href="https://www.flaticon.com/free-icons/paper-plane"
+        title="paper plane icons"
+      >
+        Paper plane icons created by Freepik - Flaticon
+      </a>
+
+      <a
+        href="https://www.flaticon.com/free-icons/contact-us"
+        title="contact us icons"
+      >
+        Contact us icons created by smashingstocks - Flaticon
+      </a>
+
+      <a href="https://www.flaticon.com/free-icons/map" title="map icons">
+        Map icons created by smashingstocks - Flaticon
+      </a>
     </MainLayout>
   );
 };

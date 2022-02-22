@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { A } from 'components';
+import Link from "next/link";
+import { A } from "components/ui";
 
 export default function Custom404() {
   return (
@@ -156,14 +156,17 @@ export default function Custom404() {
       </svg>
       <div className="flex flex-col px-6 items-center">
         <h1 className="text-center font-sans text-4xl font-bold text-blue-700 mb-6">
-          Page Not Found
+          Page Introuvable
         </h1>
-        <p className="text-center mb-6">
-          Sorry, it seems the page you are looking for doesn&apos;t exist.
+        <p className="text-center mb-6 text-xl">
+          Désolé, il semblerait que la page que vous recherchez n&apos;existe
+          pas.
         </p>
         <Link href="/" passHref>
           <A>
-            <span className="text-blue-700 hover:text-blue-500 transition">Go back home</span>
+            <span className="text-blue-700 hover:text-blue-500 transition text-xl">
+              Retourner à l&apos;accueil
+            </span>
           </A>
         </Link>
       </div>

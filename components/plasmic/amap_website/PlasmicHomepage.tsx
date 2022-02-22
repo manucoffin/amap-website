@@ -34,9 +34,11 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: dTKTvnUQf8/component
-import AmapAdvantageBlock from "../../AmapAdvantageBlock"; // plasmic-import: IPO3E1dkvS/component
-import AmapDescriptionBlock from "../../AmapDescriptionBlock"; // plasmic-import: uZnVkj7Gzvz/component
+import AmapAdvantageBlock from "../../home/AmapAdvantageBlock"; // plasmic-import: IPO3E1dkvS/component
+import AmapDescriptionBlock from "../../home/AmapDescriptionBlock"; // plasmic-import: uZnVkj7Gzvz/component
 import ListItem from "../../ListItem"; // plasmic-import: 6y2iAxc2rc/component
+
+import { useScreenVariants as useScreenVariantshaBl5ZeVufY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: HABl5zeVufY/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -79,6 +81,10 @@ function PlasmicHomepage__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantshaBl5ZeVufY()
+  });
 
   return (
     <React.Fragment>
@@ -375,22 +381,40 @@ function PlasmicHomepage__RenderFunc(props: {
                     </div>
 
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__gPmse
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__jZoo0)}
                     >
-                      {
-                        "Je signe un contrat qui m’engage à acheter les produits de mon choix pour une période donnée."
-                      }
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___6O2H1
+                        )}
+                      >
+                        {"Adhésion"}
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__gPmse
+                        )}
+                      >
+                        {
+                          "Je signe un contrat qui m’engage à acheter les produits de mon choix pour une période donnée."
+                        }
+                      </div>
                     </div>
                   </p.Stack>
 
-                  <DottedLineIcon
-                    className={classNames(projectcss.all, sty.svg__rJutr)}
-                    role={"img"}
-                  />
+                  {(
+                    hasVariant(globalVariants, "screen", "md") ? true : true
+                  ) ? (
+                    <DottedLineIcon
+                      className={classNames(projectcss.all, sty.svg__rJutr)}
+                      role={"img"}
+                    />
+                  ) : null}
 
                   <p.Stack
                     as={"div"}
@@ -398,15 +422,29 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__rrAdi)}
                   >
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__yfUPp
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__l8D23)}
                     >
-                      {
-                        "De son côté, le producteur s’engage à assurer la livraison des paniers au prix fixé dans le  contrat."
-                      }
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__s52Jx
+                        )}
+                      >
+                        {"Production"}
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__yfUPp
+                        )}
+                      >
+                        {
+                          "De son côté, le producteur s’engage à assurer la livraison des paniers au prix fixé dans le  contrat."
+                        }
+                      </div>
                     </div>
 
                     <div
@@ -420,10 +458,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     </div>
                   </p.Stack>
 
-                  <DottedLine2Icon
-                    className={classNames(projectcss.all, sty.svg__hxxRp)}
-                    role={"img"}
-                  />
+                  {(
+                    hasVariant(globalVariants, "screen", "md") ? true : true
+                  ) ? (
+                    <DottedLine2Icon
+                      className={classNames(projectcss.all, sty.svg__hxxRp)}
+                      role={"img"}
+                    />
+                  ) : null}
 
                   <p.Stack
                     as={"div"}
@@ -441,15 +483,29 @@ function PlasmicHomepage__RenderFunc(props: {
                     </div>
 
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___9WRy
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__kPzSm)}
                     >
-                      {
-                        "Chaque semaine, je vais récupérer mon panier sur le lieu de distribution."
-                      }
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__tBqhU
+                        )}
+                      >
+                        {"Distribution"}
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___9WRy
+                        )}
+                      >
+                        {
+                          "Chaque semaine, je vais récupérer mon panier sur le lieu de distribution."
+                        }
+                      </div>
                     </div>
                   </p.Stack>
                 </p.Stack>

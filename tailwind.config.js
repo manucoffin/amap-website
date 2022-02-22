@@ -17,9 +17,8 @@ module.exports = {
           100: "#A3CDD2",
           300: "#7BB8D3",
           500: "#2589C1",
-          700: "#15454D",
-          // 300: "#32A6E7",
-          // 700: "#004F7B",
+          700: "#004F7B",
+          900: "#15454D",
         },
         gray: {
           200: "#EFEFEF",
@@ -40,8 +39,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Amatic SC"],
-        // sans: ["Josefin Sans"],
+        // sans: ["Dosis"],
         serif: ["Aleo"],
+        // handwritten: ["Amatic SC"],
       },
     },
   },

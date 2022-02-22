@@ -3,8 +3,8 @@
 import * as React from "react";
 import {
   PlasmicAmapAdvantageBlock,
-  DefaultAmapAdvantageBlockProps
-} from "./plasmic/amap_website/PlasmicAmapAdvantageBlock";
+  DefaultAmapAdvantageBlockProps,
+} from "../plasmic/amap_website/PlasmicAmapAdvantageBlock";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined

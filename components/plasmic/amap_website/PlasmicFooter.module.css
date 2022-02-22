@@ -7,7 +7,7 @@
   height: 100%;
   max-width: 100%;
   background: linear-gradient(#ffe74233, #ffe74233),
-    url("/plasmic/amap_website/images/image.png") top 50% left 50% / contain repeat;
+    url("/plasmic/amap_website/images/paperTexture.png") top 50% left 50% / contain repeat;
   position: relative;
   border-bottom-style: none;
   border-bottom-width: 1px;
@@ -513,7 +513,7 @@
   }
 }
 .footer .freeBox__caP:hover {
-  background: var(--token-a3sQNIQBO);
+  background: var(--token-WNBJHso-i);
 }
 .footer .freeBox__caP:active {
   background: var(--token-7fkL0btWL);

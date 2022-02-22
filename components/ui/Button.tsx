@@ -15,8 +15,8 @@ export const Button = ({
     <button
       {...props}
       className={clsx(
-        "w-full block text-center font-medium uppercase text-white bg-blue-500 rounded cursor-pointer hover:bg-blue-300 transition text-sm",
-        "disabled:bg-blue-500/75 disabled:cursor-not-allowed",
+        "font-serif w-full block text-center uppercase text-white bg-blue-700 rounded cursor-pointer hover:bg-blue-500 transition",
+        "disabled:bg-blue-700/75 disabled:cursor-not-allowed",
         {
           "py-1": size === "small",
           "py-2": size === "medium",

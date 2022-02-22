@@ -126,7 +126,7 @@
           "projectId": "7CzphteDn95cERg7nN7EAF",
           "renderModuleFilePath": "plasmic/amap_website/PlasmicAmapDescriptionBlock.tsx",
           "importSpec": {
-            "modulePath": "AmapDescriptionBlock.tsx"
+            "modulePath": "home/AmapDescriptionBlock.tsx"
           },
           "cssFilePath": "plasmic/amap_website/PlasmicAmapDescriptionBlock.module.css",
           "scheme": "blackbox",
@@ -257,7 +257,7 @@
           "projectId": "7CzphteDn95cERg7nN7EAF",
           "renderModuleFilePath": "plasmic/amap_website/PlasmicAmapAdvantageBlock.tsx",
           "importSpec": {
-            "modulePath": "AmapAdvantageBlock.tsx"
+            "modulePath": "home/AmapAdvantageBlock.tsx"
           },
           "cssFilePath": "plasmic/amap_website/PlasmicAmapAdvantageBlock.module.css",
           "scheme": "blackbox",
@@ -338,11 +338,6 @@
       ],
       "images": [
         {
-          "id": "070V2DH0j",
-          "name": "footer_bg",
-          "filePath": "../public/plasmic/amap_website/images/footerBg.svg"
-        },
-        {
           "id": "hG1o4gpFu",
           "name": "Screenshot 2022-02-14 at 09.56.17.png",
           "filePath": "../public/plasmic/amap_website/images/screenshot20220214At095617Png.png"
@@ -409,8 +404,8 @@
         },
         {
           "id": "sqdcX4zXt",
-          "name": "image",
-          "filePath": "../public/plasmic/amap_website/images/image.png"
+          "name": "paper-texture",
+          "filePath": "../public/plasmic/amap_website/images/paperTexture.png"
         }
       ],
       "indirect": false,
