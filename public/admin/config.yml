@@ -28,20 +28,27 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Home"
+      - label: "Accueil"
         name: "home"
         file: "content/home.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - label: "About"
-        name: "about"
-        file: "content/about.md"
+      - label: "Adhérer"
+        name: "membership"
+        file: "content/membership.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "text" }
+          - {
+              label: "Document",
+              name: "document_path",
+              widget: "file",
+              media_folder: "/{{media_folder}}/files",
+              public_folder: "{{public_folder}}/files",
+              choose_url: false,
+              media_library: { allow_multiple: false },
+            }
   - name: "contracts"
     label: "Contrats"
     folder: "content/contracts"

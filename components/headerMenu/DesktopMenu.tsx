@@ -14,7 +14,13 @@ export const DesktopMenu = ({ ...props }) => {
 
       <li>
         <Link href="/contrats">
-          <A href="/contrats">Contrats / Adhésions</A>
+          <A href="/contrats">Contrats</A>
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/adherer">
+          <A href="/adherer">Adhérer</A>
         </Link>
       </li>
 

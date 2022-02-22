@@ -224,19 +224,6 @@
           "componentType": "component"
         },
         {
-          "id": "8--1DojQth",
-          "name": "Hoverable",
-          "type": "managed",
-          "projectId": "7CzphteDn95cERg7nN7EAF",
-          "renderModuleFilePath": "plasmic/amap_website/PlasmicHoverable.tsx",
-          "importSpec": {
-            "modulePath": "Hoverable.tsx"
-          },
-          "cssFilePath": "plasmic/amap_website/PlasmicHoverable.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "4PfogoODGJ2",
           "name": "TextInput",
           "type": "managed",
@@ -262,6 +249,19 @@
           "cssFilePath": "plasmic/amap_website/PlasmicAmapAdvantageBlock.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Gs4WBGGfmh",
+          "name": "Membership",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicMembership.tsx",
+          "importSpec": {
+            "modulePath": "../pages/adherer.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicMembership.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -426,6 +426,11 @@
           "id": "4sgvQ7H4d",
           "name": "map_icon",
           "filePath": "../public/plasmic/amap_website/images/mapIcon.png"
+        },
+        {
+          "id": "n7yW2LyZm",
+          "name": "contract_icon",
+          "filePath": "../public/plasmic/amap_website/images/contractIcon.png"
         }
       ],
       "indirect": false,

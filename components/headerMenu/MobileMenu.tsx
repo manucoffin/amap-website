@@ -44,9 +44,11 @@ export const MobileMenu = ({ ...props }) => {
                 </Menu.Item>
 
                 <Menu.Item>
-                  <MobileMenuLink href="/contrats">
-                    Contrats / Adhésions
-                  </MobileMenuLink>
+                  <MobileMenuLink href="/contrats">Contrats</MobileMenuLink>
+                </Menu.Item>
+
+                <Menu.Item>
+                  <MobileMenuLink href="/adhérer">Adhérer</MobileMenuLink>
                 </Menu.Item>
 
                 <Menu.Item>

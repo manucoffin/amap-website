@@ -24,7 +24,6 @@
   width: 100%;
   height: auto;
   max-width: 80%;
-  margin-top: var(--token-7R6fY6Np7);
   min-width: 0;
   padding: 0px;
 }
@@ -41,11 +40,10 @@
   font-weight: 900;
   font-size: 48px;
   text-align: left;
-  margin-top: 0px;
-  margin-bottom: var(--token-7R6fY6Np7);
   width: auto;
   height: auto;
   letter-spacing: normal;
+  margin: 96px 0px var(--token-7R6fY6Np7);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1 {

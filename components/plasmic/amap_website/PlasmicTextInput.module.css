@@ -9,7 +9,7 @@
   position: sticky;
   border-radius: 4px;
   padding: 7px 11px;
-  border: 1px solid #dbdbd7;
+  border: 1px none #dbdbd7;
 }
 .rootcolor_dark {
   background: #232320;
@@ -64,7 +64,7 @@
   left: auto;
   top: auto;
   background: #ffffff00;
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   min-width: 180px;
   padding: 0px;
   border-width: 0px;

@@ -62,6 +62,14 @@ const CreditsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <a href="https://www.flaticon.com/free-icons/map" title="map icons">
         Map icons created by smashingstocks - Flaticon
       </a>
+
+      {/* Membership Page */}
+      <a
+        href="https://www.flaticon.com/free-icons/contract"
+        title="contract icons"
+      >
+        Contract icons created by Freepik - Flaticon
+      </a>
     </MainLayout>
   );
 };

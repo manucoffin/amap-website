@@ -8,9 +8,8 @@
   box-shadow: none;
   min-width: 200px;
   position: relative;
-  border-radius: 4px;
   padding: var(--token-eReirMpIv) 0px;
-  border: 1px solid #d4cfa0;
+  border: 1px none #d4cfa0;
 }
 .freeBox___9JV3Z {
   flex-direction: column;
@@ -75,7 +74,7 @@
   min-width: 0;
 }
 .slotTargetDescription {
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   font-size: 14px;
 }
 .freeBox__tFmn {
@@ -153,6 +152,6 @@
   flex-shrink: 0;
 }
 .text {
-  font-family: var(--token-5iF75TGQk);
+  font-family: var(--token-ongjxvNd3);
   color: var(--token-WNBJHso-i);
 }

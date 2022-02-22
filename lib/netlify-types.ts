@@ -10,14 +10,14 @@ export interface Footer {
   email: string;
 }
 
-export interface Home {
+export interface Accueil {
   title: string;
   date: string;
 }
 
-export interface About {
-  title: string;
-  date: string;
+export interface Adhérer {
+  description: string;
+  document_path: any;
 }
 
 export interface Contrats {
