@@ -21,4 +21,5 @@ description: >-
 
   L’adhésion et le chèque à l’ordre de l’AMAP peuvent être apportés sous le préau ou envoyés à la trésorière dont les coordonnées paraissent en bas du bulletin.
 document_path: /static/uploads/files/bul-adh_2022.pdf
+documentPath: /static/uploads/files/bul-adh_2022.pdf
 ---
