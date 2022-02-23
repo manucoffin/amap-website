@@ -1,11 +1,11 @@
 import matter, { GrayMatterFile } from "gray-matter";
-import { join } from "path";
+import path, { join } from "path";
 import fs from "fs";
 import { Contract as NetlifyContract } from "./netlify-types";
 
 const CONTRACTS_PATH = join(process.cwd(), "content/contracts");
 
-export type Contract = NetlifyContract & { updatedAt: string };
+export type Contract = NetlifyContract & { updatedAt: string; slug: string };
 
 const getContractsFilePaths = (): string[] => {
   const filesPath = fs
@@ -20,8 +20,11 @@ const getContractData = (filePath: string): Contract => {
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data } = matter(fileContent);
 
+  console.log(fileStats);
+
   const contract = {
     updatedAt: fileStats.mtime.toString(),
+    slug: path.basename(filePath, "md"),
     ...(data as NetlifyContract),
   };
 

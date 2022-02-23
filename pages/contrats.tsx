@@ -23,10 +23,10 @@ const ContractsPage: NextPage<
         searchInput={{ onChange: (e) => setFilter(e.target.value) }}
         contracts={contracts.filter(filterContracts).map((contract) => (
           <ContractCard
-            key={contract.id}
+            key={contract.slug}
             imageUrl={contract.imagePath}
             title={contract.title}
-            slug={contract.id}
+            slug={contract.slug}
           />
         ))}
       />
