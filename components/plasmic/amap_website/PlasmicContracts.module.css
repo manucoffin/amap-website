@@ -28,10 +28,6 @@
   padding: 0px 0px var(--token-7R6fY6Np7);
 }
 .h1 {
-  color: var(--token-pf4RLfMl0);
-  font-family: var(--token-q1R6Co1cF);
-  font-weight: 900;
-  font-size: 48px;
   text-align: left;
   width: auto;
   height: auto;
@@ -40,10 +36,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1 {
-    color: var(--token-pf4RLfMl0);
-    font-family: var(--token-q1R6Co1cF);
-    font-weight: 900;
-    font-size: 48px;
     text-align: left;
     max-width: 100%;
     width: auto;

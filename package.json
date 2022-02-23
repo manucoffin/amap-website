@@ -5,7 +5,7 @@
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export",
-    "gen:types": "./node_modules/netlify-ts/bin/run public/admin/config.yml && mv ./netlify-types.ts ./lib/",
+    "gen:types": "node create-netlify-types.js",
     "gen:config": "./node_modules/yaml-convert/cli.js  --input public/admin/config.yml --output public/admin/config.js --node && yarn gen:types",
     "plasmic:sync": "plasmic sync -p 7CzphteDn95cERg7nN7EAF"
   },

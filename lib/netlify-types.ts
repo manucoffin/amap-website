@@ -10,22 +10,17 @@ export interface Footer {
   email: string;
 }
 
-export interface Accueil {
-  title: string;
-  date: string;
-}
-
-export interface Adhérer {
+export interface Membership {
   description: string;
-  document_path: any;
+  documentPath: any;
 }
 
-export interface Contrats {
+export interface Contract {
   id: any;
   title: string;
   description: string;
-  image_path: string;
-  document_path: any;
+  imagePath: string;
+  documentPath: any;
 }
 
 export interface Blog {

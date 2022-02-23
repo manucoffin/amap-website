@@ -262,6 +262,19 @@
           "cssFilePath": "plasmic/amap_website/PlasmicMembership.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "_KwHMp6Wow",
+          "name": "Contract",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicContract.tsx",
+          "importSpec": {
+            "modulePath": "../pages/contracts/[slug].tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicContract.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

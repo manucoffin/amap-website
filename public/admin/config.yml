@@ -13,10 +13,10 @@ slug:
   sanitize_replacement: "_"
 collections:
   - name: "components"
-    label: "Informations générales"
+    label: "Informations du site"
     files:
-      - label: "Footer"
-        name: "footer"
+      - name: "footer"
+        label: "Bas de page"
         file: "content/footer.md"
         fields:
           - { label: "Adresse", name: "address", widget: "string" }
@@ -28,31 +28,26 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Accueil"
-        name: "home"
-        file: "content/home.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Adhérer"
+      - label: "Adhésion"
         name: "membership"
         file: "content/membership.md"
         fields:
           - { label: "Description", name: "description", widget: "text" }
           - {
               label: "Document",
-              name: "document_path",
+              name: "documentPath",
               widget: "file",
               media_folder: "/{{media_folder}}/files",
               public_folder: "{{public_folder}}/files",
               choose_url: false,
               media_library: { allow_multiple: false },
             }
-  - name: "contracts"
+  - name: "contract"
     label: "Contrats"
+    label_singular: "Contrat"
     folder: "content/contracts"
     create: true
+    slug: "{{slug}}"
     fields:
       - {
           label: "ID",
@@ -65,7 +60,7 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - {
           label: "Image",
-          name: "image_path",
+          name: "imagePath",
           widget: "image",
           media_folder: "/{{media_folder}}/images",
           public_folder: "{{public_folder}}/images",
@@ -74,7 +69,7 @@ collections:
         }
       - {
           label: "Document",
-          name: "document_path",
+          name: "documentPath",
           widget: "file",
           media_folder: "/{{media_folder}}/files",
           public_folder: "{{public_folder}}/files",

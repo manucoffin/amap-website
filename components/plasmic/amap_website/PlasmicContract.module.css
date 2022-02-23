@@ -27,12 +27,16 @@
   min-width: 0;
   padding: 0px var(--token-eReirMpIv) var(--token-7R6fY6Np7);
 }
-.text___55SpX {
+.h1 {
   text-align: center;
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   min-width: 0;
   margin: 96px 0px;
 }
@@ -92,7 +96,7 @@
     margin: 0px 0px 16px;
   }
 }
-.text__bTxz2 {
+.text {
   color: var(--token-WNBJHso-i);
   font-family: var(--token-ongjxvNd3);
   font-weight: 700;

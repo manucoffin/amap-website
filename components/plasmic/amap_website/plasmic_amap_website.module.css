@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Amatic+SC%3Aital%2Cwght%400%2C400%3B0%2C700&family=Aleo%3Aital%2Cwght%400%2C400%3B0%2C700&family=Dosis%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Amatic+SC%3Aital%2Cwght%400%2C400%3B0%2C700&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Aleo%3Aital%2Cwght%400%2C400%3B0%2C700&family=Dosis%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800&display=swap");
 
 .plasmic_tokens {
   --token-5iF75TGQk: Josefin Sans;
@@ -79,11 +79,11 @@
   --mixin-n3Scqtajgc_user-select: text;
   --mixin-n3Scqtajgc_text-decoration-line: none;
   --mixin-n3Scqtajgc_text-overflow: clip;
-  --mixin-YHb1FhDODg_color: #000000;
+  --mixin-YHb1FhDODg_color: var(--token-pf4RLfMl0);
   --mixin-YHb1FhDODg_font-weight: 900;
-  --mixin-YHb1FhDODg_font-size: 72px;
+  --mixin-YHb1FhDODg_font-size: 48px;
   --mixin-YHb1FhDODg_line-height: 1;
-  --mixin-YHb1FhDODg_letter-spacing: -4px;
+  --mixin-YHb1FhDODg_font-family: var(--token-q1R6Co1cF);
   --mixin-PE1nYfdeL0_font-family: "Inter";
   --mixin-PE1nYfdeL0_color: #000000;
   --mixin-PE1nYfdeL0_font-size: 48px;
@@ -345,7 +345,7 @@
   font-weight: var(--mixin-YHb1FhDODg_font-weight);
   font-size: var(--mixin-YHb1FhDODg_font-size);
   line-height: var(--mixin-YHb1FhDODg_line-height);
-  letter-spacing: var(--mixin-YHb1FhDODg_letter-spacing);
+  font-family: var(--mixin-YHb1FhDODg_font-family);
 }
 
 :where(.root_reset .plasmic_default__h2),
