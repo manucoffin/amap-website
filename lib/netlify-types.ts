@@ -16,7 +16,6 @@ export interface Membership {
 }
 
 export interface Contract {
-  id: any;
   title: string;
   description: string;
   imagePath: string;

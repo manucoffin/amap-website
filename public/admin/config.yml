@@ -7,10 +7,11 @@ backend:
 cms_manual_init: true
 media_folder: public/static/uploads
 public_folder: "/static/uploads"
-slug:
-  encoding: "ascii"
-  clean_accents: true
-  sanitize_replacement: "_"
+locale: "fr"
+# slug:
+#   encoding: "ascii"
+#   clean_accents: true
+#   sanitize_replacement: "_"
 collections:
   - name: "components"
     label: "Informations du site"
@@ -49,13 +50,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {
-          label: "ID",
-          name: "id",
-          widget: "ncw-id",
-          prefix: "contract",
-          hidden: true,
-        }
       - { label: "Nom du contrat", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - {
