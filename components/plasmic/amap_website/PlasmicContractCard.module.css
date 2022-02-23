@@ -8,12 +8,13 @@
   box-shadow: none;
   min-width: 200px;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 210px;
+  height: auto;
   transition-property: all;
   transition-duration: 150ms;
   cursor: pointer;
-  padding: var(--token-eReirMpIv) 0px;
+  min-height: 210px;
+  padding: var(--token-xmbQtwPzW);
   border: 1px none #d4cfa0;
 }
 .root:hover {
@@ -22,8 +23,8 @@
 .image {
   display: block;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   max-width: 100%;
   background: var(--token-WNBJHso-i);
   flex-shrink: 0;

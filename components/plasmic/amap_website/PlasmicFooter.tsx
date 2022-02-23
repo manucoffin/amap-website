@@ -343,7 +343,7 @@ function PlasmicFooter__RenderFunc(props: {
             sty.sitemapLink
           )}
           component={Link}
-          href={"/sitemap" as const}
+          href={"/plan-du-site" as const}
           platform={"nextjs"}
         >
           {"Plan du site"}

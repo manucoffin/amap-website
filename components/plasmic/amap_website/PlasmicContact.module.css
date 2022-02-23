@@ -36,10 +36,12 @@
 }
 .h1 {
   text-align: left;
+  color: var(--token-pf4RLfMl0);
+  font-size: 48px;
+  font-family: var(--token-q1R6Co1cF);
   width: auto;
   height: auto;
   letter-spacing: normal;
-  font-family: var(--token-q1R6Co1cF);
   font-weight: 900;
   margin: 96px 0px var(--token-7R6fY6Np7);
 }

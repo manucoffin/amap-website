@@ -60,7 +60,6 @@ export const PlasmicMembership__ArgProps = new Array<ArgPropType>(
 export type PlasmicMembership__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
-  freeBox?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   img?: p.Flex<typeof p.PlasmicImg>;
   downloadButton?: p.Flex<"a"> & Partial<LinkProps>;
@@ -121,11 +120,7 @@ function PlasmicMembership__RenderFunc(props: {
             className={classNames("__wab_instance", sty.header)}
           />
 
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__e2MoN)}>
             <h1
               data-plasmic-name={"h1"}
               data-plasmic-override={overrides.h1}
@@ -176,30 +171,34 @@ function PlasmicMembership__RenderFunc(props: {
                 : "Télécharger le contrat d'adhésion"}
             </p.PlasmicLink>
 
-            <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text
-              )}
-            >
-              {"Comment ça marche ?"}
-            </div>
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__bkWx)}>
+                <div
+                  data-plasmic-name={"text"}
+                  data-plasmic-override={overrides.text}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text
+                  )}
+                >
+                  {"Comment ça marche ?"}
+                </div>
 
-            <div
-              data-plasmic-name={"description"}
-              data-plasmic-override={overrides.description}
-              className={classNames(projectcss.all, sty.description)}
-            >
-              {p.renderPlasmicSlot({
-                defaultContents:
-                  'L’adhésion est valable sur une année civile, du 1er janvier au 31 décembre. Son montant, libre, est au minimum de 10 euros.\n\nPour tout nouvel adhérent, et uniquement dans ce cas, à partir du mois de septembre de l’année en cours (début des contrats pommes), le montant de l’adhésion est fixé à 5€.\n\nPour les adhésions et ré-adhésions, à partir du 15 novembre, l’adhésion de 10€ court pour l’année civile suivante.\n\nCette adhésion est destinée à couvrir les frais de fonctionnement de l’association.\n\nElle doit être obligatoirement payée avant la signature du premier contrat et en début d’année civile pour les producteurs.\n\nEn cas de partage de paniers, chaque "co-panier" adhère individuellement à l’association.\n\nL’adhésion et le chèque à l’ordre de l’AMAP peuvent être apportés sous le préau ou envoyés à la trésorière dont les coordonnées paraissent en bas du bulletin.',
-                value: args.description,
-                className: classNames(sty.slotTargetDescription)
-              })}
-            </div>
+                <div
+                  data-plasmic-name={"description"}
+                  data-plasmic-override={overrides.description}
+                  className={classNames(projectcss.all, sty.description)}
+                >
+                  {p.renderPlasmicSlot({
+                    defaultContents:
+                      'L’adhésion est valable sur une année civile, du 1er janvier au 31 décembre. Son montant, libre, est au minimum de 10 euros.\n\nPour tout nouvel adhérent, et uniquement dans ce cas, à partir du mois de septembre de l’année en cours (début des contrats pommes), le montant de l’adhésion est fixé à 5€.\n\nPour les adhésions et ré-adhésions, à partir du 15 novembre, l’adhésion de 10€ court pour l’année civile suivante.\n\nCette adhésion est destinée à couvrir les frais de fonctionnement de l’association.\n\nElle doit être obligatoirement payée avant la signature du premier contrat et en début d’année civile pour les producteurs.\n\nEn cas de partage de paniers, chaque "co-panier" adhère individuellement à l’association.\n\nL’adhésion et le chèque à l’ordre de l’AMAP peuvent être apportés sous le préau ou envoyés à la trésorière dont les coordonnées paraissent en bas du bulletin.',
+                    value: args.description,
+                    className: classNames(sty.slotTargetDescription)
+                  })}
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
@@ -211,7 +210,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "header",
-    "freeBox",
     "h1",
     "img",
     "downloadButton",
@@ -219,7 +217,6 @@ const PlasmicDescendants = {
     "description"
   ],
   header: ["header"],
-  freeBox: ["freeBox", "h1", "img", "downloadButton", "text", "description"],
   h1: ["h1"],
   img: ["img"],
   downloadButton: ["downloadButton"],
@@ -232,7 +229,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
-  freeBox: "div";
   h1: "h1";
   img: typeof p.PlasmicImg;
   downloadButton: "a";
@@ -298,7 +294,6 @@ export const PlasmicMembership = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    freeBox: makeNodeComponent("freeBox"),
     h1: makeNodeComponent("h1"),
     img: makeNodeComponent("img"),
     downloadButton: makeNodeComponent("downloadButton"),

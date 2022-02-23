@@ -7,6 +7,14 @@ const CONTRACTS_PATH = join(process.cwd(), "content/contracts");
 
 export type Contract = NetlifyContract & { updatedAt: string; slug: string };
 
+export const getContractsSlugs = (): string[] => {
+  const slugs = fs
+    .readdirSync(CONTRACTS_PATH)
+    .filter((path) => /\.md?$/.test(path));
+
+  return slugs.map((path) => path.split(".md").shift());
+};
+
 const getContractsFilePaths = (): string[] => {
   const filesPath = fs
     .readdirSync(CONTRACTS_PATH)
@@ -16,15 +24,12 @@ const getContractsFilePaths = (): string[] => {
 
 const getContractData = (filePath: string): Contract => {
   const fileStats = fs.statSync(filePath);
-
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data } = matter(fileContent);
 
-  console.log(fileStats);
-
   const contract = {
     updatedAt: fileStats.mtime.toString(),
-    slug: path.basename(filePath, "md"),
+    slug: path.basename(filePath, ".md"),
     ...(data as NetlifyContract),
   };
 
@@ -38,4 +43,10 @@ export const getAllContracts = (): Contract[] => {
     .sort((a, b) => (a.updatedAt > b.updatedAt ? 1 : -1));
 
   return contracts;
+};
+
+export const getContract = (slug: string): Contract => {
+  const filePath = join(CONTRACTS_PATH, `${slug}.md`);
+
+  return getContractData(filePath);
 };

@@ -64,7 +64,7 @@ export type PlasmicContract__OverridesType = {
   header?: p.Flex<typeof Header>;
   freeBox?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
-  img?: p.Flex<typeof p.PlasmicImg>;
+  image?: p.Flex<typeof p.PlasmicImg>;
   downloadButton?: p.Flex<"a"> & Partial<LinkProps>;
   text?: p.Flex<"div">;
   description?: p.Flex<"div">;
@@ -89,11 +89,11 @@ function PlasmicContract__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{"AMAP de la Goutte d'Eau - Adhérer"}</title>
+        <title key="title">{"AMAP de la Goutte d'Eau - Contrat"}</title>
         <meta
           key="og:title"
           property="og:title"
-          content={"AMAP de la Goutte d'Eau - Adhérer"}
+          content={"AMAP de la Goutte d'Eau - Contrat"}
         />
       </Head>
 
@@ -140,10 +140,10 @@ function PlasmicContract__RenderFunc(props: {
             </h1>
 
             <p.PlasmicImg
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
+              data-plasmic-name={"image"}
+              data-plasmic-override={overrides.image}
               alt={""}
-              className={classNames(sty.img)}
+              className={classNames(sty.image)}
               displayHeight={"auto" as const}
               displayMaxHeight={"none" as const}
               displayMaxWidth={"100%" as const}
@@ -215,15 +215,15 @@ const PlasmicDescendants = {
     "header",
     "freeBox",
     "h1",
-    "img",
+    "image",
     "downloadButton",
     "text",
     "description"
   ],
   header: ["header"],
-  freeBox: ["freeBox", "h1", "img", "downloadButton", "text", "description"],
+  freeBox: ["freeBox", "h1", "image", "downloadButton", "text", "description"],
   h1: ["h1"],
-  img: ["img"],
+  image: ["image"],
   downloadButton: ["downloadButton"],
   text: ["text"],
   description: ["description"]
@@ -236,7 +236,7 @@ type NodeDefaultElementType = {
   header: typeof Header;
   freeBox: "div";
   h1: "h1";
-  img: typeof p.PlasmicImg;
+  image: typeof p.PlasmicImg;
   downloadButton: "a";
   text: "div";
   description: "div";
@@ -302,7 +302,7 @@ export const PlasmicContract = Object.assign(
     header: makeNodeComponent("header"),
     freeBox: makeNodeComponent("freeBox"),
     h1: makeNodeComponent("h1"),
-    img: makeNodeComponent("img"),
+    image: makeNodeComponent("image"),
     downloadButton: makeNodeComponent("downloadButton"),
     text: makeNodeComponent("text"),
     description: makeNodeComponent("description"),
