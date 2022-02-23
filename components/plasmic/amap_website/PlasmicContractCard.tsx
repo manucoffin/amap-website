@@ -53,7 +53,7 @@ type ArgPropType = keyof PlasmicContractCard__ArgsType;
 export const PlasmicContractCard__ArgProps = new Array<ArgPropType>("title");
 
 export type PlasmicContractCard__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<"a"> & Partial<LinkProps>;
   image?: p.Flex<"div">;
 };
 
@@ -72,41 +72,46 @@ function PlasmicContractCard__RenderFunc(props: {
   const { variants, args, overrides, forNode } = props;
 
   return (
-    <div
+    <p.PlasmicLink
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_tokens,
         sty.root
       )}
+      component={Link}
+      platform={"nextjs"}
     >
-      <div
-        data-plasmic-name={"image"}
-        data-plasmic-override={overrides.image}
-        className={classNames(projectcss.all, sty.image)}
-      />
+      <div className={classNames(projectcss.all, sty.freeBox__rc7M)}>
+        <div
+          data-plasmic-name={"image"}
+          data-plasmic-override={overrides.image}
+          className={classNames(projectcss.all, sty.image)}
+        />
 
-      {true ? (
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox___9JV3Z)}
-        >
-          <div className={classNames(projectcss.all, sty.freeBox__gPtl4)}>
-            {p.renderPlasmicSlot({
-              defaultContents: "Rillettes de poule et terrine de foie",
-              value: args.title,
-              className: classNames(sty.slotTargetTitle)
-            })}
-          </div>
-        </p.Stack>
-      ) : null}
-    </div>
+        {true ? (
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox___9JV3Z)}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__gPtl4)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "Rillettes de poule et terrine de foie",
+                value: args.title,
+                className: classNames(sty.slotTargetTitle)
+              })}
+            </div>
+          </p.Stack>
+        ) : null}
+      </div>
+    </p.PlasmicLink>
   ) as React.ReactElement | null;
 }
 
@@ -118,7 +123,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: "a";
   image: "div";
 };
 

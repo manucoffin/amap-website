@@ -1,4 +1,4 @@
-import { DocumentDownloadIcon } from "@heroicons/react/outline";
+import { DocumentDownloadIcon, DownloadIcon } from "@heroicons/react/outline";
 import { MainLayout } from "layouts";
 import { getFooter } from "lib/footer";
 import { getMembershipData } from "lib/membership";
@@ -19,8 +19,9 @@ const MembershipPage: NextPage<
               download
               className="mb-[96px]"
             >
-              <span className="text-3xl text-center flex font-sans text-white bg-blue-500 hover:bg-blue-300 transition py-3 px-4 rounded-xl  border-black border-2">
-                Télécharger le contrat d&apos;adhésion
+              <span className="text-3xl text-center flex items-center font-sans transition rounded-xl underline-offset-4 hover:text-blue-500 hover:underline">
+                <DownloadIcon className="w-8 h-8" /> Télécharger le contrat
+                d&apos;adhésion
               </span>
             </a>
           ),

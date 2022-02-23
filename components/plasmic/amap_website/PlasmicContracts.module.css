@@ -38,15 +38,11 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1 {
-    text-align: left;
+    text-align: center;
     color: var(--token-pf4RLfMl0);
     font-size: 48px;
     font-family: var(--token-q1R6Co1cF);
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    letter-spacing: normal;
-    margin: 96px 0px 0px;
+    margin: 96px 0px;
   }
 }
 .freeBox__orkhX {
@@ -86,94 +82,35 @@
   min-height: 0;
   padding: 0px;
 }
-.freeBox__l8Oml {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contractCard__yu3Xr:global(.__wab_instance) {
   max-width: 100%;
-  background: var(--token-p784AvFnn);
-  box-shadow: none;
-  border-radius: 4px;
-  padding: 0px;
-  border: 1px solid #c5c091;
+  position: relative;
 }
-.freeBox__iSeip {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contractCard___1NpHr:global(.__wab_instance) {
   max-width: 100%;
-  background: var(--token-p784AvFnn);
-  box-shadow: none;
-  border-radius: 4px;
-  padding: 0px;
-  border: 1px solid #c5c091;
+  position: relative;
 }
-.freeBox___5XtG3 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contractCard__iXzZx:global(.__wab_instance) {
   max-width: 100%;
-  background: var(--token-p784AvFnn);
-  box-shadow: none;
-  border-radius: 4px;
-  padding: 0px;
-  border: 1px solid #c5c091;
+  position: relative;
 }
-.freeBox__lvvaf {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contractCard__rNzW:global(.__wab_instance) {
   max-width: 100%;
-  background: var(--token-p784AvFnn);
-  box-shadow: none;
-  border-radius: 4px;
-  padding: 0px;
-  border: 1px solid #c5c091;
+  position: relative;
 }
-.freeBox__zBlix {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contractCard__u7F:global(.__wab_instance) {
   max-width: 100%;
-  background: var(--token-p784AvFnn);
-  box-shadow: none;
-  border-radius: 4px;
-  padding: 0px;
-  border: 1px solid #c5c091;
+  position: relative;
 }
-.freeBox__se0Cf {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contractCard__n8ZdE:global(.__wab_instance) {
   max-width: 100%;
-  background: var(--token-p784AvFnn);
-  box-shadow: none;
-  border-radius: 4px;
-  padding: 0px;
-  border: 1px solid #c5c091;
+  position: relative;
 }
-.freeBox__lomGb {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contractCard__yAk:global(.__wab_instance) {
   max-width: 100%;
-  background: var(--token-p784AvFnn);
-  box-shadow: none;
-  border-radius: 4px;
-  padding: 0px;
-  border: 1px solid #c5c091;
+  position: relative;
+}
+.contractCard__bjowd:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
 }

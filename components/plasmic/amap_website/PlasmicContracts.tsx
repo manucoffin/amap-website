@@ -35,8 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: dTKTvnUQf8/component
 import TextInput from "../../TextInput"; // plasmic-import: 4PfogoODGJ2/component
-
-import { useScreenVariants as useScreenVariantshaBl5ZeVufY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: HABl5zeVufY/globalVariant
+import ContractCard from "../../ContractCard"; // plasmic-import: cmMrWuVRF8/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -76,10 +75,6 @@ function PlasmicContracts__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
-
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantshaBl5ZeVufY()
-  });
 
   return (
     <React.Fragment>
@@ -130,9 +125,7 @@ function PlasmicContracts__RenderFunc(props: {
                 sty.h1
               )}
             >
-              {hasVariant(globalVariants, "screen", "md")
-                ? "Contactez nous"
-                : "Vous cherchez un contrat ? c'est par là"}
+              {"Vous cherchez un contrat ? c'est par là"}
             </h1>
 
             <div className={classNames(projectcss.all, sty.freeBox__orkhX)}>
@@ -149,35 +142,61 @@ function PlasmicContracts__RenderFunc(props: {
               {p.renderPlasmicSlot({
                 defaultContents: (
                   <React.Fragment>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__l8Oml)}
-                    />
-
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__iSeip)}
-                    />
-
-                    <div
+                    <ContractCard
                       className={classNames(
-                        projectcss.all,
-                        sty.freeBox___5XtG3
+                        "__wab_instance",
+                        sty.contractCard__yu3Xr
+                      )}
+                      title={"Rillettes de poule et terrine de foie"}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard___1NpHr
                       )}
                     />
 
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__lvvaf)}
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__iXzZx
+                      )}
                     />
 
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__zBlix)}
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__rNzW
+                      )}
                     />
 
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__se0Cf)}
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__u7F
+                      )}
                     />
 
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__lomGb)}
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__n8ZdE
+                      )}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__yAk
+                      )}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__bjowd
+                      )}
                     />
                   </React.Fragment>
                 ),

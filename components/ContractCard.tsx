@@ -18,22 +18,22 @@ function ContractCard_(
   ref: HTMLElementRefOf<"div">
 ) {
   return (
-    <Link href={`/contrats/${slug}`}>
-      <PlasmicContractCard
-        title={title}
-        image={{
-          render: (props, Component) => (
-            <Image
-              src={imageUrl}
-              alt={`Photo de ${title}`}
-              width={100}
-              height={100}
-              className="rounded-full"
-            />
-          ),
-        }}
-      />
-    </Link>
+    <PlasmicContractCard
+      {...props}
+      href={`/contrats/${slug}`}
+      title={title}
+      image={{
+        render: (props, Component) => (
+          <Image
+            src={imageUrl}
+            alt={`Photo de ${title}`}
+            width={120}
+            height={120}
+            className="rounded-full"
+          />
+        ),
+      }}
+    />
   );
 }
 

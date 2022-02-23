@@ -1,14 +1,18 @@
 .root {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+}
+.freeBox__rc7M {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  max-width: 100%;
   background: #ffffff;
   box-shadow: none;
-  min-width: 200px;
-  position: relative;
-  width: 210px;
+  min-width: 210px;
+  width: 100%;
   height: auto;
   transition-property: all;
   transition-duration: 150ms;
@@ -17,7 +21,7 @@
   padding: var(--token-xmbQtwPzW);
   border: 1px none #d4cfa0;
 }
-.root:hover {
+.root:hover .freeBox__rc7M {
   box-shadow: 0px 4px 16px 0px #00000033;
 }
 .image {

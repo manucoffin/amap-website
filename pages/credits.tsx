@@ -70,6 +70,8 @@ const CreditsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       >
         Contract icons created by Freepik - Flaticon
       </a>
+
+      {/* Contract page */}
     </MainLayout>
   );
 };

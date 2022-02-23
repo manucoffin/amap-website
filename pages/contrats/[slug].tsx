@@ -11,7 +11,7 @@ import {
   NextPage,
 } from "next";
 import * as React from "react";
-import clsx from "clsx";
+import { DownloadIcon } from "@heroicons/react/outline";
 
 const ContractPage: NextPage<
   InferGetStaticPropsType<typeof getStaticProps>
@@ -19,16 +19,16 @@ const ContractPage: NextPage<
   return (
     <MainLayout footerData={footerData}>
       <PlasmicContract
-        title={contractData.title}
+        title={`Contrat ${contractData.title}`}
         image={{
           render: (props, Component) => (
             <div className="mb-10">
               <Image
                 src={contractData.imagePath}
                 alt={`Photo de ${contractData.title}`}
-                width={250}
-                height={250}
-                className="mb-10 rounded-full"
+                width={300}
+                height={300}
+                className="rounded-full"
               />
             </div>
           ),
@@ -36,8 +36,8 @@ const ContractPage: NextPage<
         downloadButton={{
           render: (props, Component) => (
             <a href={contractData.documentPath} download className="mb-[96px]">
-              <span className="text-3xl text-center flex font-sans text-white bg-blue-500 hover:bg-blue-300 transition py-3 px-4 rounded-xl  border-black border-2">
-                Télécharger le contrat
+              <span className="text-3xl text-center underline-offset-4 flex items-center font-sans transition py-3 px-4 rounded-xl hover:text-blue-500 hover:underline">
+                <DownloadIcon className="w-8 h-8" /> Télécharger le contrat
               </span>
             </a>
           ),
