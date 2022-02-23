@@ -27,7 +27,7 @@
   min-width: 0;
   padding: 0px var(--token-eReirMpIv) var(--token-7R6fY6Np7);
 }
-.text___55SpX {
+.h1 {
   text-align: center;
   position: relative;
   width: 100%;
@@ -73,7 +73,6 @@
     width: auto;
     height: auto;
     max-width: 800px;
-    background: url("/plasmic/amap_website/images/bannerBlue.svg") top 50% left 50% / contain no-repeat;
     padding: 16px 36px;
     margin: 0px 0px 16px;
   }
@@ -82,17 +81,13 @@
   .downloadButton {
     color: var(--token-B133__sIH);
     font-family: var(--token-q1R6Co1cF);
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
-    width: auto;
-    height: auto;
-    max-width: 800px;
-    background: url("/plasmic/amap_website/images/bannerBlue.svg") top 50% left 50% / contain no-repeat;
     padding: 16px 36px;
     margin: 0px 0px 16px;
   }
 }
-.text__bTxz2 {
+.text {
   color: var(--token-WNBJHso-i);
   font-family: var(--token-ongjxvNd3);
   font-weight: 700;

@@ -61,8 +61,10 @@ export type PlasmicMembership__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
   freeBox?: p.Flex<"div">;
+  h1?: p.Flex<"h1">;
   img?: p.Flex<typeof p.PlasmicImg>;
   downloadButton?: p.Flex<"a"> & Partial<LinkProps>;
+  text?: p.Flex<"div">;
   description?: p.Flex<"div">;
 };
 
@@ -124,15 +126,18 @@ function PlasmicMembership__RenderFunc(props: {
             data-plasmic-override={overrides.freeBox}
             className={classNames(projectcss.all, sty.freeBox)}
           >
-            <div
+            <h1
+              data-plasmic-name={"h1"}
+              data-plasmic-override={overrides.h1}
               className={classNames(
                 projectcss.all,
+                projectcss.h1,
                 projectcss.__wab_text,
-                sty.text___55SpX
+                sty.h1
               )}
             >
               {"Vous souhaitez adhérer à l'AMAP ? C'est ici !"}
-            </div>
+            </h1>
 
             <p.PlasmicImg
               data-plasmic-name={"img"}
@@ -166,18 +171,18 @@ function PlasmicMembership__RenderFunc(props: {
               component={Link}
               platform={"nextjs"}
             >
-              {hasVariant(globalVariants, "screen", "sm")
-                ? "Laissez-nous un petit mot "
-                : hasVariant(globalVariants, "screen", "md")
+              {hasVariant(globalVariants, "screen", "md")
                 ? "Laissez-nous un petit mot "
                 : "Télécharger le contrat d'adhésion"}
             </p.PlasmicLink>
 
             <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__bTxz2
+                sty.text
               )}
             >
               {"Comment ça marche ?"}
@@ -203,11 +208,22 @@ function PlasmicMembership__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "freeBox", "img", "downloadButton", "description"],
+  root: [
+    "root",
+    "header",
+    "freeBox",
+    "h1",
+    "img",
+    "downloadButton",
+    "text",
+    "description"
+  ],
   header: ["header"],
-  freeBox: ["freeBox", "img", "downloadButton", "description"],
+  freeBox: ["freeBox", "h1", "img", "downloadButton", "text", "description"],
+  h1: ["h1"],
   img: ["img"],
   downloadButton: ["downloadButton"],
+  text: ["text"],
   description: ["description"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -217,8 +233,10 @@ type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
   freeBox: "div";
+  h1: "h1";
   img: typeof p.PlasmicImg;
   downloadButton: "a";
+  text: "div";
   description: "div";
 };
 
@@ -281,8 +299,10 @@ export const PlasmicMembership = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     freeBox: makeNodeComponent("freeBox"),
+    h1: makeNodeComponent("h1"),
     img: makeNodeComponent("img"),
     downloadButton: makeNodeComponent("downloadButton"),
+    text: makeNodeComponent("text"),
     description: makeNodeComponent("description"),
 
     // Metadata about props expected for PlasmicMembership

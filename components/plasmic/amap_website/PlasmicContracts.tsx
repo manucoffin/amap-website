@@ -126,10 +126,10 @@ function PlasmicContracts__RenderFunc(props: {
             >
               {hasVariant(globalVariants, "screen", "md")
                 ? "Contactez nous"
-                : "Tous les contrats"}
+                : "Vous cherchez un contrat ? c'est par là"}
             </h1>
 
-            <div className={classNames(projectcss.all, sty.freeBox__dcjzy)}>
+            <div className={classNames(projectcss.all, sty.freeBox__orkhX)}>
               <TextInput
                 data-plasmic-name={"searchInput"}
                 data-plasmic-override={overrides.searchInput}

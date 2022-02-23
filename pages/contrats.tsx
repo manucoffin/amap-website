@@ -24,10 +24,9 @@ const ContractsPage: NextPage<
         contracts={contracts.filter(filterContracts).map((contract) => (
           <ContractCard
             key={contract.id}
-            documentUrl={contract.document_path}
-            imageUrl={contract.image_path}
+            imageUrl={contract.imagePath}
             title={contract.title}
-            description={contract.description}
+            slug={contract.id}
           />
         ))}
       />

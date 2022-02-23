@@ -270,7 +270,7 @@
           "projectId": "7CzphteDn95cERg7nN7EAF",
           "renderModuleFilePath": "plasmic/amap_website/PlasmicContract.tsx",
           "importSpec": {
-            "modulePath": "../pages/contracts/[slug].tsx"
+            "modulePath": "../pages/contrats/[slug].tsx"
           },
           "cssFilePath": "plasmic/amap_website/PlasmicContract.module.css",
           "scheme": "blackbox",
@@ -350,16 +350,6 @@
         }
       ],
       "images": [
-        {
-          "id": "LPJbHOgER",
-          "name": "contract.svg",
-          "filePath": "../public/plasmic/amap_website/images/contractsvg.svg"
-        },
-        {
-          "id": "ew3_sq0iJ",
-          "name": "chicken.svg",
-          "filePath": "../public/plasmic/amap_website/images/chickensvg.svg"
-        },
         {
           "id": "nXmgALh3J",
           "name": "home_bg",
