@@ -68,19 +68,6 @@
           "componentType": "page"
         },
         {
-          "id": "3e8PB83RLm",
-          "name": "Article",
-          "type": "managed",
-          "projectId": "7CzphteDn95cERg7nN7EAF",
-          "renderModuleFilePath": "plasmic/amap_website/PlasmicArticle.tsx",
-          "importSpec": {
-            "modulePath": "../pages/article.tsx"
-          },
-          "cssFilePath": "plasmic/amap_website/PlasmicArticle.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "6mDHqpDUxe",
           "name": "Contact",
           "type": "managed",
@@ -260,6 +247,19 @@
             "modulePath": "../pages/contrats/[slug].tsx"
           },
           "cssFilePath": "plasmic/amap_website/PlasmicContract.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "3e8PB83RLm",
+          "name": "NewsArticle",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicNewsArticle.tsx",
+          "importSpec": {
+            "modulePath": "../pages/actus/[slug].tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicNewsArticle.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }

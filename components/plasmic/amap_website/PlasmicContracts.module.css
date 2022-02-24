@@ -34,7 +34,7 @@
   font-family: var(--token-q1R6Co1cF);
   width: auto;
   height: auto;
-  margin: 96px 0px;
+  margin: 96px 0px 48px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1 {
@@ -42,7 +42,7 @@
     color: var(--token-pf4RLfMl0);
     font-size: 48px;
     font-family: var(--token-q1R6Co1cF);
-    margin: 96px 0px;
+    margin: 96px 0px 48px;
   }
 }
 .freeBox__orkhX {

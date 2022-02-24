@@ -2,25 +2,13 @@ import matter, { GrayMatterFile } from "gray-matter";
 import path, { join } from "path";
 import fs from "fs";
 import { Contract as NetlifyContract } from "./netlify-types";
+import { getFilePaths, getSlugs } from "./utils";
 
 const CONTRACTS_PATH = join(process.cwd(), "content/contracts");
 
 export type Contract = NetlifyContract & { updatedAt: string; slug: string };
 
-export const getContractsSlugs = (): string[] => {
-  const slugs = fs
-    .readdirSync(CONTRACTS_PATH)
-    .filter((path) => /\.md?$/.test(path));
-
-  return slugs.map((path) => path.split(".md").shift());
-};
-
-const getContractsFilePaths = (): string[] => {
-  const filesPath = fs
-    .readdirSync(CONTRACTS_PATH)
-    .filter((path) => /\.md?$/.test(path));
-  return filesPath.map((path) => join(CONTRACTS_PATH, path));
-};
+export const getContractsSlugs = (): string[] => getSlugs(CONTRACTS_PATH);
 
 const getContractData = (filePath: string): Contract => {
   const fileStats = fs.statSync(filePath);
@@ -37,7 +25,7 @@ const getContractData = (filePath: string): Contract => {
 };
 
 export const getAllContracts = (): Contract[] => {
-  const filePaths = getContractsFilePaths();
+  const filePaths = getFilePaths(CONTRACTS_PATH);
   const contracts = filePaths
     .map((filePath) => getContractData(filePath))
     .sort((a, b) => (a.updatedAt > b.updatedAt ? 1 : -1));

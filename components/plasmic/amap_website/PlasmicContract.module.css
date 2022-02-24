@@ -41,7 +41,7 @@
   align-items: flex-start;
   justify-content: center;
   min-width: 0;
-  margin: 96px 0px;
+  margin: 96px 0px 48px;
 }
 .image {
   position: relative;

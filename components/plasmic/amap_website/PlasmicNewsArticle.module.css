@@ -23,18 +23,41 @@
   width: 100%;
   height: auto;
   max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   min-width: 0;
   margin: 96px 0px 48px;
 }
-.freeBox {
-  display: flex;
+.freeBox__rupL7 {
   position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 800px;
+  margin-bottom: var(--token-L5ZvEOVLJ);
+  display: flex;
+  flex-direction: row;
   min-width: 0;
-  padding: 8px;
+}
+.slotTargetPublicationDate {
+  font-family: var(--token-ongjxvNd3);
+  font-weight: 400;
+  color: #797979;
+}
+.freeBox__wpVmz {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.freeBox__vJ5Vk {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
 }
