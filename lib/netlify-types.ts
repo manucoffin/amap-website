@@ -22,7 +22,7 @@ export interface Contract {
   documentPath: any;
 }
 
-export interface Blog {
+export interface Article {
   title: string;
   date: string;
   thumbnail: string;

@@ -20,12 +20,32 @@ collections:
         label: "Bas de page"
         file: "content/footer.md"
         fields:
-          - { label: "Adresse", name: "address", widget: "string" }
-          - { label: "Code postal", name: "postcode", widget: "string" }
-          - { label: "Ville", name: "city", widget: "string" }
-          - { label: "Horaires", name: "schedule", widget: "string" }
-          - { label: "Téléphone", name: "phone", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
+          - {
+              label: "Adresse",
+              name: "address",
+              widget: "string",
+              required: true,
+            }
+          - {
+              label: "Code postal",
+              name: "postcode",
+              widget: "string",
+              required: true,
+            }
+          - { label: "Ville", name: "city", widget: "string", required: true }
+          - {
+              label: "Horaires",
+              name: "schedule",
+              widget: "string",
+              required: true,
+            }
+          - {
+              label: "Téléphone",
+              name: "phone",
+              widget: "string",
+              required: true,
+            }
+          - { label: "Email", name: "email", widget: "string", required: true }
   - name: "pages"
     label: "Pages"
     files:
@@ -33,7 +53,12 @@ collections:
         name: "membership"
         file: "content/membership.md"
         fields:
-          - { label: "Description", name: "description", widget: "text" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: true,
+            }
           - {
               label: "Document",
               name: "documentPath",
@@ -42,6 +67,7 @@ collections:
               public_folder: "{{public_folder}}/files",
               choose_url: false,
               media_library: { allow_multiple: false },
+              required: true,
             }
   - name: "contract"
     label: "Contrats"
@@ -50,8 +76,18 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Nom du contrat", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Nom du contrat",
+          name: "title",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: true,
+        }
       - {
           label: "Image",
           name: "imagePath",
@@ -60,6 +96,7 @@ collections:
           public_folder: "{{public_folder}}/images",
           choose_url: false,
           media_library: { allow_multiple: false },
+          required: true,
         }
       - {
           label: "Document",
@@ -69,24 +106,30 @@ collections:
           public_folder: "{{public_folder}}/files",
           choose_url: false,
           media_library: { allow_multiple: false },
+          required: true,
         }
-  - label: "Blog"
-    name: "blog"
-    folder: "content/blogPosts"
+  - name: "article"
+    label: "Actualités"
+    label_singular: "Actualité"
+    folder: "content/articles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Titre", name: "title", widget: "string", required: true }
       - {
-          label: "Publish Date",
+          label: "Date de publication",
           name: "date",
           widget: "datetime",
           required: true,
         }
       - {
-          label: "Featured Image",
+          label: "Image de couverture",
           name: "thumbnail",
           widget: "image",
+          media_folder: "/{{media_folder}}/images",
+          public_folder: "{{public_folder}}/images",
+          choose_url: false,
+          media_library: { allow_multiple: false },
           required: true,
         }
-      - { label: "Body", name: "body", widget: "markdown", required: true }
+      - { label: "Contenu", name: "body", widget: "markdown", required: true }
