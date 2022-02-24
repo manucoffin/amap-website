@@ -49,22 +49,22 @@ export const PlasmicNewsArticle__VariantProps = new Array<VariantPropType>();
 export type PlasmicNewsArticle__ArgsType = {
   title?: React.ReactNode;
   publicationDate?: React.ReactNode;
-  cover?: React.ReactNode;
-  content?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicNewsArticle__ArgsType;
 export const PlasmicNewsArticle__ArgProps = new Array<ArgPropType>(
   "title",
-  "publicationDate",
-  "cover",
-  "content"
+  "publicationDate"
 );
 
 export type PlasmicNewsArticle__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
+  article?: p.Flex<"article">;
   h1?: p.Flex<"h1">;
+  freeBox?: p.Flex<"div">;
+  cover?: p.Flex<"div">;
+  content?: p.Flex<"div">;
 };
 
 export interface DefaultNewsArticleProps {}
@@ -116,38 +116,46 @@ function PlasmicNewsArticle__RenderFunc(props: {
             className={classNames("__wab_instance", sty.header)}
           />
 
-          <h1
-            data-plasmic-name={"h1"}
-            data-plasmic-override={overrides.h1}
-            className={classNames(projectcss.all, projectcss.h1, sty.h1)}
+          <article
+            data-plasmic-name={"article"}
+            data-plasmic-override={overrides.article}
+            className={classNames(projectcss.all, sty.article)}
           >
-            {p.renderPlasmicSlot({
-              defaultContents: "Titre de l'article",
-              value: args.title
-            })}
-          </h1>
+            <h1
+              data-plasmic-name={"h1"}
+              data-plasmic-override={overrides.h1}
+              className={classNames(projectcss.all, projectcss.h1, sty.h1)}
+            >
+              {p.renderPlasmicSlot({
+                defaultContents: "Titre de l'article",
+                value: args.title
+              })}
+            </h1>
 
-          <div className={classNames(projectcss.all, sty.freeBox__rupL7)}>
-            {p.renderPlasmicSlot({
-              defaultContents: "Publié le 12/05/2022",
-              value: args.publicationDate,
-              className: classNames(sty.slotTargetPublicationDate)
-            })}
-          </div>
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
+            >
+              {p.renderPlasmicSlot({
+                defaultContents: "Publié le 12/05/2022",
+                value: args.publicationDate,
+                className: classNames(sty.slotTargetPublicationDate)
+              })}
+            </div>
 
-          <div className={classNames(projectcss.all, sty.freeBox__wpVmz)}>
-            {p.renderPlasmicSlot({
-              defaultContents: null,
-              value: args.cover
-            })}
-          </div>
+            <div
+              data-plasmic-name={"cover"}
+              data-plasmic-override={overrides.cover}
+              className={classNames(projectcss.all, sty.cover)}
+            />
 
-          <div className={classNames(projectcss.all, sty.freeBox__vJ5Vk)}>
-            {p.renderPlasmicSlot({
-              defaultContents: null,
-              value: args.content
-            })}
-          </div>
+            <div
+              data-plasmic-name={"content"}
+              data-plasmic-override={overrides.content}
+              className={classNames(projectcss.all, sty.content)}
+            />
+          </article>
         </div>
       </div>
     </React.Fragment>
@@ -155,9 +163,13 @@ function PlasmicNewsArticle__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "h1"],
+  root: ["root", "header", "article", "h1", "freeBox", "cover", "content"],
   header: ["header"],
-  h1: ["h1"]
+  article: ["article", "h1", "freeBox", "cover", "content"],
+  h1: ["h1"],
+  freeBox: ["freeBox"],
+  cover: ["cover"],
+  content: ["content"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -165,7 +177,11 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
+  article: "article";
   h1: "h1";
+  freeBox: "div";
+  cover: "div";
+  content: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -226,7 +242,11 @@ export const PlasmicNewsArticle = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
+    article: makeNodeComponent("article"),
     h1: makeNodeComponent("h1"),
+    freeBox: makeNodeComponent("freeBox"),
+    cover: makeNodeComponent("cover"),
+    content: makeNodeComponent("content"),
 
     // Metadata about props expected for PlasmicNewsArticle
     internalVariantProps: PlasmicNewsArticle__VariantProps,

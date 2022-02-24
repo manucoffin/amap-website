@@ -9,9 +9,9 @@ import {
   NextPage,
 } from "next";
 import * as React from "react";
-import { DownloadIcon } from "@heroicons/react/outline";
 import { PlasmicNewsArticle } from "../../components/plasmic/amap_website/PlasmicNewsArticle";
 import { Article, getArticle, getArticlesSlugs } from "lib/articles";
+import ReactMarkdown from "react-markdown";
 
 const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footerData,
@@ -21,8 +21,29 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <MainLayout footerData={footerData}>
       <PlasmicNewsArticle
         title={articleData.title}
-        publicationDate={articleData.date}
-        cover={articleData.thumbnail}
+        publicationDate={`Publié le ${articleData.date}`}
+        cover={{
+          render: (props, Component) => (
+            <Component {...props}>
+              <Image
+                src={articleData.thumbnail}
+                layout="fill"
+                objectFit="cover"
+                quality={60}
+              />
+            </Component>
+          ),
+        }}
+        content={{
+          render: (props, Component) => (
+            <Component
+              {...props}
+              className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif"
+            >
+              <ReactMarkdown>{articleData.content}</ReactMarkdown>
+            </Component>
+          ),
+        }}
       />
     </MainLayout>
   );
@@ -51,7 +72,7 @@ export const getStaticProps: GetStaticProps<{
   }
 
   const footerData = getFooter();
-  const articleData = getArticle(slug);
+  const articleData = await getArticle(slug);
 
   return {
     revalidate: 1,

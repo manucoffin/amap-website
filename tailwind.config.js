@@ -39,11 +39,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Amatic SC"],
-        // sans: ["Dosis"],
         serif: ["Aleo"],
-        // handwritten: ["Amatic SC"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

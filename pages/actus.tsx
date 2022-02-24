@@ -27,8 +27,8 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 export const getStaticProps: GetStaticProps<{
   articles: Article[];
   footerData: Footer;
-}> = () => {
-  const articles = getAllArticles();
+}> = async () => {
+  const articles = await getAllArticles();
   const footerData = getFooter();
 
   return {

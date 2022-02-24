@@ -13,31 +13,40 @@ export type Article = NetlifyArticle & {
 
 export const getArticlesSlugs = (): string[] => getSlugs(ARTICLES_PATH);
 
-const getArticleData = (filePath: string): Article => {
+const getArticleData = async (filePath: string): Promise<Article> => {
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(fileContent);
+
+  const date = new Intl.DateTimeFormat("fr", {
+    dateStyle: "full",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(data.date);
 
   const article = {
     slug: path.basename(filePath, ".md"),
     content,
     ...(data as NetlifyArticle),
-    date: (data as NetlifyArticle).date.toString(),
+    date,
   };
 
   return article;
 };
 
-export const getAllArticles = (): Article[] => {
+export const getAllArticles = async (): Promise<Article[]> => {
   const filePaths = getFilePaths(ARTICLES_PATH);
-  const articles = filePaths
-    .map((filePath) => getArticleData(filePath))
-    .sort((a, b) => (a.date > b.date ? 1 : -1));
+  const articlesPromises = filePaths.map(
+    async (filePath) => await getArticleData(filePath)
+  );
 
-  return articles;
+  const articles = await Promise.all(articlesPromises);
+
+  return articles.sort((a, b) => (a.date > b.date ? 1 : -1));
 };
 
-export const getArticle = (slug: string): Article => {
+export const getArticle = async (slug: string): Promise<Article> => {
   const filePath = join(ARTICLES_PATH, `${slug}.md`);
 
-  return getArticleData(filePath);
+  return await getArticleData(filePath);
 };
