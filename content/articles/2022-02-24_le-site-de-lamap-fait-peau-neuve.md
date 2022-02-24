@@ -5,7 +5,7 @@ thumbnail: /static/uploads/images/agneau.jpg
 ---
 ## This is a title
 
-Be so very light. Be a gentle whisper. **This is unplanned it really just happens**. I sincerely wish for you every possible joy life could bring. Just let go - and fall like a little waterfall. Let's make some happy little clouds in our world!
+Be so very light. Be a gentle whisper. **This is unplanned it really just happens**. I sincerely wish for you every possible joy life could bring. Just let go - and fall like a little waterfall. Let's make some happy little clouds in our world.
 
 > How do you make a round circle with a square knife? That's your challenge for the day. We'll do another happy little painting. Anything you want to do you can do here. Go out on a limb - that's where the fruit is. Steve wants reflections, so let's give him reflections. Let your imagination just wonder around when you're doing these things.
 
