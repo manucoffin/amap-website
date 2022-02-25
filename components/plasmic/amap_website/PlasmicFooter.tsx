@@ -42,7 +42,6 @@ import projectcss from "./plasmic_amap_website.module.css"; // plasmic-import: 7
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: OWIENifDVhJ/css
 
 import DropIcon from "./icons/PlasmicIcon__Drop"; // plasmic-import: RvQEfXJy0/icon
-import MailIcon from "./icons/PlasmicIcon__Mail"; // plasmic-import: PCaQsxt1j/icon
 
 export type PlasmicFooter__VariantMembers = {
   minimal: "minimal";
@@ -58,8 +57,6 @@ export const PlasmicFooter__VariantProps = new Array<VariantPropType>(
 );
 
 export type PlasmicFooter__ArgsType = {
-  phoneNumber?: React.ReactNode;
-  email?: React.ReactNode;
   schedule?: React.ReactNode;
   address?: React.ReactNode;
   postCode?: React.ReactNode;
@@ -68,8 +65,6 @@ export type PlasmicFooter__ArgsType = {
 
 type ArgPropType = keyof PlasmicFooter__ArgsType;
 export const PlasmicFooter__ArgProps = new Array<ArgPropType>(
-  "phoneNumber",
-  "email",
   "schedule",
   "address",
   "postCode",
@@ -80,7 +75,9 @@ export type PlasmicFooter__OverridesType = {
   footer?: p.Flex<"footer">;
   columns?: p.Flex<"div">;
   logo?: p.Flex<"div">;
-  contactFormLink?: p.Flex<"a"> & Partial<LinkProps>;
+  svg?: p.Flex<"svg">;
+  phone?: p.Flex<"div">;
+  email?: p.Flex<"div">;
   homeLink?: p.Flex<"a"> & Partial<LinkProps>;
   sitemapLink?: p.Flex<"a"> & Partial<LinkProps>;
   legalLink?: p.Flex<"a"> & Partial<LinkProps>;
@@ -89,8 +86,6 @@ export type PlasmicFooter__OverridesType = {
 };
 
 export interface DefaultFooterProps {
-  phoneNumber?: React.ReactNode;
-  email?: React.ReactNode;
   schedule?: React.ReactNode;
   address?: React.ReactNode;
   postCode?: React.ReactNode;
@@ -144,7 +139,9 @@ function PlasmicFooter__RenderFunc(props: {
               className={classNames(projectcss.all, sty.logo)}
             >
               <DropIcon
-                className={classNames(projectcss.all, sty.svg__ilU9L)}
+                data-plasmic-name={"svg"}
+                data-plasmic-override={overrides.svg}
+                className={classNames(projectcss.all, sty.svg)}
                 role={"img"}
               />
 
@@ -229,6 +226,16 @@ function PlasmicFooter__RenderFunc(props: {
           </div>
 
           <div className={classNames(projectcss.all, sty.column___4XhX0)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__xu6J3
+              )}
+            >
+              {"Envie de discuter ?"}
+            </div>
+
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__rdFqS)}>
                 <div
@@ -241,57 +248,31 @@ function PlasmicFooter__RenderFunc(props: {
                   {"Tel."}
                 </div>
 
-                <div className={classNames(projectcss.all, sty.freeBox__adtRy)}>
-                  {p.renderPlasmicSlot({
-                    defaultContents: "02 34 56 78 90",
-                    value: args.phoneNumber,
-                    className: classNames(sty.slotTargetPhoneNumber)
-                  })}
+                <div
+                  data-plasmic-name={"phone"}
+                  data-plasmic-override={overrides.phone}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.phone
+                  )}
+                >
+                  {"02 34 56 78 90"}
                 </div>
               </div>
             ) : null}
 
-            <div className={classNames(projectcss.all, sty.freeBox__v9Xbw)}>
-              {p.renderPlasmicSlot({
-                defaultContents: "amap-goutte-eau@mail.fr",
-                value: args.email,
-                className: classNames(sty.slotTargetEmail)
-              })}
-            </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.column__jTjFf)}>
-            <p.PlasmicLink
-              data-plasmic-name={"contactFormLink"}
-              data-plasmic-override={overrides.contactFormLink}
+            <div
+              data-plasmic-name={"email"}
+              data-plasmic-override={overrides.email}
               className={classNames(
                 projectcss.all,
-                projectcss.a,
-                sty.contactFormLink
+                projectcss.__wab_text,
+                sty.email
               )}
-              component={Link}
-              href={"/contact" as const}
-              platform={"nextjs"}
             >
-              {true ? (
-                <div className={classNames(projectcss.all, sty.freeBox__caP)}>
-                  <MailIcon
-                    className={classNames(projectcss.all, sty.svg__vcC8K)}
-                    role={"img"}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__auqT
-                    )}
-                  >
-                    {"FORMULAIRE\nDE CONTACT"}
-                  </div>
-                </div>
-              ) : null}
-            </p.PlasmicLink>
+              {"amap-goutte-eau@mail.fr"}
+            </div>
           </div>
         </p.Stack>
       ) : null}
@@ -343,7 +324,7 @@ function PlasmicFooter__RenderFunc(props: {
             sty.sitemapLink
           )}
           component={Link}
-          href={"/sitemap" as const}
+          href={"/plan-du-site" as const}
           platform={"nextjs"}
         >
           {"Plan du site"}
@@ -437,16 +418,20 @@ const PlasmicDescendants = {
     "footer",
     "columns",
     "logo",
-    "contactFormLink",
+    "svg",
+    "phone",
+    "email",
     "homeLink",
     "sitemapLink",
     "legalLink",
     "creditsLink",
     "link"
   ],
-  columns: ["columns", "logo", "contactFormLink"],
-  logo: ["logo"],
-  contactFormLink: ["contactFormLink"],
+  columns: ["columns", "logo", "svg", "phone", "email"],
+  logo: ["logo", "svg"],
+  svg: ["svg"],
+  phone: ["phone"],
+  email: ["email"],
   homeLink: ["homeLink"],
   sitemapLink: ["sitemapLink"],
   legalLink: ["legalLink"],
@@ -460,7 +445,9 @@ type NodeDefaultElementType = {
   footer: "footer";
   columns: "div";
   logo: "div";
-  contactFormLink: "a";
+  svg: "svg";
+  phone: "div";
+  email: "div";
   homeLink: "a";
   sitemapLink: "a";
   legalLink: "a";
@@ -527,7 +514,9 @@ export const PlasmicFooter = Object.assign(
     // Helper components rendering sub-elements
     columns: makeNodeComponent("columns"),
     logo: makeNodeComponent("logo"),
-    contactFormLink: makeNodeComponent("contactFormLink"),
+    svg: makeNodeComponent("svg"),
+    phone: makeNodeComponent("phone"),
+    email: makeNodeComponent("email"),
     homeLink: makeNodeComponent("homeLink"),
     sitemapLink: makeNodeComponent("sitemapLink"),
     legalLink: makeNodeComponent("legalLink"),

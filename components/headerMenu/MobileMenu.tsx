@@ -1,17 +1,16 @@
-import { Menu, Transition } from "@headlessui/react";
-import { Fragment } from "react";
-import { MenuIcon, XIcon, MailIcon } from "@heroicons/react/outline";
-import { SiteLogo } from "components";
-import { MobileMenuLink } from "./MobileMenuLink";
-import { classNames } from "@plasmicapp/react-web";
+import { Fragment } from 'react';
+import { Menu, Transition } from '@headlessui/react';
+import { MenuIcon, XIcon, MailIcon } from '@heroicons/react/outline';
+import { SiteLogo } from 'components';
+import { MobileMenuLink } from './MobileMenuLink';
 
-export const MobileMenu = ({ ...props }) => {
+export const MobileMenu = () => {
   return (
     <Menu as="div" className="inline-block md:hidden">
       {({ open }) => {
         return (
           <>
-            <Menu.Button className="grid w-16 h-full place-items-center">
+            <Menu.Button>
               <MenuIcon className="w-6 h-6 ml-auto text-blue-700" />
             </Menu.Button>
 
@@ -28,7 +27,7 @@ export const MobileMenu = ({ ...props }) => {
               <Menu.Items
                 static
                 className="fixed inset-0 z-10 flex gap-8 px-4 overflow-y-scroll origin-top-right bg-white focus:outline-none"
-                style={{ flexFlow: "column nowrap" }}
+                style={{ flexFlow: 'column nowrap' }}
               >
                 <Menu.Item>
                   <span className="flex justify-between items-center py-4">
@@ -44,9 +43,11 @@ export const MobileMenu = ({ ...props }) => {
                 </Menu.Item>
 
                 <Menu.Item>
-                  <MobileMenuLink href="/contrats">
-                    Contrats / Adhésions
-                  </MobileMenuLink>
+                  <MobileMenuLink href="/contrats">Contrats</MobileMenuLink>
+                </Menu.Item>
+
+                <Menu.Item>
+                  <MobileMenuLink href="/adhérer">Adhérer</MobileMenuLink>
                 </Menu.Item>
 
                 <Menu.Item>

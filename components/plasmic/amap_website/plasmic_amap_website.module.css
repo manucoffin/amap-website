@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&family=Aleo%3Aital%2Cwght%400%2C400%3B0%2C700&family=Josefin+Sans%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Amatic+SC%3Aital%2Cwght%400%2C400%3B0%2C700&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Aleo%3Aital%2Cwght%400%2C400%3B0%2C700&family=Dosis%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800&display=swap");
 
 .plasmic_tokens {
   --token-5iF75TGQk: Josefin Sans;
@@ -41,12 +41,36 @@
   --plasmic-token-space-96: var(--token-7R6fY6Np7);
   --token-XCQtnCr6F: #2fc875;
   --plasmic-token-green: var(--token-XCQtnCr6F);
-  --token-aoN-7lE5z: #d8f1ff;
+  --token-aoN-7lE5z: #d8f1ff80;
   --plasmic-token-pale-blue: var(--token-aoN-7lE5z);
-  --token-8lrXM-NQ6: #fffaca;
+  --token-8lrXM-NQ6: #ffe742;
   --plasmic-token-yellow: var(--token-8lrXM-NQ6);
   --token-B133__sIH: #535353;
   --plasmic-token-antracite: var(--token-B133__sIH);
+  --token-YPDMJVqLc: #d7dfab;
+  --plasmic-token-green-300: var(--token-YPDMJVqLc);
+  --token-hMEAxGo_5: #f3ffdf;
+  --plasmic-token-green-100: var(--token-hMEAxGo_5);
+  --token-DyUqYfv6N: #9aab49;
+  --plasmic-token-green-500: var(--token-DyUqYfv6N);
+  --token-Km-I5qLf7: #a3cdd2;
+  --plasmic-token-blue-300: var(--token-Km-I5qLf7);
+  --token-EI_RRlYkx: #7bb8d3;
+  --plasmic-token-blue-500: var(--token-EI_RRlYkx);
+  --token-7fkL0btWL: #15454d;
+  --plasmic-token-blue-700: var(--token-7fkL0btWL);
+  --token-q1R6Co1cF: Amatic SC;
+  --plasmic-token-amatic-sc: var(--token-q1R6Co1cF);
+  --token-KpVr-3FRg: Dosis;
+  --plasmic-token-dosis: var(--token-KpVr-3FRg);
+  --token-1MFYUnF5I: var(--token-tyDKxkI7L);
+  --plasmic-token-unnamed-style-token: var(--token-1MFYUnF5I);
+  --token-1MFYUnF5I: var(--token-tyDKxkI7L);
+  --plasmic-token-unnamed-style-token: var(--token-1MFYUnF5I);
+  --token-tyDKxkI7L: #797979;
+  --plasmic-token-semi-gray: var(--token-tyDKxkI7L);
+  --token-tyDKxkI7L: #797979;
+  --plasmic-token-semi-gray: var(--token-tyDKxkI7L);
 }
 
 .plasmic_default_styles {
@@ -63,11 +87,11 @@
   --mixin-n3Scqtajgc_user-select: text;
   --mixin-n3Scqtajgc_text-decoration-line: none;
   --mixin-n3Scqtajgc_text-overflow: clip;
-  --mixin-YHb1FhDODg_color: #000000;
+  --mixin-YHb1FhDODg_color: var(--token-pf4RLfMl0);
   --mixin-YHb1FhDODg_font-weight: 900;
-  --mixin-YHb1FhDODg_font-size: 72px;
+  --mixin-YHb1FhDODg_font-size: 48px;
   --mixin-YHb1FhDODg_line-height: 1;
-  --mixin-YHb1FhDODg_letter-spacing: -4px;
+  --mixin-YHb1FhDODg_font-family: var(--token-q1R6Co1cF);
   --mixin-PE1nYfdeL0_font-family: "Inter";
   --mixin-PE1nYfdeL0_color: #000000;
   --mixin-PE1nYfdeL0_font-size: 48px;
@@ -329,7 +353,7 @@
   font-weight: var(--mixin-YHb1FhDODg_font-weight);
   font-size: var(--mixin-YHb1FhDODg_font-size);
   line-height: var(--mixin-YHb1FhDODg_line-height);
-  letter-spacing: var(--mixin-YHb1FhDODg_letter-spacing);
+  font-family: var(--mixin-YHb1FhDODg_font-family);
 }
 
 :where(.root_reset .plasmic_default__h2),

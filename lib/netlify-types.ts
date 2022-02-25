@@ -10,17 +10,19 @@ export interface Footer {
   email: string;
 }
 
-export interface Home {
-  title: string;
-  date: string;
+export interface Membership {
+  description: string;
+  documentPath: any;
 }
 
-export interface About {
+export interface Contract {
   title: string;
-  date: string;
+  description: string;
+  imagePath: string;
+  documentPath: any;
 }
 
-export interface Blog {
+export interface Article {
   title: string;
   date: string;
   thumbnail: string;

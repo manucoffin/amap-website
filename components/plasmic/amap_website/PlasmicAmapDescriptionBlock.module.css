@@ -10,35 +10,7 @@
   min-width: 0;
   padding: 8px;
 }
-.freeBox__qzwnv {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  padding-left: var(--token-2zjFq4DPV);
-  display: flex;
-  flex-direction: row;
-  margin-bottom: var(--token-xmbQtwPzW);
-  min-width: 0;
-}
-.slotTargetSlot {
-  font-family: var(--token-ongjxvNd3);
-  font-size: 48px;
-  text-align: left;
-}
-.svg__vc1Vw {
-  position: absolute;
-  object-fit: cover;
-  max-width: 100%;
-  color: var(--token-aoN-7lE5z);
-  left: var(--token-L5ZvEOVLJ);
-  top: var(--token-xmbQtwPzW);
-  transform: rotateX(0deg) rotateY(0deg) rotateZ(-36deg);
-  width: 1em;
-  flex-shrink: 0;
-  height: 1em;
-}
-.freeBox__g8BGf {
+.freeBox {
   position: relative;
   width: 100%;
   height: auto;
@@ -47,12 +19,33 @@
   padding-left: var(--token-2zjFq4DPV);
   display: flex;
   flex-direction: row;
+  left: auto;
+  top: auto;
+  z-index: 1;
+  background: none;
   min-width: 0;
 }
-.slotTargetSlot2 {
-  font-family: var(--token-ongjxvNd3);
-  font-size: 30px;
-  text-align: left;
+.svg__fpYPs {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  color: var(--token-UwQVPw4EQ);
+  width: 200px;
+  flex-shrink: 0;
+  min-height: 0;
+}
+.text__sS8E {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-family: var(--token-q1R6Co1cF);
+  font-weight: 900;
+  font-size: 40px;
+  min-width: 0;
 }
 .ul {
   flex-direction: column;
@@ -84,6 +77,9 @@
   max-width: 100%;
   position: relative;
 }
+.text___7Wr43 {
+  font-family: var(--token-ongjxvNd3);
+}
 .li__qbcx9 {
   position: relative;
   display: flex;
@@ -92,6 +88,9 @@
 .listItem__lti77:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+}
+.text__qrGv9 {
+  font-family: var(--token-ongjxvNd3);
 }
 .li__jKDeD {
   position: relative;
@@ -102,6 +101,9 @@
   max-width: 100%;
   position: relative;
 }
+.text__cdBiA {
+  font-family: var(--token-ongjxvNd3);
+}
 .li___2ID {
   position: relative;
   display: flex;
@@ -110,4 +112,7 @@
 .listItem__wxcOr:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+}
+.text__px9Wx {
+  font-family: var(--token-ongjxvNd3);
 }

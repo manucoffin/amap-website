@@ -40,7 +40,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_amap_website.module.css"; // plasmic-import: 7CzphteDn95cERg7nN7EAF/projectcss
 import sty from "./PlasmicAmapDescriptionBlock.module.css"; // plasmic-import: uZnVkj7Gzvz/css
 
-import StadiumsvgIcon from "./icons/PlasmicIcon__Stadiumsvg"; // plasmic-import: E5VKiMd8l/icon
+import BrushIcon from "./icons/PlasmicIcon__Brush"; // plasmic-import: 7RNqhMDlZ/icon
 
 export type PlasmicAmapDescriptionBlock__VariantMembers = {};
 
@@ -51,26 +51,24 @@ export const PlasmicAmapDescriptionBlock__VariantProps =
 
 export type PlasmicAmapDescriptionBlock__ArgsType = {
   children?: React.ReactNode;
-  slot?: React.ReactNode;
-  slot2?: React.ReactNode;
+  title?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicAmapDescriptionBlock__ArgsType;
 export const PlasmicAmapDescriptionBlock__ArgProps = new Array<ArgPropType>(
   "children",
-  "slot",
-  "slot2"
+  "title"
 );
 
 export type PlasmicAmapDescriptionBlock__OverridesType = {
   root?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
   ul?: p.Flex<"ul">;
 };
 
 export interface DefaultAmapDescriptionBlockProps {
   children?: React.ReactNode;
-  slot?: React.ReactNode;
-  slot2?: React.ReactNode;
+  title?: React.ReactNode;
   className?: string;
 }
 
@@ -97,12 +95,16 @@ function PlasmicAmapDescriptionBlock__RenderFunc(props: {
         sty.root
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__qzwnv)}>
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
+      >
         {p.renderPlasmicSlot({
           defaultContents: (
             <React.Fragment>
-              <StadiumsvgIcon
-                className={classNames(projectcss.all, sty.svg__vc1Vw)}
+              <BrushIcon
+                className={classNames(projectcss.all, sty.svg__fpYPs)}
                 role={"img"}
               />
 
@@ -110,23 +112,14 @@ function PlasmicAmapDescriptionBlock__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__oxFuY
+                  sty.text__sS8E
                 )}
               >
-                {"1"}
+                {"Solidaire"}
               </div>
             </React.Fragment>
           ),
-          value: args.slot,
-          className: classNames(sty.slotTargetSlot)
-        })}
-      </div>
-
-      <div className={classNames(projectcss.all, sty.freeBox__g8BGf)}>
-        {p.renderPlasmicSlot({
-          defaultContents: "Solidaire",
-          value: args.slot2,
-          className: classNames(sty.slotTargetSlot2)
+          value: args.title
         })}
       </div>
 
@@ -150,7 +143,15 @@ function PlasmicAmapDescriptionBlock__RenderFunc(props: {
                 <ListItem
                   className={classNames("__wab_instance", sty.listItem__mGkDp)}
                 >
-                  {"Avec les producteurs"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___7Wr43
+                    )}
+                  >
+                    {"Avec les producteurs"}
+                  </div>
                 </ListItem>
               </li>
 
@@ -164,9 +165,17 @@ function PlasmicAmapDescriptionBlock__RenderFunc(props: {
                 <ListItem
                   className={classNames("__wab_instance", sty.listItem__lti77)}
                 >
-                  {
-                    "liens actifs avec tous les acteurs locaux oeuvrant pour le maintien de l’agriculture durable et d’un commerce solidaire"
-                  }
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__qrGv9
+                    )}
+                  >
+                    {
+                      "liens actifs avec tous les acteurs locaux oeuvrant pour le maintien de l’agriculture durable et d’un commerce solidaire"
+                    }
+                  </div>
                 </ListItem>
               </li>
 
@@ -180,7 +189,15 @@ function PlasmicAmapDescriptionBlock__RenderFunc(props: {
                 <ListItem
                   className={classNames("__wab_instance", sty.listItem___6SxMq)}
                 >
-                  {"L’accompagnement du producteur à l’autonomie"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__cdBiA
+                    )}
+                  >
+                    {"L’accompagnement du producteur à l’autonomie"}
+                  </div>
                 </ListItem>
               </li>
 
@@ -194,9 +211,17 @@ function PlasmicAmapDescriptionBlock__RenderFunc(props: {
                 <ListItem
                   className={classNames("__wab_instance", sty.listItem__wxcOr)}
                 >
-                  {
-                    "La définition à chaque saison d’un prix équitable entre producteur et consommateurs"
-                  }
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__px9Wx
+                    )}
+                  >
+                    {
+                      "La définition à chaque saison d’un prix équitable entre producteur et consommateurs"
+                    }
+                  </div>
                 </ListItem>
               </li>
             </React.Fragment>
@@ -209,7 +234,8 @@ function PlasmicAmapDescriptionBlock__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "ul"],
+  root: ["root", "freeBox", "ul"],
+  freeBox: ["freeBox"],
   ul: ["ul"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -217,6 +243,7 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  freeBox: "div";
   ul: "ul";
 };
 
@@ -277,6 +304,7 @@ export const PlasmicAmapDescriptionBlock = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    freeBox: makeNodeComponent("freeBox"),
     ul: makeNodeComponent("ul"),
 
     // Metadata about props expected for PlasmicAmapDescriptionBlock

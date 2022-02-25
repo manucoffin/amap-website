@@ -1,5 +1,7 @@
-const withPlugins = require("next-compose-plugins");
-const optimizedImages = require("next-optimized-images");
+// import withPlugins from 'next-compose-plugins';
+// import optimizedImages from 'next-optimized-images';
+const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
 
 const nextConfig = {
   reactStrictMode: true,
@@ -7,7 +9,7 @@ const nextConfig = {
   webpack: (configuration) => {
     configuration.module.rules.push({
       test: /\.md$/,
-      use: "frontmatter-markdown-loader",
+      use: 'frontmatter-markdown-loader',
     });
     return configuration;
   },
@@ -18,6 +20,7 @@ const nextConfig = {
 const nextOptimizedImagesPlugin = [
   optimizedImages,
   {
+    mozjpeg: { quality: 80 },
     optipng: {
       optimizationLevel: 3,
     },

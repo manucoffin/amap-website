@@ -33,11 +33,17 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Header from "../../Header"; // plasmic-import: dTKTvnUQf8/component
+import TextInput from "../../TextInput"; // plasmic-import: 4PfogoODGJ2/component
+import ContractCard from "../../ContractCard"; // plasmic-import: cmMrWuVRF8/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_amap_website.module.css"; // plasmic-import: 7CzphteDn95cERg7nN7EAF/projectcss
 import sty from "./PlasmicContracts.module.css"; // plasmic-import: QMj3hEcFdK/css
+
+import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: gdJwUI3W1pr/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: wAr9MNE9ViX/icon
 
 export type PlasmicContracts__VariantMembers = {};
 
@@ -45,13 +51,18 @@ export type PlasmicContracts__VariantsArgs = {};
 type VariantPropType = keyof PlasmicContracts__VariantsArgs;
 export const PlasmicContracts__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicContracts__ArgsType = {};
+export type PlasmicContracts__ArgsType = {
+  contracts?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicContracts__ArgsType;
-export const PlasmicContracts__ArgProps = new Array<ArgPropType>();
+export const PlasmicContracts__ArgProps = new Array<ArgPropType>("contracts");
 
 export type PlasmicContracts__OverridesType = {
   root?: p.Flex<"div">;
+  header?: p.Flex<typeof Header>;
   h1?: p.Flex<"h1">;
+  searchInput?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultContractsProps {}
@@ -69,6 +80,12 @@ function PlasmicContracts__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
+        <title key="title">{"AMAP de la Goutte d'Eau - Contrats"}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={"AMAP de la Goutte d'Eau - Contrats"}
+        />
       </Head>
 
       <style>{`
@@ -91,18 +108,102 @@ function PlasmicContracts__RenderFunc(props: {
             sty.root
           )}
         >
-          <h1
-            data-plasmic-name={"h1"}
-            data-plasmic-override={overrides.h1}
-            className={classNames(
-              projectcss.all,
-              projectcss.h1,
-              projectcss.__wab_text,
-              sty.h1
-            )}
-          >
-            {"Contrats"}
-          </h1>
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
+          />
+
+          <div className={classNames(projectcss.all, sty.freeBox__lmwJe)}>
+            <h1
+              data-plasmic-name={"h1"}
+              data-plasmic-override={overrides.h1}
+              className={classNames(
+                projectcss.all,
+                projectcss.h1,
+                projectcss.__wab_text,
+                sty.h1
+              )}
+            >
+              {"Vous cherchez un contrat ? c'est par là"}
+            </h1>
+
+            <div className={classNames(projectcss.all, sty.freeBox__orkhX)}>
+              <TextInput
+                data-plasmic-name={"searchInput"}
+                data-plasmic-override={overrides.searchInput}
+                name={"" as const}
+                placeholder={"Rechercher un contrat..." as const}
+                showStartIcon={true}
+              />
+            </div>
+
+            <div className={classNames(projectcss.all, sty.freeBox__frs9T)}>
+              {p.renderPlasmicSlot({
+                defaultContents: (
+                  <React.Fragment>
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__yu3Xr
+                      )}
+                      title={"Rillettes de poule et terrine de foie"}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard___1NpHr
+                      )}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__iXzZx
+                      )}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__rNzW
+                      )}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__u7F
+                      )}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__n8ZdE
+                      )}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__yAk
+                      )}
+                    />
+
+                    <ContractCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contractCard__bjowd
+                      )}
+                    />
+                  </React.Fragment>
+                ),
+                value: args.contracts
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -110,15 +211,19 @@ function PlasmicContracts__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1"],
-  h1: ["h1"]
+  root: ["root", "header", "h1", "searchInput"],
+  header: ["header"],
+  h1: ["h1"],
+  searchInput: ["searchInput"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  header: typeof Header;
   h1: "h1";
+  searchInput: typeof TextInput;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -178,7 +283,9 @@ export const PlasmicContracts = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    header: makeNodeComponent("header"),
     h1: makeNodeComponent("h1"),
+    searchInput: makeNodeComponent("searchInput"),
 
     // Metadata about props expected for PlasmicContracts
     internalVariantProps: PlasmicContracts__VariantProps,

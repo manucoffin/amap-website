@@ -68,19 +68,6 @@
           "componentType": "page"
         },
         {
-          "id": "3e8PB83RLm",
-          "name": "Article",
-          "type": "managed",
-          "projectId": "7CzphteDn95cERg7nN7EAF",
-          "renderModuleFilePath": "plasmic/amap_website/PlasmicArticle.tsx",
-          "importSpec": {
-            "modulePath": "../pages/article.tsx"
-          },
-          "cssFilePath": "plasmic/amap_website/PlasmicArticle.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "6mDHqpDUxe",
           "name": "Contact",
           "type": "managed",
@@ -126,7 +113,7 @@
           "projectId": "7CzphteDn95cERg7nN7EAF",
           "renderModuleFilePath": "plasmic/amap_website/PlasmicAmapDescriptionBlock.tsx",
           "importSpec": {
-            "modulePath": "AmapDescriptionBlock.tsx"
+            "modulePath": "home/AmapDescriptionBlock.tsx"
           },
           "cssFilePath": "plasmic/amap_website/PlasmicAmapDescriptionBlock.module.css",
           "scheme": "blackbox",
@@ -142,19 +129,6 @@
             "modulePath": "../pages/index.tsx"
           },
           "cssFilePath": "plasmic/amap_website/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "1jPR-7rOPe",
-          "name": "Sitemap",
-          "type": "managed",
-          "projectId": "7CzphteDn95cERg7nN7EAF",
-          "renderModuleFilePath": "plasmic/amap_website/PlasmicSitemap.tsx",
-          "importSpec": {
-            "modulePath": "../pages/sitemap.tsx"
-          },
-          "cssFilePath": "plasmic/amap_website/PlasmicSitemap.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         },
@@ -209,6 +183,98 @@
           "cssFilePath": "plasmic/amap_website/PlasmicContactForm.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "cmMrWuVRF8",
+          "name": "ContractCard",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicContractCard.tsx",
+          "importSpec": {
+            "modulePath": "ContractCard.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicContractCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "4PfogoODGJ2",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "IPO3E1dkvS",
+          "name": "AmapAdvantageBlock",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicAmapAdvantageBlock.tsx",
+          "importSpec": {
+            "modulePath": "home/AmapAdvantageBlock.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicAmapAdvantageBlock.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Gs4WBGGfmh",
+          "name": "Membership",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicMembership.tsx",
+          "importSpec": {
+            "modulePath": "../pages/adherer.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicMembership.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "_KwHMp6Wow",
+          "name": "Contract",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicContract.tsx",
+          "importSpec": {
+            "modulePath": "../pages/contrats/[slug].tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicContract.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "3e8PB83RLm",
+          "name": "NewsArticle",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicNewsArticle.tsx",
+          "importSpec": {
+            "modulePath": "../pages/actus/[slug].tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicNewsArticle.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "6W6tImoBwf",
+          "name": "ArticleCard",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicArticleCard.tsx",
+          "importSpec": {
+            "modulePath": "ArticleCard.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicArticleCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -231,43 +297,143 @@
           "id": "PCaQsxt1j",
           "name": "MailIcon",
           "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Mail.tsx"
+        },
+        {
+          "id": "ytp-msYPk",
+          "name": "DownloadDocumentIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__DownloadDocument.tsx"
+        },
+        {
+          "id": "ZMjzg7GYb",
+          "name": "InfoIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Info.tsx"
+        },
+        {
+          "id": "gdJwUI3W1pr",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "wAr9MNE9ViX",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "7RNqhMDlZ",
+          "name": "BrushIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Brush.tsx"
+        },
+        {
+          "id": "o3u0eLkve",
+          "name": "BannerIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__Banner.tsx"
+        },
+        {
+          "id": "6nNIVk6Ac",
+          "name": "WaterDropFatIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__WaterDropFat.tsx"
+        },
+        {
+          "id": "vwon0ZYL0",
+          "name": "ArrowDownsvgIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__ArrowDownsvg.tsx"
+        },
+        {
+          "id": "yxDDmV5N_",
+          "name": "DottedLineIcon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__DottedLine.tsx"
+        },
+        {
+          "id": "bDG5ZCgOH",
+          "name": "DottedLine2Icon",
+          "moduleFilePath": "plasmic/amap_website/icons/PlasmicIcon__DottedLine2.tsx"
         }
       ],
       "images": [
         {
-          "id": "7q2ShsRLo",
-          "name": "ivory_bg",
-          "filePath": "../public/plasmic/amap_website/images/ivoryBg.svg"
+          "id": "nXmgALh3J",
+          "name": "home_bg",
+          "filePath": "../public/plasmic/amap_website/images/homeBg.png"
         },
         {
-          "id": "070V2DH0j",
-          "name": "footer_bg",
-          "filePath": "../public/plasmic/amap_website/images/footerBg.svg"
+          "id": "7Euuq2iGy",
+          "name": "concrete_texture",
+          "filePath": "../public/plasmic/amap_website/images/concreteTexture.png"
         },
         {
-          "id": "09ExT-Vbr",
-          "name": "vegetables",
-          "filePath": "../public/plasmic/amap_website/images/vegetables.jpeg"
+          "id": "0zNkFQtfl",
+          "name": "support_icon",
+          "filePath": "../public/plasmic/amap_website/images/supportIcon.png"
         },
         {
-          "id": "553M2BQ3s",
-          "name": "colibri.png",
-          "filePath": "../public/plasmic/amap_website/images/colibripng.png"
+          "id": "Atb8lDYde",
+          "name": "handshake_icon",
+          "filePath": "../public/plasmic/amap_website/images/handshakeIcon.png"
         },
         {
-          "id": "hG1o4gpFu",
-          "name": "Screenshot 2022-02-14 at 09.56.17.png",
-          "filePath": "../public/plasmic/amap_website/images/screenshot20220214At095617Png.png"
+          "id": "mxppxBo9h",
+          "name": "pig_wallet_icon",
+          "filePath": "../public/plasmic/amap_website/images/pigWalletIcon.png"
         },
         {
-          "id": "wcb4-KtvC",
-          "name": "fruits bg",
-          "filePath": "../public/plasmic/amap_website/images/fruitsBg.jpeg"
+          "id": "VKenCM4B9",
+          "name": "vegetables_basket_icon",
+          "filePath": "../public/plasmic/amap_website/images/vegetablesBasketIcon.png"
         },
         {
-          "id": "X_N3uxi-c",
-          "name": "paperplane.svg",
-          "filePath": "../public/plasmic/amap_website/images/paperplanesvg.svg"
+          "id": "SGxyaG374",
+          "name": "earth_organic_icon",
+          "filePath": "../public/plasmic/amap_website/images/earthOrganicIcon.png"
+        },
+        {
+          "id": "CBpJsBfb3",
+          "name": "banner_green",
+          "filePath": "../public/plasmic/amap_website/images/bannerGreen.svg"
+        },
+        {
+          "id": "njAFYOK7N",
+          "name": "grid-bg",
+          "filePath": "../public/plasmic/amap_website/images/gridBg.svg"
+        },
+        {
+          "id": "sqdcX4zXt",
+          "name": "paper-texture",
+          "filePath": "../public/plasmic/amap_website/images/paperTexture.png"
+        },
+        {
+          "id": "PqLMirF7G",
+          "name": "banner_blue",
+          "filePath": "../public/plasmic/amap_website/images/bannerBlue.svg"
+        },
+        {
+          "id": "G1_mGRy4J",
+          "name": "banner_melon",
+          "filePath": "../public/plasmic/amap_website/images/bannerMelon.svg"
+        },
+        {
+          "id": "HL9pnPeF_",
+          "name": "banner_yellow",
+          "filePath": "../public/plasmic/amap_website/images/bannerYellow.svg"
+        },
+        {
+          "id": "oXTk2hZTy",
+          "name": "phone_icon",
+          "filePath": "../public/plasmic/amap_website/images/phoneIcon.png"
+        },
+        {
+          "id": "yZk6Q1MeA",
+          "name": "paper_plane_icon",
+          "filePath": "../public/plasmic/amap_website/images/paperPlaneIcon.png"
+        },
+        {
+          "id": "4sgvQ7H4d",
+          "name": "map_icon",
+          "filePath": "../public/plasmic/amap_website/images/mapIcon.png"
+        },
+        {
+          "id": "n7yW2LyZm",
+          "name": "contract_icon",
+          "filePath": "../public/plasmic/amap_website/images/contractIcon.png"
         }
       ],
       "indirect": false,

@@ -1,14 +1,18 @@
-import dynamic from "next/dynamic";
-import config from "../public/admin/config";
-const CMS = dynamic(
-  () =>
-    import("netlify-cms-app").then((cms) => {
-      (cms as any).init({ config });
-      // return CMS;
-    }) as any,
-  { ssr: false, loading: () => <p>Loading...</p> }
-);
+// More on customizing the Admin panel:
+// https://www.manuelkruisz.com/blog/posts/custom-previews-nextjs-netlifycms
+import { useEffect } from 'react';
+import { Widget as IdWidget } from '@ncwidgets/id';
+import config from '../public/admin/config';
+
 const AdminPage: React.FC = () => {
-  return <CMS />;
+  useEffect(() => {
+    (async () => {
+      const CMS = (await import('netlify-cms-app')).default;
+      CMS.registerWidget(IdWidget.name);
+      CMS.init({ config } as any);
+    })();
+  }, []);
+  return <div />;
 };
+
 export default AdminPage;

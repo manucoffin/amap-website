@@ -71,23 +71,23 @@ export const PlasmicLinkButton__VariantProps = new Array<VariantPropType>(
 
 export type PlasmicLinkButton__ArgsType = {
   href?: string;
-  label?: string;
+  children?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicLinkButton__ArgsType;
 export const PlasmicLinkButton__ArgProps = new Array<ArgPropType>(
   "href",
-  "label"
+  "children"
 );
 
 export type PlasmicLinkButton__OverridesType = {
   root?: p.Flex<"a"> & Partial<LinkProps>;
-  text?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
 };
 
 export interface DefaultLinkButtonProps {
   href?: string;
-  label?: string;
+  children?: React.ReactNode;
   type?: SingleChoiceArg<"outlined" | "link" | "filled">;
   size?: SingleChoiceArg<"xs" | "sm" | "md" | "lg" | "xl">;
   radius?: SingleChoiceArg<
@@ -127,26 +127,29 @@ function PlasmicLinkButton__RenderFunc(props: {
       platform={"nextjs"}
     >
       <div
-        data-plasmic-name={"text"}
-        data-plasmic-override={overrides.text}
-        className={classNames(projectcss.all, projectcss.__wab_text, sty.text)}
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
-        {"Link Button"}
+        {p.renderPlasmicSlot({
+          defaultContents: "Link Button",
+          value: args.children
+        })}
       </div>
     </p.PlasmicLink>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root", "freeBox"],
+  freeBox: ["freeBox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "a";
-  text: "div";
+  freeBox: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -206,7 +209,7 @@ export const PlasmicLinkButton = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
+    freeBox: makeNodeComponent("freeBox"),
 
     // Metadata about props expected for PlasmicLinkButton
     internalVariantProps: PlasmicLinkButton__VariantProps,

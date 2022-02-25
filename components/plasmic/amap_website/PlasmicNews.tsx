@@ -33,6 +33,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Header from "../../Header"; // plasmic-import: dTKTvnUQf8/component
+import ArticleCard from "../../ArticleCard"; // plasmic-import: 6W6tImoBwf/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -45,12 +47,20 @@ export type PlasmicNews__VariantsArgs = {};
 type VariantPropType = keyof PlasmicNews__VariantsArgs;
 export const PlasmicNews__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicNews__ArgsType = {};
+export type PlasmicNews__ArgsType = {
+  leadArticle?: React.ReactNode;
+  articles?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicNews__ArgsType;
-export const PlasmicNews__ArgProps = new Array<ArgPropType>();
+export const PlasmicNews__ArgProps = new Array<ArgPropType>(
+  "leadArticle",
+  "articles"
+);
 
 export type PlasmicNews__OverridesType = {
   root?: p.Flex<"div">;
+  header?: p.Flex<typeof Header>;
   h1?: p.Flex<"h1">;
 };
 
@@ -69,6 +79,12 @@ function PlasmicNews__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
+        <title key="title">{"AMAP de la Goutte d'Eau - Actualités"}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={"AMAP de la Goutte d'Eau - Actualités"}
+        />
       </Head>
 
       <style>{`
@@ -91,6 +107,12 @@ function PlasmicNews__RenderFunc(props: {
             sty.root
           )}
         >
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
+          />
+
           <h1
             data-plasmic-name={"h1"}
             data-plasmic-override={overrides.h1}
@@ -101,8 +123,87 @@ function PlasmicNews__RenderFunc(props: {
               sty.h1
             )}
           >
-            {"Actus"}
+            {"Actualités"}
           </h1>
+
+          <div className={classNames(projectcss.all, sty.freeBox__hzcTe)}>
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__gZq4J)}>
+                {p.renderPlasmicSlot({
+                  defaultContents: (
+                    <ArticleCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.articleCard__dxnWj
+                      )}
+                      horizontal={true}
+                    />
+                  ),
+
+                  value: args.leadArticle
+                })}
+              </div>
+            ) : null}
+
+            <div className={classNames(projectcss.all, sty.freeBox__hifXe)}>
+              {p.renderPlasmicSlot({
+                defaultContents: (
+                  <React.Fragment>
+                    <ArticleCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.articleCard__j9SfL
+                      )}
+                      title={"Titre de l'article Super long lalalala"}
+                    />
+
+                    <ArticleCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.articleCard__isWU
+                      )}
+                    />
+
+                    <ArticleCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.articleCard__vw3Jj
+                      )}
+                    />
+
+                    <ArticleCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.articleCard___9R33Q
+                      )}
+                    />
+
+                    <ArticleCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.articleCard__pdq7
+                      )}
+                    />
+
+                    <ArticleCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.articleCard__hhdj
+                      )}
+                    />
+
+                    <ArticleCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.articleCard__xEMxz
+                      )}
+                    />
+                  </React.Fragment>
+                ),
+                value: args.articles
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -110,7 +211,8 @@ function PlasmicNews__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1"],
+  root: ["root", "header", "h1"],
+  header: ["header"],
   h1: ["h1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -118,6 +220,7 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  header: typeof Header;
   h1: "h1";
 };
 
@@ -178,6 +281,7 @@ export const PlasmicNews = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    header: makeNodeComponent("header"),
     h1: makeNodeComponent("h1"),
 
     // Metadata about props expected for PlasmicNews

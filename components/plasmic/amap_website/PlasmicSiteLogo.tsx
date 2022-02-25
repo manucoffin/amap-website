@@ -39,7 +39,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_amap_website.module.css"; // plasmic-import: 7CzphteDn95cERg7nN7EAF/projectcss
 import sty from "./PlasmicSiteLogo.module.css"; // plasmic-import: VyblBdnCPp/css
 
-import DropIcon from "./icons/PlasmicIcon__Drop"; // plasmic-import: RvQEfXJy0/icon
+import WaterDropFatIcon from "./icons/PlasmicIcon__WaterDropFat"; // plasmic-import: 6nNIVk6Ac/icon
 
 export type PlasmicSiteLogo__VariantMembers = {};
 
@@ -86,7 +86,7 @@ function PlasmicSiteLogo__RenderFunc(props: {
         sty.root
       )}
     >
-      <DropIcon
+      <WaterDropFatIcon
         data-plasmic-name={"svg"}
         data-plasmic-override={overrides.svg}
         className={classNames(projectcss.all, sty.svg)}
