@@ -1,11 +1,11 @@
-import { A } from "components/ui";
-import Link from "next/link";
+import Link from 'next/link';
+import { A } from 'components/ui';
 
-export const DesktopMenu = ({ ...props }) => {
+export const DesktopMenu = () => {
   return (
     <ul className="flex-row gap-12 items-stretch hidden h-full md:flex">
       <li>
-        <Link href="/actus">
+        <Link href="/actus" passHref>
           <A href="/actus">
             <span>Actus</span>
           </A>
@@ -13,19 +13,19 @@ export const DesktopMenu = ({ ...props }) => {
       </li>
 
       <li>
-        <Link href="/contrats">
+        <Link href="/contrats" passHref>
           <A href="/contrats">Contrats</A>
         </Link>
       </li>
 
       <li>
-        <Link href="/adherer">
+        <Link href="/adherer" passHref>
           <A href="/adherer">Adhérer</A>
         </Link>
       </li>
 
       <li>
-        <Link href="/contact">
+        <Link href="/contact" passHref>
           <A
             href="/contact"
             className="border p-2 border-gray-500 rounded hover:no-underline hover:border-blue-500"

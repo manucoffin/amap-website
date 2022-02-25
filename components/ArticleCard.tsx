@@ -1,12 +1,12 @@
-import * as React from "react";
+import * as React from 'react';
+import { HTMLElementRefOf } from '@plasmicapp/react-web';
+import clsx from 'clsx';
+import Image from 'next/image';
+import Link from 'next/link';
 import {
   PlasmicArticleCard,
   DefaultArticleCardProps,
-} from "./plasmic/amap_website/PlasmicArticleCard";
-import { HTMLElementRefOf } from "@plasmicapp/react-web";
-import Image from "next/image";
-import clsx from "clsx";
-import Link from "next/link";
+} from './plasmic/amap_website/PlasmicArticleCard';
 
 export interface ArticleCardProps extends DefaultArticleCardProps {
   thumbnailUrl: string;
@@ -15,7 +15,7 @@ export interface ArticleCardProps extends DefaultArticleCardProps {
 
 function ArticleCard_(
   { thumbnailUrl, slug, horizontal, ...props }: ArticleCardProps,
-  ref: HTMLElementRefOf<"div">
+  ref: HTMLElementRefOf<'div'>
 ) {
   return (
     <PlasmicArticleCard
@@ -23,11 +23,11 @@ function ArticleCard_(
       root={{ ref }}
       {...props}
       thumbnail={{
-        render: (props, Component) => (
+        render: (props) => (
           <div
-            className={clsx("w-full relative", {
-              "h-[300px] md:h-full": horizontal,
-              "h-[200px]": !horizontal,
+            className={clsx('w-full relative', {
+              'h-[300px] md:h-full': horizontal,
+              'h-[200px]': !horizontal,
             })}
           >
             <Image

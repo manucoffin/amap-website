@@ -1,10 +1,10 @@
-import matter, { GrayMatterFile } from "gray-matter";
-import path, { join } from "path";
-import fs from "fs";
-import { Article as NetlifyArticle } from "./netlify-types";
-import { getFilePaths, getSlugs } from "./backendUtils";
+import fs from 'fs';
+import path, { join } from 'path';
+import matter from 'gray-matter';
+import { getFilePaths, getSlugs } from './backendUtils';
+import { Article as NetlifyArticle } from './netlify-types';
 
-const ARTICLES_PATH = join(process.cwd(), "content/articles");
+const ARTICLES_PATH = join(process.cwd(), 'content/articles');
 
 export type Article = NetlifyArticle & {
   slug: string;
@@ -14,15 +14,15 @@ export type Article = NetlifyArticle & {
 export const getArticlesSlugs = (): string[] => getSlugs(ARTICLES_PATH);
 
 const getArticleData = async (filePath: string): Promise<Article> => {
-  const fileContent = fs.readFileSync(filePath, "utf-8");
+  const fileContent = fs.readFileSync(filePath, 'utf-8');
   const { data, content } = matter(fileContent);
 
-  const date = new Intl.DateTimeFormat("fr", {
-    dateStyle: "full",
+  const date = new Intl.DateTimeFormat('fr', {
+    dateStyle: 'full',
   }).format(data.date);
 
   const article = {
-    slug: path.basename(filePath, ".md"),
+    slug: path.basename(filePath, '.md'),
     content,
     ...(data as NetlifyArticle),
     date,
@@ -33,9 +33,7 @@ const getArticleData = async (filePath: string): Promise<Article> => {
 
 export const getAllArticles = async (): Promise<Article[]> => {
   const filePaths = getFilePaths(ARTICLES_PATH);
-  const articlesPromises = filePaths.map(
-    async (filePath) => await getArticleData(filePath)
-  );
+  const articlesPromises = filePaths.map(async (filePath) => await getArticleData(filePath));
 
   const articles = await Promise.all(articlesPromises);
 

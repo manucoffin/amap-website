@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { HTMLElementRefOf } from '@plasmicapp/react-web';
 import { LinkWrapper } from 'components';
 import { Footer } from 'lib/netlify-types';
 import { PlasmicFooter, DefaultFooterProps } from './plasmic/amap_website/PlasmicFooter';
@@ -8,7 +7,7 @@ export interface FooterProps extends DefaultFooterProps {
   data: Footer;
 }
 
-function Footer_({ data, ...props }: FooterProps, ref: HTMLElementRefOf<'div'>) {
+function Footer_({ data, ...props }: FooterProps) {
   return (
     <PlasmicFooter
       {...props}

@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { PlasmicNews } from '../components/plasmic/amap_website/PlasmicNews';
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import ArticleCard from 'components/ArticleCard';
 import { MainLayout } from 'layouts';
+import { Article, getAllArticles } from 'lib/articles';
 import { getFooter } from 'lib/footer';
 import { Footer } from 'lib/netlify-types';
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
-import { Article, getAllArticles } from 'lib/articles';
-import ArticleCard from 'components/ArticleCard';
 import { truncateText } from 'lib/utils';
+import { PlasmicNews } from '../components/plasmic/amap_website/PlasmicNews';
 
 const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   articles,

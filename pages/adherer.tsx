@@ -15,7 +15,7 @@ const MembershipPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> =
       <PlasmicMembership
         key={'PlasmicMembership'}
         downloadButton={{
-          render: (props, Component) => (
+          render: () => (
             <a href={membershipData.documentPath} download className="mb-[96px]">
               <span className="font-medium text-xl text-center border border-gray-500 hover:border-blue-500  flex font-serif transition py-2 px-3 rounded hover:text-blue-500">
                 <DownloadIcon className="w-6 h-6" /> Télécharger le contrat d&apos;adhésion

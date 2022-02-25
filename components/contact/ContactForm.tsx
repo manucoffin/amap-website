@@ -1,12 +1,10 @@
-import * as React from "react";
-import { DefaultContactFormProps } from "../plasmic/amap_website/PlasmicContactForm";
-import { HTMLElementRefOf } from "@plasmicapp/react-web";
-import { useState } from "react";
-import { SubmitHandler, useForm } from "react-hook-form";
-import { InputContainer } from "./InputContainer";
-import { Button } from "components/ui";
+import * as React from 'react';
+import { useState } from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { Button } from 'components/ui';
+import { InputContainer } from './InputContainer';
 
-type RequestState = "IDLE" | "LOADING" | "SUCCESS" | "ERROR";
+type RequestState = 'IDLE' | 'LOADING' | 'SUCCESS' | 'ERROR';
 
 type FormValues = {
   name: string;
@@ -14,43 +12,39 @@ type FormValues = {
   message: string;
 };
 
-export interface ContactFormProps extends DefaultContactFormProps {}
-
-function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
+function ContactForm_() {
   const encode = (data: any) => {
     return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
   };
 
-  const [requestState, setRequestState] = useState<RequestState>("IDLE");
+  const [requestState, setRequestState] = useState<RequestState>('IDLE');
 
   const {
     register,
     formState: { errors },
     handleSubmit,
     reset,
-  } = useForm<FormValues>({ mode: "onSubmit" });
+  } = useForm<FormValues>({ mode: 'onSubmit' });
 
   const onSubmit: SubmitHandler<FormValues> = async (data, e) => {
     e.preventDefault();
-    setRequestState("LOADING");
+    setRequestState('LOADING');
 
     try {
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...data }),
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...data }),
       });
 
-      if (!response.ok) throw new Error("An error occured");
+      if (!response.ok) throw new Error('An error occured');
 
-      setRequestState("SUCCESS");
-      reset({ name: "", email: "", message: "" });
+      setRequestState('SUCCESS');
+      reset({ name: '', email: '', message: '' });
     } catch (e) {
-      setRequestState("ERROR");
+      setRequestState('ERROR');
     }
   };
 
@@ -66,12 +60,10 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
 
-      {requestState === "SUCCESS" ? (
+      {requestState === 'SUCCESS' ? (
         <div className="h-[400px] flex items-center bg-contain bg-no-repeat bg-center">
           <div className="flex flex-col items-center w-full">
-            <span className="w-full text-center justify-center text-3xl">
-              Merci !
-            </span>
+            <span className="w-full text-center justify-center text-3xl">Merci !</span>
 
             <span className="text-center">
               On revient vers vous
@@ -84,18 +76,15 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
         <>
           <InputContainer label="Votre nom" error={errors.name?.message}>
             <input
-              {...register("name", { required: "Ce champs est requis" })}
+              {...register('name', { required: 'Ce champs est requis' })}
               className="block w-full bg-white text-base px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none focus:outline-none focus:border focus:border-blue-500"
               type="text"
             />
           </InputContainer>
 
-          <InputContainer
-            label="Votre adresse email"
-            error={errors.email?.message}
-          >
+          <InputContainer label="Votre adresse email" error={errors.email?.message}>
             <input
-              {...register("email", { required: "Ce champs est requis" })}
+              {...register('email', { required: 'Ce champs est requis' })}
               className="block w-full bg-white text-base px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none focus:outline-none focus:border focus:border-blue-500"
               type="email"
             />
@@ -103,7 +92,7 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
 
           <InputContainer label="Message" error={errors.message?.message}>
             <textarea
-              {...register("message", { required: "Ce champs est requis" })}
+              {...register('message', { required: 'Ce champs est requis' })}
               className="block w-full bg-white text-base h-48 px-4 py-3 leading-tight text-gray-700 border border-white rounded appearance-none resize-none no-resize focus:outline-none focus:border focus:border-blue-500"
             />
           </InputContainer>
@@ -112,7 +101,7 @@ function ContactForm_(props: ContactFormProps, ref: HTMLElementRefOf<"img">) {
             size="large"
             className="grid place-content-center"
             type="submit"
-            loading={requestState === "LOADING"}
+            loading={requestState === 'LOADING'}
           >
             <span>Envoyer</span>
           </Button>

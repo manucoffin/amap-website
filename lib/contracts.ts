@@ -1,10 +1,10 @@
-import matter from "gray-matter";
-import path, { join } from "path";
-import fs from "fs";
-import { Contract as NetlifyContract } from "./netlify-types";
-import { getFilePaths, getSlugs } from "./backendUtils";
+import fs from 'fs';
+import path, { join } from 'path';
+import matter from 'gray-matter';
+import { getFilePaths, getSlugs } from './backendUtils';
+import { Contract as NetlifyContract } from './netlify-types';
 
-const CONTRACTS_PATH = join(process.cwd(), "content/contracts");
+const CONTRACTS_PATH = join(process.cwd(), 'content/contracts');
 
 export type Contract = NetlifyContract & { updatedAt: string; slug: string };
 
@@ -12,12 +12,12 @@ export const getContractsSlugs = (): string[] => getSlugs(CONTRACTS_PATH);
 
 const getContractData = (filePath: string): Contract => {
   const fileStats = fs.statSync(filePath);
-  const fileContent = fs.readFileSync(filePath, "utf-8");
+  const fileContent = fs.readFileSync(filePath, 'utf-8');
   const { data } = matter(fileContent);
 
   const contract = {
     updatedAt: fileStats.mtime.toString(),
-    slug: path.basename(filePath, ".md"),
+    slug: path.basename(filePath, '.md'),
     ...(data as NetlifyContract),
   };
 

@@ -1,11 +1,9 @@
-import * as React from "react";
+import * as React from 'react';
+import Image from 'next/image';
 import {
   PlasmicContractCard,
   DefaultContractCardProps,
-} from "./plasmic/amap_website/PlasmicContractCard";
-import { HTMLElementRefOf } from "@plasmicapp/react-web";
-import Image from "next/image";
-import Link from "next/link";
+} from './plasmic/amap_website/PlasmicContractCard';
 
 export interface ContractCardProps extends DefaultContractCardProps {
   title: string;
@@ -13,17 +11,14 @@ export interface ContractCardProps extends DefaultContractCardProps {
   imageUrl: string;
 }
 
-function ContractCard_(
-  { title, imageUrl, slug, ...props }: ContractCardProps,
-  ref: HTMLElementRefOf<"div">
-) {
+function ContractCard_({ title, imageUrl, slug, ...props }: ContractCardProps) {
   return (
     <PlasmicContractCard
       {...props}
       href={`/contrats/${slug}`}
       title={title}
       image={{
-        render: (props, Component) => (
+        render: () => (
           <Image
             src={imageUrl}
             alt={`Photo de ${title}`}
