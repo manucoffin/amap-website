@@ -23,6 +23,7 @@ module.exports = {
         alphabetize: { order: 'asc', caseInsensitive: true },
       },
     ],
+    '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/ban-ts-comment': [
       'off',
       {

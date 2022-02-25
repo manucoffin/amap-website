@@ -1,5 +1,7 @@
-const optimizedImages = require('next-optimized-images');
+// import withPlugins from 'next-compose-plugins';
+// import optimizedImages from 'next-optimized-images';
 const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
 
 const nextConfig = {
   reactStrictMode: true,
