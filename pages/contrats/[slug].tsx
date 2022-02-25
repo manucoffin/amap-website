@@ -42,7 +42,7 @@ const ContractPage: NextPage<
             </a>
           ),
         }}
-        description={contractData.description}
+        description={contractData?.description}
       />
     </MainLayout>
   );
