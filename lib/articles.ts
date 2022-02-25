@@ -19,9 +19,6 @@ const getArticleData = async (filePath: string): Promise<Article> => {
 
   const date = new Intl.DateTimeFormat("fr", {
     dateStyle: "full",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
   }).format(data.date);
 
   const article = {

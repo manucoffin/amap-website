@@ -21,7 +21,6 @@ function Footer_(
   return (
     <PlasmicFooter
       {...props}
-      contactFormLink={{ render: LinkWrapper }}
       homeLink={{ render: LinkWrapper }}
       sitemapLink={{ render: LinkWrapper }}
       legalLink={{ render: LinkWrapper }}
@@ -29,9 +28,21 @@ function Footer_(
       address={data.address}
       postCode={data.postcode}
       city={data.city}
-      phoneNumber={data.phone}
-      email={data.email}
       schedule={data.schedule}
+      email={{
+        render: (props, Component) => (
+          <a href={`mailto:${data.email}`} className={props.className}>
+            {data.email}
+          </a>
+        ),
+      }}
+      phone={{
+        render: (props, Component) => (
+          <a href={`tel:${data.phone}`} className={props.className}>
+            {data.phone}
+          </a>
+        ),
+      }}
     />
   );
 }

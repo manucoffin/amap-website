@@ -9,6 +9,7 @@
   align-items: center;
   padding-right: var(--token-eReirMpIv);
   padding-left: var(--token-eReirMpIv);
+  background: url("/plasmic/amap_website/images/concreteTexture.png") top 50% left 50% / contain repeat;
   min-width: 0;
   min-height: 0;
 }

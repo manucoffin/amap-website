@@ -23,7 +23,7 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           <ArticleCard
             horizontal
             title={truncateText(mainArticle.title, 60)}
-            date={mainArticle.date}
+            date={`Publié le ${mainArticle.date}`}
             abstract={truncateText(mainArticle.content, 100)}
             thumbnailUrl={mainArticle.thumbnail}
             slug={mainArticle.slug}
@@ -33,7 +33,7 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           <ArticleCard
             key={article.slug}
             title={truncateText(article.title, 50)}
-            date={article.date}
+            date={`Publié le ${article.date}`}
             abstract={truncateText(article.content, 80)}
             thumbnailUrl={article.thumbnail}
             slug={article.slug}
