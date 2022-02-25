@@ -25,21 +25,21 @@ function Footer_(
       sitemapLink={{ render: LinkWrapper }}
       legalLink={{ render: LinkWrapper }}
       creditsLink={{ render: LinkWrapper }}
-      address={data.address}
-      postCode={data.postcode}
-      city={data.city}
-      schedule={data.schedule}
+      address={data?.address}
+      postCode={data?.postcode}
+      city={data?.city}
+      schedule={data?.schedule}
       email={{
         render: (props, Component) => (
-          <a href={`mailto:${data.email}`} className={props.className}>
-            {data.email}
+          <a href={`mailto:${data?.email}`} className={props.className}>
+            {data?.email}
           </a>
         ),
       }}
       phone={{
         render: (props, Component) => (
-          <a href={`tel:${data.phone}`} className={props.className}>
-            {data.phone}
+          <a href={`tel:${data?.phone}`} className={props.className}>
+            {data?.phone}
           </a>
         ),
       }}
