@@ -32,7 +32,7 @@ function ArticleCard_(
           >
             <Image
               src={thumbnailUrl}
-              alt={"Alt text"}
+              alt={`Photo de ${props.title}`}
               layout="fill"
               objectFit="cover"
             />

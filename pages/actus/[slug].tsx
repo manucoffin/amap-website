@@ -27,6 +27,7 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             <Component {...props}>
               <Image
                 src={articleData.thumbnail}
+                alt={`Photo de ${articleData.title}`}
                 layout="fill"
                 objectFit="cover"
                 quality={60}

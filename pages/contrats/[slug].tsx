@@ -19,13 +19,13 @@ const ContractPage: NextPage<
   return (
     <MainLayout footerData={footerData}>
       <PlasmicContract
-        title={`Contrat ${contractData.title}`}
+        title={`Contrat ${contractData?.title}`}
         image={{
           render: (props, Component) => (
             <div className="mb-10">
               <Image
-                src={contractData.imagePath}
-                alt={`Photo de ${contractData.title}`}
+                src={contractData?.imagePath}
+                alt={`Photo de ${contractData?.title}`}
                 width={300}
                 height={300}
                 className="rounded-full"
@@ -35,9 +35,9 @@ const ContractPage: NextPage<
         }}
         downloadButton={{
           render: (props, Component) => (
-            <a href={contractData.documentPath} download className="mb-[96px]">
-              <span className="text-3xl text-center underline-offset-4 flex items-center font-sans transition py-3 px-4 rounded-xl hover:text-blue-500 hover:underline">
-                <DownloadIcon className="w-8 h-8" /> Télécharger le contrat
+            <a href={contractData?.documentPath} download className="mb-[96px]">
+              <span className="font-medium text-xl text-center border border-gray-500 hover:border-blue-500  flex font-serif transition py-2 px-3 rounded hover:text-blue-500">
+                <DownloadIcon className="w-6 h-6" /> Télécharger le contrat
               </span>
             </a>
           ),
