@@ -63,6 +63,14 @@
   --plasmic-token-amatic-sc: var(--token-q1R6Co1cF);
   --token-KpVr-3FRg: Dosis;
   --plasmic-token-dosis: var(--token-KpVr-3FRg);
+  --token-1MFYUnF5I: var(--token-tyDKxkI7L);
+  --plasmic-token-unnamed-style-token: var(--token-1MFYUnF5I);
+  --token-1MFYUnF5I: var(--token-tyDKxkI7L);
+  --plasmic-token-unnamed-style-token: var(--token-1MFYUnF5I);
+  --token-tyDKxkI7L: #797979;
+  --plasmic-token-semi-gray: var(--token-tyDKxkI7L);
+  --token-tyDKxkI7L: #797979;
+  --plasmic-token-semi-gray: var(--token-tyDKxkI7L);
 }
 
 .plasmic_default_styles {

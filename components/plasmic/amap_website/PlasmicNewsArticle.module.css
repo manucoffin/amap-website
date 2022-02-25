@@ -24,7 +24,7 @@
   justify-content: center;
   width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: 680px;
   min-width: 0;
   margin: 0px 0px var(--token-7R6fY6Np7);
 }
@@ -55,7 +55,7 @@
 .slotTargetPublicationDate {
   font-family: var(--token-ongjxvNd3);
   font-weight: 400;
-  color: #797979;
+  color: var(--token-1MFYUnF5I);
 }
 .cover {
   display: block;

@@ -6,18 +6,38 @@ import { Footer } from "lib/netlify-types";
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import { Article, getAllArticles } from "lib/articles";
 import Link from "next/link";
+import ArticleCard from "components/ArticleCard";
+import { truncateText } from "lib/utils";
 
 const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   articles,
   footerData,
 }) => {
+  const mainArticle = articles[0];
+  const previousArticles = articles.slice(1);
+
   return (
     <MainLayout footerData={footerData}>
       <PlasmicNews
-        articles={articles.map((article) => (
-          <Link href={`/actus/${article.slug}`} passHref>
-            <a>{article.title}</a>
-          </Link>
+        leadArticle={
+          <ArticleCard
+            horizontal
+            title={truncateText(mainArticle.title, 60)}
+            date={mainArticle.date}
+            abstract={truncateText(mainArticle.content, 100)}
+            thumbnailUrl={mainArticle.thumbnail}
+            slug={mainArticle.slug}
+          />
+        }
+        articles={previousArticles.map((article) => (
+          <ArticleCard
+            key={article.slug}
+            title={truncateText(article.title, 50)}
+            date={article.date}
+            abstract={truncateText(article.content, 80)}
+            thumbnailUrl={article.thumbnail}
+            slug={article.slug}
+          />
         ))}
       />
     </MainLayout>

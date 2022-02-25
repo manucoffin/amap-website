@@ -1,8 +1,8 @@
-import matter, { GrayMatterFile } from "gray-matter";
+import matter from "gray-matter";
 import path, { join } from "path";
 import fs from "fs";
 import { Contract as NetlifyContract } from "./netlify-types";
-import { getFilePaths, getSlugs } from "./utils";
+import { getFilePaths, getSlugs } from "./backendUtils";
 
 const CONTRACTS_PATH = join(process.cwd(), "content/contracts");
 
