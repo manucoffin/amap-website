@@ -1,22 +1,14 @@
-import * as React from "react";
-import {
-  PlasmicTextInput,
-  DefaultTextInputProps
-} from "./plasmic/amap_website/PlasmicTextInput";
-import { TextInputRef } from "@plasmicapp/react-web";
+import * as React from 'react';
+import { TextInputRef } from '@plasmicapp/react-web';
+import { PlasmicTextInput, DefaultTextInputProps } from './plasmic/amap_website/PlasmicTextInput';
 
-interface TextInputProps extends DefaultTextInputProps {}
-
-function TextInput_(props: TextInputProps, ref: TextInputRef) {
-  const { plasmicProps } = PlasmicTextInput.useBehavior<TextInputProps>(
-    props,
-    ref
-  );
+function TextInput_(props: DefaultTextInputProps, ref: TextInputRef) {
+  const { plasmicProps } = PlasmicTextInput.useBehavior<DefaultTextInputProps>(props, ref);
   return <PlasmicTextInput {...plasmicProps} />;
 }
 
 const TextInput = React.forwardRef(TextInput_);
 
 export default Object.assign(TextInput, {
-  __plumeType: "text-input"
+  __plumeType: 'text-input',
 });

@@ -24,7 +24,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/ban-ts-comment': [
-      2,
+      'off',
       {
         'ts-expect-error': 'allow-with-description',
         minimumDescriptionLength: 3,
