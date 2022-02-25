@@ -18,6 +18,7 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <MainLayout footerData={footerData}>
       <PlasmicNews
+        key={'plasmicNews'}
         leadArticle={
           <ArticleCard
             horizontal
