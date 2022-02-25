@@ -19,6 +19,7 @@ function Footer_(
   ref: HTMLElementRefOf<"div">
 ) {
   return (
+    
     <PlasmicFooter
       {...props}
       homeLink={{ render: LinkWrapper }}
