@@ -7,9 +7,14 @@ import { Footer } from "./netlify-types";
 const FOOTER_PATH = join(process.cwd(), "content/footer.md");
 
 export const getFooter = (): Footer => {
-  const fileContents = fs.readFileSync(FOOTER_PATH, "utf-8");
-  const { data } = matter(fileContents);
-  const footer = data as Footer;
+  try {
+    const fileContents = fs.readFileSync(FOOTER_PATH, "utf-8");
+    const { data } = matter(fileContents);
+    const footer = data as Footer;
 
-  return { ...footer };
+    return { ...footer };
+  } catch (e) {
+    console.log(e);
+    throw e;
+  }
 };
