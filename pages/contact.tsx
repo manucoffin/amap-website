@@ -1,12 +1,10 @@
-import { PlasmicContact } from "../components/plasmic/amap_website/PlasmicContact";
-import { getFooter } from "lib/footer";
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
-import { Footer } from "lib/netlify-types";
-import { MainLayout } from "layouts";
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import { MainLayout } from 'layouts';
+import { getFooter } from 'lib/footer';
+import { Footer } from 'lib/netlify-types';
+import { PlasmicContact } from '../components/plasmic/amap_website/PlasmicContact';
 
-const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  footerData,
-}) => {
+const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ footerData }) => {
   return (
     <MainLayout footerData={footerData} minimalFooter>
       <PlasmicContact

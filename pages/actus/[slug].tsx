@@ -1,17 +1,12 @@
-import { MainLayout } from "layouts";
-import { getFooter } from "lib/footer";
-import { Footer } from "lib/netlify-types";
-import Image from "next/image";
-import {
-  GetStaticPaths,
-  GetStaticProps,
-  InferGetStaticPropsType,
-  NextPage,
-} from "next";
-import * as React from "react";
-import { PlasmicNewsArticle } from "../../components/plasmic/amap_website/PlasmicNewsArticle";
-import { Article, getArticle, getArticlesSlugs } from "lib/articles";
-import ReactMarkdown from "react-markdown";
+import * as React from 'react';
+import ReactMarkdown from 'react-markdown';
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import Image from 'next/image';
+import { MainLayout } from 'layouts';
+import { Article, getArticle, getArticlesSlugs } from 'lib/articles';
+import { getFooter } from 'lib/footer';
+import { Footer } from 'lib/netlify-types';
+import { PlasmicNewsArticle } from '../../components/plasmic/amap_website/PlasmicNewsArticle';
 
 const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footerData,

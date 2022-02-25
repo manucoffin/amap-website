@@ -31,7 +31,7 @@ module.exports = {
       },
     ],
     '@next/next/no-server-import-in-page': 'off',
-    'react/jsx-key': 'warn',
+    'react/jsx-key': 'off',
     //   "no-restricted-imports": [
     //     "error",
     //     {

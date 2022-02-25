@@ -1,21 +1,22 @@
-import ContractCard from "components/ContractCard";
-import { MainLayout } from "layouts";
-import { Contract, getAllContracts } from "lib/contracts";
-import { getFooter } from "lib/footer";
-import { Footer } from "lib/netlify-types";
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
-import * as React from "react";
-import { useState } from "react";
-import { PlasmicContracts } from "../components/plasmic/amap_website/PlasmicContracts";
+import * as React from 'react';
+import { useState } from 'react';
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import ContractCard from 'components/ContractCard';
+import { MainLayout } from 'layouts';
+import { Contract, getAllContracts } from 'lib/contracts';
+import { getFooter } from 'lib/footer';
+import { Footer } from 'lib/netlify-types';
+import { PlasmicContracts } from '../components/plasmic/amap_website/PlasmicContracts';
 
-const ContractsPage: NextPage<
-  InferGetStaticPropsType<typeof getStaticProps>
-> = ({ contracts, footerData }) => {
+const ContractsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  contracts,
+  footerData,
+}) => {
   function filterContracts(contract: Contract) {
     return contract.title.toLowerCase().includes(filter.toLowerCase());
   }
 
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState('');
 
   return (
     <MainLayout footerData={footerData}>
