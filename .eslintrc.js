@@ -30,6 +30,7 @@ module.exports = {
         minimumDescriptionLength: 3,
       },
     ],
+    'react/jsx-key': [false],
     '@next/next/no-server-import-in-page': 'off',
     //   "no-restricted-imports": [
     //     "error",

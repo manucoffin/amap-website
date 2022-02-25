@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { A } from "components/ui";
+import Link from 'next/link';
+import { A } from 'components/ui';
 
 export default function Custom404() {
   return (
@@ -159,8 +159,7 @@ export default function Custom404() {
           Page Introuvable
         </h1>
         <p className="text-center mb-6 text-xl">
-          Désolé, il semblerait que la page que vous recherchez n&apos;existe
-          pas.
+          Désolé, il semblerait que la page que vous recherchez n&apos;existe pas.
         </p>
         <Link href="/" passHref>
           <A>

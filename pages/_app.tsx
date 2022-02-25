@@ -1,6 +1,6 @@
-import "../styles/global.css";
-import { AppProps } from "next/app";
-import { PlasmicRootProvider } from "@plasmicapp/react-web";
+import '../styles/global.css';
+import { PlasmicRootProvider } from '@plasmicapp/react-web';
+import { AppProps } from 'next/app';
 
 function App({ Component, pageProps }: AppProps) {
   return (
