@@ -1,6 +1,4 @@
 backend:
-  # Uncomment these lines to make the backend work locally
-  # name: github
   name: git-gateway
   repo: 'manucoffin/amap-website'
   branch: main
