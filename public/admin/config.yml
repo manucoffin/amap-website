@@ -1,9 +1,9 @@
 backend:
   # Uncomment these lines to make the backend work locally
   # name: github
-  # repo: "Teide-Technologies/amap-website"
-  # branch: main
   name: git-gateway
+  repo: 'manucoffin/amap-website'
+  branch: main
   identity_url: 'https://amap-goutte-eau.netlify.app/.netlify/identity'
   gateway_url: 'https://amap-goutte-eau.netlify.app/.netlify/git'
 cms_manual_init: true
