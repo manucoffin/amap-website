@@ -11,7 +11,12 @@ const LegalPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   legalText,
 }) => {
   return (
-    <MainLayout footerData={footerData} minimalFooter>
+    <MainLayout
+      title="Mentions légales"
+      description="Mentions légales du site de l'AMAP de la Goutte d'Eau"
+      footerData={footerData}
+      minimalFooter
+    >
       <PlasmicLegal
         content={{
           render: (props, Component) => (

@@ -85,8 +85,6 @@ function PlasmicMembership__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{"AMAP de la Goutte d'Eau - Adhérer"}</title>
-        <meta key="og:title" property="og:title" content={"AMAP de la Goutte d'Eau - Adhérer"} />
       </Head>
 
       <style>{`

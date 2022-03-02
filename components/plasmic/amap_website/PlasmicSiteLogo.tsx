@@ -40,8 +40,6 @@ import '@plasmicapp/react-web/lib/plasmic.css';
 import projectcss from './plasmic_amap_website.module.css'; // plasmic-import: 7CzphteDn95cERg7nN7EAF/projectcss
 import sty from './PlasmicSiteLogo.module.css'; // plasmic-import: VyblBdnCPp/css
 
-import WaterDropFatIcon from './icons/PlasmicIcon__WaterDropFat'; // plasmic-import: 6nNIVk6Ac/icon
-
 export type PlasmicSiteLogo__VariantMembers = {};
 
 export type PlasmicSiteLogo__VariantsArgs = {};
@@ -54,8 +52,7 @@ export const PlasmicSiteLogo__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicSiteLogo__OverridesType = {
   root?: p.Flex<'div'>;
-  svg?: p.Flex<'svg'>;
-  text?: p.Flex<'div'>;
+  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultSiteLogoProps {
@@ -87,35 +84,38 @@ function PlasmicSiteLogo__RenderFunc(props: {
         sty.root
       )}
     >
-      <WaterDropFatIcon
-        data-plasmic-name={'svg'}
-        data-plasmic-override={overrides.svg}
-        className={classNames(projectcss.all, sty.svg)}
-        role={'img'}
+      <p.PlasmicImg
+        data-plasmic-name={'img'}
+        data-plasmic-override={overrides.img}
+        alt={''}
+        className={classNames(sty.img)}
+        displayHeight={'auto' as const}
+        displayMaxHeight={'none' as const}
+        displayMaxWidth={'100%' as const}
+        displayMinHeight={'0' as const}
+        displayMinWidth={'0' as const}
+        displayWidth={'auto' as const}
+        loading={'lazy' as const}
+        src={{
+          src: '/plasmic/amap_website/images/logo.svg',
+          fullWidth: 300,
+          fullHeight: 39,
+          aspectRatio: 7.744874,
+        }}
       />
-
-      <div
-        data-plasmic-name={'text'}
-        data-plasmic-override={overrides.text}
-        className={classNames(projectcss.all, projectcss.__wab_text, sty.text)}
-      >
-        {"AMAP de la Goutte d'Eau"}
-      </div>
     </p.Stack>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ['root', 'svg', 'text'],
-  svg: ['svg'],
-  text: ['text'],
+  root: ['root', 'img'],
+  img: ['img'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> = typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: 'div';
-  svg: 'svg';
-  text: 'div';
+  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = 'variants' | 'args' | 'overrides';
@@ -170,8 +170,7 @@ export const PlasmicSiteLogo = Object.assign(
   makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    svg: makeNodeComponent('svg'),
-    text: makeNodeComponent('text'),
+    img: makeNodeComponent('img'),
 
     // Metadata about props expected for PlasmicSiteLogo
     internalVariantProps: PlasmicSiteLogo__VariantProps,

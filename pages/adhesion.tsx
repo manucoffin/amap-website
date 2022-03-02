@@ -11,7 +11,11 @@ const MembershipPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> =
   membershipData,
 }) => {
   return (
-    <MainLayout footerData={footerData}>
+    <MainLayout
+      title="Adhésion"
+      description="Page d'adhésion de l'AMAP de la Goutte d'Eau"
+      footerData={footerData}
+    >
       <PlasmicMembership
         key={'PlasmicMembership'}
         downloadButton={{

@@ -23,22 +23,14 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: var(--token-xmbQtwPzW);
 }
-.svg {
+.img {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  color: var(--token-WNBJHso-i);
-  width: 26px;
-  height: 26px;
-  flex-shrink: 0;
 }
-.text {
-  position: relative;
-  height: auto;
-  max-width: 800px;
-  color: var(--token-WNBJHso-i);
-  font-family: 'Dosis', sans-serif;
-  font-weight: 800;
-  align-self: center;
-  font-size: 20px;
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
 }

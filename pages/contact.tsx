@@ -6,7 +6,12 @@ import { PlasmicContact } from '../components/plasmic/amap_website/PlasmicContac
 
 const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ footerData }) => {
   return (
-    <MainLayout footerData={footerData} minimalFooter>
+    <MainLayout
+      title="Contact"
+      description="Page de contact de l'AMAP de la Goutte d'Eau"
+      footerData={footerData}
+      minimalFooter
+    >
       <PlasmicContact
         email={{
           render: (props) => (

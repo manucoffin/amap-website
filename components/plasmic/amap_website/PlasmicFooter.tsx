@@ -42,8 +42,6 @@ import '@plasmicapp/react-web/lib/plasmic.css';
 import projectcss from './plasmic_amap_website.module.css'; // plasmic-import: 7CzphteDn95cERg7nN7EAF/projectcss
 import sty from './PlasmicFooter.module.css'; // plasmic-import: OWIENifDVhJ/css
 
-import DropIcon from './icons/PlasmicIcon__Drop'; // plasmic-import: RvQEfXJy0/icon
-
 export type PlasmicFooter__VariantMembers = {
   minimal: 'minimal';
 };
@@ -73,8 +71,7 @@ export const PlasmicFooter__ArgProps = new Array<ArgPropType>(
 export type PlasmicFooter__OverridesType = {
   footer?: p.Flex<'footer'>;
   columns?: p.Flex<'div'>;
-  logo?: p.Flex<'div'>;
-  svg?: p.Flex<'svg'>;
+  img?: p.Flex<typeof p.PlasmicImg>;
   phone?: p.Flex<'div'>;
   email?: p.Flex<'div'>;
   homeLink?: p.Flex<'a'> & Partial<LinkProps>;
@@ -132,32 +129,25 @@ function PlasmicFooter__RenderFunc(props: {
           })}
         >
           <div className={classNames(projectcss.all, sty.column__haRo)}>
-            <div
-              data-plasmic-name={'logo'}
-              data-plasmic-override={overrides.logo}
-              className={classNames(projectcss.all, sty.logo)}
-            >
-              <DropIcon
-                data-plasmic-name={'svg'}
-                data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
-                role={'img'}
-              />
-
-              <div className={classNames(projectcss.all, sty.freeBox__pT7Tv)}>
-                <div className={classNames(projectcss.all, projectcss.__wab_text, sty.text__zrsXw)}>
-                  {'AMAP'}
-                </div>
-
-                <div className={classNames(projectcss.all, projectcss.__wab_text, sty.text__dDwWv)}>
-                  {'de la'}
-                </div>
-
-                <div className={classNames(projectcss.all, projectcss.__wab_text, sty.text___4BdA)}>
-                  {"Goutte d'Eau"}
-                </div>
-              </div>
-            </div>
+            <p.PlasmicImg
+              data-plasmic-name={'img'}
+              data-plasmic-override={overrides.img}
+              alt={''}
+              className={classNames(sty.img)}
+              displayHeight={'auto' as const}
+              displayMaxHeight={'none' as const}
+              displayMaxWidth={'300px' as const}
+              displayMinHeight={'0' as const}
+              displayMinWidth={'0' as const}
+              displayWidth={'75%' as const}
+              loading={'lazy' as const}
+              src={{
+                src: '/plasmic/amap_website/images/logoVertical.svg',
+                fullWidth: 295,
+                fullHeight: 150,
+                aspectRatio: 1.963375,
+              }}
+            />
           </div>
 
           <div className={classNames(projectcss.all, sty.column__mFf3K)}>
@@ -329,8 +319,7 @@ const PlasmicDescendants = {
   footer: [
     'footer',
     'columns',
-    'logo',
-    'svg',
+    'img',
     'phone',
     'email',
     'homeLink',
@@ -339,9 +328,8 @@ const PlasmicDescendants = {
     'privacyPolicyLink',
     'link',
   ],
-  columns: ['columns', 'logo', 'svg', 'phone', 'email'],
-  logo: ['logo', 'svg'],
-  svg: ['svg'],
+  columns: ['columns', 'img', 'phone', 'email'],
+  img: ['img'],
   phone: ['phone'],
   email: ['email'],
   homeLink: ['homeLink'],
@@ -355,8 +343,7 @@ type DescendantsType<T extends NodeNameType> = typeof PlasmicDescendants[T][numb
 type NodeDefaultElementType = {
   footer: 'footer';
   columns: 'div';
-  logo: 'div';
-  svg: 'svg';
+  img: typeof p.PlasmicImg;
   phone: 'div';
   email: 'div';
   homeLink: 'a';
@@ -419,8 +406,7 @@ export const PlasmicFooter = Object.assign(
   {
     // Helper components rendering sub-elements
     columns: makeNodeComponent('columns'),
-    logo: makeNodeComponent('logo'),
-    svg: makeNodeComponent('svg'),
+    img: makeNodeComponent('img'),
     phone: makeNodeComponent('phone'),
     email: makeNodeComponent('email'),
     homeLink: makeNodeComponent('homeLink'),

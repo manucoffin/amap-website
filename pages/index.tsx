@@ -6,7 +6,11 @@ import { Footer } from 'lib/netlify-types';
 
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ footerData }) => {
   return (
-    <MainLayout footerData={footerData}>
+    <MainLayout
+      title="Accueil"
+      description="Page d'accueil du site de l'AMAP de la Goutte d'Eau"
+      footerData={footerData}
+    >
       <PlasmicHomepage />
     </MainLayout>
   );

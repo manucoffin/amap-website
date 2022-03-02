@@ -12,7 +12,12 @@ const PrivacyPolicyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>
   privacyPolicyText,
 }) => {
   return (
-    <MainLayout footerData={footerData} minimalFooter>
+    <MainLayout
+      title="Politique de confidentialité"
+      description="Politique de confidentialité du site de l'AMAP de la Goutte d'Eau"
+      footerData={footerData}
+      minimalFooter
+    >
       <PlasmicPrivacyPolicy
         content={{
           render: (props, Component) => (

@@ -13,7 +13,11 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
   contractData,
 }) => {
   return (
-    <MainLayout footerData={footerData}>
+    <MainLayout
+      title={`Contrat ${contractData?.title}`}
+      description={`Page de téléchargement du contrat ${contractData?.title}`}
+      footerData={footerData}
+    >
       <PlasmicContract
         title={`Contrat ${contractData?.title}`}
         image={{

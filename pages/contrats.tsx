@@ -19,7 +19,11 @@ const ContractsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = 
   const [filter, setFilter] = useState('');
 
   return (
-    <MainLayout footerData={footerData}>
+    <MainLayout
+      title="Contrats"
+      description="Liste des contrats de l'AMAP de la Goutte d'Eau"
+      footerData={footerData}
+    >
       <PlasmicContracts
         searchInput={{ onChange: (e) => setFilter(e.target.value) }}
         contracts={contracts.filter(filterContracts).map((contract) => (
