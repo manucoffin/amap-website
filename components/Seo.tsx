@@ -1,10 +1,4 @@
-import {
-  NextSeo,
-  NextSeoProps,
-  DefaultSeo as NextDefaultSeo,
-  DefaultSeoProps,
-  SocialProfileJsonLd,
-} from 'next-seo'; // eslint-disable-line no-restricted-imports
+import { NextSeo, NextSeoProps, DefaultSeo as NextDefaultSeo, DefaultSeoProps } from 'next-seo'; // eslint-disable-line no-restricted-imports
 
 export const DefaultSeo = (props: DefaultSeoProps) => {
   return (
@@ -25,16 +19,6 @@ export const DefaultSeo = (props: DefaultSeoProps) => {
           { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/static/favicon-16x16.png' },
         ]}
         {...props}
-      />
-      <SocialProfileJsonLd
-        type="Organization"
-        name="MBestCare"
-        url="https://mbestcare.com/"
-        sameAs={[
-          'https://www.facebook.com/mbestcaretfe/',
-          'https://www.instagram.com/mbestcare.tenerife/',
-          'https://www.youtube.com/channel/UCoyJzvXG59EM4EHUymHCLaA',
-        ]}
       />
     </>
   );
