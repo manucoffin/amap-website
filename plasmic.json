@@ -301,6 +301,19 @@
           "cssFilePath": "plasmic/amap_website/PlasmicPrivacyPolicy.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "0HaKbtsrpU",
+          "name": "Sitemap",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicSitemap.tsx",
+          "importSpec": {
+            "modulePath": "../pages/plan-du-site.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicSitemap.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

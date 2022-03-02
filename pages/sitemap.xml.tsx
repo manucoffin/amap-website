@@ -23,12 +23,15 @@ export const getServerSideProps = async ({ res }) => {
         '_document.tsx',
         '_error.tsx',
         'sitemap.xml.tsx',
+        'admin.tsx',
+        '404.tsx',
+        '500.tsx',
         'actus',
         'contrats',
       ].includes(staticPage);
     })
     .map((staticPagePath) => {
-      return `${baseUrl}/${staticPagePath}`;
+      return `${baseUrl}/${staticPagePath.split('.tsx')[0]}`;
     });
 
   const newsArticles = (await getAllArticles()) || [];
