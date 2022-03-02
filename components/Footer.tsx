@@ -14,7 +14,7 @@ function Footer_({ data, ...props }: FooterProps) {
       homeLink={{ render: LinkWrapper }}
       sitemapLink={{ render: LinkWrapper }}
       legalLink={{ render: LinkWrapper }}
-      creditsLink={{ render: LinkWrapper }}
+      privacyPolicyLink={{ render: LinkWrapper }}
       address={data?.address}
       postCode={data?.postcode}
       city={data?.city}

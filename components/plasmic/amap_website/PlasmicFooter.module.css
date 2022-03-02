@@ -53,11 +53,7 @@
 .columns > :global(.__wab_flex-container) > *,
 .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .columns > :global(.__wab_flex-container) > picture > img,
-.columns
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
+.columns > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: var(--token-L5ZvEOVLJ);
 }
 @media (max-width: 1280px) {
@@ -94,11 +90,7 @@
   .columns > :global(.__wab_flex-container) > *,
   .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .columns > :global(.__wab_flex-container) > picture > img,
-  .columns
-    > :global(.__wab_flex-container)
-    > :global(.__wab_slot)
-    > picture
-    > img {
+  .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
     margin-left: 0px;
     margin-top: var(--token-2zjFq4DPV);
   }
@@ -125,11 +117,7 @@
   .columns > :global(.__wab_flex-container) > *,
   .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .columns > :global(.__wab_flex-container) > picture > img,
-  .columns
-    > :global(.__wab_flex-container)
-    > :global(.__wab_slot)
-    > picture
-    > img {
+  .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
     margin-top: var(--token-2zjFq4DPV);
   }
 }
@@ -511,11 +499,7 @@
 .freeBox___7CGho > :global(.__wab_flex-container) > *,
 .freeBox___7CGho > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .freeBox___7CGho > :global(.__wab_flex-container) > picture > img,
-.freeBox___7CGho
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
+.freeBox___7CGho > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: var(--token-xmbQtwPzW);
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -574,22 +558,22 @@
 .footer .legalLink:hover {
   color: var(--token-WNBJHso-i);
 }
-.text__wih21 {
+.text__ssTur {
   position: relative;
   width: auto;
   height: auto;
   max-width: 800px;
 }
-.creditsLink {
+.privacyPolicyLink {
   position: relative;
   color: var(--token-B133__sIH);
   font-family: var(--token-ongjxvNd3);
   cursor: pointer;
 }
-.footer .creditsLink:hover {
+.footer .privacyPolicyLink:hover {
   color: var(--token-WNBJHso-i);
 }
-.text__iyM0M {
+.text__wih21 {
   position: relative;
   width: auto;
   height: auto;

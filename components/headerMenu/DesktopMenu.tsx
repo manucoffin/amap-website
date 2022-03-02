@@ -19,8 +19,8 @@ export const DesktopMenu = () => {
       </li>
 
       <li>
-        <Link href="/adherer" passHref>
-          <A href="/adherer">Adhérer</A>
+        <Link href="/adhesion" passHref>
+          <A href="/adhesion">Adhérer</A>
         </Link>
       </li>
 

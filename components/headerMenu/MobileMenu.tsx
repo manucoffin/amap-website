@@ -47,7 +47,7 @@ export const MobileMenu = () => {
                 </Menu.Item>
 
                 <Menu.Item>
-                  <MobileMenuLink href="/adhérer">Adhérer</MobileMenuLink>
+                  <MobileMenuLink href="/adhesion">Adhérer</MobileMenuLink>
                 </Menu.Item>
 
                 <Menu.Item>
