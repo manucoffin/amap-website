@@ -26,6 +26,7 @@
   position: relative;
   align-self: flex-start;
   display: flex;
+  max-width: 250px;
 }
 .siteLogo:global(.__wab_instance) {
   align-self: auto;

@@ -1,0 +1,18 @@
+# Block all crawlers for /admin
+User-agent: *
+Disallow: /admin
+
+User-agent: *
+Disallow: /mentions-legales
+
+User-agent: *
+Disallow: /politique-confidentialite
+
+User-agent: *
+Disallow: /404
+
+User-agent: *
+Disallow: /500
+
+
+Sitemap: https://www.amap-goutte-eau.fr/sitemap.xml

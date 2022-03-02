@@ -54,11 +54,7 @@
 .freeBox___9JV3Z > :global(.__wab_flex-container) > *,
 .freeBox___9JV3Z > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .freeBox___9JV3Z > :global(.__wab_flex-container) > picture > img,
-.freeBox___9JV3Z
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
+.freeBox___9JV3Z > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: var(--token-eReirMpIv);
 }
 .freeBox__gPtl4 {

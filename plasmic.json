@@ -231,7 +231,7 @@
           "projectId": "7CzphteDn95cERg7nN7EAF",
           "renderModuleFilePath": "plasmic/amap_website/PlasmicMembership.tsx",
           "importSpec": {
-            "modulePath": "../pages/adherer.tsx"
+            "modulePath": "../pages/adhesion.tsx"
           },
           "cssFilePath": "plasmic/amap_website/PlasmicMembership.module.css",
           "scheme": "blackbox",
@@ -275,6 +275,45 @@
           "cssFilePath": "plasmic/amap_website/PlasmicArticleCard.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "uMRZAjbxH9",
+          "name": "Legal",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicLegal.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mentions-legales.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicLegal.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "iLdRLFQVaF",
+          "name": "PrivacyPolicy",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicPrivacyPolicy.tsx",
+          "importSpec": {
+            "modulePath": "../pages/politique-confidentialite.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicPrivacyPolicy.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "0HaKbtsrpU",
+          "name": "Sitemap",
+          "type": "managed",
+          "projectId": "7CzphteDn95cERg7nN7EAF",
+          "renderModuleFilePath": "plasmic/amap_website/PlasmicSitemap.tsx",
+          "importSpec": {
+            "modulePath": "../pages/plan-du-site.tsx"
+          },
+          "cssFilePath": "plasmic/amap_website/PlasmicSitemap.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -434,6 +473,16 @@
           "id": "n7yW2LyZm",
           "name": "contract_icon",
           "filePath": "../public/plasmic/amap_website/images/contractIcon.png"
+        },
+        {
+          "id": "zHorWSkdc",
+          "name": "logo",
+          "filePath": "../public/plasmic/amap_website/images/logo.svg"
+        },
+        {
+          "id": "dWOTF9Za_",
+          "name": "logo_vertical",
+          "filePath": "../public/plasmic/amap_website/images/logoVertical.svg"
         }
       ],
       "indirect": false,

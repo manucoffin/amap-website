@@ -13,7 +13,11 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   articleData,
 }) => {
   return (
-    <MainLayout footerData={footerData}>
+    <MainLayout
+      title={articleData?.title}
+      description="Article d'actualité de l'AMAP de la Goutte d'Eau"
+      footerData={footerData}
+    >
       <PlasmicNewsArticle
         title={articleData?.title}
         publicationDate={`Publié le ${articleData?.date}`}

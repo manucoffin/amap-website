@@ -16,7 +16,11 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   const previousArticles = articles.slice(1);
 
   return (
-    <MainLayout footerData={footerData}>
+    <MainLayout
+      title="Actualités"
+      description="Page d'actualités de l'AMAP de la Goutte d'Eau"
+      footerData={footerData}
+    >
       <PlasmicNews
         key={'plasmicNews'}
         leadArticle={

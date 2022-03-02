@@ -53,11 +53,7 @@
 .columns > :global(.__wab_flex-container) > *,
 .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .columns > :global(.__wab_flex-container) > picture > img,
-.columns
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
+.columns > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: var(--token-L5ZvEOVLJ);
 }
 @media (max-width: 1280px) {
@@ -94,11 +90,7 @@
   .columns > :global(.__wab_flex-container) > *,
   .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .columns > :global(.__wab_flex-container) > picture > img,
-  .columns
-    > :global(.__wab_flex-container)
-    > :global(.__wab_slot)
-    > picture
-    > img {
+  .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
     margin-left: 0px;
     margin-top: var(--token-2zjFq4DPV);
   }
@@ -125,11 +117,7 @@
   .columns > :global(.__wab_flex-container) > *,
   .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .columns > :global(.__wab_flex-container) > picture > img,
-  .columns
-    > :global(.__wab_flex-container)
-    > :global(.__wab_slot)
-    > picture
-    > img {
+  .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
     margin-top: var(--token-2zjFq4DPV);
   }
 }
@@ -196,83 +184,17 @@
     align-items: center;
   }
 }
-.logo {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0px;
-}
-@media (max-width: 1024px) {
-  .logo {
-    width: auto;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .logo {
-    align-items: center;
-    justify-content: center;
-  }
-}
-.svg {
+.img {
   position: relative;
   object-fit: cover;
-  max-width: 100%;
-  height: 120px;
-  width: 80px;
-  color: var(--token-WNBJHso-i);
-  margin-right: var(--token-L5ZvEOVLJ);
-  flex-shrink: 0;
+  max-width: 300px;
+  width: 75%;
 }
-.freeBox__pT7Tv {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  align-self: flex-start;
-  padding: 0px;
+.img > picture > img {
+  object-fit: cover;
 }
-.text__zrsXw {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  color: var(--token-WNBJHso-i);
-  font-family: var(--token-KpVr-3FRg);
-  font-weight: 800;
-  font-size: 40px;
-  min-width: 0;
-}
-.text__dDwWv {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  color: var(--token-WNBJHso-i);
-  font-family: var(--token-KpVr-3FRg);
-  font-weight: 800;
-  font-size: 20px;
-  min-width: 0;
-}
-.text___4BdA {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  color: var(--token-WNBJHso-i);
-  font-family: var(--token-KpVr-3FRg);
-  font-weight: 800;
-  font-size: 30px;
-  min-width: 0;
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
 }
 .column__mFf3K {
   display: flex;
@@ -511,11 +433,7 @@
 .freeBox___7CGho > :global(.__wab_flex-container) > *,
 .freeBox___7CGho > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .freeBox___7CGho > :global(.__wab_flex-container) > picture > img,
-.freeBox___7CGho
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
+.freeBox___7CGho > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: var(--token-xmbQtwPzW);
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -574,22 +492,22 @@
 .footer .legalLink:hover {
   color: var(--token-WNBJHso-i);
 }
-.text__wih21 {
+.text__ssTur {
   position: relative;
   width: auto;
   height: auto;
   max-width: 800px;
 }
-.creditsLink {
+.privacyPolicyLink {
   position: relative;
   color: var(--token-B133__sIH);
   font-family: var(--token-ongjxvNd3);
   cursor: pointer;
 }
-.footer .creditsLink:hover {
+.footer .privacyPolicyLink:hover {
   color: var(--token-WNBJHso-i);
 }
-.text__iyM0M {
+.text__wih21 {
   position: relative;
   width: auto;
   height: auto;
