@@ -1,5 +1,3 @@
-import fs from 'fs';
-import { join } from 'path';
 import * as React from 'react';
 import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next';
 import Link from 'next/link';
@@ -9,12 +7,8 @@ import { Article, getAllArticles } from 'lib/articles';
 import { Contract, getAllContracts } from 'lib/contracts';
 import { getFooter } from 'lib/footer';
 import { Footer } from 'lib/netlify-types';
+import { getStaticPages, StaticPage } from 'lib/pages';
 import { PlasmicSitemap } from '../components/plasmic/amap_website/PlasmicSitemap';
-
-type StaticPage = {
-  slug: string;
-  title: string;
-};
 
 const PrivacyPolicyPage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   staticPages,
@@ -93,37 +87,7 @@ export const getServerSideProps: GetServerSideProps<{
   contracts: Contract[];
 }> = async () => {
   const footerData = getFooter();
-
-  const staticPages: StaticPage[] = fs
-    .readdirSync(
-      {
-        development: 'pages',
-        production: 'pages',
-      }[process.env.NODE_ENV]
-    )
-    .filter((staticPage) => {
-      return ![
-        '404.tsx',
-        '500.tsx',
-        'admin.tsx',
-        '_app.tsx',
-        '_document.tsx',
-        '_error.tsx',
-        'sitemap.xml.tsx',
-        'plan-du-site.tsx',
-        'actus',
-        'contrats',
-      ].includes(staticPage);
-    })
-    .map((staticPagePath) => {
-      // Extract the title of each page
-      const fileContent = fs.readFileSync(join(process.cwd(), `pages/${staticPagePath}`), 'utf-8');
-      const title = fileContent.match(/title="(.*?)"/g)[0].slice(7, -1);
-
-      return { title, slug: staticPagePath.split('.tsx')[0] };
-    })
-    .sort((a, b) => (a.title > b.title ? 1 : -1));
-
+  const staticPages = getStaticPages();
   const newsArticles = (await getAllArticles()) || [];
   const contracts = getAllContracts() || [];
 

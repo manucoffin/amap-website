@@ -1,6 +1,6 @@
-import fs from 'fs';
 import { getAllArticles } from 'lib/articles';
 import { getAllContracts } from 'lib/contracts';
+import { getStaticPages } from 'lib/pages';
 
 const Sitemap = () => <></>;
 
@@ -10,40 +10,17 @@ export const getServerSideProps = async ({ res }) => {
     production: 'https://amap-goutte-eau.fr',
   }[process.env.NODE_ENV];
 
-  const staticPages = fs
-    .readdirSync(
-      {
-        development: 'pages',
-        production: 'pages',
-      }[process.env.NODE_ENV]
-    )
-    .filter((staticPage) => {
-      return ![
-        '_app.tsx',
-        '_document.tsx',
-        '_error.tsx',
-        'sitemap.xml.tsx',
-        'admin.tsx',
-        '404.tsx',
-        '500.tsx',
-        'actus',
-        'contrats',
-      ].includes(staticPage);
-    })
-    .map((staticPagePath) => {
-      return `${baseUrl}/${staticPagePath.split('.tsx')[0]}`;
-    });
-
+  const staticPages = getStaticPages();
   const newsArticles = (await getAllArticles()) || [];
   const contracts = getAllContracts() || [];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           ${staticPages
-            .map((url) => {
+            .map(({ slug }) => {
               return `
                 <url>
-                  <loc>${url}</loc>
+                  <loc>${baseUrl}/${slug}</loc>
                   <lastmod>${new Date().toISOString()}</lastmod>
                   <changefreq>monthly</changefreq>
                   <priority>1.0</priority>
