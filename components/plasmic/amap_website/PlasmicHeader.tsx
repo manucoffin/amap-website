@@ -89,6 +89,7 @@ function PlasmicHeader__RenderFunc(props: {
       <p.PlasmicLink
         data-plasmic-name={'logo'}
         data-plasmic-override={overrides.logo}
+        aria-label={"Retour à l'accueil" as const}
         className={classNames(projectcss.all, projectcss.a, sty.logo)}
         component={Link}
         href={'/' as const}

@@ -10,7 +10,7 @@ export const MobileMenu = () => {
       {({ open }) => {
         return (
           <>
-            <Menu.Button>
+            <Menu.Button aria-label="Menu">
               <MenuIcon className="w-6 h-6 ml-auto text-blue-700" />
             </Menu.Button>
 

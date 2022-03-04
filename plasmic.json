@@ -397,7 +397,7 @@
         {
           "id": "7Euuq2iGy",
           "name": "concrete_texture",
-          "filePath": "../public/plasmic/amap_website/images/concreteTexture.png"
+          "filePath": "../public/plasmic/amap_website/images/concreteTexture.jpeg"
         },
         {
           "id": "0zNkFQtfl",
@@ -483,6 +483,11 @@
           "id": "dWOTF9Za_",
           "name": "logo_vertical",
           "filePath": "../public/plasmic/amap_website/images/logoVertical.svg"
+        },
+        {
+          "id": "Okai7Ek8A",
+          "name": "home-bg-1024",
+          "filePath": "../public/plasmic/amap_website/images/homeBg1024.png"
         }
       ],
       "indirect": false,

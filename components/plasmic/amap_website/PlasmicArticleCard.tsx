@@ -175,6 +175,7 @@ function PlasmicArticleCard__RenderFunc(props: {
           <p.PlasmicLink
             data-plasmic-name={'goToDetailLink'}
             data-plasmic-override={overrides.goToDetailLink}
+            aria-label={'Lire la suite' as const}
             className={classNames(
               projectcss.all,
               projectcss.a,
