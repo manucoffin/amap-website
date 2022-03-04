@@ -6,7 +6,7 @@ export const DesktopMenu = () => {
     <ul className="flex-row gap-12 items-stretch hidden h-full md:flex">
       <li>
         <Link href="/actus" passHref>
-          <A href="/actus">
+          <A href="/actus" aria-label="Actus">
             <span>Actus</span>
           </A>
         </Link>
@@ -14,13 +14,17 @@ export const DesktopMenu = () => {
 
       <li>
         <Link href="/contrats" passHref>
-          <A href="/contrats">Contrats</A>
+          <A href="/contrats" aria-label="Contrats">
+            Contrats
+          </A>
         </Link>
       </li>
 
       <li>
         <Link href="/adhesion" passHref>
-          <A href="/adhesion">Adhérer</A>
+          <A href="/adhesion" aria-label="Adhérer">
+            Adhérer
+          </A>
         </Link>
       </li>
 
@@ -28,6 +32,7 @@ export const DesktopMenu = () => {
         <Link href="/contact" passHref>
           <A
             href="/contact"
+            aria-label="Contact"
             className="border p-2 border-gray-500 rounded hover:no-underline hover:border-blue-500"
           >
             <span>Nous contacter</span>

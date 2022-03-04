@@ -397,6 +397,11 @@
           "checksum": "4df8d55ae0599441bb3784ad2416f95d"
         },
         {
+          "type": "image",
+          "assetId": "Okai7Ek8A",
+          "checksum": "ff545463e263b72cf1c3e366c39fb32d"
+        },
+        {
           "assetId": "7CzphteDn95cERg7nN7EAF",
           "type": "projectCss",
           "checksum": "8633043f7d932650fcd3691d4708d89c"
