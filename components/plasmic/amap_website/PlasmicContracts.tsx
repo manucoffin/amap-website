@@ -139,6 +139,7 @@ function PlasmicContracts__RenderFunc(props: {
 
                     <ContractCard
                       className={classNames('__wab_instance', sty.contractCard___1NpHr)}
+                      title={'Rillettes de poule et terrine de foie'}
                     />
 
                     <ContractCard

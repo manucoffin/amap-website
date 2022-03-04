@@ -5,9 +5,8 @@ import { DefaultLinkButtonProps } from './plasmic/amap_website/PlasmicLinkButton
 
 function LinkButton_({ children, href, radius, size, type }: DefaultLinkButtonProps) {
   return (
-    <Link href={href}>
+    <Link href={href} passHref>
       <a
-        href={href}
         className={clsx(
           'font-sans font-semibold text-blue-500 hover:text-blue-300 cursor-pointer',
           {

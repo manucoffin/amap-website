@@ -39,20 +39,27 @@ export const MobileMenu = () => {
                 </Menu.Item>
 
                 <Menu.Item>
-                  <MobileMenuLink href="/actus">Actus</MobileMenuLink>
+                  <MobileMenuLink href="/actus" aria-label="Actus">
+                    Actus
+                  </MobileMenuLink>
                 </Menu.Item>
 
                 <Menu.Item>
-                  <MobileMenuLink href="/contrats">Contrats</MobileMenuLink>
+                  <MobileMenuLink href="/contrats" aria-label="Contrats">
+                    Contrats
+                  </MobileMenuLink>
                 </Menu.Item>
 
                 <Menu.Item>
-                  <MobileMenuLink href="/adhesion">Adhérer</MobileMenuLink>
+                  <MobileMenuLink href="/adhesion" aria-label="Adhérer">
+                    Adhérer
+                  </MobileMenuLink>
                 </Menu.Item>
 
                 <Menu.Item>
                   <MobileMenuLink
                     href="/contact"
+                    aria-label="Nous contacter"
                     className="inline-flex flex-row items-center py-6 mt-auto text-base font-medium border-t border-gray-300"
                   >
                     <MailIcon className="w-5 h-5 mr-2" /> Nous contacter

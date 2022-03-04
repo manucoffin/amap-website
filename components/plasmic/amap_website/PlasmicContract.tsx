@@ -154,6 +154,7 @@ function PlasmicContract__RenderFunc(props: {
             <p.PlasmicLink
               data-plasmic-name={'downloadButton'}
               data-plasmic-override={overrides.downloadButton}
+              aria-label={'Télécharger le contrat' as const}
               className={classNames(
                 projectcss.all,
                 projectcss.a,

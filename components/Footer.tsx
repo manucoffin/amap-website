@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import { LinkWrapper } from 'components';
 import { Footer } from 'lib/netlify-types';
 import { PlasmicFooter, DefaultFooterProps } from './plasmic/amap_website/PlasmicFooter';
@@ -10,7 +11,6 @@ export interface FooterProps extends DefaultFooterProps {
 function Footer_({ data, ...props }: FooterProps) {
   return (
     <PlasmicFooter
-      {...props}
       homeLink={{ render: LinkWrapper }}
       sitemapLink={{ render: LinkWrapper }}
       legalLink={{ render: LinkWrapper }}
@@ -33,6 +33,7 @@ function Footer_({ data, ...props }: FooterProps) {
           </a>
         ),
       }}
+      {...props}
     />
   );
 }
