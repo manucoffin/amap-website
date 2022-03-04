@@ -145,6 +145,7 @@ function PlasmicMembership__RenderFunc(props: {
             <p.PlasmicLink
               data-plasmic-name={'downloadButton'}
               data-plasmic-override={overrides.downloadButton}
+              aria-label={"Télécharger le contrat d'adhésion" as const}
               className={classNames(
                 projectcss.all,
                 projectcss.a,

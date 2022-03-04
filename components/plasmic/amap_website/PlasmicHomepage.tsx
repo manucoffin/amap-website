@@ -64,6 +64,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<'div'>;
   header?: p.Flex<typeof Header>;
+  heroBackground?: p.Flex<typeof p.PlasmicImg>;
   h1?: p.Flex<'h1'>;
   scrollDownButton?: p.Flex<'a'> & Partial<LinkProps>;
   sectionAvantages?: p.Flex<'div'>;
@@ -124,6 +125,35 @@ function PlasmicHomepage__RenderFunc(props: {
               />
 
               <div className={classNames(projectcss.all, sty.freeBox__kGeKe)}>
+                <p.PlasmicImg
+                  data-plasmic-name={'heroBackground'}
+                  data-plasmic-override={overrides.heroBackground}
+                  alt={''}
+                  className={classNames(sty.heroBackground)}
+                  displayHeight={'100%' as const}
+                  displayMaxHeight={'none' as const}
+                  displayMaxWidth={'none' as const}
+                  displayMinHeight={'0' as const}
+                  displayMinWidth={'0' as const}
+                  displayWidth={'auto' as const}
+                  loading={'lazy' as const}
+                  src={
+                    hasVariant(globalVariants, 'screen', 'lg')
+                      ? {
+                          src: '/plasmic/amap_website/images/homeBg1024.png',
+                          fullWidth: 819,
+                          fullHeight: 593,
+                          aspectRatio: undefined,
+                        }
+                      : {
+                          src: '/plasmic/amap_website/images/homeBg.png',
+                          fullWidth: 1267,
+                          fullHeight: 634,
+                          aspectRatio: undefined,
+                        }
+                  }
+                />
+
                 <h1
                   data-plasmic-name={'h1'}
                   data-plasmic-override={overrides.h1}
@@ -156,6 +186,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <p.PlasmicLink
                   data-plasmic-name={'scrollDownButton'}
                   data-plasmic-override={overrides.scrollDownButton}
+                  aria-label={"Découvrir l'AMAP" as const}
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -833,6 +864,7 @@ const PlasmicDescendants = {
   root: [
     'root',
     'header',
+    'heroBackground',
     'h1',
     'scrollDownButton',
     'sectionAvantages',
@@ -841,6 +873,7 @@ const PlasmicDescendants = {
     'columns',
   ],
   header: ['header'],
+  heroBackground: ['heroBackground'],
   h1: ['h1'],
   scrollDownButton: ['scrollDownButton'],
   sectionAvantages: ['sectionAvantages'],
@@ -853,6 +886,7 @@ type DescendantsType<T extends NodeNameType> = typeof PlasmicDescendants[T][numb
 type NodeDefaultElementType = {
   root: 'div';
   header: typeof Header;
+  heroBackground: typeof p.PlasmicImg;
   h1: 'h1';
   scrollDownButton: 'a';
   sectionAvantages: 'div';
@@ -914,6 +948,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent('header'),
+    heroBackground: makeNodeComponent('heroBackground'),
     h1: makeNodeComponent('h1'),
     scrollDownButton: makeNodeComponent('scrollDownButton'),
     sectionAvantages: makeNodeComponent('sectionAvantages'),

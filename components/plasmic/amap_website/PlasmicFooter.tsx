@@ -232,6 +232,7 @@ function PlasmicFooter__RenderFunc(props: {
         <p.PlasmicLink
           data-plasmic-name={'homeLink'}
           data-plasmic-override={overrides.homeLink}
+          aria-label={'Accueil' as const}
           className={classNames(projectcss.all, projectcss.a, projectcss.__wab_text, sty.homeLink)}
           component={Link}
           href={'/' as const}
@@ -247,6 +248,7 @@ function PlasmicFooter__RenderFunc(props: {
         <p.PlasmicLink
           data-plasmic-name={'sitemapLink'}
           data-plasmic-override={overrides.sitemapLink}
+          aria-label={'Plan du site' as const}
           className={classNames(
             projectcss.all,
             projectcss.a,
@@ -267,6 +269,7 @@ function PlasmicFooter__RenderFunc(props: {
         <p.PlasmicLink
           data-plasmic-name={'legalLink'}
           data-plasmic-override={overrides.legalLink}
+          aria-label={'Mentions légales' as const}
           className={classNames(projectcss.all, projectcss.a, projectcss.__wab_text, sty.legalLink)}
           component={Link}
           href={'/mentions-legales' as const}
@@ -282,6 +285,7 @@ function PlasmicFooter__RenderFunc(props: {
         <p.PlasmicLink
           data-plasmic-name={'privacyPolicyLink'}
           data-plasmic-override={overrides.privacyPolicyLink}
+          aria-label={'Politique de confidentialité' as const}
           className={classNames(
             projectcss.all,
             projectcss.a,
@@ -302,6 +306,7 @@ function PlasmicFooter__RenderFunc(props: {
         <p.PlasmicLink
           data-plasmic-name={'link'}
           data-plasmic-override={overrides.link}
+          aria-label={'Teide Technologies' as const}
           className={classNames(projectcss.all, projectcss.a, projectcss.__wab_text, sty.link)}
           component={Link}
           href={'https://teide.tech' as const}
