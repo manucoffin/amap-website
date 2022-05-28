@@ -1,11 +1,23 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/core/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
+        primary: {
+          50: "#92c4e0",
+          100: "#7cb8d9",
+          200: "#66acd3",
+          300: "#50a0cd",
+          400: "#3a94c7",
+          500: "#2589C1",
+          600: "#217bad",
+          700: "#1d6d9a",
+          800: "#195f87",
+          900: "#165273",
+        },
         white: "#FFFFFF",
         black: "#000000",
         green: {
@@ -38,7 +50,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Amatic SC"],
+        handwritten: ["Amatic SC"],
+        sans: ["Aleo"],
         serif: ["Aleo"],
       },
     },

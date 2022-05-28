@@ -4,10 +4,13 @@ backend:
   branch: main
   identity_url: 'https://amap-goutte-eau.netlify.app/.netlify/identity'
   gateway_url: 'https://amap-goutte-eau.netlify.app/.netlify/git'
+
 cms_manual_init: true
-media_folder: public/static/uploads
-public_folder: '/static/uploads'
-locale: 'fr'
+media_folder: "public/uploads" # Where media files will be stored
+public_folder: "/uploads" # Where the media files can be accesed from the server
+publish_mode: editorial_workflow # For Drafts
+locale: "fr"
+
 collections:
   - name: 'components'
     label: 'Informations du site'
