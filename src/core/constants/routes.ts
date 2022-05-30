@@ -10,7 +10,9 @@ type ParsedUrlQueryInput = NodeJS.Dict<
 
 export const Routes = {
   Home: () => '/',
-  NewsPage: () => '/actualites',
+  NewsPage: () => '/actus',
+  ArticlePage: (query: { articleId: number | string } & ParsedUrlQueryInput) =>
+    `/actus/${query.articleId}`,
   ManifestPage: () => '/charte-de-l-amap',
   ContactPage: () => '/contact',
   ProducersPage: () => '/producteurs',

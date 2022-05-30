@@ -7,7 +7,7 @@ type Props = React.ComponentPropsWithoutRef<'nav'>;
 const DesktopMenu = ({ ...props }: Props) => {
   return (
     <nav {...props} className="hidden md:flex text-gray-700">
-      <MenuLink href={'/actus'} label="Actus" />
+      <MenuLink href={Routes.NewsPage()} label="Actus" />
       <div className="group inline-block relative">
         <button className=" flex items-center p-4 justify-start hover:text-primary-700 transition">
           <span className="mr-2">La Goutte d&apos;Eau</span>
@@ -15,9 +15,9 @@ const DesktopMenu = ({ ...props }: Props) => {
         </button>
 
         <ul className="absolute hidden group-hover:block z-10 bg-white rounded-md min-w-[200px] shadow-lg">
-          <MenuLink href={'/contrats'} label="Contrats" />
-          <MenuLink href={'/producteurs'} label="Producteurs" />
-          <MenuLink href={'/adherer'} label="Adhérer" />
+          <MenuLink href={Routes.ContractsPage()} label="Contrats" />
+          <MenuLink href={Routes.ProducersPage()} label="Producteurs" />
+          <MenuLink href={Routes.MembershipPage()} label="Adhérer" />
         </ul>
       </div>
 

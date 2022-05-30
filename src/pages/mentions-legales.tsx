@@ -4,7 +4,7 @@ import { MainLayout } from 'src/core/layouts';
 import { getFooter } from 'src/core/lib/footer';
 import { getLegalText } from 'src/core/lib/legal';
 import { Footer } from 'src/core/lib/netlify-types';
-import { PlasmicLegal } from '../core/components/plasmic/amap_website/PlasmicLegal';
+import { Header } from '@src/core/components';
 
 const LegalPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footerData,
@@ -15,20 +15,20 @@ const LegalPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       title="Mentions légales"
       description="Mentions légales du site de l'AMAP de la Goutte d'Eau"
       footerData={footerData}
-      minimalFooter
+      footerVariant="minimal"
+      className="bg-concrete bg-repeat"
     >
-      <PlasmicLegal
-        content={{
-          render: (props, Component) => (
-            <Component
-              {...props}
-              className="prose prose-stone prose-h3:my-0 prose-p:my-0 prose-li:my-0 prose-ul:leading-5 max-w-none prose-headings:font-serif prose-headings:font-normal prose-headings:text-blue-700 prose-p:font-serif"
-            >
-              <ReactMarkdown>{legalText}</ReactMarkdown>
-            </Component>
-          ),
-        }}
-      />
+      <Header />
+
+      <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
+        <h1 className="text-center font-heading font-bold text-2xl md:text-3xl mb-10 text-gray-700">
+          Mentions légales
+        </h1>
+
+        <div className="prose prose-stone prose-h3:my-0 prose-p:my-0 prose-li:my-0 prose-ul:leading-5 max-w-none prose-headings:font-serif prose-headings:font-normal prose-headings:text-blue-700 prose-p:font-serif">
+          <ReactMarkdown>{legalText}</ReactMarkdown>
+        </div>
+      </div>
     </MainLayout>
   );
 };
