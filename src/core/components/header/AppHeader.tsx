@@ -28,7 +28,7 @@ const Header = ({ variant = 'full', className, ...props }: HeaderProps) => {
     <header
       className={clsx(
         className,
-        'py-4 px-4 max-w-screen-xl mx-auto sticky top-0',
+        'py-4 px-4 sticky top-0',
         'sticky top-0 z-[9999] ease-in duration-200',
         {
           'bg-white': scrollPosition > 0,

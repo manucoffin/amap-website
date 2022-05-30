@@ -1,11 +1,12 @@
 import { ChevronDownIcon } from '@heroicons/react/outline';
-import { MenuLink } from '@src/core/components';
+import { ButtonLink, MenuLink } from '@src/core/components';
+import { Routes } from '@src/core/constants/routes';
 
 type Props = React.ComponentPropsWithoutRef<'nav'>;
 
 const DesktopMenu = ({ ...props }: Props) => {
   return (
-    <nav {...props} className="hidden md:flex">
+    <nav {...props} className="hidden md:flex text-gray-700">
       <MenuLink href={'/actus'} label="Actus" />
       <div className="group inline-block relative">
         <button className=" flex items-center p-4 justify-start hover:text-primary-700 transition">
@@ -19,7 +20,16 @@ const DesktopMenu = ({ ...props }: Props) => {
           <MenuLink href={'/adherer'} label="Adhérer" />
         </ul>
       </div>
-      <MenuLink href={'/contact'} label="Nous contacter" />
+
+      <div className="flex items-center">
+        <ButtonLink
+          href={Routes.ContactPage()}
+          variant="outlined"
+          className="text-gray-500 border border-gray-700 hover:border-primary-500 hover:text-primary-500"
+        >
+          Nous contacter
+        </ButtonLink>
+      </div>
     </nav>
   );
 };

@@ -6,6 +6,9 @@ module.exports = {
         fabric: "url('/assets/fabric-texture.png')",
         concrete: "url('/assets/concrete-texture.jpg')",
       },
+      height: {
+        'screen-no-header': 'calc(100vh - 88px)',
+      },
       colors: {
         primary: {
           50: '#92c4e0',

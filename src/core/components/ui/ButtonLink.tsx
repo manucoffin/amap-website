@@ -34,7 +34,7 @@ const ButtonLink = forwardRef<HTMLAnchorElement, ButtonLinkProps>(
           { 'text-primary-800 bg-primary-100 hover:bg-primary-200': variant === 'plain' },
           {
             'text-primary-500 border border-primary-500 hover:border-primary-700 hover:text-primary-700':
-              variant === 'outlined',
+              variant === 'outlined' && !className,
           }
         )}
       />
