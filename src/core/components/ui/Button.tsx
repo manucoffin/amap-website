@@ -1,36 +1,41 @@
-import clsx from "clsx";
+import clsx from "clsx"
 
-interface Props extends React.ComponentPropsWithoutRef<"button"> {
-  size?: "small" | "medium" | "large";
-  loading?: boolean;
+export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
+  size?: "xs" | "sm" | "md" | "lg"
+  loading?: boolean
+  loadingText?: string
 }
 
-export const Button = ({
+const Button = ({
   children,
+  disabled,
   loading,
-  size = "medium",
+  loadingText = "Loading...",
+  size = "md",
+  className,
   ...props
-}: Props) => {
+}: ButtonProps) => {
   return (
     <button
       {...props}
       className={clsx(
-        "font-serif w-full block text-center uppercase text-white bg-blue-700 rounded cursor-pointer hover:bg-blue-500 transition",
-        "disabled:bg-blue-700/75 disabled:cursor-not-allowed",
+        className,
+        "transition cursor-pointer rounded-lg w-full",
+        "disabled:cursor-not-allowed",
         {
-          "py-1": size === "small",
-          "py-2": size === "medium",
-          "py-3": size === "large",
-        },
-        props.className
+          "py-px px-1": size === "xs",
+          "py-1 px-2": size === "sm",
+          "py-2 px-3": size === "md",
+          "py-3 px-4": size === "lg",
+        }
       )}
-      disabled={loading}
+      disabled={disabled || loading}
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center">
         <svg
           className={clsx(
             loading ? "block" : "hidden",
-            "animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+            "animate-spin -ml-1 mr-3 h-5 w-5 text-gray-400"
           )}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -50,8 +55,11 @@ export const Button = ({
             d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
           ></path>
         </svg>
-        {children}
+
+        {loading ? loadingText : children}
       </div>
     </button>
-  );
-};
+  )
+}
+
+export default Button

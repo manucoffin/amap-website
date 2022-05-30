@@ -8,15 +8,21 @@ export const DefaultSeo = (props: DefaultSeoProps) => {
         description="Association pour le Maintien d'une Agriculture Paysanne"
         openGraph={{
           type: 'website',
-          url: 'https://amap-goutte-eau.fr/',
-        }}
-        twitter={{
-          site: '@site',
-          cardType: 'summary_large_image',
+          url: 'https://www.amap-goutte-eau.fr/',
+          title: "AMAP de la Goutte d'Eau",
+          description: "AMAP de la Goutte d'Eau",
+          images: [
+            {
+              url: '/og_image.png',
+              width: 1200,
+              height: 630,
+              alt: "AMAP de la Goutte d'Eau logo",
+            },
+          ],
         }}
         additionalLinkTags={[
-          { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/static/favicon-32x32.png' },
-          { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/static/favicon-16x16.png' },
+          { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+          { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         ]}
         {...props}
       />

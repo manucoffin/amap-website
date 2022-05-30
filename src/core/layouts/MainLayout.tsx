@@ -1,21 +1,38 @@
-import { Footer } from 'src/core/components';
-import { Seo } from 'src/core/components/Seo';
-import { Footer as FooterData } from 'src/core/lib/netlify-types';
+import PlausibleProvider from 'next-plausible';
+import { NextSeoProps } from 'next-seo';
+import { Footer } from '@core/components';
+import { Seo } from '@core/components/Seo';
+import { Footer as FooterData } from '@core/lib/netlify-types';
 
 interface Props extends React.PropsWithoutRef<JSX.IntrinsicElements['main']> {
   title: string;
   description: string;
   footerData: FooterData;
-  minimalFooter?: boolean;
+  footerVariant?: 'minimal' | 'full';
+  seoProps?: Omit<NextSeoProps, 'title'>;
 }
 
-export const MainLayout = ({ title, description, footerData, minimalFooter, ...props }: Props) => {
-  return (
-    <>
-      <Seo title={title} description={description} />
+export const MainLayout = ({
+  title,
+  seoProps,
+  description,
+  footerData,
+  footerVariant = 'full',
+  ...props
+}: Props) => {
+  return process.env.NODE_ENV === 'production' ? (
+    <PlausibleProvider domain="amap-goutte-eau.fr">
+      <div>
+        <Seo title={title} description={description} {...seoProps} />
+        <main {...props} />
+        <Footer data={footerData} variant={footerVariant} />
+      </div>
+    </PlausibleProvider>
+  ) : (
+    <div>
+      <Seo title={title} description={description} {...seoProps} />
       <main {...props} />
-
-      <Footer data={footerData} minimal={minimalFooter} />
-    </>
+      <Footer data={footerData} variant={footerVariant} />
+    </div>
   );
 };
