@@ -7,3 +7,4 @@ export { default as Footer } from './Footer';
 export { default as LinkButton } from './LinkButton';
 export { default as SiteLogo } from './SiteLogo';
 export { LinkWrapper } from './LinkWrapper';
+export { default as Banner } from './Banner';
