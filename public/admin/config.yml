@@ -6,10 +6,10 @@ backend:
   gateway_url: 'https://amap-goutte-eau.netlify.app/.netlify/git'
 
 cms_manual_init: true
-media_folder: "public/uploads" # Where media files will be stored
-public_folder: "/uploads" # Where the media files can be accesed from the server
+media_folder: 'public/uploads' # Where media files will be stored
+public_folder: '/uploads' # Where the media files can be accesed from the server
 publish_mode: editorial_workflow # For Drafts
-locale: "fr"
+locale: 'fr'
 
 collections:
   - name: 'components'
@@ -32,7 +32,7 @@ collections:
         name: 'membership'
         file: 'content/membership.md'
         fields:
-          - { label: 'Description', name: 'description', widget: 'text', required: true }
+          - { label: 'Description', name: 'description', widget: 'markdown', required: true }
           - {
               label: 'Document',
               name: 'documentPath',

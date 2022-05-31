@@ -24,7 +24,7 @@ export const Routes = {
   RecipesPage: () => '/recettes',
   RecipePage: (query: { recipeId: number | string } & ParsedUrlQueryInput) =>
     `/recettes/${query.recipeId}`,
-  MembershipPage: () => '/adherer',
+  MembershipPage: () => '/adhesion',
   PrivacyPolicyPage: () => '/politique-confidentialite',
   LegalMentionsPage: () => '/mentions-legales',
   SiteMap: () => '/plan-du-site',

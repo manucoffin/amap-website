@@ -33,7 +33,7 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-y-8 md:gap-x-8">
           <div className="md:col-span-3">
             <div className="grid grid-cols-1 gap-y-4 md:grid-cols-5 md:gap-4 md:h-[300px]">
-              <div className="h-[200px] md:h-full md:col-span-2 relative rounded-lg overflow-hidden">
+              <div className="shadow-lg h-[200px] md:h-full md:col-span-2 relative rounded-lg overflow-hidden">
                 <Image
                   src={mainArticle.thumbnail}
                   objectFit="cover"
@@ -69,29 +69,6 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           ))}
         </div>
       </div>
-      {/* <PlasmicNews
-        key={'plasmicNews'}
-        leadArticle={
-          <ArticleCard
-            horizontal
-            title={truncateText(mainArticle.title, 60)}
-            date={`Publié le ${mainArticle.date}`}
-            abstract={truncateText(mainArticle.content, 100)}
-            thumbnailUrl={mainArticle.thumbnail}
-            slug={mainArticle.slug}
-          />
-        }
-        articles={previousArticles.map((article) => (
-          <ArticleCard
-            key={article.slug}
-            title={truncateText(article.title, 50)}
-            date={`Publié le ${article.date}`}
-            abstract={truncateText(article.content, 80)}
-            thumbnailUrl={article.thumbnail}
-            slug={article.slug}
-          />
-        ))}
-      /> */}
     </MainLayout>
   );
 };

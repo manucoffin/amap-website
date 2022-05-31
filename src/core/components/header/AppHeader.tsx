@@ -31,7 +31,7 @@ const Header = ({ variant = 'full', className, ...props }: HeaderProps) => {
         'py-4 px-4 sticky top-0',
         'sticky top-0 z-[9999] ease-in duration-200',
         {
-          'bg-white': scrollPosition > 0,
+          'bg-concrete bg-repeat shadow-md': scrollPosition > 0,
         }
       )}
       {...props}

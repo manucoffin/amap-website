@@ -14,7 +14,7 @@ const ArticleCard = ({ article }: Props) => {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="h-[200px] relative rounded-lg overflow-hidden">
+      <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg">
         <Image src={thumbnail} objectFit="cover" layout="fill" alt={title} />
       </div>
 

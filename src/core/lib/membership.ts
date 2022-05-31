@@ -7,8 +7,8 @@ const MEMBERSHIP_PATH = join(process.cwd(), 'content/membership.md');
 
 export const getMembershipData = (): Membership => {
   const fileContents = fs.readFileSync(MEMBERSHIP_PATH, 'utf-8');
-  const { data } = matter(fileContents);
-  const membershipData = data as Membership;
+  const { data, content } = matter(fileContents);
+  const membershipData = { description: content, documentPath: data } as Membership;
 
-  return { ...membershipData };
+  return membershipData;
 };
