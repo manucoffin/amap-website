@@ -1,4 +1,4 @@
-import { Banner, Header } from '@src/core/components';
+import { Banner, H1, Header } from '@src/core/components';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from 'src/core/layouts';
 import { getFooter } from 'src/core/lib/footer';
@@ -18,9 +18,7 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <Header />
 
       <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
-        <h1 className="text-center font-handwritten font-heading font-bold text-4xl md:text-5xl mb-12 text-gray-700">
-          Envie de discuter ?
-        </h1>
+        <H1>Envie de discuter ?</H1>
 
         <div className="flex flex-col items-center text-gray-700 gap-6">
           <Image
@@ -59,28 +57,28 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             {phone}
           </a>
         </div>
-      </div>
-      <div className="flex flex-col items-center text-gray-700 gap-6 mt-20">
-        <Image
-          src="/assets/map-point.png"
-          alt="Dessin d'une carte avec un repère"
-          width={100}
-          height={100}
-        />
+        <div className="flex flex-col items-center text-gray-700 gap-6 mt-20">
+          <Image
+            src="/assets/map-point.png"
+            alt="Dessin d'une carte avec un repère"
+            width={100}
+            height={100}
+          />
 
-        <div className="relative w-[260px] flex justify-center">
-          <Banner className="fill-melon-500 absolute -top-[6px] left-0" />
-          <span className="relative font-handwritten text-3xl z-10">Venez nous recontrer !</span>
+          <div className="relative w-[260px] flex justify-center">
+            <Banner className="fill-melon-500 absolute -top-[6px] left-0" />
+            <span className="relative font-handwritten text-3xl z-10">Venez nous recontrer !</span>
+          </div>
+
+          <ul className="text-2xl font-normal text-center">
+            <li>{schedule}</li>
+            <li className="mt-4">{address}</li>
+            <li>
+              {postcode}&nbsp;
+              {city}
+            </li>
+          </ul>
         </div>
-
-        <ul className="text-2xl font-normal text-center">
-          <li>{schedule}</li>
-          <li className="mt-4">{address}</li>
-          <li>
-            {postcode}&nbsp;
-            {city}
-          </li>
-        </ul>
       </div>
     </MainLayout>
   );

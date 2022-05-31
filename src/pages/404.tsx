@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { A } from 'src/core/components/ui';
+import { ButtonLink } from '@src/core/components';
+import { Routes } from '@src/core/constants/routes';
 
 export default function Custom404() {
   return (
@@ -189,13 +189,11 @@ export default function Custom404() {
         <p className="text-center mb-6 text-xl">
           Désolé, il semblerait que la page que vous recherchez n&apos;existe pas.
         </p>
-        <Link href="/" passHref>
-          <A>
-            <span className="text-blue-700 hover:text-blue-500 transition text-xl">
-              Retourner à l&apos;accueil
-            </span>
-          </A>
-        </Link>
+        <ButtonLink href={Routes.Home()}>
+          <span className="text-blue-700 hover:text-blue-500 transition text-xl">
+            Retourner à l&apos;accueil
+          </span>
+        </ButtonLink>
       </div>
     </div>
   );

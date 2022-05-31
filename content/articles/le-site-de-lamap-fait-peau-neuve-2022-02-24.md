@@ -1,8 +1,9 @@
 ---
 title: Le site de l'AMAP fait peau neuve !
 date: 2022-02-24T11:06:59.031Z
-thumbnail: /static/uploads/images/agneau.jpg
+thumbnail: /uploads/images/agneau.jpg
 ---
+
 ## Un sous titre
 
 This present moment is perfect simply due to the fact you're experiencing it. Everything is happy if you choose to make it that way. How do you make a round circle with a square knife? That's your challenge for the day. Let's do it again then, what the heck.
@@ -11,7 +12,7 @@ This present moment is perfect simply due to the fact you're experiencing it. Ev
 
 It's life. It's interesting. It's fun. Volunteering your time; it pays you and your whole community fantastic dividends. These things happen automatically. All you have to do is just let them happen. Let's build some happy little clouds up here. But we're not there yet, so we don't need to worry about it.
 
-![un canard](/static/uploads/361852.jpeg "un canard")
+![un canard](/uploads/361852.jpeg 'un canard')
 
 I'm gonna start with a little Alizarin crimson and a touch of Prussian blue Let your heart be your guide. Everyone wants to enjoy the good parts - but you have to build the framework first. Put your feelings into it, your heart, it's your world. We have no limits to our world. We're only limited by our imagination.
 

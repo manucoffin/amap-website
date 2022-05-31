@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { A } from "src/core/components/ui";
+import { ButtonLink } from '@src/core/components';
+import { Routes } from '@src/core/constants/routes';
 
 export default function Custom404() {
   return (
@@ -32,54 +32,12 @@ export default function Custom404() {
           />
         </defs>
         <title>warning</title>
-        <ellipse
-          cx="530.99"
-          cy="416.32"
-          rx="466.48"
-          ry="416.32"
-          fill="#01b5e1"
-          opacity="0.1"
-        />
-        <ellipse
-          cx="172"
-          cy="629.28"
-          rx="172"
-          ry="26.66"
-          fill="#01b5e1"
-          opacity="0.1"
-        />
-        <ellipse
-          cx="254.67"
-          cy="769.13"
-          rx="66.9"
-          ry="13.82"
-          fill="#01b5e1"
-          opacity="0.1"
-        />
-        <ellipse
-          cx="711.8"
-          cy="715.96"
-          rx="66.9"
-          ry="13.82"
-          fill="#01b5e1"
-          opacity="0.1"
-        />
-        <ellipse
-          cx="484.79"
-          cy="699.75"
-          rx="108.79"
-          ry="18.43"
-          fill="#01b5e1"
-          opacity="0.1"
-        />
-        <ellipse
-          cx="805.34"
-          cy="608.52"
-          rx="226.91"
-          ry="35.54"
-          fill="#01b5e1"
-          opacity="0.1"
-        />
+        <ellipse cx="530.99" cy="416.32" rx="466.48" ry="416.32" fill="#01b5e1" opacity="0.1" />
+        <ellipse cx="172" cy="629.28" rx="172" ry="26.66" fill="#01b5e1" opacity="0.1" />
+        <ellipse cx="254.67" cy="769.13" rx="66.9" ry="13.82" fill="#01b5e1" opacity="0.1" />
+        <ellipse cx="711.8" cy="715.96" rx="66.9" ry="13.82" fill="#01b5e1" opacity="0.1" />
+        <ellipse cx="484.79" cy="699.75" rx="108.79" ry="18.43" fill="#01b5e1" opacity="0.1" />
+        <ellipse cx="805.34" cy="608.52" rx="226.91" ry="35.54" fill="#01b5e1" opacity="0.1" />
         <path
           d="M130.91,580.17a63.14,63.14,0,0,0,3.29,63.39c2,3,3.84,5.16,5.31,5.73,7.05,2.77,21.17,9.58,21.17,9.58l34-13.36s5.52-29.2,10.74-54.27v0c3.56-17.1,7-32.27,8.41-34.93,3.52-6.55,0-77.86,0-77.86s-34-2.28-43.35,23.93l-4.09,8Z"
           transform="translate(-83.88 -33.68)"
@@ -535,16 +493,13 @@ export default function Custom404() {
           Une erreur est survenue
         </h1>
         <p className="text-center mb-6 text-xl">
-          Nos serveurs ont rencontré une erreur, veuillez réessayer
-          ultérieurement.
+          Nos serveurs ont rencontré une erreur, veuillez réessayer ultérieurement.
         </p>
-        <Link href="/" passHref>
-          <A>
-            <span className="text-blue-700 hover:text-blue-500 transition text-xl">
-              Retourner à l&apos;accueil
-            </span>
-          </A>
-        </Link>
+        <ButtonLink href={Routes.Home()}>
+          <span className="text-blue-700 hover:text-blue-500 transition text-xl">
+            Retourner à l&apos;accueil
+          </span>
+        </ButtonLink>
       </div>
     </div>
   );

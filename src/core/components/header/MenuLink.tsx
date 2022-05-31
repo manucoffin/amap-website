@@ -13,7 +13,7 @@ const MenuLink = ({ href, label, ...props }: MenuLinkProps) => {
     <Link href={href || ''} passHref>
       <a
         className={clsx('flex items-center p-4 justify-start hover:text-primary-700 transition', {
-          'bg-primary-400/10 rounded-lg text-primary-700': router.pathname === href,
+          'text-primary-700': router.pathname === href,
         })}
         aria-label="Activities"
         {...props}

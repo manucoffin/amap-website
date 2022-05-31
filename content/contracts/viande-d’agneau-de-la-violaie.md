@@ -10,6 +10,6 @@ description: >-
 
 
   Retour des contrats le 4 novembre dernier délai.
-imagePath: /static/uploads/images/agneau.jpg
-documentPath: /static/uploads/files/contrat_viande_d_agneau.chemin_des_ruisseaux.pdf
+imagePath: /uploads/images/agneau.jpg
+documentPath: /uploads/files/contrat_viande_d_agneau.chemin_des_ruisseaux.pdf
 ---

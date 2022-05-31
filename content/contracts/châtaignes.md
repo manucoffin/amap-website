@@ -27,6 +27,6 @@ description: >-
 
 
   Prochaine distribution le 28 octobre 2021
-imagePath: /static/uploads/images/chataigne.jpg
-documentPath: /static/uploads/files/chataignes.zip
+imagePath: /uploads/images/chataigne.jpg
+documentPath: /uploads/files/chataignes.zip
 ---

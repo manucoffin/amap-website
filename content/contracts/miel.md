@@ -12,6 +12,6 @@ description: >-
 
 
   Adhésion 2022 obligatoire avant de signer tout contrat.
-imagePath: /static/uploads/images/miel.jpg
-documentPath: /static/uploads/files/contrat_miel-annee-2022.pdf
+imagePath: /uploads/images/miel.jpg
+documentPath: /uploads/files/contrat_miel-annee-2022.pdf
 ---

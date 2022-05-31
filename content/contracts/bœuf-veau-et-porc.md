@@ -18,6 +18,6 @@ description: >-
 
 
   Son blog
-imagePath: /static/uploads/images/viande.jpg
-documentPath: /static/uploads/files/contrat_viande_2021-2022.pdf
+imagePath: /uploads/images/viande.jpg
+documentPath: /uploads/files/contrat_viande_2021-2022.pdf
 ---

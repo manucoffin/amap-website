@@ -1,8 +1,9 @@
 ---
 title: Toujours un article
 date: 2022-02-24T11:09:23.838Z
-thumbnail: /static/uploads/images/pain.jpg
+thumbnail: /uploads/images/pain.jpg
 ---
+
 This present moment is perfect simply due to the fact you're experiencing it. Everything is happy if you choose to make it that way. How do you make a round circle with a square knife? That's your challenge for the day. Let's do it again then, what the heck.
 
 The only prerequisite is that it makes you happy. If it makes you happy then it's good. Paint anything you want on the canvas. Create your own world. Just go back and put one little more happy tree in there. Just let go - and fall like a little waterfall. Just let these leaves jump off the brush
