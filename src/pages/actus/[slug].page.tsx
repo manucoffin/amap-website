@@ -6,45 +6,36 @@ import { MainLayout } from 'src/core/layouts';
 import { Article, getArticle, getArticlesSlugs } from 'src/core/lib/articles';
 import { getFooter } from 'src/core/lib/footer';
 import { Footer } from 'src/core/lib/netlify-types';
-import { PlasmicNewsArticle } from '../../core/components/plasmic/amap_website/PlasmicNewsArticle';
+import { H1, Header } from '@core/components';
 
 const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footerData,
   articleData,
 }) => {
+  const { title, content, date, thumbnail } = articleData;
+
   return (
     <MainLayout
-      title={articleData?.title}
+      title={title}
       description="Article d'actualité de l'AMAP de la Goutte d'Eau"
       footerData={footerData}
+      className="bg-concrete bg-repeat pb-20"
     >
-      <PlasmicNewsArticle
-        title={articleData?.title}
-        publicationDate={`Publié le ${articleData?.date}`}
-        cover={{
-          render: (props, Component) => (
-            <Component {...props}>
-              <Image
-                src={articleData?.thumbnail}
-                alt={`Photo de ${articleData?.title}`}
-                layout="fill"
-                objectFit="cover"
-                quality={60}
-              />
-            </Component>
-          ),
-        }}
-        content={{
-          render: (props, Component) => (
-            <Component
-              {...props}
-              className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif"
-            >
-              <ReactMarkdown>{articleData?.content}</ReactMarkdown>
-            </Component>
-          ),
-        }}
-      />
+      <Header />
+
+      <div className="px-4 py-12 lg:w-1/2 2xl:w-1/2 mx-auto">
+        <H1>{title}</H1>
+
+        <p className="text-gray-400 mb-4">Publié le {date}</p>
+
+        <div className="h-[200px] md:h-[400px] relative overflow-hidden my-6">
+          <Image src={thumbnail} objectFit="cover" layout="fill" alt={title} />
+        </div>
+
+        <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
+      </div>
     </MainLayout>
   );
 };

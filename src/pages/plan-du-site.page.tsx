@@ -21,6 +21,7 @@ const PrivacyPolicyPage: NextPage<InferGetServerSidePropsType<typeof getServerSi
       description="Plan du site de l'AMAP de la Goutte d'Eau"
       footerData={footerData}
       footerVariant="minimal"
+      className="bg-concrete bg-repeat pb-20"
     >
       <Header />
 

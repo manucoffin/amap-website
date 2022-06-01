@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
-import { ArticleCard } from '@src/modules/articles/components';
+import { ArticleCard } from '@src/pages/actus/components';
 import { MainLayout } from 'src/core/layouts';
 import { Article, getAllArticles } from 'src/core/lib/articles';
 import { getFooter } from 'src/core/lib/footer';

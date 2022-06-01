@@ -1,14 +1,15 @@
 import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { XIcon, MenuIcon } from '@heroicons/react/outline';
-import { MenuSectionHeading, MenuLink } from '@src/core/components';
+import { MenuSectionHeading, MenuLink } from '@core/components';
 import Image from 'next/image';
+import { Routes } from '@core/constants/routes';
 
 const MenuItems = () => {
   return (
     <>
       <Menu.Item>
-        <MenuLink href={'/actus'} label="Actus" />
+        <MenuLink href={Routes.NewsPage()} label="Actus" />
       </Menu.Item>
 
       <>
@@ -16,20 +17,20 @@ const MenuItems = () => {
           <MenuSectionHeading label="La Goutte d'Eau" />
         </Menu.Item>
         <Menu.Item>
-          <MenuLink href={'/contrats'} label="Contrats" />
+          <MenuLink href={Routes.ContractsPage()} label="Contrats" />
         </Menu.Item>
         <Menu.Item>
-          <MenuLink href={'/producteurs'} label="Producteurs" />
+          <MenuLink href={Routes.ProducersPage()} label="Producteurs" />
         </Menu.Item>
         <Menu.Item>
-          <MenuLink href={'/adherer'} label="Adhérer" />
+          <MenuLink href={Routes.MembershipPage()} label="Adhérer" />
         </Menu.Item>
       </>
 
       <hr className="my-4" />
 
       <Menu.Item>
-        <MenuLink href={'/contact'} label="Nous Contacter" />
+        <MenuLink href={Routes.ContactPage()} label="Nous Contacter" />
       </Menu.Item>
     </>
   );

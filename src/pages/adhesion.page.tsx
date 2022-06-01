@@ -40,7 +40,9 @@ const MembershipPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> =
 
           <div className="mt-20 text-gray-700">
             <h2 className="text-2xl text-primary-700 mb-6">Comment ça marche ?</h2>
-            <ReactMarkdown>{description}</ReactMarkdown>
+            <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">
+              <ReactMarkdown>{description}</ReactMarkdown>
+            </div>
           </div>
         </div>
       </div>
