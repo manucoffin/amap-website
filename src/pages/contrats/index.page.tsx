@@ -4,7 +4,7 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
 import { Contract, getAllContracts } from '@core/lib/contracts';
 import { getFooter } from '@core/lib/footer';
-import { Footer } from '@core/lib/netlify-types';
+import { Footer } from '@cms/models';
 import { H1, Header } from '@core/components';
 import autoAnimate from '@formkit/auto-animate';
 import { ContractCard } from '@src/pages/contrats/components';

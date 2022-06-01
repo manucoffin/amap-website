@@ -3,7 +3,7 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
 import { getFooter } from '@core/lib/footer';
 import { getMembershipData } from '@core/lib/membership';
-import { Footer, Membership } from '@core/lib/netlify-types';
+import { Footer, Membership } from '@cms/models';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 

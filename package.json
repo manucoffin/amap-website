@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "server": "npx netlify-cms-proxy-server",
     "dev": "next",
     "build": "next build",
     "start": "next start",

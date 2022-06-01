@@ -2,7 +2,7 @@ import fs from 'fs';
 import path, { join } from 'path';
 import matter from 'gray-matter';
 import { getFilePaths, getSlugs } from './backendUtils';
-import { Article as NetlifyArticle } from './netlify-types';
+import { Article as NetlifyArticle } from '@cms/models';
 
 const ARTICLES_PATH = join(process.cwd(), 'content/articles');
 

@@ -2,7 +2,7 @@ import { Banner, H1, Header } from '@src/core/components';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from 'src/core/layouts';
 import { getFooter } from 'src/core/lib/footer';
-import { Footer } from 'src/core/lib/netlify-types';
+import { Footer } from '@cms/models';
 import Image from 'next/image';
 
 const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ footerData }) => {

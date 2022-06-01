@@ -2,7 +2,7 @@ import { HandDrawnArrowDownIcon, Header } from '@core/components';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
 import { getFooter } from '@core/lib/footer';
-import { Footer } from '@core/lib/netlify-types';
+import { Footer } from '@cms/models';
 import Image from 'next/image';
 
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ footerData }) => {

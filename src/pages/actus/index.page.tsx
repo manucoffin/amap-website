@@ -4,7 +4,7 @@ import { ArticleCard } from '@src/pages/actus/components';
 import { MainLayout } from 'src/core/layouts';
 import { Article, getAllArticles } from 'src/core/lib/articles';
 import { getFooter } from 'src/core/lib/footer';
-import { Footer } from 'src/core/lib/netlify-types';
+import { Footer } from '@cms/models';
 import { ButtonLink, H1, Header } from '@src/core/components';
 import Image from 'next/image';
 import clsx from 'clsx';

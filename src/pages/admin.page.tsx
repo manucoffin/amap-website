@@ -8,7 +8,7 @@ const AdminPage: React.FC = () => {
   useEffect(() => {
     (async () => {
       const CMS = (await import('netlify-cms-app')).default;
-      CMS.registerWidget(IdWidget.name);
+      CMS.registerWidget(IdWidget.name, IdWidget.controlComponent);
       CMS.init({ config } as any);
     })();
   }, []);

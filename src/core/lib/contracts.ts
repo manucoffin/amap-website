@@ -2,7 +2,7 @@ import fs from 'fs';
 import path, { join } from 'path';
 import matter from 'gray-matter';
 import { getFilePaths, getSlugs } from './backendUtils';
-import { Contract as NetlifyContract } from './netlify-types';
+import { Contract as NetlifyContract } from '@cms/models';
 
 const CONTRACTS_PATH = join(process.cwd(), 'content/contracts');
 

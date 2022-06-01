@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { MainLayout } from 'src/core/layouts';
 import { Article, getArticle, getArticlesSlugs } from 'src/core/lib/articles';
 import { getFooter } from 'src/core/lib/footer';
-import { Footer } from 'src/core/lib/netlify-types';
+import { Footer } from '@cms/models';
 import { H1, Header } from '@core/components';
 
 const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({

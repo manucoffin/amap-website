@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
-import { Membership } from './netlify-types';
+import { Membership } from '@cms/models';
 
 const MEMBERSHIP_PATH = join(process.cwd(), 'content/membership.md');
 

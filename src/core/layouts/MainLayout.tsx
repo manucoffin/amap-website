@@ -2,7 +2,7 @@ import PlausibleProvider from 'next-plausible';
 import { NextSeoProps } from 'next-seo';
 import { Footer } from '@core/components';
 import { Seo } from '@core/components/Seo';
-import { Footer as FooterData } from '@core/lib/netlify-types';
+import { Footer as FooterData } from '@cms/models';
 
 interface Props extends React.PropsWithoutRef<JSX.IntrinsicElements['main']> {
   title: string;

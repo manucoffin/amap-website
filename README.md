@@ -1,7 +1,10 @@
 # AMAP Website
 
-### Development
+### Local Development
 
+1. Start local netlify server: `yarn server`
+2. Start the app: `yarn dev`
+3. Navigate to `http:localhosst:3000/admin`
 
 ### Netlify CMS Config
 

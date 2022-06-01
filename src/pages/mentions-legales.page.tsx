@@ -3,7 +3,7 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from 'src/core/layouts';
 import { getFooter } from 'src/core/lib/footer';
 import { getLegalText } from 'src/core/lib/legal';
-import { Footer } from 'src/core/lib/netlify-types';
+import { Footer } from '@cms/models';
 import { Header } from '@src/core/components';
 
 const LegalPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({

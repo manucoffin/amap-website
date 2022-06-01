@@ -11,7 +11,7 @@ function main() {
 
   var capitalizedTypes = types.replace(/(?<=interface\s+).*?(?=\s+{)/gs, capitalize);
 
-  fs.writeFileSync('./src/core/lib/netlify-types.ts', capitalizedTypes);
+  fs.writeFileSync('./src/cms/models.ts', capitalizedTypes);
 }
 
 main();

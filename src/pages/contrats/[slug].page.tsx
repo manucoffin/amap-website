@@ -1,23 +1,25 @@
 import * as React from 'react';
-import { DocumentDownloadIcon } from '@heroicons/react/outline';
+import { DocumentDownloadIcon, ExternalLinkIcon } from '@heroicons/react/outline';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Image from 'next/image';
 import { MainLayout } from '@core/layouts';
 import { getContract, getContractsSlugs, Contract } from '@core/lib/contracts';
 import { getFooter } from '@core/lib/footer';
-import { Footer } from '@core/lib/netlify-types';
+import { Footer, Tutor } from '@cms/models';
 import { H1, Header } from '@core/components';
 import ReactMarkdown from 'react-markdown';
+import { getTutors } from '@src/cms/tutors/getTutors';
 
 const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footerData,
-  contractData,
+  contract,
+  tutors,
 }) => {
-  const { title, imagePath, description, documentPath } = contractData;
+  const { title, imagePath, description, documentPath } = contract;
   return (
     <MainLayout
-      title={`Contrat ${contractData?.title}`}
-      description={`Page de téléchargement du contrat ${contractData?.title}`}
+      title={`Contrat ${title}`}
+      description={`Page de téléchargement du contrat ${title}`}
       footerData={footerData}
       className="bg-concrete bg-repeat pb-20"
     >
@@ -27,13 +29,34 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
         <H1>Contrat {title}</H1>
 
         <div className="flex flex-col gap-8 md:flex-row">
-          <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg md:w-full md:h-[300px]">
-            <Image
-              src={imagePath}
-              objectFit="cover"
-              layout="fill"
-              alt={`Image du contrat ${title}`}
-            />
+          <div className="w-full">
+            <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg md:w-full md:h-[300px]">
+              <Image
+                src={imagePath}
+                objectFit="cover"
+                layout="fill"
+                alt={`Image du contrat ${title}`}
+              />
+            </div>
+
+            <a
+              href={documentPath}
+              download
+              className="md:w-auto flex items-center justify-center mt-8 text-center md:text-xl px-4 py-3 rounded-lg text-primary-500 border border-primary-500 hover:border-primary-700 hover:text-primary-700"
+            >
+              <DocumentDownloadIcon className="w-6 mr-2" />
+              <span>Télécharger le contrat</span>
+            </a>
+
+            {contract.calendarLink && (
+              <a
+                href={contract.calendarLink}
+                className="md:w-auto flex items-center justify-center mt-4 text-center md:text-xl px-4 py-3 text-primary-500 hover:text-primary-700"
+              >
+                <span>Calendrier de distribution</span>
+                <ExternalLinkIcon className="w-6 ml-2" />
+              </a>
+            )}
           </div>
 
           <div>
@@ -42,14 +65,19 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
               <ReactMarkdown>{description}</ReactMarkdown>
             </div>
 
-            <a
-              href={documentPath}
-              download
-              className="md:w-auto flex items-center justify-center mt-8 text-center md:text-xl px-4 py-3 rounded-lg text-primary-500 border border-primary-500 hover:border-primary-700 hover:text-primary-700 disabled:border-gray-300 disabled:text-gray-400"
-            >
-              <DocumentDownloadIcon className="w-6 mr-2" />
-              <span>Télécharger le contrat</span>
-            </a>
+            {tutors.length ? (
+              <>
+                <h2 className="text-2xl text-primary-700 mt-6 mb-4">Tuteurs</h2>
+                <ul className="text-gray-700 list-inside list-disc">
+                  {tutors.map((tutor) => (
+                    <li>
+                      {tutor.firstname} {tutor.lastname}{' '}
+                      {tutor.contact ? `(${tutor.contact})` : null}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : null}
           </div>
         </div>
       </div>
@@ -72,7 +100,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<{
   footerData: Footer;
-  contractData: Contract;
+  contract: Contract;
+  tutors: Tutor[];
 }> = async ({ params }) => {
   const slug = params.slug as string | undefined;
   if (!slug) {
@@ -80,11 +109,12 @@ export const getStaticProps: GetStaticProps<{
   }
 
   const footerData = getFooter();
-  const contractData = getContract(slug);
+  const contract = getContract(slug);
+
+  const tutors = contract.tutors ? await getTutors(contract.tutors) : [];
 
   return {
-    revalidate: 1,
-    props: { footerData, contractData },
+    props: { footerData, contract, tutors },
   };
 };
 

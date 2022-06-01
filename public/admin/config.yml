@@ -5,10 +5,12 @@ backend:
   identity_url: 'https://amap-goutte-eau.netlify.app/.netlify/identity'
   gateway_url: 'https://amap-goutte-eau.netlify.app/.netlify/git'
 
+local_backend: true
+
 cms_manual_init: true
 media_folder: 'public/uploads' # Where media files will be stored
 public_folder: '/uploads' # Where the media files can be accesed from the server
-publish_mode: editorial_workflow # For Drafts
+# publish_mode: editorial_workflow # For Drafts
 locale: 'fr'
 
 collections:
@@ -43,6 +45,17 @@ collections:
               media_library: { allow_multiple: false },
               required: true,
             }
+  - name: 'tutor'
+    label: 'Tuteurs'
+    label_singular: 'Tuteur'
+    folder: 'content/tutors'
+    create: true
+    slug: '{{id}}'
+    fields:
+      - { label: 'ID', name: 'id', prefix: 'tutor', widget: 'ncw-id', hidden: true }
+      - { label: 'Nom', name: 'lastname', widget: 'string', required: true }
+      - { label: 'Prénom', name: 'firstname', widget: 'string', required: true }
+      - { label: 'Contact', name: 'contact', widget: 'string', required: false }
   - name: 'contract'
     label: 'Contrats'
     label_singular: 'Contrat'
@@ -52,6 +65,27 @@ collections:
     fields:
       - { label: 'Nom du contrat', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'text', required: true }
+      - {
+          label: 'Lien vers le calendrier de distribution',
+          name: 'calendarLink',
+          widget: 'string',
+          required: true,
+        }
+      - {
+          label: 'Tuteurs',
+          name: 'tutors',
+          widget: 'list',
+          field:
+            {
+              label: 'Tuteur',
+              name: 'tutor',
+              widget: 'relation',
+              collection: 'tutor',
+              search_fields: ['firstname', 'lastname'],
+              value_field: 'id',
+              display_fields: ['firstname', 'lastname'],
+            },
+        }
       - {
           label: 'Image',
           name: 'imagePath',

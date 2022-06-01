@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import * as React from 'react';
-import { Footer } from 'src/core/lib/netlify-types';
+import { Footer } from '@cms/models';
 import { ButtonLink } from '@core/components';
 import { Routes } from '@core/constants/routes';
 

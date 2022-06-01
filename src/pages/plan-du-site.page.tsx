@@ -4,7 +4,7 @@ import { MainLayout } from 'src/core/layouts';
 import { Article, getAllArticles } from 'src/core/lib/articles';
 import { Contract, getAllContracts } from 'src/core/lib/contracts';
 import { getFooter } from 'src/core/lib/footer';
-import { Footer } from 'src/core/lib/netlify-types';
+import { Footer } from '@cms/models';
 import { getStaticPages, StaticPage } from 'src/core/lib/pages';
 import { ButtonLink, Header } from '@src/core/components';
 import { Routes } from '@src/core/constants/routes';

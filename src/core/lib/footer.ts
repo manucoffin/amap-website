@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
-import { Footer } from './netlify-types';
+import { Footer } from '@cms/models';
 
 // path to our list of available posts
 const FOOTER_PATH = join(process.cwd(), 'content/footer.md');
