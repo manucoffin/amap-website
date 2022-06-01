@@ -1,13 +1,20 @@
 /* eslint-disable */
 /* tslint:disable */
 
-export interface Footer {
+export interface Contact {
+  phone: string;
+  email: string;
+}
+
+export interface Address {
   address: string;
   postcode: string;
   city: string;
-  schedule: string;
-  phone: string;
-  email: string;
+}
+
+export interface Amap {
+  name: string;
+  schedule?: string;
 }
 
 export interface Membership {

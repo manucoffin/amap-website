@@ -3,8 +3,8 @@ import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next'
 import { MainLayout } from 'src/core/layouts';
 import { Article, getAllArticles } from 'src/core/lib/articles';
 import { Contract, getAllContracts } from 'src/core/lib/contracts';
-import { getFooter } from 'src/core/lib/footer';
-import { Footer } from '@cms/models';
+import { Address, Amap, Contact } from '@cms/models';
+import { getAddress, getAmap, getContact } from '@src/cms';
 import { getStaticPages, StaticPage } from 'src/core/lib/pages';
 import { ButtonLink, Header } from '@src/core/components';
 import { Routes } from '@src/core/constants/routes';
@@ -23,7 +23,7 @@ const PrivacyPolicyPage: NextPage<InferGetServerSidePropsType<typeof getServerSi
       footerVariant="minimal"
       className="bg-concrete bg-repeat pb-20"
     >
-      <Header />
+      <Header amapName={footerData.amap.name} />
 
       <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
         <h1 className="text-center font-heading font-bold text-2xl md:text-3xl mb-10 text-gray-700">
@@ -86,12 +86,16 @@ const PrivacyPolicyPage: NextPage<InferGetServerSidePropsType<typeof getServerSi
 };
 
 export const getServerSideProps: GetServerSideProps<{
-  footerData: Footer;
   staticPages: StaticPage[];
   newsArticles: Article[];
   contracts: Contract[];
+  footerData: { address: Address; amap: Amap; contact: Contact };
 }> = async () => {
-  const footerData = getFooter();
+  const footerData = {
+    address: getAddress(),
+    amap: getAmap(),
+    contact: getContact(),
+  };
   const staticPages = getStaticPages();
   const newsArticles = (await getAllArticles()) || [];
   const contracts = getAllContracts() || [];

@@ -1,8 +1,8 @@
 import { HandDrawnArrowDownIcon, Header } from '@core/components';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
-import { getFooter } from '@core/lib/footer';
-import { Footer } from '@cms/models';
+import { Address, Amap, Contact } from '@cms/models';
+import { getAddress, getAmap, getContact } from '@src/cms';
 import Image from 'next/image';
 
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ footerData }) => {
@@ -13,7 +13,7 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ fo
       footerData={footerData}
       className="bg-concrete bg-repeat"
     >
-      <Header />
+      <Header amapName={footerData.amap.name} />
 
       <div className="hidden lg:flex h-screen-no-header absolute top-[88px] left-0 right-0 bottom-0 overflow-hidden">
         <Image
@@ -54,9 +54,13 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ fo
 };
 
 export const getStaticProps: GetStaticProps<{
-  footerData: Footer;
+  footerData: { address: Address; amap: Amap; contact: Contact };
 }> = () => {
-  const footerData = getFooter();
+  const footerData = {
+    address: getAddress(),
+    amap: getAmap(),
+    contact: getContact(),
+  };
 
   return {
     props: { footerData },

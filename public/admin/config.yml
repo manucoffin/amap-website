@@ -10,23 +10,32 @@ local_backend: true
 cms_manual_init: true
 media_folder: 'public/uploads' # Where media files will be stored
 public_folder: '/uploads' # Where the media files can be accesed from the server
-# publish_mode: editorial_workflow # For Drafts
+publish_mode: editorial_workflow # For Drafts
 locale: 'fr'
 
 collections:
-  - name: 'components'
+  - name: 'metadata'
     label: 'Informations du site'
     files:
-      - name: 'footer'
-        label: 'Bas de page'
-        file: 'content/footer.md'
+      - name: 'contact'
+        label: 'Informations de contact'
+        file: 'content/site_metadata/contact.md'
+        fields:
+          - { label: 'Téléphone', name: 'phone', widget: 'string', required: true }
+          - { label: 'Email', name: 'email', widget: 'string', required: true }
+      - name: 'address'
+        label: 'Adresse'
+        file: 'content/site_metadata/address.md'
         fields:
           - { label: 'Adresse', name: 'address', widget: 'string', required: true }
           - { label: 'Code postal', name: 'postcode', widget: 'string', required: true }
           - { label: 'Ville', name: 'city', widget: 'string', required: true }
-          - { label: 'Horaires', name: 'schedule', widget: 'string', required: true }
-          - { label: 'Téléphone', name: 'phone', widget: 'string', required: true }
-          - { label: 'Email', name: 'email', widget: 'string', required: true }
+      - name: 'amap'
+        label: "Informations de l'AMAP"
+        file: 'content/site_metadata/amap.md'
+        fields:
+          - { label: "Nom de l'AMAP", name: 'name', widget: 'string', required: true }
+          - { label: 'Horaires', name: 'schedule', widget: 'string', required: false }
   - name: 'pages'
     label: 'Pages'
     files:

@@ -1,12 +1,16 @@
 import { Banner, H1, Header } from '@src/core/components';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from 'src/core/layouts';
-import { getFooter } from 'src/core/lib/footer';
-import { Footer } from '@cms/models';
+import { Address, Amap, Contact } from '@cms/models';
+import { getAddress, getAmap, getContact } from '@src/cms';
 import Image from 'next/image';
 
 const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ footerData }) => {
-  const { email, phone, address, postcode, city, schedule } = footerData;
+  const {
+    address: { postcode, city, address },
+    amap: { schedule },
+    contact: { phone, email },
+  } = footerData;
 
   return (
     <MainLayout
@@ -15,7 +19,7 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       footerData={footerData}
       className="bg-concrete bg-repeat pb-20"
     >
-      <Header />
+      <Header amapName={footerData.amap.name} />
 
       <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
         <H1>Envie de discuter ?</H1>
@@ -85,12 +89,15 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 };
 
 export const getStaticProps: GetStaticProps<{
-  footerData: Footer;
+  footerData: { address: Address; amap: Amap; contact: Contact };
 }> = () => {
-  const footerData = getFooter();
+  const footerData = {
+    address: getAddress(),
+    amap: getAmap(),
+    contact: getContact(),
+  };
 
   return {
-    revalidate: 1,
     props: { footerData },
   };
 };

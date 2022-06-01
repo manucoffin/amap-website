@@ -4,11 +4,11 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } fro
 import Image from 'next/image';
 import { MainLayout } from '@core/layouts';
 import { getContract, getContractsSlugs, Contract } from '@core/lib/contracts';
-import { getFooter } from '@core/lib/footer';
-import { Footer, Tutor } from '@cms/models';
+import { Address, Amap, Contact, Tutor } from '@cms/models';
 import { H1, Header } from '@core/components';
 import ReactMarkdown from 'react-markdown';
 import { getTutors } from '@src/cms/tutors/getTutors';
+import { getAddress, getAmap, getContact } from '@src/cms';
 
 const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footerData,
@@ -23,7 +23,7 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
       footerData={footerData}
       className="bg-concrete bg-repeat pb-20"
     >
-      <Header />
+      <Header amapName={footerData.amap.name} />
 
       <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
         <H1>Contrat {title}</H1>
@@ -99,7 +99,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps<{
-  footerData: Footer;
+  footerData: { address: Address; amap: Amap; contact: Contact };
   contract: Contract;
   tutors: Tutor[];
 }> = async ({ params }) => {
@@ -108,10 +108,15 @@ export const getStaticProps: GetStaticProps<{
     return { notFound: true };
   }
 
-  const footerData = getFooter();
   const contract = getContract(slug);
 
   const tutors = contract.tutors ? await getTutors(contract.tutors) : [];
+
+  const footerData = {
+    address: getAddress(),
+    amap: getAmap(),
+    contact: getContact(),
+  };
 
   return {
     props: { footerData, contract, tutors },

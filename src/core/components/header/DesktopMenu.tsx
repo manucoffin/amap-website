@@ -2,15 +2,15 @@ import { ChevronDownIcon } from '@heroicons/react/outline';
 import { ButtonLink, MenuLink } from '@src/core/components';
 import { Routes } from '@src/core/constants/routes';
 
-type Props = React.ComponentPropsWithoutRef<'nav'>;
+type Props = React.ComponentPropsWithoutRef<'nav'> & { amapName: string };
 
-const DesktopMenu = ({ ...props }: Props) => {
+const DesktopMenu = ({ amapName, ...props }: Props) => {
   return (
     <nav {...props} className="hidden md:flex text-gray-700">
       <MenuLink href={Routes.NewsPage()} label="Actus" />
       <div className="group inline-block relative">
         <button className=" flex items-center p-4 justify-start hover:text-primary-700 transition">
-          <span className="mr-2">La Goutte d&apos;Eau</span>
+          <span className="mr-2">{amapName}</span>
           <ChevronDownIcon className="w-4" />
         </button>
 

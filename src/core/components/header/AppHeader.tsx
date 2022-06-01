@@ -6,9 +6,10 @@ import { useEffect, useState } from 'react';
 
 interface HeaderProps extends React.ComponentPropsWithoutRef<'header'> {
   variant?: 'minimal' | 'full';
+  amapName: string;
 }
 
-const Header = ({ variant = 'full', className, ...props }: HeaderProps) => {
+const Header = ({ amapName, variant = 'full', className, ...props }: HeaderProps) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
@@ -48,7 +49,7 @@ const Header = ({ variant = 'full', className, ...props }: HeaderProps) => {
 
         {variant === 'full' ? (
           <>
-            <DesktopMenu />
+            <DesktopMenu amapName={amapName} />
             <MobileMenu />
           </>
         ) : null}

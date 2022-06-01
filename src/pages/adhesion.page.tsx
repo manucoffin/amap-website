@@ -1,9 +1,9 @@
 import { H1, Header } from '@core/components';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
-import { getFooter } from '@core/lib/footer';
+import { Address, Amap, Contact, Membership } from '@cms/models';
+import { getAddress, getAmap, getContact } from '@src/cms';
 import { getMembershipData } from '@core/lib/membership';
-import { Footer, Membership } from '@cms/models';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 
@@ -20,7 +20,7 @@ const MembershipPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> =
       footerData={footerData}
       className="bg-concrete bg-repeat pb-20"
     >
-      <Header />
+      <Header amapName={footerData.amap.name} />
 
       <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
         <H1>Vous souhaitez adhérer à l&apos;AMAP ? C&apos;est ici !</H1>
@@ -51,10 +51,14 @@ const MembershipPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> =
 };
 
 export const getStaticProps: GetStaticProps<{
-  footerData: Footer;
   membershipData: Membership;
+  footerData: { address: Address; amap: Amap; contact: Contact };
 }> = () => {
-  const footerData = getFooter();
+  const footerData = {
+    address: getAddress(),
+    amap: getAmap(),
+    contact: getContact(),
+  };
   const membershipData = getMembershipData();
 
   return {

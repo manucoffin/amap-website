@@ -4,8 +4,8 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } fro
 import Image from 'next/image';
 import { MainLayout } from 'src/core/layouts';
 import { Article, getArticle, getArticlesSlugs } from 'src/core/lib/articles';
-import { getFooter } from 'src/core/lib/footer';
-import { Footer } from '@cms/models';
+import { Address, Amap, Contact } from '@cms/models';
+import { getAddress, getAmap, getContact } from '@src/cms';
 import { H1, Header } from '@core/components';
 
 const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
@@ -21,7 +21,7 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       footerData={footerData}
       className="bg-concrete bg-repeat pb-20"
     >
-      <Header />
+      <Header amapName={footerData.amap.name} />
 
       <div className="px-4 py-12 lg:w-1/2 2xl:w-1/2 mx-auto">
         <H1>{title}</H1>
@@ -54,7 +54,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps<{
-  footerData: Footer;
+  footerData: { address: Address; amap: Amap; contact: Contact };
   articleData: Article;
 }> = async ({ params }) => {
   const slug = params.slug as string | undefined;
@@ -62,11 +62,15 @@ export const getStaticProps: GetStaticProps<{
     return { notFound: true };
   }
 
-  const footerData = getFooter();
+  const footerData = {
+    address: getAddress(),
+    amap: getAmap(),
+    contact: getContact(),
+  };
   const articleData = await getArticle(slug);
 
   return {
-    revalidate: 1,
+    revalidate: 600,
     props: { footerData, articleData },
   };
 };

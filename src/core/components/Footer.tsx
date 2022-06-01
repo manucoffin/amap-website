@@ -1,16 +1,20 @@
 import Image from 'next/image';
 import * as React from 'react';
-import { Footer } from '@cms/models';
+import { Address, Amap, Contact } from '@cms/models';
 import { ButtonLink } from '@core/components';
 import { Routes } from '@core/constants/routes';
 
 type Props = {
-  data: Footer;
+  data: { address: Address; amap: Amap; contact: Contact };
   variant: 'minimal' | 'full';
 };
 
 const Footer = ({ data }: Props) => {
-  const { address, postcode, city, schedule, phone, email } = data;
+  const {
+    address: { postcode, city, address },
+    amap: { schedule },
+    contact: { phone, email },
+  } = data;
 
   return (
     <footer className="text-gray-700 bg-fabric bg-blend-multiply bg-primary-300/25 lg:grid lg:grid-cols-7">

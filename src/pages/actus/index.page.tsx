@@ -3,8 +3,8 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { ArticleCard } from '@src/pages/actus/components';
 import { MainLayout } from 'src/core/layouts';
 import { Article, getAllArticles } from 'src/core/lib/articles';
-import { getFooter } from 'src/core/lib/footer';
-import { Footer } from '@cms/models';
+import { Address, Amap, Contact } from '@cms/models';
+import { getAddress, getAmap, getContact } from '@src/cms';
 import { ButtonLink, H1, Header } from '@src/core/components';
 import Image from 'next/image';
 import clsx from 'clsx';
@@ -25,7 +25,7 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       footerData={footerData}
       className="bg-concrete bg-repeat pb-20"
     >
-      <Header />
+      <Header amapName={footerData.amap.name} />
 
       <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
         <H1>Actualités</H1>
@@ -75,13 +75,17 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
 export const getStaticProps: GetStaticProps<{
   articles: Article[];
-  footerData: Footer;
+  footerData: { address: Address; amap: Amap; contact: Contact };
 }> = async () => {
   const articles = await getAllArticles();
-  const footerData = getFooter();
+  const footerData = {
+    address: getAddress(),
+    amap: getAmap(),
+    contact: getContact(),
+  };
 
   return {
-    revalidate: 1,
+    revalidate: 60,
     props: { articles, footerData },
   };
 };

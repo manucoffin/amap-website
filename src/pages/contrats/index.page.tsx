@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from 'react';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
 import { Contract, getAllContracts } from '@core/lib/contracts';
-import { getFooter } from '@core/lib/footer';
-import { Footer } from '@cms/models';
+import { Address, Amap, Contact } from '@cms/models';
+import { getAddress, getAmap, getContact } from '@src/cms';
 import { H1, Header } from '@core/components';
 import autoAnimate from '@formkit/auto-animate';
 import { ContractCard } from '@src/pages/contrats/components';
@@ -32,7 +32,7 @@ const ContractsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = 
       footerData={footerData}
       className="bg-concrete bg-repeat pb-20"
     >
-      <Header />
+      <Header amapName={footerData.amap.name} />
 
       <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
         <H1>Vous cherchez un contrat ? c&apos;est par là</H1>
@@ -62,10 +62,14 @@ const ContractsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = 
 
 export const getStaticProps: GetStaticProps<{
   contracts: Contract[];
-  footerData: Footer;
+  footerData: { address: Address; amap: Amap; contact: Contact };
 }> = () => {
   const contracts = getAllContracts();
-  const footerData = getFooter();
+  const footerData = {
+    address: getAddress(),
+    amap: getAmap(),
+    contact: getContact(),
+  };
 
   return {
     props: { contracts, footerData },
