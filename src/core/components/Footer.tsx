@@ -70,7 +70,7 @@ const Footer = ({ data }: Props) => {
                   Recettes
                 </ButtonLink>
                 <ButtonLink
-                  href={Routes.ManifestPage()}
+                  href={Routes.ConventionPage()}
                   size="base"
                   className="text-gray-700 hover:text-primary-600"
                 >

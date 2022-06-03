@@ -41,7 +41,7 @@ collections:
     files:
       - label: 'Adhésion'
         name: 'membership'
-        file: 'content/membership.md'
+        file: 'content/pages/membership.md'
         fields:
           - { label: 'Description', name: 'description', widget: 'markdown', required: true }
           - {
@@ -54,6 +54,11 @@ collections:
               media_library: { allow_multiple: false },
               required: true,
             }
+      - label: 'Charte des AMAP'
+        name: 'convention'
+        file: 'content/pages/convention.md'
+        fields:
+          - { label: 'Contenu', name: 'body', widget: 'markdown', required: true }
   - name: 'tutor'
     label: 'Tuteurs'
     label_singular: 'Tuteur'

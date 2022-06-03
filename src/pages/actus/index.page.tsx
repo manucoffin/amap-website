@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next';
 import { ArticleCard } from '@src/pages/actus/components';
 import { MainLayout } from 'src/core/layouts';
 import { Article, getAllArticles } from 'src/core/lib/articles';
@@ -11,7 +11,7 @@ import clsx from 'clsx';
 import { truncateText } from '@src/core/lib/utils';
 import { Routes } from '@src/core/constants/routes';
 
-const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+const NewsPage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   articles,
   footerData,
 }) => {
@@ -73,7 +73,7 @@ const NewsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   );
 };
 
-export const getStaticProps: GetStaticProps<{
+export const getServerSideProps: GetServerSideProps<{
   articles: Article[];
   footerData: { address: Address; amap: Amap; contact: Contact };
 }> = async () => {
@@ -85,7 +85,6 @@ export const getStaticProps: GetStaticProps<{
   };
 
   return {
-    revalidate: 60,
     props: { articles, footerData },
   };
 };

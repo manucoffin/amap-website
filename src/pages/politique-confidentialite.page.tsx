@@ -4,12 +4,12 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from 'src/core/layouts';
 import { Address, Amap, Contact } from '@cms/models';
 import { getAddress, getAmap, getContact } from '@src/cms';
-import { getPrivacyPolicyText } from 'src/core/lib/legal';
+import { getPrivacyPolicy } from '@src/cms/pages/getPrivacyPolicy';
 import { Header } from '@src/core/components';
 
 const PrivacyPolicyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footerData,
-  privacyPolicyText,
+  privacyPolicy,
 }) => {
   return (
     <MainLayout
@@ -27,7 +27,7 @@ const PrivacyPolicyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>
         </h1>
 
         <div className="prose prose-stone prose-h3:my-0 prose-p:my-0 prose-li:my-0 prose-ul:leading-5 max-w-none prose-headings:font-serif prose-headings:font-normal prose-headings:text-blue-700 prose-p:font-serif prose-li:font-serif">
-          <ReactMarkdown>{privacyPolicyText}</ReactMarkdown>
+          <ReactMarkdown>{privacyPolicy}</ReactMarkdown>
         </div>
       </div>
     </MainLayout>
@@ -35,7 +35,7 @@ const PrivacyPolicyPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>
 };
 
 export const getStaticProps: GetStaticProps<{
-  privacyPolicyText: string;
+  privacyPolicy: string;
   footerData: { address: Address; amap: Amap; contact: Contact };
 }> = () => {
   const footerData = {
@@ -43,10 +43,10 @@ export const getStaticProps: GetStaticProps<{
     amap: getAmap(),
     contact: getContact(),
   };
-  const privacyPolicyText = getPrivacyPolicyText();
+  const privacyPolicy = getPrivacyPolicy();
 
   return {
-    props: { footerData, privacyPolicyText },
+    props: { footerData, privacyPolicy },
   };
 };
 

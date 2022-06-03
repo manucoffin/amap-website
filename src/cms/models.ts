@@ -22,6 +22,9 @@ export interface Membership {
   documentPath: any;
 }
 
+export interface Convention {
+ }
+
 export interface Tutor {
   id: any;
   lastname: string;

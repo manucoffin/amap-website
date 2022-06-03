@@ -3,7 +3,7 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
 import { Address, Amap, Contact, Membership } from '@cms/models';
 import { getAddress, getAmap, getContact } from '@src/cms';
-import { getMembershipData } from '@core/lib/membership';
+import { getMembership } from '@src/cms/pages/getMembership';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 
@@ -59,7 +59,7 @@ export const getStaticProps: GetStaticProps<{
     amap: getAmap(),
     contact: getContact(),
   };
-  const membershipData = getMembershipData();
+  const membershipData = getMembership();
 
   return {
     props: { footerData, membershipData },

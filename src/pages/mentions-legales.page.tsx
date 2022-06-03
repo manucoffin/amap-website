@@ -3,12 +3,12 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from 'src/core/layouts';
 import { Address, Amap, Contact } from '@cms/models';
 import { getAddress, getAmap, getContact } from '@src/cms';
-import { getLegalText } from 'src/core/lib/legal';
+import { getLegalMentions } from '@src/cms/pages/getLegalMentions';
 import { Header } from '@src/core/components';
 
 const LegalPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footerData,
-  legalText,
+  legalMentions,
 }) => {
   return (
     <MainLayout
@@ -26,7 +26,7 @@ const LegalPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         </h1>
 
         <div className="prose prose-stone prose-h3:my-0 prose-p:my-0 prose-li:my-0 prose-ul:leading-5 max-w-none prose-headings:font-serif prose-headings:font-normal prose-headings:text-blue-700 prose-p:font-serif">
-          <ReactMarkdown>{legalText}</ReactMarkdown>
+          <ReactMarkdown>{legalMentions}</ReactMarkdown>
         </div>
       </div>
     </MainLayout>
@@ -34,7 +34,7 @@ const LegalPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 };
 
 export const getStaticProps: GetStaticProps<{
-  legalText: string;
+  legalMentions: string;
   footerData: { address: Address; amap: Amap; contact: Contact };
 }> = () => {
   const footerData = {
@@ -42,10 +42,10 @@ export const getStaticProps: GetStaticProps<{
     amap: getAmap(),
     contact: getContact(),
   };
-  const legalText = getLegalText();
+  const legalMentions = getLegalMentions();
 
   return {
-    props: { footerData, legalText },
+    props: { footerData, legalMentions },
   };
 };
 

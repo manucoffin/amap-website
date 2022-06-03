@@ -13,7 +13,7 @@ export const Routes = {
   NewsPage: () => '/actus',
   ArticlePage: (query: { articleId: number | string } & ParsedUrlQueryInput) =>
     `/actus/${query.articleId}`,
-  ManifestPage: () => '/charte-de-l-amap',
+  ConventionPage: () => '/charte',
   ContactPage: () => '/contact',
   ProducersPage: () => '/producteurs',
   ProducerPage: (query: { producerId: number | string } & ParsedUrlQueryInput) =>
