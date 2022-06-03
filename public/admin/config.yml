@@ -59,6 +59,11 @@ collections:
         file: 'content/pages/convention.md'
         fields:
           - { label: 'Contenu', name: 'body', widget: 'markdown', required: true }
+      - label: "Statuts de l'association"
+        name: 'statutes'
+        file: 'content/pages/statutes.md'
+        fields:
+          - { label: 'Contenu', name: 'body', widget: 'markdown', required: true }
   - name: 'tutor'
     label: 'Tuteurs'
     label_singular: 'Tuteur'

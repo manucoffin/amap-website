@@ -14,6 +14,7 @@ export const Routes = {
   ArticlePage: (query: { articleId: number | string } & ParsedUrlQueryInput) =>
     `/actus/${query.articleId}`,
   ConventionPage: () => '/charte',
+  StatutesPage: () => '/statuts',
   ContactPage: () => '/contact',
   ProducersPage: () => '/producteurs',
   ProducerPage: (query: { producerId: number | string } & ParsedUrlQueryInput) =>

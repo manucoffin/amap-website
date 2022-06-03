@@ -25,6 +25,9 @@ export interface Membership {
 export interface Convention {
  }
 
+export interface Statutes {
+ }
+
 export interface Tutor {
   id: any;
   lastname: string;

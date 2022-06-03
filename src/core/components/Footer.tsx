@@ -70,6 +70,13 @@ const Footer = ({ data }: Props) => {
                   Recettes
                 </ButtonLink>
                 <ButtonLink
+                  href={Routes.PrivacyPolicyPage()}
+                  size="base"
+                  className="text-gray-700 hover:text-primary-600"
+                >
+                  Calendrier de distribution
+                </ButtonLink>
+                <ButtonLink
                   href={Routes.ConventionPage()}
                   size="base"
                   className="text-gray-700 hover:text-primary-600"
@@ -77,11 +84,11 @@ const Footer = ({ data }: Props) => {
                   Charte de l&apos;AMAP
                 </ButtonLink>
                 <ButtonLink
-                  href={Routes.PrivacyPolicyPage()}
+                  href={Routes.StatutesPage()}
                   size="base"
                   className="text-gray-700 hover:text-primary-600"
                 >
-                  Calendrier de distribution
+                  Statuts de l&apos;association
                 </ButtonLink>
               </nav>
             </div>
