@@ -29,7 +29,7 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
         <H1>Contrat {title}</H1>
 
         <div className="flex flex-col gap-8 md:flex-row">
-          <div className="w-full">
+          <div className="w-full basis-1/2">
             <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg md:w-full md:h-[300px]">
               <Image
                 src={imagePath}
@@ -59,7 +59,7 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
             )}
           </div>
 
-          <div>
+          <div className="basis-1/2">
             <h2 className="text-2xl text-primary-700 mb-6">À propos de ce contrat</h2>
             <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">
               <ReactMarkdown>{description}</ReactMarkdown>

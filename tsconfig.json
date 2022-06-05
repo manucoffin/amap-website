@@ -20,7 +20,12 @@
       "@core/*": ["src/core/*"],
       "@cms/*": ["src/cms/*"],
       "@modules/*": ["src/modules/*"],
-      "@layouts/*": ["src/core/layouts/*"]
+      "@layouts/*": ["src/core/layouts/*"],
+      "@src": ["src"],
+      "@core": ["src/core"],
+      "@cms": ["src/cms"],
+      "@modules": ["src/modules"],
+      "@layouts": ["src/core/layouts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

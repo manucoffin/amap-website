@@ -12,6 +12,9 @@ media_folder: 'public/uploads' # Where media files will be stored
 public_folder: '/uploads' # Where the media files can be accesed from the server
 publish_mode: editorial_workflow # For Drafts
 locale: 'fr'
+slug:
+  encoding: 'ascii'
+  clean_accents: true
 
 collections:
   - name: 'metadata'
@@ -75,6 +78,48 @@ collections:
       - { label: 'Nom', name: 'lastname', widget: 'string', required: true }
       - { label: 'Prénom', name: 'firstname', widget: 'string', required: true }
       - { label: 'Contact', name: 'contact', widget: 'string', required: false }
+  - name: 'producer'
+    label: 'Producteurs'
+    label_singular: 'Producteur'
+    folder: 'content/producers'
+    create: true
+    slug: '{{id}}'
+    fields:
+      - { label: 'ID', name: 'id', widget: 'ncw-id', hidden: true }
+      - { label: 'Nom', name: 'lastname', widget: 'string', required: true }
+      - { label: 'Prénom', name: 'firstname', widget: 'string', required: true }
+      - { label: 'Bio', name: 'biography', widget: 'markdown', required: true }
+      - { label: 'Activité', name: 'activity', widget: 'string', required: true }
+      - { label: 'Adresse', name: 'address', widget: 'string', required: false }
+      - { label: 'Code postal', name: 'postcode', widget: 'string', required: false }
+      - { label: 'Ville', name: 'city', widget: 'string', required: false }
+      - { label: 'Téléphone', name: 'phone', widget: 'string', required: false }
+      - { label: 'Email', name: 'email', widget: 'string', required: false }
+      - {
+          label: 'Photo de profil',
+          name: 'avatarUrl',
+          widget: 'image',
+          media_folder: '/{{media_folder}}/images',
+          public_folder: '{{public_folder}}/images',
+          choose_url: false,
+          media_library: { allow_multiple: false },
+          required: true,
+        }
+      - {
+          label: 'Contrat(s)',
+          name: 'contracts',
+          widget: 'list',
+          field:
+            {
+              label: 'Nom du contrat',
+              name: 'slug',
+              widget: 'relation',
+              collection: 'contract',
+              search_fields: ['title'],
+              value_field: '{{slug}}',
+              display_fields: ['title'],
+            },
+        }
   - name: 'contract'
     label: 'Contrats'
     label_singular: 'Contrat'
