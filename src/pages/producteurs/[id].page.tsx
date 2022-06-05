@@ -17,7 +17,7 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
   const {
     firstname,
     lastname,
-    avatarUrl,
+    photoUrl,
     biography,
     activity,
     address,
@@ -30,7 +30,7 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
   return (
     <MainLayout
       title={`${firstname} ${lastname}`}
-      description={`${firstname} ${lastname} - Producteur pour l'AMAP ${footerData.amap.name}`}
+      description={`${firstname} ${lastname} - ${activity}`}
       footerData={footerData}
       className="bg-concrete bg-repeat pb-20"
     >
@@ -45,7 +45,7 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
           <div className="w-full basis-1/2">
             <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg md:w-full md:h-[300px]">
               <Image
-                src={avatarUrl}
+                src={photoUrl}
                 objectFit="cover"
                 layout="fill"
                 alt={`Photo de profil de ${firstname} ${lastname}`}

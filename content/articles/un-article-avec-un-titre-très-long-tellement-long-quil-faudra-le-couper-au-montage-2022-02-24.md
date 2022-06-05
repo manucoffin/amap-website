@@ -2,7 +2,7 @@
 title: Un article avec un titre très long, tellement long qu'il faudra le couper
   au montage
 date: 2022-02-24T11:08:10.800Z
-thumbnail: /uploads/images/chataigne.jpg
+photoUrl: /uploads/images/chataigne.jpg
 ---
 
 This present moment is perfect simply due to the fact you're experiencing it. Everything is happy if you choose to make it that way. How do you make a round circle with a square knife? That's your challenge for the day. Let's do it again then, what the heck.

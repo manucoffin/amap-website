@@ -1,7 +1,7 @@
 ---
 title: Le site de l'AMAP fait peau neuve !
 date: 2022-02-24T11:06:59.031Z
-thumbnail: /uploads/images/agneau.jpg
+photoUrl: /uploads/images/agneau.jpg
 ---
 
 ## Un sous titre

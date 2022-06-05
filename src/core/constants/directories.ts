@@ -4,3 +4,4 @@ export const CONTRACTS_DIR = 'content/contracts';
 export const PAGES_DIR = 'content/pages';
 export const SITEMETADATA_DIR = 'content/site_metadata';
 export const ARTICLES_DIR = 'content/articles';
+export const RECIPES_DIR = 'content/recipes';

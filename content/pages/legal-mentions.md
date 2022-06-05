@@ -97,3 +97,7 @@ Réalisées par :
 - [Contact us icons created by smashingstocks - Flaticon](https://www.flaticon.com/free-icons/contact-us")
 - [Map icons created by smashingstocks - Flaticon](https://www.flaticon.com/free-icons/map")
 - [Contract icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/contract")
+- [Cooking icons created by kerismaker - Flaticon](https://www.flaticon.com/free-icons/cooking)
+- [Baking icons created by ultimatearm - Flaticon](https://www.flaticon.com/free-icons/baking)
+- [Hourglass icons created by prettycons - Flaticon](https://www.flaticon.com/free-icons/hourglass)
+- [Plate icons created by Nikita Golubev - Flaticon](https://www.flaticon.com/free-icons/plate)

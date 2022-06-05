@@ -12,8 +12,8 @@ const ProducersPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePr
 }) => {
   return (
     <MainLayout
-      title="Contrats"
-      description="Liste des contrats de l'AMAP de la Goutte d'Eau"
+      title="Producteurs"
+      description="Liste des producteurs de l'AMAP de la Goutte d'Eau"
       footerData={footerData}
       className="bg-concrete bg-repeat pb-20"
     >

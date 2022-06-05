@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next';
 import { ArticleCard } from '@src/pages/actus/components';
-import { MainLayout } from 'src/core/layouts';
-import { Article, getAllArticles } from 'src/core/lib/articles';
-import { Address, Amap, Contact } from '@cms/models';
-import { getAddress, getAmap, getContact } from '@src/cms';
-import { ButtonLink, H1, Header } from '@src/core/components';
+import { MainLayout } from '@core/layouts';
+import { Address, Amap, Contact, Article } from '@cms/models';
+import { getAddress, getAmap, getContact } from '@cms';
+import { ButtonLink, H1, Header } from '@core/components';
 import Image from 'next/image';
 import clsx from 'clsx';
-import { truncateText } from '@src/core/lib/utils';
-import { Routes } from '@src/core/constants/routes';
+import { truncateText } from '@core/lib/utils';
+import { Routes } from '@core/constants/routes';
+import { getArticles } from '@cms/articles';
 
 const NewsPage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   articles,
@@ -35,7 +35,7 @@ const NewsPage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>>
             <div className="grid grid-cols-1 gap-y-4 md:grid-cols-5 md:gap-4 md:h-[300px]">
               <div className="shadow-lg h-[200px] md:h-full md:col-span-2 relative rounded-lg overflow-hidden">
                 <Image
-                  src={mainArticle.thumbnail}
+                  src={mainArticle.photoUrl}
                   objectFit="cover"
                   layout="fill"
                   alt={mainArticle.title}
@@ -77,7 +77,7 @@ export const getServerSideProps: GetServerSideProps<{
   articles: Article[];
   footerData: { address: Address; amap: Amap; contact: Contact };
 }> = async () => {
-  const articles = await getAllArticles();
+  const articles = await getArticles();
   const footerData = {
     address: getAddress(),
     amap: getAmap(),

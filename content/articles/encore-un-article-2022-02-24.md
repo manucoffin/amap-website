@@ -1,7 +1,7 @@
 ---
 title: Encore un article
 date: 2022-02-24T11:08:44.896Z
-thumbnail: /uploads/images/miel.jpg
+photoUrl: /uploads/images/miel.jpg
 ---
 
 This present moment is perfect simply due to the fact you're experiencing it. Everything is happy if you choose to make it that way. How do you make a round circle with a square knife? That's your challenge for the day. Let's do it again then, what the heck.

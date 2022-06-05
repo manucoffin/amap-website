@@ -1,4 +1,4 @@
-import { Contract as NetlifyContract } from './netlify-entities';
+import { Contract as NetlifyContract, Article as NetlifyArticle } from './netlify-entities';
 
 export type {
   Amap,
@@ -9,7 +9,11 @@ export type {
   Statutes,
   Tutor,
   Producer,
-  Article,
+  Recipe,
 } from './netlify-entities';
 
 export type Contract = NetlifyContract & { updatedAt: string; slug: string };
+export type Article = NetlifyArticle & {
+  slug: string;
+  content: string;
+};

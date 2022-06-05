@@ -46,7 +46,7 @@ export interface Producer {
   city?: string;
   phone?: string;
   email?: string;
-  avatarUrl: string;
+  photoUrl: string;
   contracts: string[];
 }
 
@@ -55,12 +55,25 @@ export interface Contract {
   description: string;
   calendarLink: string;
   tutors: any[];
-  imagePath: string;
+  photoUrl: string;
   documentPath: any;
 }
 
 export interface Article {
   title: string;
   date: string;
-  thumbnail: string;
+  photoUrl: string;
+}
+
+export interface Recipe {
+  id: any;
+  date: string;
+  title: string;
+  description: string;
+  prepTime: string;
+  cookTime: string;
+  yields: string;
+  ingredients: string[];
+  instructions: string[];
+  photoUrl: string;
 }

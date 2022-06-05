@@ -97,7 +97,7 @@ collections:
       - { label: 'Email', name: 'email', widget: 'string', required: false }
       - {
           label: 'Photo de profil',
-          name: 'avatarUrl',
+          name: 'photoUrl',
           widget: 'image',
           media_folder: '/{{media_folder}}/images',
           public_folder: '{{public_folder}}/images',
@@ -152,7 +152,7 @@ collections:
         }
       - {
           label: 'Image',
-          name: 'imagePath',
+          name: 'photoUrl',
           widget: 'image',
           media_folder: '/{{media_folder}}/images',
           public_folder: '{{public_folder}}/images',
@@ -181,7 +181,7 @@ collections:
       - { label: 'Date de publication', name: 'date', widget: 'datetime', required: true }
       - {
           label: 'Image de couverture',
-          name: 'thumbnail',
+          name: 'photoUrl',
           widget: 'image',
           media_folder: '/{{media_folder}}/images',
           public_folder: '{{public_folder}}/images',
@@ -190,3 +190,53 @@ collections:
           required: true,
         }
       - { label: 'Contenu', name: 'body', widget: 'markdown', required: true }
+  - name: 'recipe'
+    label: 'Recettes'
+    label_singular: 'Recette'
+    folder: 'content/recipes'
+    create: true
+    slug: '{{id}}'
+    fields:
+      - { label: 'ID', name: 'id', widget: 'ncw-id', hidden: true }
+      - { label: 'Date de publication', name: 'date', widget: 'datetime', required: true }
+      - { label: 'Titre', name: 'title', widget: 'string', required: true }
+      - { label: 'Description', name: 'description', widget: 'string', required: true }
+      - {
+          label: 'Temps de préparation (en minutes)',
+          name: 'prepTime',
+          widget: 'number',
+          required: true,
+        }
+      - {
+          label: 'Temps de cuisson (en minutes)',
+          name: 'cookTime',
+          widget: 'number',
+          required: true,
+        }
+      - { label: 'Nombre de personnes', name: 'yields', widget: 'number', required: true }
+      - {
+          label: "Liste d'ingrédients",
+          label_singular: 'Ingrédient',
+          name: 'ingredients',
+          widget: 'list',
+          field: { label: Ingrédient, name: ingredient, widget: string },
+          required: true,
+        }
+      - {
+          label: 'Instructions',
+          label_singular: 'Instruction',
+          name: 'instructions',
+          widget: 'list',
+          field: { label: Ingrédient, name: ingredient, widget: string },
+          required: true,
+        }
+      - {
+          label: 'Photo',
+          name: 'photoUrl',
+          widget: 'image',
+          media_folder: '/{{media_folder}}/images',
+          public_folder: '{{public_folder}}/images',
+          choose_url: false,
+          media_library: { allow_multiple: false },
+          required: true,
+        }
