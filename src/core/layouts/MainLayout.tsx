@@ -2,7 +2,13 @@ import PlausibleProvider from 'next-plausible';
 import { NextSeoProps } from 'next-seo';
 import { Footer } from '@core/components';
 import { Seo } from '@core/components/Seo';
-import { Footer as FooterData } from '@cms/models';
+import { Address, Amap, Contact } from '@cms/models';
+
+interface FooterData {
+  address: Address;
+  amap: Amap;
+  contact: Contact;
+}
 
 interface Props extends React.PropsWithoutRef<JSX.IntrinsicElements['main']> {
   title: string;
