@@ -1,4 +1,4 @@
-import { getAllArticles } from 'src/core/lib/articles';
+import { getArticles } from '@cms/articles';
 import { getAllContracts } from 'src/core/lib/contracts';
 import { getStaticPages } from 'src/core/lib/pages';
 
@@ -11,7 +11,7 @@ export const getServerSideProps = async ({ res }) => {
   }[process.env.NODE_ENV];
 
   const staticPages = getStaticPages();
-  const newsArticles = (await getAllArticles()) || [];
+  const newsArticles = (await getArticles()) || [];
   const contracts = getAllContracts() || [];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

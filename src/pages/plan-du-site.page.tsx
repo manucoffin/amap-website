@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next';
 import { MainLayout } from 'src/core/layouts';
-import { Article, getAllArticles } from 'src/core/lib/articles';
 import { Contract, getAllContracts } from 'src/core/lib/contracts';
-import { Address, Amap, Contact } from '@cms/models';
+import { Address, Amap, Contact, Article } from '@cms/models';
 import { getAddress, getAmap, getContact } from '@src/cms';
 import { getStaticPages, StaticPage } from 'src/core/lib/pages';
 import { ButtonLink, Header } from '@src/core/components';
-import { Routes } from '@src/core/constants/routes';
+import { Routes } from '@core/constants/routes';
+import { getArticles } from '@cms/articles';
 
 const PrivacyPolicyPage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   staticPages,
@@ -97,7 +97,7 @@ export const getServerSideProps: GetServerSideProps<{
     contact: getContact(),
   };
   const staticPages = getStaticPages();
-  const newsArticles = (await getAllArticles()) || [];
+  const newsArticles = (await getArticles()) || [];
   const contracts = getAllContracts() || [];
 
   return {
