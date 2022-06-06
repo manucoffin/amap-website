@@ -5,6 +5,7 @@ module.exports = {
       backgroundImage: {
         fabric: "url('/assets/fabric-texture.png')",
         concrete: "url('/assets/concrete-texture.jpg')",
+        grid: "url('/assets/grid-bg-2.svg')",
       },
       height: {
         'screen-no-header': 'calc(100vh - 88px)',

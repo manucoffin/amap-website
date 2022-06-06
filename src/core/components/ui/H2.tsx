@@ -1,14 +1,17 @@
-import clsx from "clsx"
+import clsx from 'clsx';
 
-type Props = React.ComponentProps<"h2">
+type Props = React.ComponentProps<'h2'>;
 
 const H2 = ({ className, ...props }: Props) => {
   return (
     <h2
       {...props}
-      className={clsx("text-xl font-semibold font-heading text-gray-800 mb-3 mt-6", className)}
+      className={clsx(
+        'tracking-wide text-center font-handwritten font-heading font-bold text-4xl md:text-5xl mb-12 text-primary-700',
+        className
+      )}
     />
-  )
-}
+  );
+};
 
-export default H2
+export default H2;

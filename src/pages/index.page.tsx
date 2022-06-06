@@ -1,11 +1,120 @@
-import { HandDrawnArrowDownIcon, Header } from '@core/components';
+import { H2, HandDrawnArrowDownIcon, Header } from '@core/components';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
 import { Address, Amap, Contact } from '@cms/models';
 import { getAddress, getAmap, getContact } from '@src/cms';
 import Image from 'next/image';
+import { AmapBenefitCard, AmapValueCard, HowItWorksStepCard } from '@src/pages/home/components';
 
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ footerData }) => {
+  const benefits = [
+    {
+      title: 'Pour manger mieux',
+      content:
+        'Les paniers sont composés de produits frais et de saison, ce qui assure une meilleure qualité nutritive. De plus, des produits bios, et donc sans pesticides sont meilleurs pour la santé.',
+      imageUrl: '/assets/vegetables-hand-drawn-basket.png',
+      imageAlt: "Dessin d'un panier de légumes",
+    },
+    {
+      title: 'Pour les producteurs',
+      content:
+        'En achetant les produits à l’avance, vous assurez une sécurité financière pour les producteurs, ce qui leur permet de pouvoir gérer les aléas de la production plus sereinement.',
+      imageUrl: '/assets/care.png',
+      imageAlt: "Dessin d'une main tendue",
+    },
+    {
+      title: "Pour l'environnement",
+      content:
+        'Les paniers permettent de réduire les emballages, et donc de produire moins de déchets. De plus, en favorisant les circuits court, on limite les émissions de CO2 liées au transport.',
+      imageUrl: '/assets/planet-earth.png',
+      imageAlt: 'Dessin de la planète Terre',
+    },
+    {
+      title: 'Pour le lien social',
+      content:
+        'Contrairement aux allées froides et sans âme des supermarchés, la distribution des paniers se fait un cadre chaleureux et convivial, qui permet de renouer le lien entre le producteur et les consommateurs.',
+      imageUrl: '/assets/deal.png',
+      imageAlt: "Dessin d'une poignée de main",
+    },
+    {
+      title: 'Pour le porte monnaie',
+      content:
+        'En réduisant les intermédiaires, on peut réduire le coût du panier, tout en ayant un prix juste pour le producteur. C’est pourquoi le rapport qualité/prix des paniers est excellent !',
+      imageUrl: '/assets/piggy-bank.png',
+      imageAlt: "Dessin d'une tirelire",
+    },
+  ];
+
+  const howItWorksSteps: {
+    title: string;
+    content: string;
+    color: 'primary' | 'yellow' | 'melon';
+  }[] = [
+    {
+      title: 'Adhésion',
+      content:
+        "Je signe un contrat qui m'engage à acheter les produits de mon choix pour une période donnée.",
+      color: 'primary',
+    },
+    {
+      title: 'Production',
+      content:
+        "De son côté, le producteur s'engage à assurer la livraison des paniers au prix fixé dans le  contrat.",
+      color: 'yellow',
+    },
+    {
+      title: 'Distribution',
+      content: 'Chaque semaine, je vais récupérer mon panier sur le lieu de distribution.',
+      color: 'melon',
+    },
+  ];
+
+  const amapValues: {
+    title: string;
+    items: string[];
+    color: 'primary' | 'yellow' | 'melon' | 'green';
+  }[] = [
+    {
+      title: 'Solidarité',
+      color: 'melon',
+      items: [
+        'Soutien des consommateurs aux producteurs dans les aléas de la production',
+        "Accompagnement du producteur à l'autonomie, c'est-à-dire la capacité à être maître de ses choix",
+        "Appui à l'agriculture paysanne locale",
+      ],
+    },
+    {
+      title: 'Équité',
+      color: 'primary',
+      items: [
+        'Définition à chaque saison d’un prix équitable entre consommateurs et producteur',
+        'Formalisation et respect des contrats entre consommateurs et producteur',
+        'Respect des normes sociales par rapport aux employés de l’exploitation, y compris le personnel temporaire',
+        'Aucun intermédiaire entre producteur et consommateurs, pas de produits achetés et revendus par le producteur sans accord des consommateurs',
+      ],
+    },
+    {
+      title: 'Qualité',
+      color: 'green',
+      items: [
+        'Qualité des produits : gustative, sanitaire, environnementale',
+        "Production respectueuse de la nature, de l'environnement et de l'animal",
+        'Information fréquente du consommateur sur les produits',
+        "Recherche de la transparence dans les actes d'achat, de production, de transformation et de vente des produits agricoles",
+        "Production de dimension humaine adaptée aux types de culture et d'élevage",
+      ],
+    },
+    {
+      title: 'Lien social',
+      color: 'yellow',
+      items: [
+        'Proximité du producteur et des consommateurs',
+        "Participation active des consommateurs à l'AMAP favorisée notamment par la responsabilisation du maximum d'adhérents",
+        "Sensibilisation des adhérents de l'AMAP aux particularités de l'agriculture paysanne",
+      ],
+    },
+  ];
+
   return (
     <MainLayout
       title="Accueil"
@@ -46,9 +155,45 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ fo
         </a>
       </div>
 
-      <div id="pourquoi-adherer-a-une-amap">
-        <h2>Pourquoi adhérer à une AMAP ?</h2>
-      </div>
+      <section id="pourquoi-adherer-a-une-amap" className="px-4 lg:w-2/3 2xl:w-1/2 mx-auto">
+        <H2>Pourquoi adhérer à une AMAP ?</H2>
+
+        <div className="flex flex-col gap-14 md:flex-row md:flex-wrap justify-center">
+          {benefits.map((benefit) => (
+            <AmapBenefitCard
+              title={benefit.title}
+              content={benefit.content}
+              imageUrl={benefit.imageUrl}
+              imageAlt={benefit.imageAlt}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-12 py-20 bg-grid bg-repeat bg-[length:20px_20px] border-dashed border-y-4 border-gray-300">
+        <H2>Comment ça marche ?</H2>
+
+        <div className="flex flex-col gap-12 md:flex-row justify-center items-center md:items-start">
+          {howItWorksSteps.map((step, index) => (
+            <HowItWorksStepCard
+              step={index + 1}
+              title={step.title}
+              content={step.content}
+              color={step.color}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-32 pb-20">
+        <H2>Les valeurs des AMAP</H2>
+
+        <div className="flex flex-col gap-12 md:flex-row md:flex-wrap justify-center items-center md:items-start">
+          {amapValues.map((value) => (
+            <AmapValueCard title={value.title} items={value.items} color={value.color} />
+          ))}
+        </div>
+      </section>
     </MainLayout>
   );
 };
