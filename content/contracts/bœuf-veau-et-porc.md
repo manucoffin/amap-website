@@ -22,6 +22,6 @@ calendarLink: http://test.com
 tutors:
   - tutor-eymtaxSNQ
   - tutor-hxag58qeF
-imagePath: /uploads/images/viande.jpg
+photoUrl: /uploads/images/viande.jpg
 documentPath: /uploads/files/contrat_viande_2021-2022.pdf
 ---

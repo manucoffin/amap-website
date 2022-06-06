@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Article } from '@core/lib/articles';
+import { Article } from '@cms/models';
 import { truncateText } from '@core/lib/utils';
 import { Routes } from '@src/core/constants/routes';
 import clsx from 'clsx';

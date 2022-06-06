@@ -15,7 +15,7 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
   contract,
   tutors,
 }) => {
-  const { title, imagePath, description, documentPath } = contract;
+  const { title, photoUrl, description, documentPath } = contract;
   return (
     <MainLayout
       title={`Contrat ${title}`}
@@ -32,7 +32,7 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
           <div className="w-full basis-1/2">
             <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg md:w-full md:h-[300px]">
               <Image
-                src={imagePath}
+                src={photoUrl}
                 objectFit="cover"
                 layout="fill"
                 alt={`Image du contrat ${title}`}

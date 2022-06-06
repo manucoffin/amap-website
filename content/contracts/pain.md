@@ -6,6 +6,6 @@ description: |-
   Pensez à RENOUVELER VOTRE ADHESION pour 2021
 
   Et à vous inscrire à une PERMANENCE.
-imagePath: /uploads/images/pain.jpg
+photoUrl: /uploads/images/pain.jpg
 documentPath: /uploads/files/contrat_pain_2022.pdf
 ---

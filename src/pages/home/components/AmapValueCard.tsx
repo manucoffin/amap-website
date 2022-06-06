@@ -1,6 +1,7 @@
 import { Brush } from '@core/components';
 import { CheckIcon } from '@heroicons/react/outline';
 import clsx from 'clsx';
+import Fade from 'react-reveal/Fade';
 
 interface Props {
   title: string;
@@ -21,14 +22,16 @@ const AmapValueCard = ({ title, items, color }: Props) => {
         <Brush className={clsx('w-[150px] absolute left-[50px]', colorConfig)} />
         <span className="relative font-bold font-handwritten text-4xl z-10">{title}</span>
       </div>
-      <ul>
-        {items.map((item) => (
-          <li className="mb-4 flex items-start">
-            <CheckIcon className="w-6 mr-2 shrink-0 text-green-600" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
+      <Fade cascade>
+        <ul>
+          {items.map((item, index) => (
+            <li key={index} className="mb-4 flex items-start">
+              <CheckIcon className="w-6 mr-2 shrink-0 text-green-600" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </Fade>
     </div>
   );
 };

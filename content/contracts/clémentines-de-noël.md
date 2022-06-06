@@ -29,6 +29,6 @@ description: >-
 
 
   Les clémentines de Noël arriveront vraisemblablement le 16 décembre à Brain.
-imagePath: /uploads/images/clementine.jpg
+photoUrl: /uploads/images/clementine.jpg
 documentPath: /uploads/files/contrat_amap_palette_de_noel_nantes_49.jpeg
 ---

@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next';
-import { ArticleCard } from '@src/pages/actus/components';
 import { MainLayout } from '@core/layouts';
 import { Address, Amap, Contact, Article } from '@cms/models';
 import { getAddress, getAmap, getContact } from '@cms';
-import { ButtonLink, H1, Header } from '@core/components';
+import { ButtonLink, H1, Header, ArticleCard } from '@core/components';
 import Image from 'next/image';
 import clsx from 'clsx';
 import { truncateText } from '@core/lib/utils';

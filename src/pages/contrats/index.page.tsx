@@ -9,6 +9,7 @@ import { H1, Header } from '@core/components';
 import autoAnimate from '@formkit/auto-animate';
 import { ContractCard } from '@src/pages/contrats/components';
 import { SearchIcon } from '@heroicons/react/outline';
+import Fade from 'react-reveal/Fade';
 
 const ContractsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   contracts,
@@ -52,7 +53,9 @@ const ContractsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = 
           ref={parent}
         >
           {contracts.filter(filterContracts).map((contract, index) => (
-            <ContractCard key={index} contract={contract} />
+            <Fade key={index}>
+              <ContractCard contract={contract} />
+            </Fade>
           ))}
         </div>
       </div>

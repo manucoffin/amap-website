@@ -3,6 +3,9 @@ import { PlasmicRootProvider } from '@plasmicapp/react-web';
 import PlausibleProvider from 'next-plausible';
 import { AppProps } from 'next/app';
 import { DefaultSeo } from 'src/core/components/Seo';
+import config from 'react-reveal/globals';
+
+config({ ssrFadeout: true });
 
 function App({ Component, pageProps }: AppProps) {
   return (

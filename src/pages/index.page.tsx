@@ -1,12 +1,17 @@
-import { H2, HandDrawnArrowDownIcon, Header } from '@core/components';
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import { ArticleCard, H2, HandDrawnArrowDownIcon, Header } from '@core/components';
+import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
-import { Address, Amap, Contact } from '@cms/models';
+import { Address, Amap, Article, Contact } from '@cms/models';
 import { getAddress, getAmap, getContact } from '@src/cms';
 import Image from 'next/image';
 import { AmapBenefitCard, AmapValueCard, HowItWorksStepCard } from '@src/pages/home/components';
+import Fade from 'react-reveal/Fade';
+import { getArticles } from '@src/cms/articles';
 
-const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ footerData }) => {
+const HomePage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
+  articles,
+  footerData,
+}) => {
   const benefits = [
     {
       title: 'Pour manger mieux',
@@ -155,42 +160,60 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ fo
         </a>
       </div>
 
-      <section id="pourquoi-adherer-a-une-amap" className="px-4 lg:w-2/3 2xl:w-1/2 mx-auto">
-        <H2>Pourquoi adhérer à une AMAP ?</H2>
+      <section className="px-4 lg:w-2/3 2xl:w-1/2 mx-auto">
+        <H2>Les dernières actus</H2>
 
-        <div className="flex flex-col gap-14 md:flex-row md:flex-wrap justify-center">
-          {benefits.map((benefit) => (
-            <AmapBenefitCard
-              title={benefit.title}
-              content={benefit.content}
-              imageUrl={benefit.imageUrl}
-              imageAlt={benefit.imageAlt}
-            />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-y-8 md:gap-x-8">
+          {articles.map((article, index) => (
+            <Fade key={index}>
+              <ArticleCard article={article} />
+            </Fade>
           ))}
         </div>
       </section>
 
-      <section className="mt-12 py-20 bg-grid bg-repeat bg-[length:20px_20px] border-dashed border-y-4 border-gray-300">
+      <section id="pourquoi-adherer-a-une-amap" className="px-4 mt-32 lg:w-2/3 2xl:w-1/2 mx-auto">
+        <H2>Pourquoi adhérer à une AMAP ?</H2>
+
+        <div className="flex flex-col gap-14 md:flex-row md:flex-wrap justify-center">
+          {benefits.map((benefit, index) => (
+            <Fade key={index}>
+              <AmapBenefitCard
+                title={benefit.title}
+                content={benefit.content}
+                imageUrl={benefit.imageUrl}
+                imageAlt={benefit.imageAlt}
+              />
+            </Fade>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-4 mt-12 py-20 bg-grid bg-repeat bg-[length:20px_20px] border-dashed border-y-4 border-gray-300">
         <H2>Comment ça marche ?</H2>
 
         <div className="flex flex-col gap-12 md:flex-row justify-center items-center md:items-start">
           {howItWorksSteps.map((step, index) => (
-            <HowItWorksStepCard
-              step={index + 1}
-              title={step.title}
-              content={step.content}
-              color={step.color}
-            />
+            <Fade key={index}>
+              <HowItWorksStepCard
+                step={index + 1}
+                title={step.title}
+                content={step.content}
+                color={step.color}
+              />
+            </Fade>
           ))}
         </div>
       </section>
 
-      <section className="mt-32 pb-20">
+      <section className="px-4 mt-32 pb-20">
         <H2>Les valeurs des AMAP</H2>
 
         <div className="flex flex-col gap-12 md:flex-row md:flex-wrap justify-center items-center md:items-start">
-          {amapValues.map((value) => (
-            <AmapValueCard title={value.title} items={value.items} color={value.color} />
+          {amapValues.map((value, index) => (
+            <Fade key={index}>
+              <AmapValueCard title={value.title} items={value.items} color={value.color} />
+            </Fade>
           ))}
         </div>
       </section>
@@ -198,9 +221,11 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ fo
   );
 };
 
-export const getStaticProps: GetStaticProps<{
+export const getServerSideProps: GetServerSideProps<{
+  articles: Article[];
   footerData: { address: Address; amap: Amap; contact: Contact };
-}> = () => {
+}> = async () => {
+  const articles = await getArticles();
   const footerData = {
     address: getAddress(),
     amap: getAmap(),
@@ -208,7 +233,7 @@ export const getStaticProps: GetStaticProps<{
   };
 
   return {
-    props: { footerData },
+    props: { footerData, articles: articles.slice(0, 3) },
   };
 };
 
