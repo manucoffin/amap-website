@@ -7,7 +7,7 @@ import { ARTICLES_DIR } from '@core/constants';
 const dirPath = join(process.cwd(), ARTICLES_DIR);
 
 export const getArticle = async (slug: string): Promise<Article> => {
-  const filePath = join(dirPath, `${slug}.md`);
+  const filePath = join(dirPath, `${slug.toLocaleLowerCase()}.md`);
 
   const fileContent = fs.readFileSync(filePath, 'utf-8');
   const { data, content } = matter(fileContent);

@@ -73,6 +73,10 @@ export const getStaticProps: GetStaticProps<{
   };
   const articleData = await getArticle(slug);
 
+  if (!articleData) {
+    return { notFound: true };
+  }
+
   return {
     revalidate: 600,
     props: { footerData, articleData },

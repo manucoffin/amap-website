@@ -110,6 +110,10 @@ export const getStaticProps: GetStaticProps<{
 
   const contract = getContract(slug);
 
+  if (!contract) {
+    return { notFound: true };
+  }
+
   const tutors = contract.tutors ? await getTutors(contract.tutors) : [];
 
   const footerData = {
