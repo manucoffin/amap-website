@@ -5,7 +5,7 @@ const withPlugins = require('next-compose-plugins');
 
 const nextConfig = {
   reactStrictMode: true,
-  // pageExtensions: ["page.tsx", "page.ts"],
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx'],
   webpack: (configuration) => {
     configuration.module.rules.push({
       test: /\.md$/,

@@ -23,6 +23,6 @@ description: >-
 
 
   Françoise Le Camus 14 route d’Avalou 49800 Brain sur l’Authion 06 14 44 28 95
-imagePath: /static/uploads/images/rillettes.jpg
-documentPath: /static/uploads/files/contrat_terrines_et_rillettes_2022.pdf
+photoUrl: /uploads/images/rillettes.jpg
+documentPath: /uploads/files/contrat_terrines_et_rillettes_2022.pdf
 ---
