@@ -8,10 +8,10 @@ type Props = React.ComponentPropsWithoutRef<'a'> & {
 };
 
 const RecipeCard = ({ recipe }: Props) => {
-  const { photoUrl, id, title, prepTime, cookTime, yields } = recipe;
+  const { photoUrl, title, prepTime, cookTime, yields, slug } = recipe;
 
   return (
-    <Link href={Routes.RecipePage({ recipeId: id })} passHref>
+    <Link href={Routes.RecipePage({ slug })} passHref>
       <a className="flex flex-col gap-4 group">
         <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition">
           <Image src={photoUrl} objectFit="cover" layout="fill" alt={`Photo de ${title}`} />

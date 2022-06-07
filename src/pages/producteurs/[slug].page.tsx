@@ -77,8 +77,8 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
                 <>
                   <h2 className="text-2xl text-primary-700 mt-8 mb-4">Contrats</h2>
                   <ul className="text-gray-700 list-inside list-disc">
-                    {contracts.map((contract) => (
-                      <li>
+                    {contracts.map((contract, index) => (
+                      <li key={index}>
                         <ButtonLink
                           href={Routes.ContractPage({ contractId: contract.slug })}
                           size="base"
@@ -110,13 +110,13 @@ export const getServerSideProps: GetServerSideProps<{
   producer: Producer;
   contracts: Contract[];
 }> = async ({ params }) => {
-  const id = params.id as string | undefined;
+  const slug = params.slug as string | undefined;
 
-  if (!id) {
+  if (!slug) {
     return { notFound: true };
   }
 
-  const producer = getProducer(id.toLocaleLowerCase());
+  const producer = await getProducer(slug);
   const contracts = producer.contracts.map((contractSlug) => getContract(contractSlug));
 
   const footerData = {

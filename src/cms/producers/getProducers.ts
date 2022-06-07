@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { join } from 'path';
+import path, { join } from 'path';
 import matter from 'gray-matter';
 import { Producer } from '@cms/models';
 import { getSlugs } from '@cms/lib/utils';
@@ -14,7 +14,7 @@ export const getProducers = async (): Promise<Producer[]> => {
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const { data } = matter(fileContent);
 
-    return data as Producer;
+    return { ...data, slug: path.basename(filePath, '.md') } as Producer;
   });
 
   const producers = await Promise.all(producersPromises);

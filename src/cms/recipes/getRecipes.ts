@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { join } from 'path';
+import path, { join } from 'path';
 import matter from 'gray-matter';
 import { Recipe } from '@cms/models';
 import { getFilePaths } from '@cms/lib/utils';
@@ -18,7 +18,7 @@ export const getRecipes = async (): Promise<Recipe[]> => {
       dateStyle: 'full',
     }).format(data.date);
 
-    return { ...data, date } as Recipe;
+    return { ...data, date, slug: path.basename(filePath, '.md') } as Recipe;
   });
 
   const recipes = await Promise.all(recipesPromises);

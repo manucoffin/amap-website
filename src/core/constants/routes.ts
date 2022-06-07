@@ -11,20 +11,18 @@ type ParsedUrlQueryInput = NodeJS.Dict<
 export const Routes = {
   Home: () => '/',
   NewsPage: () => '/actus',
-  ArticlePage: (query: { articleId: number | string } & ParsedUrlQueryInput) =>
-    `/actus/${query.articleId}`,
+  ArticlePage: (query: { slug: number | string } & ParsedUrlQueryInput) => `/actus/${query.slug}`,
   ConventionPage: () => '/charte',
   StatutesPage: () => '/statuts',
   ContactPage: () => '/contact',
   ProducersPage: () => '/producteurs',
-  ProducerPage: (query: { producerId: number | string } & ParsedUrlQueryInput) =>
-    `/producteurs/${query.producerId}`,
+  ProducerPage: (query: { slug: number | string } & ParsedUrlQueryInput) =>
+    `/producteurs/${query.slug}`,
   ContractsPage: () => '/contrats',
   ContractPage: (query: { contractId: number | string } & ParsedUrlQueryInput) =>
     `/contrats/${query.contractId}`,
   RecipesPage: () => '/recettes',
-  RecipePage: (query: { recipeId: number | string } & ParsedUrlQueryInput) =>
-    `/recettes/${query.recipeId}`,
+  RecipePage: (query: { slug: number | string } & ParsedUrlQueryInput) => `/recettes/${query.slug}`,
   MembershipPage: () => '/adhesion',
   PrivacyPolicyPage: () => '/politique-confidentialite',
   LegalMentionsPage: () => '/mentions-legales',

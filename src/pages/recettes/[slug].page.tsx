@@ -63,8 +63,8 @@ const RecipePage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps
             <h2 className="text-2xl text-primary-700 mt-4 mb-4">Ingrédients</h2>
 
             <ul className="text-gray-700 list-inside list-disc">
-              {ingredients.map((ingredient) => (
-                <li>{ingredient}</li>
+              {ingredients.map((ingredient, index) => (
+                <li key={index}>{ingredient}</li>
               ))}
             </ul>
           </div>
@@ -74,7 +74,7 @@ const RecipePage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps
 
             <ul className="text-gray-700 list-inside">
               {instructions.map((instruction, index) => (
-                <li className="flex flex-col mb-4">
+                <li key={index} className="flex flex-col mb-4">
                   <span className="uppercase font-bold">Étape {index + 1}</span>
                   <span>{instruction}</span>
                 </li>
@@ -91,13 +91,13 @@ export const getServerSideProps: GetServerSideProps<{
   footerData: { address: Address; amap: Amap; contact: Contact };
   recipe: Recipe;
 }> = async ({ params }) => {
-  const id = params.id as string | undefined;
+  const slug = params.slug as string | undefined;
 
-  if (!id) {
+  if (!slug) {
     return { notFound: true };
   }
 
-  const recipe = await getRecipe(id.toLocaleLowerCase());
+  const recipe = await getRecipe(slug);
 
   const footerData = {
     address: getAddress(),

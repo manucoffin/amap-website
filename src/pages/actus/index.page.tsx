@@ -52,7 +52,7 @@ const NewsPage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>>
 
                 <div className="flex w-full justify-end mt-4">
                   <ButtonLink
-                    href={Routes.ArticlePage({ articleId: mainArticle.slug })}
+                    href={Routes.ArticlePage({ slug: mainArticle.slug })}
                     decoration="underline"
                     size="base"
                   >

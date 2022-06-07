@@ -69,8 +69,8 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
               <>
                 <h2 className="text-2xl text-primary-700 mt-6 mb-4">Tuteurs</h2>
                 <ul className="text-gray-700 list-inside list-disc">
-                  {tutors.map((tutor) => (
-                    <li>
+                  {tutors.map((tutor, index) => (
+                    <li key={index}>
                       {tutor.firstname} {tutor.lastname}{' '}
                       {tutor.contact ? `(${tutor.contact})` : null}
                     </li>
@@ -114,7 +114,11 @@ export const getStaticProps: GetStaticProps<{
     return { notFound: true };
   }
 
-  const tutors = contract.tutors ? await getTutors(contract.tutors) : [];
+  const allTutors = await getTutors();
+
+  const tutors = contract.tutors
+    ? allTutors.filter((tutor) => contract.tutors.includes(tutor.id))
+    : [];
 
   const footerData = {
     address: getAddress(),
