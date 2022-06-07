@@ -1,4 +1,11 @@
 {
+  // Overrides compiler options for ts-node only
+  // This is required to execute the gen:config script
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -28,6 +35,6 @@
       "@layouts": ["src/core/layouts"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/admin.page.jsx"],
   "exclude": ["node_modules"]
 }

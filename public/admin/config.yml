@@ -6,7 +6,6 @@ backend:
   gateway_url: 'https://amap-goutte-eau.netlify.app/.netlify/git'
 
 local_backend: true
-
 cms_manual_init: true
 media_folder: 'public/uploads' # Where media files will be stored
 public_folder: '/uploads' # Where the media files can be accesed from the server
@@ -53,8 +52,7 @@ collections:
               widget: 'file',
               media_folder: '/{{media_folder}}/files',
               public_folder: '{{public_folder}}/files',
-              choose_url: false,
-              media_library: { allow_multiple: false },
+              media_library: { allow_multiple: false, choose_url: false },
               required: true,
             }
       - label: 'Charte des AMAP'
