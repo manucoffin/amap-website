@@ -83,7 +83,7 @@ collections:
     create: true
     slug: '{{id}}'
     fields:
-      - { label: 'ID', name: 'id', widget: 'ncw-id', hidden: true }
+      - { label: 'ID', name: 'id', prefix: 'producer', widget: 'ncw-id', hidden: true }
       - { label: 'Nom', name: 'lastname', widget: 'string', required: true }
       - { label: 'Prénom', name: 'firstname', widget: 'string', required: true }
       - { label: 'Bio', name: 'biography', widget: 'markdown', required: true }
@@ -195,7 +195,7 @@ collections:
     create: true
     slug: '{{id}}'
     fields:
-      - { label: 'ID', name: 'id', widget: 'ncw-id', hidden: true }
+      - { label: 'ID', name: 'id', prefix: 'recipe', widget: 'ncw-id', hidden: true }
       - { label: 'Date de publication', name: 'date', widget: 'datetime', required: true }
       - { label: 'Titre', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: true }
