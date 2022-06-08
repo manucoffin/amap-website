@@ -16,7 +16,7 @@ export const config = {
     identity_url: process.env.NEXT_PUBLIC_IDENTITY_URL,
     gateway_url: process.env.NEXT_PUBLIC_GATEWAY_URL,
   },
-  local_backend: true,
+  local_backend: process.env.NODE_ENV === 'development',
   cms_manual_init: true,
   media_folder: 'public/uploads',
   public_folder: '/uploads',

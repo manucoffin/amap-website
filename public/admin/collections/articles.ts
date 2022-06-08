@@ -7,7 +7,15 @@ export const articles = {
   slug: '{{slug}}-{{year}}-{{month}}-{{day}}',
   fields: [
     { label: 'Titre', name: 'title', widget: 'string', required: true },
+    { label: 'Auteur', name: 'author', widget: 'string', required: true },
     { label: 'Date de publication', name: 'date', widget: 'datetime', required: true },
+    {
+      label: 'Résumé',
+      name: 'abstract',
+      widget: 'text',
+      required: true,
+      pattern: ['^.{1,150}$', 'Le résumé ne peut pas dépasser 150 caractères.'],
+    },
     {
       label: 'Image de couverture',
       name: 'photoUrl',

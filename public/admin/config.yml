@@ -3,10 +3,10 @@
 
 backend:
   name: git-gateway
-  repo: manucoffin/amap-website
+  repo: null
   branch: main
-  identity_url: https://amap-goutte-eau.netlify.app/.netlify/identity
-  gateway_url: https://amap-goutte-eau.netlify.app/.netlify/git
+  identity_url: null
+  gateway_url: null
 local_backend: true
 cms_manual_init: true
 media_folder: public/uploads
@@ -131,10 +131,21 @@ collections:
         name: title
         widget: string
         required: true
+      - label: Auteur
+        name: author
+        widget: string
+        required: true
       - label: Date de publication
         name: date
         widget: datetime
         required: true
+      - label: Résumé
+        name: abstract
+        widget: text
+        required: true
+        pattern:
+          - ^.{1,150}$
+          - Le résumé ne peut pas dépasser 150 caractères.
       - label: Image de couverture
         name: photoUrl
         widget: image
@@ -278,10 +289,6 @@ collections:
       - label: ID
         name: id
         widget: ncw-id
-      - label: Date de publication
-        name: date
-        widget: datetime
-        required: true
       - label: Titre
         name: title
         widget: string
@@ -289,6 +296,14 @@ collections:
       - label: Description
         name: description
         widget: string
+        required: true
+      - label: Auteur
+        name: author
+        widget: string
+        required: true
+      - label: Date de publication
+        name: date
+        widget: datetime
         required: true
       - label: Temps de préparation (en minutes)
         name: prepTime

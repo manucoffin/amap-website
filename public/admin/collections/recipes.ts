@@ -7,9 +7,10 @@ export const recipes = {
   slug: '{{slug}}-{{id}}',
   fields: [
     { label: 'ID', name: 'id', widget: 'ncw-id' },
-    { label: 'Date de publication', name: 'date', widget: 'datetime', required: true },
     { label: 'Titre', name: 'title', widget: 'string', required: true },
     { label: 'Description', name: 'description', widget: 'string', required: true },
+    { label: 'Auteur', name: 'author', widget: 'string', required: true },
+    { label: 'Date de publication', name: 'date', widget: 'datetime', required: true },
     {
       label: 'Temps de préparation (en minutes)',
       name: 'prepTime',

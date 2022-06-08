@@ -37,7 +37,9 @@ export interface Tutor {
 
 export interface Article {
   title: string;
+  author: string;
   date: string;
+  abstract: string;
   photoUrl: string;
 }
 
@@ -67,9 +69,10 @@ export interface Producer {
 
 export interface Recipe {
   id: any;
-  date: string;
   title: string;
   description: string;
+  author: string;
+  date: string;
   prepTime: string;
   cookTime: string;
   yields: string;
