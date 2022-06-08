@@ -3,12 +3,14 @@ import { DocumentDownloadIcon, ExternalLinkIcon } from '@heroicons/react/outline
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Image from 'next/image';
 import { MainLayout } from '@core/layouts';
-import { getContract, getContractsSlugs, Contract } from '@core/lib/contracts';
-import { Address, Amap, Contact, Tutor } from '@cms/models';
+import { Address, Amap, Contact, Tutor, getContract, Contract } from '@cms';
 import { H1, Header } from '@core/components';
 import ReactMarkdown from 'react-markdown';
 import { getTutors } from '@src/cms/tutors/getTutors';
 import { getAddress, getAmap, getContact } from '@src/cms';
+import { getSlugs } from '@src/cms/lib/utils';
+import { join } from 'path';
+import { CONTRACTS_DIR } from '@src/core/constants';
 
 const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   footerData,
@@ -86,7 +88,8 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const contractPaths = getContractsSlugs();
+  const dirPath = join(process.cwd(), CONTRACTS_DIR);
+  const contractPaths = getSlugs(dirPath);
 
   const paths = contractPaths.map((slug) => ({
     params: { slug },
