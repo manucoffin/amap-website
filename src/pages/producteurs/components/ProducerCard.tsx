@@ -8,10 +8,10 @@ type Props = React.ComponentPropsWithoutRef<'a'> & {
 };
 
 const ProducerCard = ({ producer }: Props) => {
-  const { firstname, lastname, photoUrl, id } = producer;
+  const { firstname, lastname, photoUrl, slug } = producer;
 
   return (
-    <Link href={Routes.ProducerPage({ producerId: id })} passHref>
+    <Link href={Routes.ProducerPage({ slug })} passHref>
       <a className="flex flex-col gap-4 group">
         <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition">
           <Image

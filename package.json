@@ -7,9 +7,7 @@
     "start": "next start",
     "lint": "next lint --fix",
     "export": "npm run build && next export",
-    "gen:types": "node create-netlify-types.js",
-    "gen:config": "./node_modules/yaml-convert/cli.js  --input public/admin/config.yml --output public/admin/config.js --node && yarn gen:types",
-    "gen:config_": "ts-node public/admin/config.src.ts && yarn gen:types"
+    "gen:types": "ts-node public/admin/create-netlify-types.ts"
   },
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.1",

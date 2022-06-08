@@ -1,20 +1,15 @@
 import fs from 'fs';
-import { join } from 'path';
+import path, { join } from 'path';
 import matter from 'gray-matter';
 import { Producer } from '@cms/models';
+import { PRODUCERS_DIR } from '@core/constants';
 
-const dirPath = join(process.cwd(), 'content/producers');
+const dirPath = join(process.cwd(), PRODUCERS_DIR);
 
-export const getProducer = (id: string): Producer => {
-  const filePath = join(dirPath, `${id}.md`);
-
+export const getProducer = async (slug: string): Promise<Producer> => {
+  const filePath = join(dirPath, `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, 'utf-8');
   const { data } = matter(fileContent);
 
-  // get contracts
-  const tutor = {
-    ...data,
-  } as Producer;
-
-  return tutor;
+  return { ...data, slug: path.basename(filePath, '.md') } as Producer;
 };

@@ -26,11 +26,7 @@ const ArticleCard = ({ article }: Props) => {
         </div>
 
         <div className="flex w-full justify-end mt-4">
-          <ButtonLink
-            href={Routes.ArticlePage({ articleId: slug })}
-            decoration="underline"
-            size="base"
-          >
+          <ButtonLink href={Routes.ArticlePage({ slug })} decoration="underline" size="base">
             Lire la suite
           </ButtonLink>
         </div>

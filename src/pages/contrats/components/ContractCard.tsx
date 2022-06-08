@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Contract } from '@core/lib/contracts';
+import { Contract } from '@cms';
 import { Routes } from '@src/core/constants/routes';
 import Link from 'next/link';
 

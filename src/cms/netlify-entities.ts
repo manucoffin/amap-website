@@ -35,6 +35,23 @@ export interface Tutor {
   contact?: string;
 }
 
+export interface Article {
+  title: string;
+  author: string;
+  date: string;
+  abstract: string;
+  photoUrl: string;
+}
+
+export interface Contract {
+  title: string;
+  description: string;
+  calendarLink: string;
+  tutors: any[];
+  photoUrl: string;
+  documentPath: any;
+}
+
 export interface Producer {
   id: any;
   lastname: string;
@@ -50,26 +67,12 @@ export interface Producer {
   contracts: string[];
 }
 
-export interface Contract {
-  title: string;
-  description: string;
-  calendarLink: string;
-  tutors: any[];
-  photoUrl: string;
-  documentPath: any;
-}
-
-export interface Article {
-  title: string;
-  date: string;
-  photoUrl: string;
-}
-
 export interface Recipe {
   id: any;
-  date: string;
   title: string;
   description: string;
+  author: string;
+  date: string;
   prepTime: string;
   cookTime: string;
   yields: string;
