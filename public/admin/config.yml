@@ -3,11 +3,11 @@
 
 backend:
   name: git-gateway
-  repo: null
+  repo: manucoffin/amap-website
   branch: main
-  identity_url: null
-  gateway_url: null
-local_backend: true
+  identity_url: https://amap-website.netlify.app/.netlify/identity
+  gateway_url: https://amap-website.netlify.app/.netlify/git
+local_backend: false
 cms_manual_init: true
 media_folder: public/uploads
 public_folder: /uploads
