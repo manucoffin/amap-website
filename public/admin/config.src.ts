@@ -11,10 +11,10 @@ import { recipes } from './collections/recipes';
 export const config = {
   backend: {
     name: 'git-gateway',
-    repo: 'manucoffin/amap-website',
+    repo: process.env.NEXT_PUBLIC_GIT_REPO,
     branch: 'main',
-    identity_url: 'https://amap-goutte-eau.netlify.app/.netlify/identity',
-    gateway_url: 'https://amap-goutte-eau.netlify.app/.netlify/git',
+    identity_url: process.env.NEXT_PUBLIC_IDENTITY_URL,
+    gateway_url: process.env.NEXT_PUBLIC_GATEWAY_URL,
   },
   local_backend: true,
   cms_manual_init: true,

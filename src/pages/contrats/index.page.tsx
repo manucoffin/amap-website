@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
-import { Contract, getAllContracts } from '@core/lib/contracts';
-import { Address, Amap, Contact } from '@cms/models';
+import { getContracts } from '@cms/contracts';
+import { Address, Amap, Contact, Contract } from '@cms/models';
 import { getAddress, getAmap, getContact } from '@src/cms';
 import { H1, Header } from '@core/components';
 import autoAnimate from '@formkit/auto-animate';
@@ -67,7 +67,7 @@ export const getStaticProps: GetStaticProps<{
   contracts: Contract[];
   footerData: { address: Address; amap: Amap; contact: Contact };
 }> = () => {
-  const contracts = getAllContracts();
+  const contracts = getContracts();
   const footerData = {
     address: getAddress(),
     amap: getAmap(),
