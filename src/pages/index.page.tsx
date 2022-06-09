@@ -1,5 +1,5 @@
 import { ArticleCard, H2, HandDrawnArrowDownIcon, Header } from '@core/components';
-import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next';
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { MainLayout } from '@core/layouts';
 import { Address, Amap, Article, Contact } from '@cms/models';
 import { getAddress, getAmap, getContact } from '@src/cms';
@@ -8,7 +8,7 @@ import { AmapBenefitCard, AmapValueCard, HowItWorksStepCard } from '@src/pages/h
 import Fade from 'react-reveal/Fade';
 import { getArticles } from '@src/cms/articles';
 
-const HomePage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
+const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   articles,
   footerData,
 }) => {
@@ -221,7 +221,7 @@ const HomePage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>>
   );
 };
 
-export const getServerSideProps: GetServerSideProps<{
+export const getStaticProps: GetStaticProps<{
   articles: Article[];
   footerData: { address: Address; amap: Amap; contact: Contact };
 }> = async () => {
@@ -233,6 +233,7 @@ export const getServerSideProps: GetServerSideProps<{
   };
 
   return {
+    revalidate: 3600,
     props: { footerData, articles: articles.slice(0, 3) },
   };
 };
