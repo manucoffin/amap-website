@@ -5,8 +5,8 @@ backend:
   name: git-gateway
   repo: manucoffin/amap-website
   branch: main
-  identity_url: https://amap-website.netlify.app/.netlify/identity
-  gateway_url: https://amap-website.netlify.app/.netlify/git
+  identity_url: https://amap-goutte-eau.netlify.app/.netlify/identity
+  gateway_url: https://amap-goutte-eau.netlify.app/.netlify/git
 local_backend: false
 cms_manual_init: true
 media_folder: public/uploads
