@@ -15,7 +15,7 @@ export const config = {
     branch: 'main',
     identity_url: 'https://amap-goutte-eau.netlify.app/.netlify/identity',
     gateway_url: 'https://amap-goutte-eau.netlify.app/.netlify/git',
-    base_url: 'https://www.amap-goutte-eau.fr',
+    // base_url: 'https://www.amap-goutte-eau.fr',
   },
   local_backend: process.env.NODE_ENV === 'development',
   cms_manual_init: true,
