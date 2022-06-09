@@ -233,7 +233,6 @@ export const getStaticProps: GetStaticProps<{
   };
 
   return {
-    revalidate: 3600,
     props: { footerData, articles: articles.slice(0, 3) },
   };
 };
