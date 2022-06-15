@@ -1,23 +1,42 @@
 # AMAP CMS
 
-## Local Development
+## Stack technique
 
-1. Start local netlify server: `yarn server`
-2. Start the app: `yarn dev`
-3. Navigate to `http:localhosst:3000/admin`
+- NextJs
+- Tailwind CSS
+- Vercel pour l'hébergement
+- Netlify Identity pour la connexion au dashboard administrateur
 
-## Netlify CMS Config
+## Inviter de utilisateurs
 
-### Edit the CMS configuration
+- Depuis l'interface de Netlify, dans l'onglet `Identity`, cliquer sur le bouton `invite user`
+- Renseigner les emails des personnes à inviter
+- La personne invitée clique sur le lien reçu dans l'email
+- Ajouter `admin` dans l'url, juste avant le `#invite_token`
+- Finaliser l'inscription en suivant les instructions
 
-- Only the `config.src.ts` file should be edited.
-- You can edit collections in the `collections` folder
+## Développement local
 
-### Generate Collections Types
+1. Démarrer le serveur local Netlify CMS: `yarn server`
+2. Démarrer l'application: `yarn dev`
+3. L'application est disponible sur `http:localhost:3000`
+4. Le dashboard administrateur est accessible via la route `/admin`
 
-- Once you are happy with your configuration, you can export the types: `yarn gen:types`
-- This will output a `config.yml` file in the admin folder, and a `netlify-entities.ts` in `src/cms`
+## Configuration de Netlify CMS
 
-## Access Netlify CMS Admin Dashboard
+### Modifier la configuration du CMS
 
-When the app is running, the admin dashboard can be accessed via the `/admin` route.
+- La configuration se trouve dans le fichier `public/admin/config.src.ts`
+- `public/admin/config.yml` est généré automatiquement, il n'a pas besoin d'être modifié
+- Les collections peuvent être modifiées depuis le dossier `public/admin/collections`
+- Voir la [https://www.netlifycms.org/docs/intro/](documentation) pour plus d'informations
+
+### Générer les types pour les Collections
+
+- Configurer le fichier `public/admin/config.src.ts`
+- Exporter les types avec la commande `yarn gen:types`
+- Cette commande va générer un fichier `public/admin/config.yml` et un fichier `src/cms/netlify-entities.ts`
+
+## Déploiement
+
+TODO
