@@ -12,6 +12,7 @@ const AdminPage = () => {
 
       CMS.registerWidget(IdWidget.name, IdWidget.controlComponent);
       CMS.init({ config } as any); // TODO: type properly and enable eslint no-explicit-any rule
+
       identity.init({
         locale: 'fr',
         APIUrl: 'https://amap-goutte-eau.netlify.app/.netlify/identity',

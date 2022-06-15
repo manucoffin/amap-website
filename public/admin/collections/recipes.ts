@@ -4,7 +4,7 @@ export const recipes = {
   label_singular: 'Recette',
   folder: 'content/recipes',
   create: true,
-  slug: '{{slug}}-{{id}}',
+  slug: '{{slug}}_{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}',
   fields: [
     { label: 'ID', name: 'id', widget: 'ncw-id' },
     { label: 'Titre', name: 'title', widget: 'string', required: true },

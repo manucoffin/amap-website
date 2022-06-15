@@ -4,7 +4,7 @@ export const tutors = {
   label_singular: 'Tuteur',
   folder: 'content/tutors',
   create: true,
-  slug: '{{firstname}}-{{lastname}}-{{id}}',
+  slug: '{{firstname}}-{{lastname}}_{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}',
   fields: [
     { label: 'ID', name: 'id', widget: 'ncw-id' },
     { label: 'Nom', name: 'lastname', widget: 'string', required: true },

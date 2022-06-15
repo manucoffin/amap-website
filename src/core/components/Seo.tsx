@@ -8,7 +8,7 @@ export const DefaultSeo = (props: DefaultSeoProps) => {
         description="Association pour le Maintien d'une Agriculture Paysanne"
         openGraph={{
           type: 'website',
-          url: 'https://www.amap-goutte-eau.fr/',
+          url: process.env.NEXT_PUBLIC_BASE_URL,
           title: "AMAP de la Goutte d'Eau",
           description: "AMAP de la Goutte d'Eau",
           images: [

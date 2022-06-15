@@ -35,11 +35,11 @@ const RecipePage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps
         openGraph={{
           title: title,
           description: description,
-          url: `https://www.amap-goutte-eau.fr${router.asPath}`,
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}${router.asPath}`,
           type: 'website',
           images: [
             {
-              url: `https://www.amap-goutte-eau.fr/uploads/images/${photoUrl}`,
+              url: `${process.env.NEXT_PUBLIC_BASE_URL}/uploads/images/${photoUrl}`,
               width: 850,
               height: 650,
               alt: `Photo de l'article : ${title}`,
@@ -57,14 +57,14 @@ const RecipePage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps
         cookTime={`PT${cookTime}M`}
         totalTime={`PT${prepTime + cookTime}M`}
         yields={yields}
-        images={[`https://www.amap-goutte-eau.fr/uploads/images/${photoUrl}`]}
+        images={[`${process.env.NEXT_PUBLIC_BASE_URL}/uploads/images/${photoUrl}`]}
         ingredients={ingredients}
         instructions={instructions.map((instruction, index) => [
           {
             name: `Étape ${index + 1}`,
             text: instruction,
-            url: `https://www.amap-goutte-eau.fr${router.asPath}#etape${index + 1}`,
-            image: `https://www.amap-goutte-eau.fr/uploads/images/${photoUrl}`,
+            url: `${process.env.NEXT_PUBLIC_BASE_URL}${router.asPath}#etape${index + 1}`,
+            image: `${process.env.NEXT_PUBLIC_BASE_URL}/uploads/images/${photoUrl}`,
           },
         ])}
       />

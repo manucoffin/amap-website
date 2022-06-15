@@ -27,7 +27,7 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         openGraph={{
           title: title,
           description: abstract,
-          url: `https://www.amap-goutte-eau.fr${router.asPath}`,
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}${router.asPath}`,
           type: 'article',
           article: {
             publishedTime: date,
@@ -36,7 +36,7 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           },
           images: [
             {
-              url: `https://www.amap-goutte-eau.fr/uploads/images/${photoUrl}`,
+              url: `${process.env.NEXT_PUBLIC_BASE_URL}/uploads/images/${photoUrl}`,
               width: 850,
               height: 650,
               alt: `Photo de l'article : ${title}`,
@@ -46,13 +46,13 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       />
 
       <ArticleJsonLd
-        url={`https://www.amap-goutte-eau.fr${router.asPath}`}
+        url={`${process.env.NEXT_PUBLIC_BASE_URL}${router.asPath}`}
         title={title}
-        images={[`https://www.amap-goutte-eau.fr/uploads/images/${photoUrl}`]}
+        images={[`${process.env.NEXT_PUBLIC_BASE_URL}/uploads/images/${photoUrl}`]}
         datePublished={date}
         dateModified={date}
         authorName={[author]}
-        publisherLogo={`https://www.amap-goutte-eau.fr/logo_h.png`}
+        publisherLogo={`${process.env.NEXT_PUBLIC_BASE_URL}/logo_h.png`}
         description={abstract}
       />
 

@@ -12,17 +12,4 @@ const nextConfig = {
   },
 };
 
-// Not necessary when using next/image component
-// More infos about plugin configuration here:
-// https://github.com/cyrilwanner/next-optimized-images
-// const nextOptimizedImagesPlugin = [
-//   optimizedImages,
-//   {
-//     mozjpeg: { quality: 80 },
-//     optipng: {
-//       optimizationLevel: 3,
-//     },
-//   },
-// ];
-
 module.exports = withPlugins([], nextConfig);
