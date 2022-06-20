@@ -1,8 +1,8 @@
 ---
 document_path: /uploads/files/bul-adh_2022.pdf
 description: >-
-  AAAAAL’adhésion est valable sur une année civile, du 1er janvier au 31
-  décembre. Son montant, libre, est au minimum de 10 euros.
+  L’adhésion est valable sur une année civile, du 1er janvier au 31 décembre.
+  Son montant, libre, est au minimum de 10 euros.
 
 
   Pour tout nouvel adhérent, et uniquement dans ce cas, à partir du mois de septembre de l’année en cours (début des contrats pommes), le montant de l’adhésion est fixé à 5€.
