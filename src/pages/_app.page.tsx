@@ -1,17 +1,24 @@
 import '../styles/global.css';
-import PlausibleProvider from 'next-plausible';
 import { AppProps } from 'next/app';
 import { DefaultSeo } from 'src/core/components/Seo';
 import config from 'react-reveal/globals';
+import Script from 'next/script';
 
 config({ ssrFadeout: true });
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <PlausibleProvider domain="amap-goutte-eau.fr">
+    <>
+      <Script
+        strategy="afterInteractive"
+        data-domain="amap-goutte-eau.fr"
+        defer
+        src="https://plausible.io/js/plausible.js"
+      />
+
       <DefaultSeo />
       <Component {...pageProps} />
-    </PlausibleProvider>
+    </>
   );
 }
 

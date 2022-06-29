@@ -37,14 +37,14 @@ const Footer = ({ data }: Props) => {
                 {phone}
               </a>
 
-              <div className="text-xs tracking-widest uppercase mt-4">Ou</div>
+              <div className="mt-4 text-xs tracking-widest uppercase">Ou</div>
               <a className="block text-xl sm:text-2xl hover:opacity-75" href={`mailto:${email}`}>
                 {email}
               </a>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 col-span-3">
+          <div className="grid grid-cols-1 col-span-3 gap-4 sm:grid-cols-2">
             <div>
               <p className="font-bold text-primary-900">Distribution de légumes</p>
 
@@ -121,7 +121,12 @@ const Footer = ({ data }: Props) => {
               </ButtonLink>
             </div>
 
-            <p className="mt-4 sm:mt-0">&copy; {new Date().getFullYear()} Manuel Coffin</p>
+            <p className="mt-4 sm:mt-0">
+              &copy; {new Date().getFullYear()}{' '}
+              <a href="https://www.manuelcoffin.fr" rel="noopener noreferrer" target="_blank">
+                Manuel Coffin
+              </a>
+            </p>
           </div>
         </div>
       </div>

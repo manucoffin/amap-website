@@ -7,7 +7,7 @@ export default function Custom404() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1032.24 832.63"
-        className="w-3/4 md:w-1/2 lg:w-2/5 mb-20"
+        className="w-3/4 mb-20 md:w-1/2 lg:w-2/5"
       >
         <defs>
           <linearGradient
@@ -488,15 +488,15 @@ export default function Custom404() {
           opacity="0.1"
         />
       </svg>
-      <div className="flex flex-col px-6 items-center">
-        <h1 className="text-center font-sans text-4xl font-bold text-blue-700 mb-6">
+      <div className="flex flex-col items-center px-6">
+        <h1 className="mb-6 font-sans text-4xl font-bold text-center text-blue-700">
           Une erreur est survenue
         </h1>
-        <p className="text-center mb-6 text-xl">
+        <p className="mb-6 text-xl text-center">
           Nos serveurs ont rencontré une erreur, veuillez réessayer ultérieurement.
         </p>
         <ButtonLink href={Routes.Home()}>
-          <span className="text-blue-700 hover:text-blue-500 transition text-xl">
+          <span className="text-xl text-blue-700 transition hover:text-blue-500">
             Retourner à l&apos;accueil
           </span>
         </ButtonLink>
