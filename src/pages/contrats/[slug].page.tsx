@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { DocumentDownloadIcon, ExternalLinkIcon } from '@heroicons/react/outline';
+import {
+  DocumentDownloadIcon,
+  ExternalLinkIcon,
+  LocationMarkerIcon,
+  MailIcon,
+  PhoneIcon,
+} from '@heroicons/react/outline';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Image from 'next/image';
 import { MainLayout } from '@core/layouts';
@@ -23,11 +29,11 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
       title={`Contrat ${title}`}
       description={`Page de téléchargement du contrat ${title}`}
       footerData={footerData}
-      className="bg-concrete bg-repeat pb-20"
+      className="pb-20 bg-repeat bg-concrete"
     >
       <Header amapName={footerData.amap.name} />
 
-      <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
+      <div className="px-4 py-12 mx-auto lg:w-2/3 2xl:w-1/2">
         <H1>Contrat {title}</H1>
 
         <div className="flex flex-col gap-8 md:flex-row">
@@ -44,7 +50,7 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
             <a
               href={documentPath}
               download
-              className="md:w-auto flex items-center justify-center mt-8 text-center md:text-xl px-4 py-3 rounded-lg text-primary-500 border border-primary-500 hover:border-primary-700 hover:text-primary-700"
+              className="flex items-center justify-center px-4 py-3 mt-8 text-center border rounded-lg md:w-auto md:text-xl text-primary-500 border-primary-500 hover:border-primary-700 hover:text-primary-700"
             >
               <DocumentDownloadIcon className="w-6 mr-2" />
               <span>Télécharger le contrat</span>
@@ -53,7 +59,7 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
             {contract.calendarLink && (
               <a
                 href={contract.calendarLink}
-                className="md:w-auto flex items-center justify-center mt-4 text-center md:text-xl px-4 py-3 text-primary-500 hover:text-primary-700"
+                className="flex items-center justify-center px-4 py-3 mt-4 text-center md:w-auto md:text-xl text-primary-500 hover:text-primary-700"
               >
                 <span>Calendrier de distribution</span>
                 <ExternalLinkIcon className="w-6 ml-2" />
@@ -62,19 +68,48 @@ const ContractPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
           </div>
 
           <div className="basis-1/2">
-            <h2 className="text-2xl text-primary-700 mb-6">À propos de ce contrat</h2>
+            <h2 className="mb-6 text-2xl text-primary-700">À propos de ce contrat</h2>
             <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">
               <ReactMarkdown>{description}</ReactMarkdown>
             </div>
 
             {tutors.length ? (
               <>
-                <h2 className="text-2xl text-primary-700 mt-6 mb-4">Tuteurs</h2>
-                <ul className="text-gray-700 list-inside list-disc">
+                <h2 className="mt-6 mb-4 text-2xl text-primary-700">Tuteurs</h2>
+                <ul className="flex flex-col gap-4 text-gray-700 list-inside">
                   {tutors.map((tutor, index) => (
-                    <li key={index}>
-                      {tutor.firstname} {tutor.lastname}{' '}
-                      {tutor.contact ? `(${tutor.contact})` : null}
+                    <li key={index} className="flex items-center">
+                      <Image
+                        src={tutor.photoUrl}
+                        alt={`Photo de profil de ${tutor.firstname} ${tutor.lastname}`}
+                        width={80}
+                        height={80}
+                        className="rounded-lg"
+                      />
+                      <div className="flex flex-col ml-2">
+                        <span className="font-bold">
+                          {tutor.firstname} {tutor.lastname}
+                        </span>
+
+                        {tutor.phone && (
+                          <span className="flex items-center">
+                            <PhoneIcon className="w-4 mr-1 shrink-0" /> {tutor.phone}
+                          </span>
+                        )}
+
+                        {tutor.email && (
+                          <span className="flex items-center">
+                            <MailIcon className="w-4 mr-1 shrink-0" /> {tutor.email}
+                          </span>
+                        )}
+
+                        {tutor.address && (
+                          <span className="flex items-center ">
+                            <LocationMarkerIcon className="w-4 mr-1 shrink-0" /> {tutor.address}{' '}
+                            {tutor.postcode} {tutor.city}
+                          </span>
+                        )}
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -130,6 +165,7 @@ export const getStaticProps: GetStaticProps<{
   };
 
   return {
+    revalidate: 60,
     props: { footerData, contract, tutors },
   };
 };

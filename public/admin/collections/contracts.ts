@@ -12,7 +12,7 @@ export const contracts = {
       label: 'Lien vers le calendrier de distribution',
       name: 'calendarLink',
       widget: 'string',
-      required: true,
+      required: false,
     },
     {
       label: 'Tuteurs',

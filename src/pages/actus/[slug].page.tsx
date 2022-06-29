@@ -60,14 +60,14 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         title={title}
         description="Article d'actualité de l'AMAP de la Goutte d'Eau"
         footerData={footerData}
-        className="bg-concrete bg-repeat pb-20"
+        className="pb-20 bg-repeat bg-concrete"
       >
         <Header amapName={footerData.amap.name} />
 
-        <div className="px-4 py-12 lg:w-1/2 2xl:w-1/2 mx-auto">
+        <div className="px-4 py-12 mx-auto lg:w-1/2 2xl:w-1/2">
           <H1>{title}</H1>
 
-          <p className="text-gray-400 mb-4">Publié le {date}</p>
+          <p className="mb-4 text-gray-400">Publié le {date}</p>
 
           <div className="h-[200px] md:h-[400px] relative overflow-hidden my-6">
             <Image src={photoUrl} objectFit="cover" layout="fill" alt={title} />
@@ -117,7 +117,7 @@ export const getStaticProps: GetStaticProps<{
   }
 
   return {
-    revalidate: 600,
+    revalidate: 60,
     props: { footerData, articleData },
   };
 };

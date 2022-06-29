@@ -20,7 +20,7 @@ export const config = {
   cms_manual_init: true,
   media_folder: 'public/uploads',
   public_folder: '/uploads',
-  // publish_mode: 'editorial_workflow',
+  publish_mode: 'editorial_workflow',
   locale: 'fr',
   slug: { encoding: 'ascii', clean_accents: true },
   collections: [metadata, pages, tutors, articles, contracts, producers, recipes],

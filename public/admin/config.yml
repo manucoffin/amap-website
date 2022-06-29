@@ -3,15 +3,14 @@
 
 backend:
   name: git-gateway
-  repo: manucoffin/amap-website
+  repo: null
   branch: main
-  identity_url: https://amap-goutte-eau.netlify.app/.netlify/identity
-  gateway_url: https://amap-goutte-eau.netlify.app/.netlify/git
+  identity_url: null
+  gateway_url: null
 local_backend: false
 cms_manual_init: true
 media_folder: public/uploads
 public_folder: /uploads
-publish_mode: editorial_workflow
 locale: fr
 slug:
   encoding: ascii
@@ -24,10 +23,14 @@ collections:
         label: Informations de contact
         file: content/site_metadata/contact.md
         fields:
-          - label: Téléphone
-            name: phone
+          - label: Téléphone 1
+            name: phone1
             widget: string
             required: true
+          - label: Téléphone 2
+            name: phone2
+            widget: string
+            required: false
           - label: Email
             name: email
             widget: string
@@ -103,7 +106,8 @@ collections:
     label_singular: Tuteur
     folder: content/tutors
     create: true
-    slug: "{{firstname}}-{{lastname}}-{{id}}"
+    slug: "{{firstname}}-{{lastname}}_{{year}}{{month}}{{day}}{{hour}}{{minute}}{{s\
+      econd}}"
     fields:
       - label: ID
         name: id
@@ -116,10 +120,35 @@ collections:
         name: firstname
         widget: string
         required: true
-      - label: Contact
-        name: contact
+      - label: Adresse
+        name: address
         widget: string
         required: false
+      - label: Code postal
+        name: postcode
+        widget: string
+        required: false
+      - label: Ville
+        name: city
+        widget: string
+        required: false
+      - label: Téléphone
+        name: phone
+        widget: string
+        required: false
+      - label: Email
+        name: email
+        widget: string
+        required: false
+      - label: Photo de profil
+        name: photoUrl
+        widget: image
+        media_folder: /{{media_folder}}/images
+        public_folder: "{{public_folder}}/images"
+        choose_url: false
+        media_library:
+          allow_multiple: false
+        required: true
   - name: article
     label: Actualités
     label_singular: Actualité
@@ -177,7 +206,7 @@ collections:
       - label: Lien vers le calendrier de distribution
         name: calendarLink
         widget: string
-        required: true
+        required: false
       - label: Tuteurs
         name: tutors
         widget: list
@@ -216,7 +245,8 @@ collections:
     label_singular: Producteur
     folder: content/producers
     create: true
-    slug: "{{firstname}}-{{lastname}}-{{id}}"
+    slug: "{{firstname}}-{{lastname}}_{{year}}{{month}}{{day}}{{hour}}{{minute}}{{s\
+      econd}}"
     fields:
       - label: ID
         name: id
@@ -284,7 +314,7 @@ collections:
     label_singular: Recette
     folder: content/recipes
     create: true
-    slug: "{{slug}}-{{id}}"
+    slug: "{{slug}}_{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}"
     fields:
       - label: ID
         name: id

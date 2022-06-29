@@ -31,21 +31,21 @@ const ContractsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = 
       title="Contrats"
       description="Liste des contrats de l'AMAP de la Goutte d'Eau"
       footerData={footerData}
-      className="bg-concrete bg-repeat pb-20"
+      className="pb-20 bg-repeat bg-concrete"
     >
       <Header amapName={footerData.amap.name} />
 
-      <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
+      <div className="px-4 py-12 mx-auto lg:w-2/3 2xl:w-1/2">
         <H1>Vous cherchez un contrat ? c&apos;est par là</H1>
 
         <div className="relative max-w-[300px] h-10 mx-auto mb-10">
           <input
-            className="transition h-full rounded-full appearance-none border border-gray-300 w-full pl-5 pr-9 bg-white text-gray-700 placeholder-gray-400 focus:shadow-xl text-base focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent"
+            className="w-full h-full pl-5 text-base text-gray-700 placeholder-gray-400 transition bg-white border border-gray-300 rounded-full appearance-none pr-9 focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent"
             type="text"
             placeholder="Rechercher un contrat"
             onChange={(e) => setFilter(e.target.value)}
           />
-          <SearchIcon className="text-gray-400 w-6 h-6 absolute right-3 top-2" />
+          <SearchIcon className="absolute w-6 h-6 text-gray-400 right-3 top-2" />
         </div>
 
         <div
@@ -75,6 +75,7 @@ export const getStaticProps: GetStaticProps<{
   };
 
   return {
+    revalidate: 60,
     props: { contracts, footerData },
   };
 };

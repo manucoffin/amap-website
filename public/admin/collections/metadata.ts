@@ -7,7 +7,8 @@ export const metadata = {
       label: 'Informations de contact',
       file: 'content/site_metadata/contact.md',
       fields: [
-        { label: 'Téléphone', name: 'phone', widget: 'string', required: true },
+        { label: 'Téléphone 1', name: 'phone1', widget: 'string', required: true },
+        { label: 'Téléphone 2', name: 'phone2', widget: 'string', required: false },
         { label: 'Email', name: 'email', widget: 'string', required: true },
       ],
     },

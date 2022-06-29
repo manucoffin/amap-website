@@ -32,11 +32,11 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
       title={`${firstname} ${lastname}`}
       description={`${firstname} ${lastname} - ${activity}`}
       footerData={footerData}
-      className="bg-concrete bg-repeat pb-20"
+      className="pb-20 bg-repeat bg-concrete"
     >
       <Header amapName={footerData.amap.name} />
 
-      <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
+      <div className="px-4 py-12 mx-auto lg:w-2/3 2xl:w-1/2">
         <H1>
           {firstname} {lastname} - {activity}
         </H1>
@@ -52,8 +52,8 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
               />
             </div>
 
-            <div className="text-gray-700 flex flex-col gap-2">
-              <h2 className="text-2xl text-primary-700 mt-4 mb-2">Contact</h2>
+            <div className="flex flex-col gap-2 text-gray-700">
+              <h2 className="mt-4 mb-2 text-2xl text-primary-700">Contact</h2>
               <p className="flex">
                 <AtSymbolIcon className="w-5 mr-2" />
                 <span>{email}</span>
@@ -75,8 +75,8 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
 
               {contracts.length ? (
                 <>
-                  <h2 className="text-2xl text-primary-700 mt-8 mb-4">Contrats</h2>
-                  <ul className="text-gray-700 list-inside list-disc">
+                  <h2 className="mt-8 mb-4 text-2xl text-primary-700">Contrats</h2>
+                  <ul className="text-gray-700 list-disc list-inside">
                     {contracts.map((contract, index) => (
                       <li key={index}>
                         <ButtonLink
@@ -94,7 +94,7 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
           </div>
 
           <div className="basis-1/2">
-            <h2 className="text-2xl text-primary-700 mb-6">À propos</h2>
+            <h2 className="mb-6 text-2xl text-primary-700">À propos</h2>
             <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">
               <ReactMarkdown>{biography}</ReactMarkdown>
             </div>

@@ -3,6 +3,7 @@ import * as React from 'react';
 import { Address, Amap, Contact } from '@cms/models';
 import { ButtonLink } from '@core/components';
 import { Routes } from '@core/constants/routes';
+import { ChevronRightIcon } from '@heroicons/react/outline';
 
 type Props = {
   data: { address: Address; amap: Amap; contact: Contact };
@@ -13,7 +14,7 @@ const Footer = ({ data }: Props) => {
   const {
     address: { postcode, city, address },
     amap: { schedule },
-    contact: { phone, email },
+    contact: { phone1, phone2, email },
   } = data;
 
   return (
@@ -33,9 +34,28 @@ const Footer = ({ data }: Props) => {
             <div className="font-medium">
               <span className="text-xs tracking-widest uppercase">Envie de nous contacter ?</span>
 
-              <a className="block text-xl sm:text-2xl hover:opacity-75" href={`tel:${phone}`}>
-                {phone}
-              </a>
+              <ul>
+                <li>
+                  <a
+                    className="flex text-xl sm:text-2xl hover:opacity-75 "
+                    href={`tel:${phone1.replace(/\s/g, '')}`}
+                  >
+                    <ChevronRightIcon className="w-5 mr-1" />
+                    {phone1}
+                  </a>
+                </li>
+                {phone2 ? (
+                  <li>
+                    <a
+                      className="flex text-xl sm:text-2xl hover:opacity-75"
+                      href={`tel:${phone2.replace(/\s/g, '')}`}
+                    >
+                      <ChevronRightIcon className="w-5 mr-1" />
+                      {phone2}
+                    </a>
+                  </li>
+                ) : null}
+              </ul>
 
               <div className="mt-4 text-xs tracking-widest uppercase">Ou</div>
               <a className="block text-xl sm:text-2xl hover:opacity-75" href={`mailto:${email}`}>

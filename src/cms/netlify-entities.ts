@@ -2,7 +2,8 @@
 /* tslint:disable */
 
 export interface Contact {
-  phone: string;
+  phone1: string;
+  phone2?: string;
   email: string;
 }
 
@@ -32,7 +33,12 @@ export interface Tutor {
   id: any;
   lastname: string;
   firstname: string;
-  contact?: string;
+  address?: string;
+  postcode?: string;
+  city?: string;
+  phone?: string;
+  email?: string;
+  photoUrl: string;
 }
 
 export interface Article {
@@ -46,7 +52,7 @@ export interface Article {
 export interface Contract {
   title: string;
   description: string;
-  calendarLink: string;
+  calendarLink?: string;
   tutors: any[];
   photoUrl: string;
   documentPath: any;
