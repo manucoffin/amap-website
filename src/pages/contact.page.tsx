@@ -9,7 +9,7 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   const {
     address: { postcode, city, address },
     amap: { schedule },
-    contact: { phone, email },
+    contact: { phone1, phone2, email },
   } = footerData;
 
   return (
@@ -17,14 +17,14 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       title="Contact"
       description="Page de contact de l'AMAP de la Goutte d'Eau"
       footerData={footerData}
-      className="bg-concrete bg-repeat pb-20"
+      className="pb-20 bg-repeat bg-concrete"
     >
       <Header amapName={footerData.amap.name} />
 
-      <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
+      <div className="px-4 py-12 mx-auto lg:w-2/3 2xl:w-1/2">
         <H1>Envie de discuter ?</H1>
 
-        <div className="flex flex-col items-center text-gray-700 gap-6">
+        <div className="flex flex-col items-center gap-6 text-gray-700">
           <Image
             src="/assets/paper-plane.png"
             alt="Dessin d'un avion en papier"
@@ -34,7 +34,7 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
           <div className="relative w-[260px] flex justify-center">
             <Banner className="fill-primary-100 absolute -top-[6px] left-0" />
-            <span className="relative font-handwritten text-3xl z-10">
+            <span className="relative z-10 text-3xl font-handwritten">
               Laissez nous un petit mot
             </span>
           </div>
@@ -44,24 +44,35 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           </a>
         </div>
 
-        <div className="flex flex-col items-center text-gray-700 gap-6 mt-20">
+        <div className="flex flex-col items-center gap-6 mt-20 text-gray-700">
           <Image
             src="/assets/contact-us.png"
-            alt="Dessin d'un téléphone"
+            alt="Dessin d'un télé1phone1,phone2"
             width={100}
             height={100}
           />
 
           <div className="relative w-[260px] flex justify-center">
             <Banner className="fill-yellow-500 absolute -top-[6px] left-0" />
-            <span className="relative font-handwritten text-3xl z-10">Discutons</span>
+            <span className="relative z-10 text-3xl font-handwritten">Discutons</span>
           </div>
 
-          <a href={`tel:${phone}`} className="text-2xl font-bold">
-            {phone}
-          </a>
+          <ul>
+            <li>
+              <a className="text-2xl font-bold" href={`tel:${phone1.replace(/\s/g, '')}`}>
+                {phone1}
+              </a>
+            </li>
+            {phone2 ? (
+              <li>
+                <a className="text-2xl font-bold" href={`tel:${phone2.replace(/\s/g, '')}`}>
+                  {phone2}
+                </a>
+              </li>
+            ) : null}
+          </ul>
         </div>
-        <div className="flex flex-col items-center text-gray-700 gap-6 mt-20">
+        <div className="flex flex-col items-center gap-6 mt-20 text-gray-700">
           <Image
             src="/assets/map-point.png"
             alt="Dessin d'une carte avec un repère"
@@ -71,7 +82,7 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
           <div className="relative w-[260px] flex justify-center">
             <Banner className="fill-melon-500 absolute -top-[6px] left-0" />
-            <span className="relative font-handwritten text-3xl z-10">Venez nous recontrer !</span>
+            <span className="relative z-10 text-3xl font-handwritten">Venez nous recontrer !</span>
           </div>
 
           <ul className="text-2xl font-normal text-center">
