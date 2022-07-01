@@ -1,6 +1,6 @@
 ---
 id: xUJz_BDLR
-lastname: FREULON
+lastname: Freulon
 firstname: Francine
 phone: "0623302586"
 email: f.freulon50@orange.fr
