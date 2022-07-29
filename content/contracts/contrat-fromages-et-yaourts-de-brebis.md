@@ -1,5 +1,5 @@
 ---
-title: Contrat fromages et yaourts de brebis
+title: Contrat fromages et yaourts de brebis 2022
 description: >-
   Le printemps est décalé cette année et commencera officieusement le 07 avril .
 
@@ -14,5 +14,5 @@ description: >-
 tutors:
   - Lmi_5m1tr
 photoUrl: /uploads/images/agneau.jpg
-documentPath: /uploads/files/pdf-dist.png
+documentPath: /uploads/files/contrat_fromages_brebis-_2022.pdf
 ---
