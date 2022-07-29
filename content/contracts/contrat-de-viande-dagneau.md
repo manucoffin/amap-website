@@ -1,5 +1,5 @@
 ---
-title: "Contrat de viande d'agneau "
+title: Contrat de viande d'agneau 2022
 description: >
   Yohann BURET de « la bergerie de la Violaie » propose des colis de viande
   d’agneau produite selon le cahier des charges de l'Agriculture Biologique (N°
