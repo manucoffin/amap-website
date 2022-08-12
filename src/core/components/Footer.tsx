@@ -66,7 +66,7 @@ const Footer = ({ data }: Props) => {
 
           <div className="grid grid-cols-1 col-span-3 gap-4 sm:grid-cols-2">
             <div>
-              <p className="font-bold text-primary-900">Distribution de légumes</p>
+              <p className="font-bold text-primary-900">Distribution</p>
 
               <ul className="mt-4 space-y-2 text-sm">
                 <li>{schedule}</li>
