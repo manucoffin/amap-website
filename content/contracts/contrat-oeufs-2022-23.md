@@ -1,5 +1,5 @@
 ---
-title: Contrat oeufs 2022-23
+title: Contrat oeufs 2022-2023
 description: Téléchargez la page du contrat en un seul exemplaire, remplissez-la
   et apportez-la avec le paiement à l’AMAP le plus tôt possible un jeudi ou
   envoyez-la par la poste à la tutrice dont l’adresse parait en bas de contrat.
