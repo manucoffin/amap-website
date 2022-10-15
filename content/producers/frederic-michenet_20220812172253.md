@@ -13,9 +13,11 @@ biography: >-
 
   https://naturancestrale.fr
 activity: Cueilleur de plantes sauvages
-address: Nature Ancestrale
+address: Nature Ancestrale, 16 route des Groies, Andard
 postcode: "49800"
-city: Andard
+city: Loire-Authion
+phone: 06 49 15 56 16
+email: contact@naturancestrale.fr
 photoUrl: /uploads/images/img_20211023_142539-1-1280x1280.jpg
 contracts:
   - contrat-tisanes-2021_2022
