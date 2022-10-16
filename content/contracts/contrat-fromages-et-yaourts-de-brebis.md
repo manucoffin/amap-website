@@ -13,6 +13,6 @@ description: >-
   Comme d’habitude, téléchargez la dernière feuille du contrat et apportez-la avec les chèques à l’AMAp ou envoyez le tout au tuteur.
 tutors:
   - Lmi_5m1tr
-photoUrl: /uploads/images/agneau.jpg
+photoUrl: /uploads/images/fromage-brebis.jpg
 documentPath: /uploads/files/contrat_fromages_brebis-_2022.pdf
 ---
