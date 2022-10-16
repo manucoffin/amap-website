@@ -14,6 +14,6 @@ description: >-
 tutors:
   - wdBMCuZQN
   - w44Nipamq
-photoUrl: /uploads/images/pommes_dessin__fruits_gratuits_a_imprimer_20160426_1958290118.png
+photoUrl: /uploads/images/pommes.jpg
 documentPath: /uploads/files/pdf-dist.png
 ---
