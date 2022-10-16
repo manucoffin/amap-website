@@ -5,6 +5,6 @@ description: "Il est proposé : des paniers de légumes de saison, variés et
   façon hebdomadaire pour un prix de 10 ou 15 € par panier."
 tutors:
   - HvSDm18v7
-photoUrl: /uploads/images/vegetables.jpg
+photoUrl: /uploads/images/legumes.jpg
 documentPath: /uploads/files/pdf-dist.png
 ---
