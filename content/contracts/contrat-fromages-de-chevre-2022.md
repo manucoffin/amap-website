@@ -8,6 +8,6 @@ description: >
   Téléchargez la page 3 et apportez-la, avec le paiement, à la tutrice sur le lieu de distribution ou envoyez-le lui à son adresse.
 tutors:
   - I8FjAGICh
-photoUrl: /uploads/images/che-vre.png
+photoUrl: /uploads/images/fromage-de-chevre.jpg
 documentPath: /uploads/files/contrat_chevre_227v21.pdf
 ---
