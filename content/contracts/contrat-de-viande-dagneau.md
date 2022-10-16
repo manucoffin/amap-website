@@ -10,6 +10,6 @@ description: >
   Le colis ½ agneau pèse de 7 à 8 kg et est au tarif de 16,50€/kg 
 tutors:
   - I8FjAGICh
-photoUrl: /uploads/images/agneau.jpg
+photoUrl: /uploads/images/viande-agneau.jpg
 documentPath: /uploads/files/contrat_viande_d_agneau_2022.pdf
 ---
