@@ -1,9 +1,9 @@
 ---
 title: Nouvelle actu
 author: Dominique
-date: 2022-08-12T16:56:55.538Z
+date: 2022-10-21T08:18:52.586Z
 abstract: "Le nouveau site est en cours de création. "
-photoUrl: /uploads/images/depositphotos_1603378-stock-photo-man-with-fork-on-white.jpg
+photoUrl: /uploads/images/chantier.webp
 ---
-Gros chantier !
-Il nous faut des photos des prod', des tuteurs, une image (photo ou dessin) qui représente la ferme ou l'activité. Envoyer à Francine ou Dominique pour l'instant
+Gros chantier ! Le nouveau site est en cours de construction ! 
+Il nous faut des photos des prod', des tuteurs, une image (photo ou dessin) qui représente la ferme ou l'activité.(Envoyer à Francine ou Dominique pour l'instant)
