@@ -31,6 +31,6 @@ description: >-
   Les clémentines de Noël arriveront vraisemblablement le 15 décembre à Brain.
 tutors:
   - mN_gcWxWz
-photoUrl: /uploads/images/clementine.jpg
+photoUrl: /uploads/images/clementine-caffin-dscn1044.jpeg
 documentPath: /uploads/files/22-23-alimeria-49-contrat-clem-noel.pdf
 ---
