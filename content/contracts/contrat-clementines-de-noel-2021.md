@@ -28,7 +28,7 @@ description: >-
   Jean-Louis Poirier, 13 route de l’Etang Corné 49630 Loire-Authion
 
 
-  Les clémentines de Noël arriveront vraisemblablement le 16 décembre à Brain.
+  Les clémentines de Noël arriveront vraisemblablement le 15 décembre à Brain.
 tutors:
   - mN_gcWxWz
 photoUrl: /uploads/images/clementine.jpg
