@@ -1,5 +1,5 @@
 ---
-title: Contrat clémentines de Noël 2021
+title: Contrat clémentines de Noël 2022
 description: >-
   Ce contrat est réservé aux adhérents de l’AMAP de la Goutte d’eau
 
