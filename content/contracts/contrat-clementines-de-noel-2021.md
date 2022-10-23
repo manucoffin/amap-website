@@ -7,7 +7,7 @@ description: >-
   Téléchargez le contrat clémentines de Noël en 2 exemplaires
 
 
-  Afin que le travail du tuteur bénévole et du salarié de la SAS Alimeria soit facilité, merci le de remplir lisiblement en indiquant le nom de l’AMAP et le nom de la commune de Brain.
+  Afin que le travail du tuteur bénévole et du salarié de la SAS Alimeria soit facilité, merci  de le remplir lisiblement en indiquant le nom de l’AMAP et le nom de la commune de Brain.
 
 
   Le nom inscrit sur le chèque doit être identique à celui du contrat.
@@ -19,7 +19,7 @@ description: >-
   Chèque à l’ordre de SAS Alimeria
 
 
-  Plier le contrat en deux, écriture visible, ni agrafe, ni trombonne ni pochette plastique. Chèque glissé à l’intérieur.
+  Plier le contrat en deux, écriture visible, ni agrafe, ni trombone ni pochette plastique. Chèque glissé à l’intérieur.
 
 
   Date limite de retour des contrats : 10 novembre sur le lieu de distribution ou dans la boite à lettres du tuteur :
@@ -32,5 +32,5 @@ description: >-
 tutors:
   - mN_gcWxWz
 photoUrl: /uploads/images/clementine.jpg
-documentPath: /uploads/files/contrat_amap_palette_de_noel_nantes_49.jpg
+documentPath: /uploads/files/22-23-alimeria-49-contrat-clem-noel.pdf
 ---
