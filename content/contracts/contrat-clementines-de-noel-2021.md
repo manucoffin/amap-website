@@ -4,10 +4,10 @@ description: >-
   Ce contrat est réservé aux adhérents de l’AMAP de la Goutte d’eau
 
 
-  Téléchargez le contrat clémentines de Noël en 2 exemplaires
+  Téléchargez le contrat clémentines de Noël en 1 seul exemplaire
 
 
-  Afin que le travail du tuteur bénévole et du salarié de la SAS Alimeria soit facilité, merci  de le remplir lisiblement en indiquant le nom de l’AMAP et le nom de la commune de Brain.
+  Afin que le travail du tuteur bénévole et du salarié de la SAS Alimeria soit facilité, merci  de le remplir lisiblement en indiquant le nom de l’AMAP ET le nom de la commune de Brain/Authion.
 
 
   Le nom inscrit sur le chèque doit être identique à celui du contrat.
@@ -22,13 +22,13 @@ description: >-
   Plier le contrat en deux, écriture visible, ni agrafe, ni trombone ni pochette plastique. Chèque glissé à l’intérieur.
 
 
-  Date limite de retour des contrats : 10 novembre sur le lieu de distribution ou dans la boite à lettres du tuteur :
+  Date limite de retour des contrats : 4 novembre sur le lieu de distribution ou dans la boite à lettres du tuteur :
 
 
   Jean-Louis Poirier, 13 route de l’Etang Corné 49630 Loire-Authion
 
 
-  Les clémentines de Noël arriveront vraisemblablement le 15 décembre à Brain.
+  Les clémentines de Noël arriveront vraisemblablement le 15 décembre à Brain/Authion.
 tutors:
   - mN_gcWxWz
 photoUrl: /uploads/images/clementine-caffin-dscn1044.jpeg
