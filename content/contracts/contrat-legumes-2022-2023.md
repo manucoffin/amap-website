@@ -6,5 +6,5 @@ description: "Il est proposé : des paniers de légumes de saison, variés et
 tutors:
   - HvSDm18v7
 photoUrl: /uploads/images/legumes.jpg
-documentPath: /uploads/files/pdf-dist.png
+documentPath: /uploads/files/contrat_panier_le_gume_anne_e_2022_2023.pdf
 ---
