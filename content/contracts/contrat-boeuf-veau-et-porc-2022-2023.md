@@ -19,6 +19,7 @@ description: >-
   http://fermedefrancois.canalblog.com/
 tutors:
   - 6eDTaA16l
+producer: hEorfTyhr
 photoUrl: /uploads/images/viande-boeuf.jpg
 documentPath: /uploads/files/contrat_viande_2022-2023_nouvelle_version.pdf
 ---

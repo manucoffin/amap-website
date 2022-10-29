@@ -54,6 +54,7 @@ export interface Contract {
   description: string;
   calendarLink?: string;
   tutors: any[];
+  producer: any;
   photoUrl: string;
   documentPath: any;
 }

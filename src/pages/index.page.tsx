@@ -133,16 +133,16 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <Image
           src="/assets/home-bg.png"
           alt="Image avec des fruits et légumes"
-          objectFit="cover"
-          layout="fill"
+          fill
+          className="object-cover"
         />
       </div>
       <div className="lg:hidden h-screen-no-header absolute top-[88px] left-0 right-0 bottom-0 overflow-hidden">
         <Image
           src="/assets/home_bg_1024.png"
           alt="Image avec des fruits et légumes"
-          objectFit="cover"
-          layout="fill"
+          fill
+          className="object-cover"
         />
       </div>
 

@@ -46,8 +46,8 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
             <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg md:w-full md:h-[300px]">
               <Image
                 src={photoUrl}
-                objectFit="cover"
-                layout="fill"
+                fill
+                className="object-cover"
                 alt={`Photo de profil de ${firstname} ${lastname}`}
               />
             </div>

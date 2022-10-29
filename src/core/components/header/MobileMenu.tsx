@@ -68,7 +68,7 @@ const MobileMenu = () => {
                       alt="Logo de l'AMAP de la goutte d'eau"
                       height={40}
                       width={200}
-                      objectFit="contain"
+                      className="object-contain"
                     />
                     <span className="w-16">
                       <XIcon className="w-6 h-6 ml-auto" />

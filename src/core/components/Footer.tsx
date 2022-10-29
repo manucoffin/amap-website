@@ -23,8 +23,8 @@ const Footer = ({ data }: Props) => {
         <Image
           src="/logo_v.png"
           alt="Logo de l'AMAP de la Goutte d'Eau"
-          layout="fill"
-          objectFit="contain"
+          fill
+          className="object-contain"
         />
       </aside>
 
