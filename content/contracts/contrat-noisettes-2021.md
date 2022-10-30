@@ -37,6 +37,7 @@ description: >-
   L’encaissement aura lieu quelques jours avant la livraison en octobre.
 tutors:
   - mN_gcWxWz
+producer: VEBsDdOdW
 photoUrl: /uploads/images/noisettes.webp
 documentPath: /uploads/files/contrat_noisette.pdf
 ---

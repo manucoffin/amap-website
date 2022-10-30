@@ -35,8 +35,8 @@ const NewsPage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>>
               <div className="shadow-lg h-[200px] md:h-full md:col-span-2 relative rounded-lg overflow-hidden">
                 <Image
                   src={mainArticle.photoUrl}
-                  objectFit="cover"
-                  layout="fill"
+                  fill
+                  className="object-cover"
                   alt={mainArticle.title}
                 />
               </div>

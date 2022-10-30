@@ -70,7 +70,7 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           <p className="mb-4 text-gray-400">Publié le {date}</p>
 
           <div className="h-[200px] md:h-[400px] relative overflow-hidden my-6">
-            <Image src={photoUrl} objectFit="cover" layout="fill" alt={title} />
+            <Image src={photoUrl} fill className="object-cover" alt={title} />
           </div>
 
           <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">

@@ -83,7 +83,7 @@ const RecipePage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps
           <div className="flex flex-col gap-8 md:flex-row">
             <div className="w-full basis-1/2">
               <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg md:w-full md:h-[300px]">
-                <Image src={photoUrl} objectFit="cover" layout="fill" alt={`Photo de ${title}}`} />
+                <Image src={photoUrl} fill className="object-cover" alt={`Photo de ${title}}`} />
               </div>
 
               <div className="flex gap-4 mt-4 text-lg md:text-xl text-gray-700">

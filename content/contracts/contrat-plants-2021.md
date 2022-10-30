@@ -20,6 +20,7 @@ description: >-
   L’adhésion à l’AMAP est obligatoire pour accéder à ce contrat.
 tutors:
   - xUJz_BDLR
+producer: VEBsDdOdW
 photoUrl: /uploads/images/illustration-jardin-potager_98292-3765.webp
 documentPath: /uploads/files/contrat_plants_2021_amap_brain.pdf
 ---

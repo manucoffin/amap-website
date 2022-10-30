@@ -11,6 +11,7 @@ description: >
   Le Brebis Doux est composé de lait emprésuré, c'est un produit ultra doux avec une consistance très léger. Il est aussi connu sous le nom de caillebotte.
 tutors:
   - Lmi_5m1tr
+producer: VEBsDdOdW
 photoUrl: /uploads/images/yaourts.jpg
 documentPath: /uploads/files/contrat-yaourts-brebis-2022.pdf
 ---

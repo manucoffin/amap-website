@@ -1,19 +1,16 @@
-import { forwardRef } from "react"
-import clsx from "clsx"
+import clsx from 'clsx';
 
-type Props = React.PropsWithRef<JSX.IntrinsicElements["a"]>
+type Props = React.ComponentPropsWithoutRef<'a'>;
 
-const ExternalLink = forwardRef<HTMLAnchorElement, Props>((props, ref) => (
+const ExternalLink = (props: Props, ref) => (
   <a
     {...props}
     ref={ref}
     className={clsx(
       props.className,
-      "text-gray-500 font-light hover:text-primary-500  hover:underline transition cursor-pointer"
+      'text-gray-500 font-light hover:text-primary-500  hover:underline transition cursor-pointer'
     )}
   />
-))
+);
 
-ExternalLink.displayName = "ExternalLink"
-
-export default ExternalLink
+export default ExternalLink;

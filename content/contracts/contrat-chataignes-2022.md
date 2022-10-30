@@ -30,6 +30,7 @@ description: >-
   http://amap.delagouttedeau.free.fr/spip.php?article273
 tutors:
   - DgyVxdOEn
+producer: VEBsDdOdW
 photoUrl: /uploads/images/autumn-taste-chestnuts-600w-698353891.webp
 documentPath: /uploads/files/contrat_cha_taignes_2022.pdf
 ---

@@ -7,7 +7,12 @@ import { ButtonLink, H1, Header } from '@core/components';
 import { getAddress, getAmap, getContact, getContract, getProducer } from '@src/cms';
 import { Routes } from '@core/constants';
 import ReactMarkdown from 'react-markdown';
-import { AtSymbolIcon, LocationMarkerIcon, PhoneIcon } from '@heroicons/react/outline';
+import {
+  AtSymbolIcon,
+  DocumentTextIcon,
+  LocationMarkerIcon,
+  PhoneIcon,
+} from '@heroicons/react/outline';
 
 const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = ({
   footerData,
@@ -46,14 +51,16 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
             <div className="h-[200px] relative rounded-lg overflow-hidden shadow-lg md:w-full md:h-[300px]">
               <Image
                 src={photoUrl}
-                objectFit="cover"
-                layout="fill"
+                fill
+                className="object-cover"
                 alt={`Photo de profil de ${firstname} ${lastname}`}
               />
             </div>
+          </div>
 
+          <div className="basis-1/2">
             <div className="flex flex-col gap-2 text-gray-700">
-              <h2 className="mt-4 mb-2 text-2xl text-primary-700">Contact</h2>
+              <h2 className="mb-2 text-2xl text-primary-700">Contact</h2>
               <p className="flex">
                 <AtSymbolIcon className="w-5 mr-2" />
                 <span>{email}</span>
@@ -76,14 +83,17 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
               {contracts.length ? (
                 <>
                   <h2 className="mt-8 mb-4 text-2xl text-primary-700">Contrats</h2>
-                  <ul className="text-gray-700 list-disc list-inside">
+                  <ul className="text-gray-700 list-inside flex flex-col">
                     {contracts.map((contract, index) => (
-                      <li key={index}>
+                      <li key={index} className="grow-0">
                         <ButtonLink
                           href={Routes.ContractPage({ contractId: contract.slug })}
                           size="base"
                         >
-                          {contract.title}
+                          <span className="flex text-lg">
+                            <DocumentTextIcon className="w-5 h-5 mr-2 mt-0.5" />
+                            {contract.title}
+                          </span>
                         </ButtonLink>
                       </li>
                     ))}
@@ -92,13 +102,11 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
               ) : null}
             </div>
           </div>
+        </div>
 
-          <div className="basis-1/2">
-            <h2 className="mb-6 text-2xl text-primary-700">À propos</h2>
-            <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">
-              <ReactMarkdown>{biography}</ReactMarkdown>
-            </div>
-          </div>
+        <h2 className="mb-6 mt-12 text-2xl text-primary-700">À propos</h2>
+        <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">
+          <ReactMarkdown>{biography}</ReactMarkdown>
         </div>
       </div>
     </MainLayout>

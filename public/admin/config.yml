@@ -11,6 +11,7 @@ local_backend: false
 cms_manual_init: true
 media_folder: public/uploads
 public_folder: /uploads
+publish_mode: editorial_workflow
 locale: fr
 slug:
   encoding: ascii
@@ -222,6 +223,17 @@ collections:
           display_fields:
             - firstname
             - lastname
+      - label: Producteur
+        name: producer
+        widget: relation
+        collection: producer
+        search_fields:
+          - firstname
+          - lastname
+        value_field: slug
+        display_fields:
+          - firstname
+          - lastname
       - label: Image
         name: photoUrl
         widget: image

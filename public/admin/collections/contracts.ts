@@ -29,6 +29,15 @@ export const contracts = {
       },
     },
     {
+      label: 'Producteur',
+      name: 'producer',
+      widget: 'relation',
+      collection: 'producer',
+      search_fields: ['firstname', 'lastname'],
+      value_field: 'id',
+      display_fields: ['firstname', 'lastname'],
+    },
+    {
       label: 'Image',
       name: 'photoUrl',
       widget: 'image',
