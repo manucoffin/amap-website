@@ -1,32 +1,27 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { forwardRef } from 'react';
 import { Routes } from '@core/constants/routes';
 
-type Props = React.PropsWithRef<JSX.IntrinsicElements['a']> & {
+type Props = React.ComponentPropsWithoutRef<'a'> & {
   width: number;
   height: number;
 };
 
-export const LogoHorizontal = forwardRef<HTMLAnchorElement, Props>(
-  ({ width, height, ...props }) => {
-    return (
-      <Link href={Routes.Home()} {...props}>
-        <Image
-          src="/logo_h.png"
-          alt="Logo de l'AMAP de la Goutte d'Eau"
-          width={width}
-          height={height}
-          className="object-contain"
-        />
-      </Link>
-    );
-  }
-);
+export const LogoHorizontal = ({ width, height, ...props }: Props) => {
+  return (
+    <Link href={Routes.Home()} {...props}>
+      <Image
+        src="/logo_h.png"
+        alt="Logo de l'AMAP de la Goutte d'Eau"
+        width={width}
+        height={height}
+        className="object-contain"
+      />
+    </Link>
+  );
+};
 
-LogoHorizontal.displayName = 'LogoHorizontal';
-
-export const LogoSquare = forwardRef<HTMLAnchorElement, Props>(({ width, height, ...props }) => {
+export const LogoSquare = ({ width, height, ...props }: Props) => {
   return (
     <Link href={Routes.Home()} {...props}>
       <Image
@@ -38,11 +33,9 @@ export const LogoSquare = forwardRef<HTMLAnchorElement, Props>(({ width, height,
       />
     </Link>
   );
-});
+};
 
-LogoSquare.displayName = 'LogoSquare';
-
-export const LogoVertical = forwardRef<HTMLAnchorElement, Props>(({ width, height, ...props }) => {
+export const LogoVertical = ({ width, height, ...props }: Props) => {
   return (
     <Link href={Routes.Home()} {...props}>
       <Image
@@ -54,6 +47,4 @@ export const LogoVertical = forwardRef<HTMLAnchorElement, Props>(({ width, heigh
       />
     </Link>
   );
-});
-
-LogoVertical.displayName = 'LogoVertical';
+};
