@@ -14,6 +14,7 @@ description: >-
   Adhésion 2022 obligatoire avant de signer tout contrat.
 tutors:
   - 9LlfELqqF
+producer: VEBsDdOdW
 photoUrl: /uploads/images/miel.jpg
 documentPath: /uploads/files/contrat_miel-annee-2022.pdf
 ---

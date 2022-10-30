@@ -11,6 +11,7 @@ description: >-
   http://amap.delagouttedeau.free.fr/spip.php?article285
 tutors:
   - w44Nipamq
+producer: VEBsDdOdW
 photoUrl: /uploads/images/volailles.jpg
 documentPath: /uploads/files/contrat_volailles_2022-2023.pdf
 ---
