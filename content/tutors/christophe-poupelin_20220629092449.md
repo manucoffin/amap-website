@@ -8,5 +8,5 @@ postcode: "49800"
 city: Loire-Authion
 phone: 02 41 54 35 52
 email: christophe.poupelin@orange.fr
-photoUrl: /uploads/images/vegetables.jpg
+photoUrl: /uploads/images/img_20220728_075451.jpg
 ---
