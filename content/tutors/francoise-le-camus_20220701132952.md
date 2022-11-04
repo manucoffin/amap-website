@@ -7,5 +7,5 @@ postcode: "49800 "
 city: Loire Authion
 phone: 06 14 44 28 95
 email: francoise.le-camus@orange.fr
-photoUrl: /uploads/images/img_20220903_141938.jpg
+photoUrl: /uploads/images/amap-2.jpg
 ---
