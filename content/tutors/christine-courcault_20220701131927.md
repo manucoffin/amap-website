@@ -7,5 +7,5 @@ postcode: 49800 Corné
 city: Loire Authion
 phone: 06 85 75 74 10
 email: courcault.ch@wanadoo.fr
-photoUrl: /uploads/images/depositphotos_1603378-stock-photo-man-with-fork-on-white.jpg
+photoUrl: /uploads/images/img-20221028-wa0013~2.jpg
 ---
