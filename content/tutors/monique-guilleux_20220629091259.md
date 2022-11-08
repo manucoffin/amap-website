@@ -8,5 +8,5 @@ postcode: "49124"
 city: Le Plessis Grammoire
 phone: "02 41 76 47 37\t"
 email: guilleux.monique@wanadoo.fr
-photoUrl: /uploads/images/pain.jpg
+photoUrl: /uploads/images/img-20211221-wa0005.jpg
 ---
