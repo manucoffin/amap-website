@@ -7,7 +7,7 @@ activity: pommiculteur
 address: "Le Petit Bois "
 postcode: "49140"
 city: Jarzé Village
-photoUrl: /uploads/images/pommes_dessin__fruits_gratuits_a_imprimer_20160426_1958290118.png
+photoUrl: /uploads/images/portrait_bertrand.jpg
 contracts:
   - contrat-pommes-et-jus-2022-2023
 ---
