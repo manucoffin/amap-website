@@ -2,7 +2,10 @@
 id: -ZgSHRz9q
 lastname: godebout
 firstname: bertrand
-biography: pompompom
+biography: |-
+   Photo Copyright Yannick Lecoq 
+
+  pompompom
 activity: pommiculteur
 address: "Le Petit Bois "
 postcode: "49140"
