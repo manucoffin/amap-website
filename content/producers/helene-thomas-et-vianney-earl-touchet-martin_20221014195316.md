@@ -2,7 +2,7 @@
 id: hEorfTyhr
 lastname: EARL Touchet Martin
 firstname: Hélène, Thomas et Vianney
-biography: photo  Copyright Yannick Lecoq
+biography: mmm
 activity: Farine, boeuf
-photoUrl: /uploads/images/portrait-thomas.jpg
+photoUrl: /uploads/images/20210802_161919.jpg
 ---
