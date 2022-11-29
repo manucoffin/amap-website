@@ -1,5 +1,5 @@
 ---
-title: Contrats Légumes hiver 22- 23
+title: Contrats Légumes hiver 2022- 2023
 description: Veuillez télécharger le  contrat et l'apporter sur le lieu de
   distribution ou en l'envoyant au tuteur dont les coordonnées paraissent sur le
   contrat.
