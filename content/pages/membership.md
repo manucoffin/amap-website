@@ -20,7 +20,7 @@ description: >-
   En cas de partage de paniers, chaque "co-panier" adhère individuellement à l’association.
 
 
-  L’adhésion et le chèque à l’ordre de l’AMAP peuvent être apportés sous le préau ou envoyés à la trésorière dont les coordonnées paraissent en bas du bulletin.
+  L’adhésion et le chèque à l’ordre de l’AMAP de la Goutte d'eau peuvent être apportés sous le préau ou envoyés à la trésorière dont les coordonnées paraissent en bas du bulletin.
 documentPath: /uploads/files/adhesion-amap.jpeg
 ---
 
