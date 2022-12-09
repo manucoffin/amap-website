@@ -18,28 +18,28 @@ const MembershipPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> =
       title="Adhésion"
       description="Page d'adhésion de l'AMAP de la Goutte d'Eau"
       footerData={footerData}
-      className="bg-concrete bg-repeat pb-20"
+      className="pb-20 bg-repeat bg-concrete"
     >
       <Header amapName={footerData.amap.name} />
 
-      <div className="px-4 py-12 lg:w-2/3 2xl:w-1/2 mx-auto">
+      <div className="px-4 py-12 mx-auto lg:w-2/3 2xl:w-1/2">
         <H1>Vous souhaitez adhérer à l&apos;AMAP ? C&apos;est ici !</H1>
 
-        <div className="flex flex-col items-center text-gray-700 gap-6">
+        <div className="flex flex-col items-center gap-6 text-gray-700">
           <Image src="/assets/contract.png" alt="Dessin d'un contrat" width={100} height={100} />
 
           <div className="mt-8">
             <a
               href={documentPath}
               download
-              className="text md:text-xl px-4 py-3 rounded-lg text-primary-500 border border-primary-500 hover:border-primary-700 hover:text-primary-700 disabled:border-gray-300 disabled:text-gray-400"
+              className="px-4 py-3 border rounded-lg text md:text-xl text-primary-500 border-primary-500 hover:border-primary-700 hover:text-primary-700 disabled:border-gray-300 disabled:text-gray-400"
             >
               Télécharger le contrat d&apos;adhésion
             </a>
           </div>
 
           <div className="mt-20 text-gray-700">
-            <h2 className="text-2xl text-primary-700 mb-6">Comment ça marche ?</h2>
+            <h2 className="mb-6 text-2xl text-primary-700">Comment ça marche ?</h2>
             <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">
               <ReactMarkdown>{description}</ReactMarkdown>
             </div>
