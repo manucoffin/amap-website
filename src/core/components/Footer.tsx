@@ -143,8 +143,8 @@ const Footer = ({ data }: Props) => {
 
             <p className="mt-4 sm:mt-0">
               &copy; {new Date().getFullYear()}{' '}
-              <a href="https://www.manuelcoffin.fr" rel="noopener noreferrer" target="_blank">
-                Manuel Coffin
+              <a href="https://www.melicel.io" rel="noopener noreferrer" target="_blank">
+                Melicelio
               </a>
             </p>
           </div>

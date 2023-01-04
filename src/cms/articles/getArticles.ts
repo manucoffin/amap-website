@@ -14,14 +14,10 @@ export const getArticles = async (): Promise<Article[]> => {
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const { data, content } = matter(fileContent);
 
-    const date = new Intl.DateTimeFormat('fr', {
-      dateStyle: 'full',
-    }).format(data.date);
-
     const article = {
       ...data,
       content,
-      date,
+      date: data.date.toString(),
       slug: path.basename(filePath, '.md'),
     } as Article;
 
@@ -30,5 +26,5 @@ export const getArticles = async (): Promise<Article[]> => {
 
   const articles = await Promise.all(promises);
 
-  return articles.sort((a, b) => (a.date > b.date ? 1 : -1));
+  return articles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 };

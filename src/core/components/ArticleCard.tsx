@@ -4,6 +4,7 @@ import { truncateText } from '@core/lib/utils';
 import { Routes } from '@src/core/constants/routes';
 import clsx from 'clsx';
 import { ButtonLink } from '@src/core/components';
+import { getLocaleDate } from '@core/lib';
 
 type Props = React.ComponentPropsWithoutRef<'div'> & {
   article: Article;
@@ -21,11 +22,11 @@ const ArticleCard = ({ article }: Props) => {
       <div className={clsx('grow flex flex-col text-gray-700 justify-between')}>
         <div>
           <h5 className="text-xl font-bold">{truncateText(title, 60)}</h5>
-          <p className="text-sm text-gray-400 mb-4">Publié le {date}</p>
+          <p className="mb-4 text-sm text-gray-400">Publié le {getLocaleDate(new Date(date))}</p>
           <p>{truncateText(content, 80)}</p>
         </div>
 
-        <div className="flex w-full justify-end mt-4">
+        <div className="flex justify-end w-full mt-4">
           <ButtonLink href={Routes.ArticlePage({ slug })} decoration="underline" size="base">
             Lire la suite
           </ButtonLink>
