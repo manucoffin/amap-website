@@ -4,7 +4,7 @@ author: dominique
 date: 2022-12-29T21:00:43.288Z
 abstract: Planter un millier d'arbres pour former un bosquet sur une parcelle
   non cultivée de Camille et Nicolas Oran.
-photoUrl: /uploads/images/1000-arbres2.jpg
+photoUrl: /uploads/images/1000-arbres1-2.jpg
 ---
 Cela s'est passé ce matin, à Mazé, sur un terrain de Camille et Nicolas Oran. Une trentaine d'espèces différentes : chenes, hetres, bourdaines, charmes... provenant de leurs voisins pépinièristes.
 
