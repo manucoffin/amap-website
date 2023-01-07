@@ -5,7 +5,7 @@ author: dominique
 date: 2023-01-06T21:19:44.084Z
 abstract: "Justin, le crieur de L'AMAP, s'est emparé de vos messages et les a
   déclamés. \"T'écris, je crie...\" Voici l'un parmi tous les messages :"
-photoUrl: /uploads/images/img_8226.jpg
+photoUrl: /uploads/images/img_8226-2.jpg
 ---
 J'ai vu en 2022
 
