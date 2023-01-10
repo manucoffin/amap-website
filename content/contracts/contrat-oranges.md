@@ -1,6 +1,6 @@
 ---
 title: "Contrat oranges "
-description: une distribution dsupplémentaire d'une cagette d'oranges début février
+description: une distribution supplémentaire d'une cagette d'oranges début février
 tutors:
   - mN_gcWxWz
 producer: AxEwXIAEV
