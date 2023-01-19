@@ -13,7 +13,8 @@ description: >-
   et 
 
   🐮 800 gr de boeuf bourguignon cuisiné, prêt à réchauffer =16.50€
-tutors: []
+tutors:
+  - aEJ37-co0
 producer: hEorfTyhr
 photoUrl: /uploads/images/capture-d-e-cran-2023-01-19-a-12.48.53.png
 documentPath: /uploads/files/contratbocaux22-23.pdf
