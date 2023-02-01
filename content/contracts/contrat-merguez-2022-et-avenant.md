@@ -9,5 +9,5 @@ tutors:
   - I8FjAGICh
 producer: ped66L5OJ
 photoUrl: /uploads/images/merguez.jpg
-documentPath: /uploads/files/amap_contrat_merguez_2022_avenant.pdf
+documentPath: /uploads/files/2023-contrat-viande-d-agneau-et-merguez_1.pdf
 ---
