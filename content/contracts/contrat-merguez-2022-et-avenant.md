@@ -1,10 +1,36 @@
 ---
 title: Contrat merguez 2022 et avenant
 description: >-
-  Yohann propose 4 dates pour goûter aux merguez de sa ferme.
+  Oyez oyez les amateurs de viande de brebis et merguez. Nous avons dû modifier
+  le contrat pour rajouter les merguez.
 
 
-  Pour en profiter, téléchargez le contrat et apportez-le rempli et accompagné de ses chèques au le terrain de boules à Brain/Authion ou envoyez-le à la tutrice dont l’adresse parait en bas du contrat.
+  Pensez vite à vos commandes , première livraison jeudi 9 février !
+
+
+  Merci de m'adresser vos contrats avant le dimanche 5 février lors de la distribution de demain, par voie postale ou par mail . Vous me l'apporterez avec vos chèques lors de la première livraison.
+
+   
+
+  Christine Courcault
+
+
+  Tutrice viande d’agneau
+
+
+  28 rue de l’Ormeau
+
+
+  Corné
+
+
+  49630 LOIRE AUTHION
+
+
+  06.85.75.74.10
+
+
+  courcault.ch@wanadoo.fr
 tutors:
   - I8FjAGICh
 producer: ped66L5OJ
