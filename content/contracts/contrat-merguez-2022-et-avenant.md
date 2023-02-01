@@ -1,5 +1,5 @@
 ---
-title: Contrat merguez 2022 et avenant
+title: Contrat vianded'agneau et merguez 2023
 description: >-
   Oyez oyez les amateurs de viande de brebis et merguez. Nous avons dû modifier
   le contrat pour rajouter les merguez.
