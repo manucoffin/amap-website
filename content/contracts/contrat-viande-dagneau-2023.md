@@ -1,5 +1,5 @@
 ---
-title: Contrat viande d'agneau 2023
+title: Contrat viande d'agneau et merguez 2023
 description: Cette année, possibilité de choisir 1/2 agneau ou 1/4 d'agneau.
 calendarLink: ""
 tutors:
