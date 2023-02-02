@@ -6,5 +6,5 @@ tutors:
   - I8FjAGICh
 producer: ped66L5OJ
 photoUrl: /uploads/images/agneau.jpg
-documentPath: /uploads/files/2023-contrat-viande-d-agneau_.pdf
+documentPath: /uploads/files/2023-contrat-viande-d-agneau-et-merguez_1.pdf
 ---
