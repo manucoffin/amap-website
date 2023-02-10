@@ -7,9 +7,9 @@ photoUrl: /uploads/images/img_8434.jpg
 ---
 Non, ce n'est pas un campement d'indiens cette fumée qui monte dans la nuit ! 
 
-![C'est un rassemblement d'amapiens frigorifiés et réjouis](/uploads/img_8438.jpg)
+![](/uploads/img_8438.jpg)
 
-, autour d'un vin et jus de pomme chauds mijotés par Jérme et Christine au nom de l'AMAP
+C'est un rassemblement d'amapiens frigorifiés et réjouis, autour d'un vin et jus de pomme chauds mijotés par Jérome et Christine, au nom de l'AMAP
 
 ![](/uploads/img_8436.jpg)
 
