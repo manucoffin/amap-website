@@ -1,5 +1,5 @@
 ---
-title: Contrat rillettes de poule et terrine de foie 2022
+title: Contrat rillettes de poule et terrine de foie 2023
 description: >-
   Contrat rillettes de poules et terrines de foie
 
