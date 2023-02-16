@@ -27,5 +27,5 @@ tutors:
   - rryx6ojEj
 producer: wbcgbKIsi
 photoUrl: /uploads/images/poule.png
-documentPath: /uploads/files/contrat_terrines_et_rillettes_2022.pdf
+documentPath: /uploads/files/contrat-rillettes-2023-.pdf
 ---
