@@ -2,12 +2,9 @@
 id: wbcgbKIsi
 lastname: Durand
 firstname: Christine
-biography: |-
-  Photo  Copyright Yannick Lecoq 
-
-  mmmm
+biography: Photo  Copyright Yannick Lecoq
 activity: éleveuse de poules pondeuses
-photoUrl: /uploads/images/portrait_christine-jeanluc.jpg
+photoUrl: /uploads/images/christine-et-jean-luc.jpg
 contracts:
   - contrat-oeufs-2022-23
 ---
