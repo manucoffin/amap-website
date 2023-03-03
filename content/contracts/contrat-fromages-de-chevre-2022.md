@@ -10,5 +10,5 @@ tutors:
   - I8FjAGICh
 producer: oahMVY_bh
 photoUrl: /uploads/images/fromage-de-chevre.jpg
-documentPath: /uploads/files/contrat_chevre_227v21.pdf
+documentPath: /uploads/files/contrat-chevre-2023.pdf
 ---
