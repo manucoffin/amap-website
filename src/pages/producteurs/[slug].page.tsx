@@ -83,7 +83,7 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
               {contracts.length ? (
                 <>
                   <h2 className="mt-8 mb-4 text-2xl text-primary-700">Contrats</h2>
-                  <ul className="text-gray-700 list-inside flex flex-col">
+                  <ul className="flex flex-col text-gray-700 list-inside">
                     {contracts.map((contract, index) => (
                       <li key={index} className="grow-0">
                         <ButtonLink
@@ -104,7 +104,7 @@ const ProducerPage: NextPage<InferGetServerSidePropsType<typeof getServerSidePro
           </div>
         </div>
 
-        <h2 className="mb-6 mt-12 text-2xl text-primary-700">À propos</h2>
+        <h2 className="mt-12 mb-6 text-2xl text-primary-700">À propos</h2>
         <div className="prose prose-stone max-w-none prose-headings:font-sans prose-headings:font-bold prose-headings:text-blue-700 prose-p:font-serif prose-blockquote:font-serif">
           <ReactMarkdown>{biography}</ReactMarkdown>
         </div>
