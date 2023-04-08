@@ -13,5 +13,5 @@ tutors:
   - Lmi_5m1tr
 producer: ped66L5OJ
 photoUrl: /uploads/images/yaourts.jpg
-documentPath: /uploads/files/contrat-yaourts-brebis-2022.pdf
+documentPath: /uploads/files/contrat-yaourts-brebis-2023.pdf
 ---
