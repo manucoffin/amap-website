@@ -15,5 +15,5 @@ tutors:
   - Lmi_5m1tr
 producer: ped66L5OJ
 photoUrl: /uploads/images/fromage-brebis.jpg
-documentPath: /uploads/files/contrat-fromages-brebis-2023.pdf
+documentPath: /uploads/files/contrat-brebis-frais.pdf
 ---
