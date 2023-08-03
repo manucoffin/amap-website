@@ -1,5 +1,5 @@
 ---
-title: Contrat bœuf, veau et porc 2022/2023
+title: Contrat bœuf, veau et porc 2023/2024
 description: >-
   Téléchargez le dernier feuillet du contrat, remplissez-le et photocopiez-le en
   2 exemplaires ( un pour la tutrice de l’Amap, un pour le producteur. )
