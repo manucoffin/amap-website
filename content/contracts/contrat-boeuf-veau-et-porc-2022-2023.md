@@ -14,8 +14,6 @@ description: >-
   Pour tout savoir sur la ferme, l’élevage, les animaux allez voir :
 
 
-  http://amap.delagouttedeau.free.fr/spip.php?article69
-
   http://fermedefrancois.canalblog.com/
 tutors:
   - 6eDTaA16l
