@@ -13,5 +13,5 @@ tutors:
   - w44Nipamq
 producer: 2Kkw2Um1F
 photoUrl: /uploads/images/volailles.jpg
-documentPath: /uploads/files/contrat_volailles_2022-2023.pdf
+documentPath: /uploads/files/contrat_volailles_2023-2024.pdf
 ---
