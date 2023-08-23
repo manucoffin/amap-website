@@ -1,5 +1,5 @@
 ---
-title: Contrat volailles 2022-2023
+title: Contrat volailles 2023-2024
 description: >-
   Si les bêtes à plumes vous tentent, sautez sur vos plumiers, encre et outils
   divers et complétez ce contrat que vous apporterez rapidement lors d’une
