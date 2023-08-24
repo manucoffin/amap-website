@@ -1,5 +1,5 @@
 ---
-title: Contrat vomlailles 2023-2024
+title: Contrat volailles 2023-2024
 description: poulets de différents poids, pintades et coqs
 tutors:
   - w44Nipamq
