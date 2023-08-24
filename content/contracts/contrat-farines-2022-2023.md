@@ -13,5 +13,5 @@ tutors:
   - dtIlz2-P8
 producer: hEorfTyhr
 photoUrl: /uploads/images/farine.jpg
-documentPath: /uploads/files/2022_2023_contrat_farine.pdf
+documentPath: /uploads/files/2023-2024-contrat-farine.pdf
 ---
