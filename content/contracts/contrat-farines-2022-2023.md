@@ -1,5 +1,5 @@
 ---
-title: Contrat farines 2022-2023
+title: Contrat farines 2023-2024
 description: >-
   Le contrat farine 2022 2023 est en ligne.
 
