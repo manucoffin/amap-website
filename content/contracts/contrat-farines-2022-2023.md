@@ -1,7 +1,7 @@
 ---
 title: Contrat farines 2023-2024
 description: >-
-  Le contrat farine 2022 2023 est en ligne.
+  Le contrat farine 2023 2024 est en ligne.
 
 
   Les tarifs ont évolué car ils n’étaient pas suffisamment en adéquation avec les charges de production et le temps de travail. Hélène reste à votre disposition pour vous expliquer leur démarche.
