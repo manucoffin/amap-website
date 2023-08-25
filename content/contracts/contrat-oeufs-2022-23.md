@@ -7,5 +7,5 @@ tutors:
   - rryx6ojEj
 producer: wbcgbKIsi
 photoUrl: /uploads/images/poule.png
-documentPath: /uploads/files/contrat_oeufs_2022_2023_consommateur.pdf
+documentPath: /uploads/files/contrat-oeufs-2023-2024-consommateur-2.pdf
 ---
