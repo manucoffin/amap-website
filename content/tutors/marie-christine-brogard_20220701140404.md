@@ -5,7 +5,7 @@ firstname: Marie-Christine
 address: 7 impasse Gaby Morlay,
 postcode: " La Bohalle"
 city: 49800 Loire Authion
-phone: 02 41 54 94 22
-email: philbrog@yahoo.fr
+phone: 06 13 78 76 05
+email: christinebrogard10@gmail.com
 photoUrl: /uploads/images/20221101_092237.jpg
 ---
