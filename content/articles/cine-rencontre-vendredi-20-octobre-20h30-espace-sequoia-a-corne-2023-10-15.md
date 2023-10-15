@@ -2,7 +2,8 @@
 title: Ciné-rencontre, vendredi 20 octobre 20h30, espace Sequoia à Corné
 author: dominique
 date: 2023-10-15T17:39:52.835Z
-abstract: test
+abstract: "Projection du film \"Bienveillance paysanne\", d'Oliver Dickinson. 95
+  min, thème : élevage et agroécologie. Tarif 3€"
 photoUrl: /uploads/images/corne-cine-debat.jpeg
 ---
 **Les élevages vertueux, c'est possible !** 
