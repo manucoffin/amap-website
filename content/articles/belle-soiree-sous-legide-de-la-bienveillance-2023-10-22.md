@@ -10,3 +10,5 @@ Une bonne centaine de personnes est venue assister au film puis débat "Bienveil
 ![](/uploads/image000000-2.jpg)
 
 Un pot de l'amitié avec des produits de l'AMAP ou locaux a permis de continuer les échanges.
+
+![](/uploads/img_2488.jpg)
