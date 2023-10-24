@@ -7,5 +7,5 @@ tutors:
   - f2smOTo7R
 producer: VEBsDdOdW
 photoUrl: /uploads/images/tisane.jpg
-documentPath: /uploads/files/contrat-tisanes-2023-2024-tarif-distri-pres.pdf
+documentPath: /uploads/files/contrat-tisanes-2023-2024-pres-tarif-distr.pdf
 ---
