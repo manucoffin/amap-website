@@ -26,7 +26,7 @@ description: >-
   Suivez ce lien pour en savoir plus sur Alexandre et ses produits.
 
 
-  http://amap.delagouttedeau.free.fr/spip.php?article273
+  https://www.amap-goutte-eau.fr/
 tutors:
   - DgyVxdOEn
 producer: tyL1xOm6q
