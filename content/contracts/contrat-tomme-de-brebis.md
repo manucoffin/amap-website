@@ -1,5 +1,5 @@
 ---
-title: Contrat tomme de brebis 2023
+title: Contrat tomme de brebis - 2023
 description: >
   Il est proposé : des parts de tomme produites selon le cahier des charges de
   l'Agriculture Biologique. (N° de certification ECOCERT: 187102P ).
