@@ -1,24 +1,23 @@
 ---
-title: Contrat châtaignes 2022
+title: Contrat châtaignes 2023-24
 description: >-
-  L’AMAP de la Goutte d’Eau lance ce contrat châtaignes entre ses Amapiens et le
-  producteur Alexandre Guesdon de Chirols en Ardèche.
+  L’AMAP de la Goutte d’Eau poursuit le contrat châtaignes entre ses Amapiens et
+  le producteur Alexandre Guesdon de Chirols en Ardèche.
 
 
-  Michèle Touchet sera la tutrice pour ce contrat.
+  Michèle Touchet est la tutrice pour ce contrat.
 
 
-
-  Alexandre envisage 2 distributions cette année et non 3 comme indiqué sur le contrat.
-
-
-  Si vous souhaitez contractualiser avec lui, lisez bien le contrat qui diffère un peu des autres.
+  Alexandre envisage 2 distributions par an.
 
 
-  imprimez la dernière page en 1 exemplaire
+  Si vous souhaitez contractualiser avec lui, lisez bien le contrat.
 
 
-  Imprimez le bon de commande en deux exemplaires
+  Imprimez la 3ème page en 1 exemplaire.
+
+
+  Imprimez le bon de commande (4ème page) en 2 exemplaires
 
 
   et apportez le tout à la tutrice lors d’une distribution ou envoyez-le avec votre paiement à son adresse indiquée en bas de page.
@@ -32,5 +31,5 @@ tutors:
   - DgyVxdOEn
 producer: tyL1xOm6q
 photoUrl: /uploads/images/autumn-taste-chestnuts-600w-698353891.webp
-documentPath: /uploads/files/contrat_cha_taignes_2022.pdf
+documentPath: /uploads/files/contrat-chataignes-2023-2024-contrat-bdc-decembre-produits-disponibles-tarifs.pdf
 ---
