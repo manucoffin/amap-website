@@ -1,5 +1,5 @@
 ---
-title: Contrat miel 2023
+title: Contrat miel 2024
 description: >-
   Fabien Bonsergent propose des miels variés que vous découvrirez sur le
   contrat.
@@ -16,5 +16,5 @@ tutors:
   - 9LlfELqqF
 producer: LAl9byv0E
 photoUrl: /uploads/images/miel.jpg
-documentPath: /uploads/files/contrat_miel-annee-2023.pdf
+documentPath: /uploads/files/contrat_miel-annee-2024.pdf
 ---
