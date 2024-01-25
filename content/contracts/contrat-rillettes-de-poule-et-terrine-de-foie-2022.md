@@ -1,5 +1,5 @@
 ---
-title: Contrat rillettes de poule et terrine de foie 2023
+title: Contrat rillettes de poule et terrine de foie 2024
 description: >-
   Contrat rillettes de poules et terrines de foie
 
@@ -27,5 +27,5 @@ tutors:
   - rryx6ojEj
 producer: wbcgbKIsi
 photoUrl: /uploads/images/poule.png
-documentPath: /uploads/files/contrat-rillettes-2023-.pdf
+documentPath: /uploads/files/contrat-rillettes-2024-consommateur.pdf
 ---
