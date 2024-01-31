@@ -7,5 +7,5 @@ tutors:
   - HvSDm18v7
 producer: 0iHnhNscu
 photoUrl: /uploads/images/legumes-de-garde.jpg
-documentPath: /uploads/files/contrat-le-gume-garde-2023-2024.pdf
+documentPath: /uploads/files/contrat-le-gume-garde-2024.pdf
 ---
