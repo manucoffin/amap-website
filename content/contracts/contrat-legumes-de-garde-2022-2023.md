@@ -1,5 +1,5 @@
 ---
-title: Contrat légumes de garde 2023-2024
+title: Contrat légumes de garde 2024
 description: Veuillez télécharger le ou les contrats et les apporter sur le lieu
   de distribution ou en les envoyant au tuteur dont les coordonnées paraissent
   sur le contrat.
