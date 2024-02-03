@@ -5,13 +5,15 @@ date: 2024-02-03T13:31:58.650Z
 abstract: Quelques un.e.s  déjà, nous nourrissent à l'AMAP
 photoUrl: /uploads/images/image1.jpg
 ---
-<!--\[if gte mso 9]><xml>
+Il en faut plus encore pour nourrir sainement toutes et tous.
+
+"Nous préférons construire ENSEMBLE un modèle qui profite aux agriculteurs, aux consommateurs et à la vie, comme il aurait toujours dû l’être."<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -51,9 +53,9 @@ photoUrl: /uploads/images/image1.jpg
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="375">
@@ -553,13 +555,13 @@ photoUrl: /uploads/images/image1.jpg
   <w:LsdException Locked="false" Priority="51"
    Name="Grid Table 6 Colorful Accent 6"/>
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -599,9 +601,9 @@ photoUrl: /uploads/images/image1.jpg
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="375">
@@ -1178,9 +1180,9 @@ photoUrl: /uploads/images/image1.jpg
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Unresolved Mention"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -1204,7 +1206,7 @@ photoUrl: /uploads/images/image1.jpg
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:EN-US;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
@@ -1219,6 +1221,7 @@ Pas de pays sans paysannes et paysans
 nombreux !
 
 <!--EndFragment-->
+
   <w:LsdException Locked="false" Priority="52"
    Name="Grid Table 7 Colorful Accent 6"/>
   <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
@@ -1299,7 +1302,7 @@ nombreux !
  </w:LatentStyles>
 </xml><!\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -1323,12 +1326,10 @@ nombreux !
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:EN-US;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
-Il en faut plus encore pour nourrir sainement toutes et tous.
 
-"Nous préférons construire ENSEMBLE un modèle qui profite aux agriculteurs, aux consommateurs et à la vie, comme il aurait toujours dû l’être."
 
 <!--EndFragment-->
