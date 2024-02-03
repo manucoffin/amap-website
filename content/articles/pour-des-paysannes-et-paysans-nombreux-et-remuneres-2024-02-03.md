@@ -6,6 +6,8 @@ abstract: Jeudi 1er Février, à la distribution AMAP, quelques-un.es nous
   nourrissent déjà !
 photoUrl: /uploads/images/image1.jpg
 ---
+Jeudi 1er Février, à la distribution AMAP, quelques-un.es nous nourrissent déjà !
+
 **Il en faut encore plus pour nourrir sainement toutes et tous.**
 
 **Nous préférons construire ENSEMBLE un modèle qui profite aux agriculteurs, aux consommateurs et à la vie, comme il aurait toujours dû l’être.**
