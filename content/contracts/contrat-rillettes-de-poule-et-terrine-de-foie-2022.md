@@ -1,7 +1,7 @@
 ---
-title: Contrat rillettes de poule et terrine de foie 2024
+title: Contrat rillettes de poule et effilochés 2024
 description: >-
-  Contrat rillettes de poules et terrines de foie
+  Contrat rillettes de poules et effilochés
 
 
   La ferme des Durand de Cheviré Le Rouge vous propose un nouveau contrat terrines et rillettes. Après 1 an et demi de bons et loyaux services, une partie des poules de la ferme est transformée en terrines et rillettes.
@@ -13,7 +13,7 @@ description: >-
   Les rillettes de poules au prix de 6 euros sont 100 % volaille (viande de poule et graisse de canard.)
 
 
-  Les terrines au prix de 6,20 euros sont des terrines de foie et d’abats, viande de poule et graisse de porc.
+  Les effilochés au prix de 6,20 euros sont des terrines de foie et d’abats, viande de poule et graisse de porc.
 
 
   Un contrat de 4 livraisons vous est proposé pour l’année : en mars, juin septembre et décembre. Livraison le premier jeudi du mois
