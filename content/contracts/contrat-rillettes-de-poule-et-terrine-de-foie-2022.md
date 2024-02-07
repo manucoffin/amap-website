@@ -27,5 +27,5 @@ tutors:
   - rryx6ojEj
 producer: wbcgbKIsi
 photoUrl: /uploads/images/poule.png
-documentPath: /uploads/files/contrat-rillettes-2024-consommateur.pdf
+documentPath: /uploads/files/contrat-rillettes-2024-consommateur-ok-ok.pdf
 ---
