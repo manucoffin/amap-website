@@ -1,5 +1,5 @@
 ---
-title: Contrat fromages de chèvre 2023
+title: Contrat fromages de chèvre 2024
 description: >
   Julie MIGAUD, gérante de l’EARL de la Voie lactée à Neuillé, vous propose des
   fromages de chèvre lactés, fabriqués avec des ferments fermiers.
