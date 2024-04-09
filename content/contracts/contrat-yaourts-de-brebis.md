@@ -1,5 +1,5 @@
 ---
-title: Contrat yaourts de brebis 2024
+title: Contrat Yaourts de brebis 2024
 description: >
   Il est proposé : des yaourts nature produits selon le cahier des charges de
   l'Agriculture Biologique. (N° de certification ECOCERT: 187102P ) 
