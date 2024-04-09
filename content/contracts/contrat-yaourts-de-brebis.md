@@ -12,7 +12,7 @@ description: >
 
   Les deux sont délicieux .
 
-  vous trouverez ici le contrat Yaourt  de Brebis et/ou Brebis Doux  2024 .
+  vous trouverez ici le contrat Yaourt  de Brebis   2024 .
 tutors:
   - Lmi_5m1tr
 producer: ped66L5OJ
