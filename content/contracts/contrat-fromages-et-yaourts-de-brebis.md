@@ -1,5 +1,5 @@
 ---
-title: contrat fromages de brebis 2024
+title: Contrat fromages de brebis 2024
 description: >-
   Le printemps est de nouveau décalé cette année et commencera officieusement le
   18 avril 2024.
