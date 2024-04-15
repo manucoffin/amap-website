@@ -7,5 +7,5 @@ tutors:
   - HvSDm18v7
 producer: 0iHnhNscu
 photoUrl: /uploads/images/legumes.jpg
-documentPath: /uploads/files/contrat-panier-legume-annee-2024-2025.odt
+documentPath: /uploads/files/contrat-panier-legume-annee-2024-2025.pdf
 ---
