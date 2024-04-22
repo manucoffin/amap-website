@@ -1,12 +1,9 @@
 ---
 title: Contrat viande d'agneau et merguez 2023
-description: >-
+description: |-
   bonjour,
-
-  ce nouveau contrat 2024  concerne une seule distribution une seule distribution : le 30 mai 2024.
-
+  ce nouveau contrat 2024  concerne  une seule distribution : le 30 mai 2024.
   ce sera la seule distribution avant l'été.
-
 
   Christine, tutrice
 calendarLink: ""
