@@ -9,7 +9,7 @@ Par ce beau dimanche 2 juin, gris et rafraichissant, nous fûmes une dizaine , �
 
 ![](/uploads/610666be-c1c8-42b8-a7dd-dd7b83e2d4cc.jpg)
 
-La pluie encourage les herbes qui bientot enfouissent les petits plants d'oignons. Tout en discutant et rigolant, nous avons sortis d'embarras les oignons ( et Camille et Nicolas !) sur 300 mètres de long. C'est une goutte d'eau sur les 200m de chaque rang et le champ compte environ 50 rangs, mais c'est un plaisir de participer. Nous avons préservé ces bouts de rangs du moulinage au tracteur. Satisfaction pour nos maraichers !
+La pluie encourage les herbes qui bientot enfouissent les petits plants d'oignons. Tout en discutant et rigolant, nous avons sorti d'embarras les oignons ( et Camille et Nicolas !) sur 300 mètres de long. C'est une goutte d'eau sur les 200m de chaque rang et le champ compte environ 50 rangs, mais c'est un plaisir de participer. Nous avons préservé ces bouts de rangs du moulinage au tracteur. Satisfaction pour nos maraichers !
 
 ![](/uploads/ec0ee7dc-0ee5-4222-bab6-bb71b5a88360.jpg)
 
