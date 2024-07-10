@@ -4,7 +4,7 @@ author: Christine COURCAULT
 date: 2024-07-10T17:03:57.528Z
 abstract: "Samedi après-midi 6 juillet Julie nous a accueilli pour une visite de
   sa ferme "
-photoUrl: /uploads/images/degustation-2-.jpg
+photoUrl: /uploads/images/les-bb.jpg
 ---
 En ce bel après-midi ensoleillé de juillet, Julie MIGAUD, notre productrice de fromage de chèvre nous a ouvert sa ferme "la voie lactée". 
 
