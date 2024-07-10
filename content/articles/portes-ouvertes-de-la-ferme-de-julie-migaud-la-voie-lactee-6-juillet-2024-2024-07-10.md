@@ -12,4 +12,4 @@ Elle nous a présenté son troupeau composé de 70 chèvres de 2 races  différe
 
 u﻿ne trentaine de personnes étaient présentes des familles avec leurs enfants, des amapiens, des voisins..
 
-A﻿près cette
+L﻿a visite s'est terminée par une dégustation de fromage et de vins locaux
