@@ -8,9 +8,10 @@ description: >-
 
   -> deux nouveaux types de farine de blé sont proposés - Farine blanche (type 65) et farine complète (type 110).
 
-  -> le conditionnement commence à 1Kg
+  -> le conditionnement commence à 1Kg.
 
-  Restent proposées la farines de blé semi complètes(type 80), les farine de seigle,  sarrasin, petit épeautre (engrain) et grand épeautre non hybridé.
+
+  Restent proposées la farine de blé semi complète (type 80), les farines de seigle,  sarrasin, petit épeautre (engrain) et grand épeautre non hybridé.
 
 
   Rappel :
