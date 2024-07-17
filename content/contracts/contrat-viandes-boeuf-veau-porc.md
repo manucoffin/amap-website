@@ -5,5 +5,5 @@ tutors:
   - 6eDTaA16l
 producer: hEorfTyhr
 photoUrl: /uploads/images/viande-boeuf.jpg
-documentPath: /uploads/files/contrat-viande-2023-2024.pdf
+documentPath: /uploads/files/contrat-viande-2024-2025.pdf
 ---
