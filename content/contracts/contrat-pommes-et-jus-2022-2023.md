@@ -1,9 +1,9 @@
 ---
-title: Contrat pommes et jus 2023-2024
+title: Contrat pommes et jus 2024-2025
 description: >-
   Bonjour à toutes et tous, amateurs de pommes 😃
 
-  Voici le contrat pommes et jus pour la saison qui arrive (1ère distribution le 7 septembre).
+  Voici le contrat pommes et jus pour la saison qui arrive (1ère distribution le 5 septembre).
 
 
   Sachez bien que même si vous ne prenez pas de pommes tout de suite , vous pouvez dès à présent retourner votre contrat complété.
@@ -16,8 +16,7 @@ description: >-
 
   les prix non plus!
 
-
-  Une nouveauté cependant : Bertrand propose cette année un jus de pommes pétillant au tarif de 3.50€/L,
+  Vous trouverez des pommes en mélange (sucrées, acidulées), des pommes à compote, du jus et du pétillant ;)
 
 
   A vos contrats et à très vite!
@@ -34,8 +33,7 @@ description: >-
   06.22.75.04.97
 tutors:
   - wdBMCuZQN
-  - w44Nipamq
 producer: -ZgSHRz9q
 photoUrl: /uploads/images/pommes.jpg
-documentPath: /uploads/files/pommes-2023-2024-contrat.pdf
+documentPath: /uploads/files/pommes-2024-2025-contrat.pdf
 ---
