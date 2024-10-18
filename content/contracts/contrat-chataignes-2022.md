@@ -1,5 +1,5 @@
 ---
-title: Contrat châtaignes 2023-24
+title: Contrat châtaignes 2024-25
 description: >-
   L’AMAP de la Goutte d’Eau poursuit le contrat châtaignes entre ses Amapiens et
   le producteur Alexandre Guesdon de Chirols en Ardèche.
@@ -31,5 +31,5 @@ tutors:
   - DgyVxdOEn
 producer: tyL1xOm6q
 photoUrl: /uploads/images/autumn-taste-chestnuts-600w-698353891.webp
-documentPath: /uploads/files/contrat-chataignes-2023-2024-contrat-bdc-decembre-produits-disponibles-tarifs.pdf
+documentPath: /uploads/files/contrat-chataignes-2024-2025-contrat-bdc-decembre-produits-disponibles-tarifs.pdf
 ---
