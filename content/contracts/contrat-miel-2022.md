@@ -1,5 +1,5 @@
 ---
-title: Contrat miel 2024
+title: Contrat miel 2025
 description: >-
   Fabien Bonsergent propose des miels variés que vous découvrirez sur le
   contrat.
@@ -11,10 +11,10 @@ description: >-
   En cas d’absence du tuteur, envoyez le contrat à son adresse postale.
 
 
-  Adhésion 2023 obligatoire avant de signer tout contrat.
+  Adhésion 2025 obligatoire avant de signer tout contrat.
 tutors:
   - 9LlfELqqF
 producer: LAl9byv0E
 photoUrl: /uploads/images/miel.jpg
-documentPath: /uploads/files/contrat_miel-annee-2024.pdf
+documentPath: /uploads/files/contrat_miel-annee-2025.pdf
 ---
