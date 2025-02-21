@@ -1,5 +1,5 @@
 ---
-title: Contrat fleurs coupées et mix comestibles 2024
+title: Contrat fleurs coupées et mix comestibles 2025
 description: >+
   Selon la saison, les fleurs proposées sont : œillets, achillées, bleuets,
   immortelles, statices, reines marguerites, tournesols, zinnias, cosmos,
@@ -9,5 +9,5 @@ tutors:
   - YeoxCVGK6
 producer: CUxZnT2OZ
 photoUrl: /uploads/images/logo-jardin-d-eva-vect-1.jpg
-documentPath: /uploads/files/24-contrat-fleurs-.pdf
+documentPath: /uploads/files/contrat-fleurs-et-mix-2025.pdf
 ---
