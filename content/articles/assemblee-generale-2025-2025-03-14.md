@@ -3,11 +3,13 @@ title: Assemblée générale 2025
 author: dominique
 date: 2025-03-14T13:52:42.116Z
 abstract: une trentaine de présents et 26 pouvoirs !
-photoUrl: /uploads/images/img_2530.jpg
+photoUrl: /uploads/images/img_2531.jpg
 ---
-![](/uploads/img_2528.jpg)
+![](/uploads/img_2530.jpg)
 
 ![](/uploads/img_2529.jpg)
+
+![](/uploads/img_2528.jpg)
 
 Assemblée Générale 6 mars 2025 :
 
@@ -16,7 +18,12 @@ aux Communaux de Grasseval, Corné, à la ferme de Camille et Nicolas maître
 – 1/ rappeler les fondamentaux de l'amap :\
 maintenir (et d’inciter à l’installation) des fermes de proximité, pratiquant une agriculture paysanne et durable, dans le respect de la charte des AMAP sous la forme\
 d’un partenariat solidaire entre-producteurs et consommateurs,\
-promouvoir des produits de qualité, de saison, variés, écologiquement sains et socialement équitables\
+promouvoir des produits de qualité, de sa
+
+![]()
+
+![]()
+
 permettre à ses adhérents de retrouver des liens avec la terre
 
 1bis/ état global de l'agriculture en France (rapport d'expertise de Terre de liens-doc 1 joint) 
