@@ -6,6 +6,6 @@ description: "Julie MIGAUD de la ferme de la voie Lactée située à Neuillé
 tutors:
   - I8FjAGICh
 producer: oahMVY_bh
-photoUrl: /uploads/images/img-20221102-wa0014~2.jpg
+photoUrl: /uploads/images/fromage-de-chevre.jpg
 documentPath: /uploads/files/contrat-chevre-2025.pdf
 ---
