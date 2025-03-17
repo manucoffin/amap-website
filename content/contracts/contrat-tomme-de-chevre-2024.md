@@ -10,6 +10,6 @@ tutors:
   - I8FjAGICh
   - I8FjAGICh
 producer: oahMVY_bh
-photoUrl: /uploads/images/tomme-de-chevre-fermiere.jpg
-documentPath: /uploads/files/contrat-tomme-chevre-2024.pdf
+photoUrl: /uploads/images/fromage-de-chevre.jpg
+documentPath: /uploads/files/contrat-chevre-2025.pdf
 ---
