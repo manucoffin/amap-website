@@ -8,7 +8,7 @@ description: >-
 
   Les fromages de Brebis seront fournis à l’AMAP  aux mêmes dates que celles des  yaourts de brebis 
 
-  Yaourts et  fromages   sont  fabriqués par Yohann et Romain avec le lait de leur brebis.
+  Yaourts et  fromages   sont  fabriqués par Yohann et Romain avec le lait de leurs brebis.
 
 
   Vous trouverez ici le contrat 2025 pour les fromages de Brebis.
