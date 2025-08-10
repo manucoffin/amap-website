@@ -1,5 +1,5 @@
 ---
-title: Contrat pommes et jus 2024-2025
+title: Contrat pommes et jus 2025-2026
 description: >-
   Bonjour à toutes et tous, amateurs de pommes 😃
 
@@ -32,5 +32,5 @@ tutors:
   - wdBMCuZQN
 producer: -ZgSHRz9q
 photoUrl: /uploads/images/pommes.jpg
-documentPath: /uploads/files/pommes-2024-2025-contrat.pdf
+documentPath: /uploads/files/pommes-2025-2026-contrat.pdf
 ---
