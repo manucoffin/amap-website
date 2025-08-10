@@ -3,13 +3,10 @@ title: Contrat pommes et jus 2024-2025
 description: >-
   Bonjour à toutes et tous, amateurs de pommes 😃
 
-  Voici le contrat pommes et jus pour la saison qui arrive (1ère distribution le 5 septembre).
+  Voici le contrat pommes et jus pour la saison qui arrive (1ère distribution le 4 septembre).
 
 
-  Sachez bien que même si vous ne prenez pas de pommes tout de suite , vous pouvez dès à présent retourner votre contrat complété.
-
-
-  Ceci permet à Bertrand de s’organiser, de prévoir.
+  Sachez que même si vous ne prenez pas de pommes tout de suite , vous pouvez dès à présent retourner votre contrat complété, pour permettre à Bertrand de s’organiser, de prévoir.
 
 
   Le format ne change pas (distribution mensuelle, 1er jeudi du mois, de septembre à février, (n'oubliez pas votre contenant), 
