@@ -7,5 +7,5 @@ postcode: 49800 Brain/Authion
 city: 49800 Loire Authion
 phone: 06 88 99 12 59
 email: lomah@orange.fr
-photoUrl: /uploads/images/depositphotos_1603378-stock-photo-man-with-fork-on-white.jpg
+photoUrl: /uploads/images/moi-meme.jpg
 ---
