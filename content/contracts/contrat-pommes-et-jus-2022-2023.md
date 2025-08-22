@@ -28,7 +28,6 @@ description: >-
 
   Daphné RAVENEAU
 
-
   Matheflon - 49140 SEICHES-SUR-LE-LOIR
 
   06.22.75.04.97
