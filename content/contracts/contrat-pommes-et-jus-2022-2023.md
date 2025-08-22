@@ -13,7 +13,11 @@ description: >-
 
   les prix non plus!
 
-  Vous trouverez des pommes en mélange (sucrées, acidulées), des pommes à compote, du jus et du pétillant ;)
+  Vous trouverez des pommes en mélange (sucrées, acidulées), 
+
+  des pommes à compote, 
+
+  du jus et du pétillant ;)
 
 
   A vos contrats et à très vite!
