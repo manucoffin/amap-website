@@ -1,17 +1,7 @@
 ---
-title: Contrat farines 2024-2025
+title: Contrat farines 2025-2026
 description: >-
-  Le contrat farine 2024 2025 est en ligne.
-
-
-  Nouveautés:
-
-  -> deux nouveaux types de farine de blé sont proposés - Farine blanche (type 65) et farine complète (type 110).
-
-  -> le conditionnement commence à 1Kg.
-
-
-  Restent proposées la farine de blé semi complète (type 80), les farines de seigle,  sarrasin, petit épeautre (engrain) et grand épeautre non hybridé.
+  Le contrat farine 2025 2026 est en ligne.
 
 
   Rappel :
@@ -22,5 +12,5 @@ tutors:
   - dtIlz2-P8
 producer: hEorfTyhr
 photoUrl: /uploads/images/farine.jpg
-documentPath: /uploads/files/2024-2025-contrat-farine.pdf
+documentPath: /uploads/files/2025-2026-contrat-farine.pdf
 ---
