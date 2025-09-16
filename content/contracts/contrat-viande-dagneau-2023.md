@@ -1,5 +1,5 @@
 ---
-title: Contrat viande d'agneau et merguez 2024
+title: Contrat viande d'agneau et merguez 2025-26
 description: >-
   bonjour,
 
@@ -9,5 +9,5 @@ tutors:
   - I8FjAGICh
 producer: ped66L5OJ
 photoUrl: /uploads/images/la-ferme-de-la-violaie.jpg
-documentPath: /uploads/files/2024-2025-contrat-viande-d-agneau-et-merguez-v5.pdf
+documentPath: /uploads/files/2025-2026contrat-viande-d-agneau-et-merguez-v2.pdf
 ---
