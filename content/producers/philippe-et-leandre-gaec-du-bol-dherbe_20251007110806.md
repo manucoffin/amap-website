@@ -1,7 +1,7 @@
 ---
 id: 8tgPaypw9
 lastname: GAEC du Bol d'herbe
-firstname: Philippe et Léandre
+firstname: Philippe
 biography: >-
   Nos produits sont tous au lait cru, sauf les yaourts, dont le procédé de
   fabrication passe par une pasteurisation.\
