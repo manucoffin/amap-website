@@ -1,5 +1,5 @@
 ---
-title: Fromages de brebis 2025
+title: Contrat Fromages de brebis 2025
 description: >-
   La bergerie la Violaie  vous propose en cette année  2025 de délicieux de
   Fromages  affinés de type palet ou brique ainsi que des fromages frais et à la
