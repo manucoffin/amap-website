@@ -31,5 +31,5 @@ tutors:
   - DgyVxdOEn
 producer: tyL1xOm6q
 photoUrl: /uploads/images/autumn-taste-chestnuts-600w-698353891.webp
-documentPath: /uploads/files/contrat-chataignes-2024-2025-contrat-bdc-decembre-produits-disponibles-tarifs.pdf
+documentPath: /uploads/files/contrat-chataignes-2025-2026-contrat-bdc-decembre-produits-disponibles-tarifs.pdf
 ---
