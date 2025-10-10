@@ -1,5 +1,5 @@
 ---
-title: Contrat châtaignes 2024-25
+title: Contrat châtaignes 2025-26
 description: >-
   L’AMAP de la Goutte d’Eau poursuit le contrat châtaignes entre ses Amapiens et
   le producteur Alexandre Guesdon de Chirols en Ardèche.
@@ -8,10 +8,10 @@ description: >-
   Michèle Touchet est la tutrice pour ce contrat.
 
 
-  Alexandre envisage 2 distributions par an.
+  Alexandre envisage 1 distribution par an, le jeudi 11 décembre 2025.
 
 
-  Si vous souhaitez contractualiser avec lui, lisez bien le contrat.
+  Si vous souhaitez contractualiser avec lui, lisez bien le contrat. Limite de commande : jeudi 20 novembre 2025.
 
 
   Imprimez la 3ème page en 1 exemplaire.
@@ -31,5 +31,5 @@ tutors:
   - DgyVxdOEn
 producer: tyL1xOm6q
 photoUrl: /uploads/images/autumn-taste-chestnuts-600w-698353891.webp
-documentPath: /uploads/files/contrat-chataignes-2024-2025-contrat-bdc-decembre-produits-disponibles-tarifs.pdf
+documentPath: /uploads/files/contrat-chataignes-2025-2026-contrat-bdc-decembre-produits-disponibles-tarifs.pdf
 ---
