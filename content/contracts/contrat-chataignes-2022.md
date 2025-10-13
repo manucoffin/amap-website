@@ -26,7 +26,7 @@ description: >-
   Suivez ce lien pour en savoir plus sur Alexandre et ses produits.
 
 
-  https://www.amap-goutte-eau.fr/
+  https://chirols.fr/vivre-a-chirols-2/economie-locale/lart-des-chataignes/
 tutors:
   - DgyVxdOEn
 producer: tyL1xOm6q
