@@ -8,6 +8,6 @@ description: >-
 tutors:
   - Hdw50xgS1
 producer: ped66L5OJ
-photoUrl: /uploads/images/logo-tomme-1500.png
+photoUrl: /uploads/images/logo-tomme-blanc.png
 documentPath: /uploads/files/contrat-tomme-de-brebis-2025.pdf
 ---
