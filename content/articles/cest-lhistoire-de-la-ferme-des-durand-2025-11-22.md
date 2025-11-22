@@ -4,7 +4,7 @@ author: dominique
 date: 2025-11-22T17:35:11.150Z
 abstract: " 30 ans d'activité, 15 ans de vente directe, une aventure de famille
   : Christine, Jean-Luc et les 6 enfants ! Puis en octobre , tout bascule..."
-photoUrl: /uploads/images/capture-d-e-cran-2025-11-22-a-19.33.21.png
+photoUrl: /uploads/images/capture-d-e-cran-petite.png
 ---
 D'une ferme laitière pour l'industrie à une ferme avicole pour les familles, nous étions
 
