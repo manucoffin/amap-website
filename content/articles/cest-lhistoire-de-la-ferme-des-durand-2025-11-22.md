@@ -20,6 +20,8 @@ nous a permis de remettre le pied à l'étrier.
 
 Aujourd'hui, nous avons encore besoin de vous !
 
+![](/uploads/fermedurand.jpg)
+
 Nous nous sommes rencontrés plusieurs fois avec les tuteurs de nos amap. Nous
 
 avons réalisé un bilan financier, humain et juridique avec un consultant indépendant
