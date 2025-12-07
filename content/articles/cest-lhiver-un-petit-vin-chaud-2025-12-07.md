@@ -1,7 +1,7 @@
 ---
 title: C'est l'hiver, un petit vin chaud
 author: dominique
-date: 2025-12-07T17:09:01.158Z
+date: 2025-12-04T17:17:13.438Z
 abstract: pour réchauffer les corps et les coeurs !
 photoUrl: /uploads/images/img_5311.jpeg
 ---
