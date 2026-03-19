@@ -1,5 +1,6 @@
 ---
-title: fromages de la voie lactée fromages lactés de chèvre et tomme de vache
+title: contrat fromages de la voie lactée fromages lactés de chèvre et tomme de
+  vache 2026
 description: >
   Julie MIGAUD propose des fromages lactés de chèvre AB élaborés avec le lait
   des chèvres ( poitevines et du Massif Central)  de sa ferme "la voie lactée"
