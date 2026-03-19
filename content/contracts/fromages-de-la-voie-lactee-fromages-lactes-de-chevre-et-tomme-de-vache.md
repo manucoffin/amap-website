@@ -9,6 +9,6 @@ description: >
 tutors:
   - I8FjAGICh
 producer: oahMVY_bh
-photoUrl: /uploads/images/logo.jpg
+photoUrl: /uploads/images/resized_20260319_120112-1-.jpg
 documentPath: /uploads/files/contrat-fromages-de-julie-2026-proposition.pdf
 ---
