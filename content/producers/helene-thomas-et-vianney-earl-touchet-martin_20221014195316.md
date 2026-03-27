@@ -1,7 +1,7 @@
 ---
 id: hEorfTyhr
 lastname: EARL Touchet Martin
-firstname: Hélène, Thomas et Vianney
+firstname: "Hélène et Thomas "
 biography: Ferme bio et familiale produisant de la vainde de boeuf, de veau et
   de porc, des céréales et des farines. Nouvellement, production de bocaux de
   viande.
