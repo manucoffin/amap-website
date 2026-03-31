@@ -1,5 +1,5 @@
 ---
-title: Contrat Yaourts de brebis 2025
+title: Contrat Yaourts de brebis 2026
 description: >
   Il est proposé : des yaourts nature produits selon le cahier des charges de
   l'Agriculture Biologique. (N° de certification ECOCERT: 187102P ) 
@@ -12,10 +12,10 @@ description: >
 
   Les deux sont délicieux .
 
-  vous trouverez ici le contrat Yaourt  de Brebis   2025 .
+  vous trouverez ici le contrat Yaourt  de Brebis   2026.
 tutors:
   - Lmi_5m1tr
 producer: ped66L5OJ
 photoUrl: /uploads/images/yaourts.jpg
-documentPath: /uploads/files/2025-contrat-yaourt-brebis.pdf
+documentPath: /uploads/files/contrat-yaourt-brebis-2026.pdf
 ---
