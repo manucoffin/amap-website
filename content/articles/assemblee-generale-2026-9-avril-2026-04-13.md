@@ -6,9 +6,7 @@ abstract: 27 personnes présentes et 20 pouvoirs !!! 2 heures attentives suivies
   d'une heure de debriefing gustatif et pas que !
 photoUrl: /uploads/images/img_6578.jpeg
 ---
-Au CA qui a suivi la dernière AG, le 6 mars 2025, il a été confirmé qu’entendre raconter
-
-la vie des fermes est primordial, même le témoignage par l’intermédiaire du tuteur.
+Au CA qui a suivi la dernière AG, le 6 mars 2025, il a été confirmé qu’entendre raconter la vie des fermes est primordial, même le témoignage par l’intermédiaire du tuteur.
 
 **Bilan d’activités 2025**
 
@@ -51,8 +49,6 @@ o Intégration de la ferme Fleurs coupées et mix comestibles en 2025
 o Intégration d’une nouvelle productrice de Champignons, Manel ARFAOUI
 
 Intégration de la ferme laitière ( vache) du Bol D’herbe à Daumeray
-
-
 
 *Vie de l’association*
 
@@ -110,8 +106,6 @@ de 18h30 à 20h
 
 Réussir à faire installer les producteurs en rond pour les distributions : faire village
 
-
-
 **BILAN FINANCIER**
 
 ![](/uploads/img_6585.jpeg)
@@ -123,8 +117,6 @@ Réussir à faire installer les producteurs en rond pour les distributions : fai
 **Le bol d'herbe**
 
 <https://share.google/bwVcmNroQfCegMgdh>
-
-
 
 **La ferme de François**
 
@@ -144,23 +136,15 @@ Pour absorber ces charges supplémentaires, nous avons revu nos prix auprès de 
 
 Merci aux AMAP qui ont manifesté leur soutien. Pour les autres, il est toujours possible de le faire ! Etre agriculteur bio ne doit pas rimer avec sobriété subie mais choisie ! vite !
 
-
-
  **YOHANN BURET, Bergerie la Violaie**  
 
 Les brebis viennent de retourner à l'herbe, les cochons chien et agneaux de bergerie sont nourris , fin de service à l'extérieur ! Bonjour les papiers pour France travail! Bonne soirée ! 
 
 * audio : « Bonsoir l’AMAP ! Il est 20h42, demain vous serez en plein milieu de l’AG. Un petit coucou de la Violaie où l’année s’annonce très très chargée. Les agnelages se sont bien passés. Quasiment toutes les brebis ont mis bas. Quelques pertes : agneaux prema, peut-être un reste de la LCO qui nous a touchés l’an dernier. Sinon, ça s’est plutôt bien passé. Les mises bas sont terminées. La dernière était la semaine dernière. Le lendemain, on lançait quasiment la traite. Il y a une trentaine de brebis en lait. Les agneaux sont sevrés. Les agneaux vont partir ce soir. Quelques-uns vont rester ici pour le renouvellement. Je tourne les fromages en même temps que je parle. La fromagerie tourne plein pot. La fabrication de galettes a repris la semaine dernière. Je n’ai gardé que les magasins, l’amap et le marché fermier du samedi. Je ne serai capable d’assumer que cette charge-là. Je suis sur la 7e journée consécutive de plus de 12 heures de travail et la semaine prochaine, ce sera encore plus important car il y aura encore plus de brebis en lait. Plus de travail en fromagerie. Les agneaux qui pâturent, ceux de l’an passé, du boulot pour aller les alimenter dans la prairie. Donc les journées seront de plus de 14 heures de travail. Du coup j’ai beaucoup réfléchi ce week-end. Je fais appel à un salarié à temps partiel. Un stagiaire, sous la garantie de france travail, pour me libèrer des tâches, entre parenthèses, à faible valeur ajoutée : aide aux galettes, aide à la fabrication de yaourt, aide à la vente du samedi, partiellement, aide au pâturage. Le bruit, c’est le démoulage d’une tomme. À jeudi prochain. Yohann 
 
-
-
 **Michèle Touchet, tutrice chtaignes**
 
  Après une période difficile une embellie (timide) se profile. Une vente annuelle est proposée en décembre, histoire de savourer les marrons autour de la dinde de Noël et de profiter d 'excellents produits: confiture ,sirop, farine ,crème...
-
-
-
-
 
 **Julien Cesbron- La Ferme du Domaine**
 
