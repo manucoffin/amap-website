@@ -16,31 +16,13 @@ avec retour sur les priorités 2025
 
 \- Pas d’élection du conseil collégial, pas de quorum
 
-\- Malgré les diﬃcultés à coordonner les disponibilités de chacun.e.s, 5 CA ont eu
-
-lieu cette année. A plusieurs reprises, nous avons utilisé un outil de gouvernance
-
-participative ( chapeaux de Bono) pour aider à faire décision : intégration de la
-
-ferme du Bol d’Herbe, organisation de la **fête des 20 ans ( le 4 juin 26, à la ferme**
-
-**de François)**
+\- Malgré les diﬃcultés à coordonner les disponibilités de chacun.e.s, 5 CA ont eu lieu cette année. A plusieurs reprises, nous avons utilisé un outil de gouvernance participative ( chapeaux de Bono) pour aider à faire décision : intégration de la ferme du Bol d’Herbe, organisation de la **fête des 20 ans ( le 4 juin 26, à la ferme de François)**
 
 *Répondre aux besoins des producteurs*
 
-Soutien à la ferme des Durand, financier, bénévolat, soutien moral - courrier des
+Soutien à la ferme des Durand, financier, bénévolat, soutien moral - courrier des amapiens, gâteaux et co. En collaboration avec plusieurs AMAP et les groupes des clients de marché, mise en place d’un prêt solidaire, ainsi que d’une cagnotte. L’amap a acheté cinq poules, Sibylle, Désirée, Poul’ichinelle le, Rose, Delphine
 
-amapiens, gâteaux et co. En collaboration avec plusieurs AMAP et les groupes des clients
-
-de marché, mise en place d’un prêt solidaire, ainsi que d’une cagnotte. L’amap a acheté
-
-cinq poules, Sibylle, Désirée, Poul’ichinelle le, Rose, Delphine
-
-*Convivialité* : pendant l’amap, « boustifaille », crieur, au cours de l’action « Mise
-
-en lumière des fermes », dégustation des produits lors de la distribution, oﬀerte par
-
-l’AMAP :
+*Convivialité* : pendant l’amap, « boustifaille », crieur, au cours de l’action « Mise en lumière des fermes », dégustation des produits lors de la distribution, oﬀerte par l’AMAP :
 
 10 avril, La Ferme de Julie, fromage de chèvre
 
@@ -52,33 +34,17 @@ vins chauds les soirées froides
 
 *Communication* :
 
-° spot pub (ajourné, pas pertinent), avis très défavorable d’un Amapien avisé
-
-sur la pertinence d’investir autant d’argent par rapport aux résultats
+° spot pub (ajourné, pas pertinent), avis très défavorable d’un Amapien avisé sur la pertinence d’investir autant d’argent par rapport aux résultats
 
 o journal annuel avec vécu des fermes, pas encore fait
 
-o évènements culturels au sein des Fermes : soutien communication au
+o évènements culturels au sein des Fermes : soutien communication au « Tour de l’assiette à biocyclette », le 8 juin, cinq fermes concernées dont deux de l’AMAP, Thomas Lecomte et Camille et Nicolas Oran, en portes ouvertes, reliées par un circuit vélo d’environ 25 km, soutenu par l’AMAPau niveau de la diﬀusion de l’information
 
-« Tour de l’assiette à biocyclette », le 8 juin, cinq fermes concernées dont
-
-deux de l’AMAP, Thomas Lecomte et Camille et Nicolas Oran, en portes
-
-ouvertes, reliées par un circuit vélo d’environ 25 km, soutenu par l’AMAP
-
-au niveau de la diﬀusion de l’information
-
-o Encart publicitaire dans le calendrier des pompiers de Brain, lancé déjà en
-
-2025
+o Encart publicitaire dans le calendrier des pompiers de Brain, lancé déjà en 2025
 
 *Sensibilisation à une alimentation saine et à la biodiversité :*
 
-o L’ordonnance verte : suivi des actions au sein d’ALM et de la communauté
-
-de communes nord-est du Maine-et-Loire . Groupe de suivi mis en place
-
-avec trois amapiens hommes : Daniel, Mathieu, Justin.
+o L’ordonnance verte : suivi des actions au sein d’ALM et de la communauté de communes nord-est du Maine-et-Loire . Groupe de suivi mis en place avec trois amapiens hommes : Daniel, Mathieu, Justin.
 
 o Intégration de la ferme Fleurs coupées et mix comestibles en 2025
 
@@ -86,67 +52,45 @@ o Intégration d’une nouvelle productrice de Champignons, Manel ARFAOUI
 
 Intégration de la ferme laitière ( vache) du Bol D’herbe à Daumeray
 
+
+
 *Vie de l’association*
 
-4 nouvelles personnes se sont proposées pour être tutrice et tuteurs, rôle
+4 nouvelles personnes se sont proposées pour être tutrice et tuteurs, rôle essentiel pour l’existence et la perennité d’une AMAP. Important travail de fourmi et dans l’ombre, que nous pouvons toutes et tous faciliter en complétant nos contrats avec soin, rigueur et dans les temps !
 
-essentiel pour l’existence et la perennité d’une AMAP. Important travail de fourmi
+Un grand merci à tous les tuteurs et tutrices. (une minute d’applaudissements !) 
 
-![]()
+On en profite pour rappeler l’importance que chacun.e participe, besoin de mains pour l’installation des tables et de l’étal légumes particulièrement , et pour la permanence pain et autres
 
-et dans l’ombre, que nous pouvons toutes et tous faciliter en complétant nos
+ Achat par la bibliothèque de l’AMAP (malle à la disposition de tous, chaque début de mois) de la B.D. d’Inès Léraud : Champ de bataille, l’histoire enfouie du remembrement.
 
-contrats avec soin, rigueur et dans les temps !
+Parallèlement, grosse action, menée par l’interAMAP, vente de 152 exemplaires de la B.D. dans plus de 10 AMAP du département
 
-Un grand merci à tous les tuteurs et tutrices. (une minute d’applaudissements !)
+Participation à des réunions organisées par le service de la vie associative de Loire Authion, autour de thèmes divers, la gouvernance, la convivialité, le budget.
 
-On en profite pour rappeler l’importance que chacun.e participe, besoin de
-
-mains pour l’installation des tables et de l’étal légumes particulièrement , et pour
-
-la permanence pain et autres
-
-Achat par la bibliothèque de l’AMAP (malle à la disposition de tous, chaque
-
-début de mois) de la B.D. d’Inès Léraud : Champ de bataille, l’histoire enfouie du
-
-remembrement.
-
-Parallèlement, grosse action, menée par l’interAMAP, vente de 152 exemplaires
-
-de la B.D. dans plus de 10 AMAP du département
-
-Participation à des réunions organisées par le service de la vie associative
-
-de Loire Authion, autour de thèmes divers, la gouvernance, la convivialité, le
-
-budget.
-
-**BOUSSOLE AMAP POUR 2026**
+**BOUSSOLE AMAP POUR 2026** 
 
 *(brain-storming, idées recueillies en 10 min auprès des personnes présentes à l’AG)*
 
 Visibiliser l’ AMAP, pour sensibiliser à ce moyen de se nourrir
 
-Travailler le lien entre les AMAPiens, sur le modèle, à modifier, d’un groupe qui a
-
-réalisé des repas @rés au sort pour se connaître
+Travailler le lien entre les AMAPiens, sur le modèle, à modifier, d’un groupe qui a réalisé des repas aprés tirage au sort pour se connaître
 
 Inviter au CA tous les AMAPiens
 
-De la musique pendant les distribu@ons
+De la musique pendant les distributions
 
 Abri plus grand pour les jours de pluie
 
 Reprendre les visites de Ferme
 
-Proposer des pe@ts spectacles ou des anima@ons musicales pendant les distribu@ons
+Proposer des petits spectacles ou des animations musicales pendant les distributions
 
 Proposer des visites des Fermes des producteurs
 
 Atelier cuisine
 
-Boucle de receIes
+Boucle de recettes
 
 Fruits locaux
 
@@ -154,7 +98,7 @@ Un ciné- échanges
 
 Inventer une manière de rencontrer la nouvelle équipe municipale
 
-Con@nuer les dégusta@ons
+Continuer les dégustations
 
 Contrat bière
 
@@ -164,7 +108,9 @@ Téléphoner à la météo, laisser un message, aucune pluie n’est autorisée 
 
 de 18h30 à 20h
 
-Réussir à faire installer les producteurs en rond pour les distribu@ons : faire village
+Réussir à faire installer les producteurs en rond pour les distributions : faire village
+
+
 
 **BILAN FINANCIER**
 
@@ -178,15 +124,15 @@ Réussir à faire installer les producteurs en rond pour les distribu@ons : fair
 
 <https://share.google/bwVcmNroQfCegMgdh>
 
+
+
 **La ferme de François**
 
 Chères AMAPIENNES, chers AMAPIENS,
 
-Vous trouverez ci-après les nouvelles semestrielles de la ferme. Au préalable, nous tenons
+Vous trouverez ci-après les nouvelles semestrielles de la ferme. Au préalable, nous tenons à ces quelques
 
-à ces quelques précisions suite aux difficultés auxquelles nous sommes confrontés. Le
-
-soutien de nos 5 AMAP prend tout son sens dans ces moments là…
+précisions suite aux difficultés auxquelles nous sommes confrontés. Le soutien de nos 5 AMAP prend tout son sens dans ces moments là…
 
 Comme vous le savez peut-être, ou pas, depuis décembre dernier nous devons faire face à une situation inédite concernant la production de viande bovine, c’est-à-dire le bœuf et le veau.
 
@@ -198,48 +144,25 @@ Pour absorber ces charges supplémentaires, nous avons revu nos prix auprès de 
 
 Merci aux AMAP qui ont manifesté leur soutien. Pour les autres, il est toujours possible de le faire ! Etre agriculteur bio ne doit pas rimer avec sobriété subie mais choisie ! vite !
 
-A très vite
 
 
+ **YOHANN BURET, Bergerie la Violaie**  
 
- **YOHANN BURET**
+Les brebis viennent de retourner à l'herbe, les cochons chien et agneaux de bergerie sont nourris , fin de service à l'extérieur ! Bonjour les papiers pour France travail! Bonne soirée ! 
 
-**Bergerie la Violaie   La Poueze**
+* audio : « Bonsoir l’AMAP ! Il est 20h42, demain vous serez en plein milieu de l’AG. Un petit coucou de la Violaie où l’année s’annonce très très chargée. Les agnelages se sont bien passés. Quasiment toutes les brebis ont mis bas. Quelques pertes : agneaux prema, peut-être un reste de la LCO qui nous a touchés l’an dernier. Sinon, ça s’est plutôt bien passé. Les mises bas sont terminées. La dernière était la semaine dernière. Le lendemain, on lançait quasiment la traite. Il y a une trentaine de brebis en lait. Les agneaux sont sevrés. Les agneaux vont partir ce soir. Quelques-uns vont rester ici pour le renouvellement. Je tourne les fromages en même temps que je parle. La fromagerie tourne plein pot. La fabrication de galettes a repris la semaine dernière. Je n’ai gardé que les magasins, l’amap et le marché fermier du samedi. Je ne serai capable d’assumer que cette charge-là. Je suis sur la 7e journée consécutive de plus de 12 heures de travail et la semaine prochaine, ce sera encore plus important car il y aura encore plus de brebis en lait. Plus de travail en fromagerie. Les agneaux qui pâturent, ceux de l’an passé, du boulot pour aller les alimenter dans la prairie. Donc les journées seront de plus de 14 heures de travail. Du coup j’ai beaucoup réfléchi ce week-end. Je fais appel à un salarié à temps partiel. Un stagiaire, sous la garantie de france travail, pour me libèrer des tâches, entre parenthèses, à faible valeur ajoutée : aide aux galettes, aide à la fabrication de yaourt, aide à la vente du samedi, partiellement, aide au pâturage. Le bruit, c’est le démoulage d’une tomme. À jeudi prochain. Yohann 
 
-**49370 ERDRE EN ANJOU**
 
- 
-
-Les brebis viennent de retourner à l'herbe, les cochons chien et agneaux de bergerie sont nourris , fin de service à l'extérieur ! 
-
-Bonjour les papiers pour France travail!
-
-Bonne soirée ! 
-
-+ audio :
-
-« Bonsoir l’AMAP ! Il est 20h42, demain vous serez en plein milieu de l’AG. Un petit coucou de la Violaie où l’année s’annonce très très chargée. Les agnelages se sont bien passés. Quasiment toutes les brebis ont mis bas. Quelques pertes : agneaux prema, peut-être un reste de la LCO qui nous a touchés l’an dernier. Sinon, ça s’est plutôt bien passé. Les mises bas sont terminées. La dernière était la semaine dernière. Le lendemain, on lançait quasiment la traite. Il y a une trentaine de brebis en lait. Les agneaux sont sevrés. Les agneaux vont partir ce soir. Quelques-uns vont rester ici pour le renouvellement. Je tourne les fromages en même temps que je parle. La fromagerie tourne plein pot. La fabrication de galettes a repris la semaine dernière. Je n’ai gardé que les magasins, l’amap et le marché fermier du samedi. Je ne serai capable d’assumer que cette charge-là. Je suis sur la 7e journée consécutive de plus de 12 heures de travail et la semaine prochaine, ce sera encore plus important car il y aura encore plus de brebis en lait. Plus de travail en fromagerie. Les agneaux qui pâturent, ceux de l’an passé, du boulot pour aller les alimenter dans la prairie. Donc les journées seront de plus de 14 heures de travail. Du coup j’ai beaucoup réfléchi ce week-end. Je fais appel à un salarié à temps partiel. Un stagiaire, sous la garantie de france travail, pour me libèrer des tâches, entre parenthèses, à faible valeur ajoutée : aide aux galettes, aide à la fabrication de yaourt, aide à la vente du samedi, partiellement, aide au pâturage. Le bruit, c’est le démoulage d’une tomme. À jeudi prochain. Yohann »
-
- 
 
 **Michèle Touchet, tutrice chtaignes**
 
- Après une période difficile une embellie (timide) se profile.
+ Après une période difficile une embellie (timide) se profile. Une vente annuelle est proposée en décembre, histoire de savourer les marrons autour de la dinde de Noël et de profiter d 'excellents produits: confiture ,sirop, farine ,crème...
 
-Une vente annuelle est proposée en décembre, histoire de savourer les marrons autour de la dinde de Noël et de profiter d 'excellents produits: confiture ,sirop, farine ,crème...
 
-bonne réunion
 
-\
-**Julien Cesbron**
 
-**EARL La Ferme du Domaine**
 
-**Le Domaine - Chanzeaux**
-
-**49750 Chemillé en Anjou**
-
-Info de la ferme 
+**Julien Cesbron- La Ferme du Domaine**
 
 Suite au travail avec un conseiller extérieur de mai à août 2025, le positif est revenu sur la ferme, moralement et économiquement.
 
@@ -251,20 +174,6 @@ Des travaux d'amélioration viennent d'avoir lieu :
 
 "nous allons pouvoir travailler dans du propre et cela fait déjà du bien !"
 
-Reste à investir dans des vis à grain et autres containers pour limiter les charges portées chaque jour.
+Reste à investir dans des vis à grain et autres containers pour limiter les charges portées chaque jour. Le but est de gagner en temps et en fatigue, pour améliorer le suivi des animaux. 
 
-Le but est de gagner en temps et en fatigue, pour améliorer le suivi des animaux. 
-
-Les ventes vont bien et les marges ont été corrigées.
-
- La production de céréales est toujours juste pour l'autonomie alimentaire des volailles. 
-
-Pour y remédier, des choix techniques ont été pris à l'automne dernier, 
-
-notamment en faisant intervenir un service extérieur (entreprise de travaux agricoles) pour le labour et le semis des céréales.      
-
-(semis plus précis, à la bonne date, dans de bonnes conditions)
-
- j'espère voir le résultat à la récolte cet été.
-
- Merci pour votre engagement
+Les ventes vont bien et les marges ont été corrigées. La production de céréales est toujours juste pour l'autonomie alimentaire des volailles. Pour y remédier, des choix techniques ont été pris à l'automne dernier, notamment en faisant intervenir un service extérieur (entreprise de travaux agricoles) pour le labour et le semis des céréales (semis plus précis, à la bonne date, dans de bonnes conditions), j'espère voir le résultat à la récolte cet été. Merci pour votre engagement
