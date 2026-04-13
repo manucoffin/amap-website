@@ -8,6 +8,8 @@ photoUrl: /uploads/images/img_6578.jpeg
 ---
 Au CA qui a suivi la dernière AG, le 6 mars 2025, il a été confirmé qu’entendre raconter la vie des fermes est primordial, même le témoignage par l’intermédiaire du tuteur.
 
+![](/uploads/img_6573.jpeg)
+
 **Bilan d’activités 2025**
 
 avec retour sur les priorités 2025
@@ -63,6 +65,8 @@ On en profite pour rappeler l’importance que chacun.e participe, besoin de mai
 Parallèlement, grosse action, menée par l’interAMAP, vente de 152 exemplaires de la B.D. dans plus de 10 AMAP du département
 
 Participation à des réunions organisées par le service de la vie associative de Loire Authion, autour de thèmes divers, la gouvernance, la convivialité, le budget.
+
+![](/uploads/img_6574.jpeg)
 
 **BOUSSOLE AMAP POUR 2026** 
 
