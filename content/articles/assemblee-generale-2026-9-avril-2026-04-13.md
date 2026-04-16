@@ -2,7 +2,7 @@
 title: ASSEMBLEE GENERALE 2026- 9 avril
 author: dominique
 date: 2026-04-13T09:58:25.790Z
-abstract: 27 personnes présentes et 20 pouvoirs !!! 2 heures attentives suivies
+abstract: 27 personnes présentes et 22 pouvoirs !!! 2 heures attentives suivies
   d'une heure de debriefing gustatif et pas que !
 photoUrl: /uploads/images/img_6578.jpeg
 ---
@@ -166,8 +166,6 @@ Reste à investir dans des vis à grain et autres containers pour limiter les ch
 
 Les ventes vont bien et les marges ont été corrigées. La production de céréales est toujours juste pour l'autonomie alimentaire des volailles. Pour y remédier, des choix techniques ont été pris à l'automne dernier, notamment en faisant intervenir un service extérieur (entreprise de travaux agricoles) pour le labour et le semis des céréales (semis plus précis, à la bonne date, dans de bonnes conditions), j'espère voir le résultat à la récolte cet été. Merci pour votre engagement
 
-
-
 **Manel Arfaoui, Myss'Champi**
 
 ![](/uploads/manel.jpg)
@@ -182,6 +180,12 @@ En consommant mes champignons, vous optez pour une alimentation saine, locale et
 
 Suivez-moi sur les réseaux sociaux : https://www.facebook.com/profile.php?id=61557937844171
 
- 
 
-<!--EndFragment-->
+
+**Maria Irazoki, pain fermier**
+
+Le moment est venu pour moi , de passer la main et la passion du pain à quelqu'un de bien. Ce n'est pas toujours facile de s'accorder, pour un passage qui exige de la rigueur, de la volonté, du courage. Avec ces ingrédients, le savoir-faire vient et devient une évidence.
+
+Cela fait 25 ans que ce métier me façonne auprès de vous, toutes-tous les croqueurs de pain. Le lien tissé, chaque jeudi, meme si ce n'est que quelques instants par semaine, m'a donné le courage de continuer malgré certaines traversées difficiles, car vous m'avez toujours soutenue. Je vous en suis vraiment reconnaissante.
+
+Je serai encore parmi vous jusqu'en décembre. D'ici là, on a encore quelques sourires à partager et quelques pains à manger.
