@@ -10,7 +10,7 @@ Au CA qui a suivi la dernière AG, le 6 mars 2025, il a été confirmé qu’ent
 
 ![](/uploads/img_6573.jpeg)
 
-**Bilan d’activités 2025**
+**Bilan d’activités 2025, adopté à l'unanimité**
 
 avec retour sur les priorités 2025
 
@@ -110,11 +110,15 @@ de 18h30 à 20h
 
 Réussir à faire installer les producteurs en rond pour les distributions : faire village
 
-**BILAN FINANCIER**
+**BILAN FINANCIER, adopté à l'unanimité**
 
 ![](/uploads/img_6585.jpeg)
 
 ![](/uploads/img_6584.jpeg)
+
+**ELECTIONS DU CONSEIL D'ADMINISTRATION, réélu à l'unanimité**
+
+
 
 **TOUR DES FERMES**
 
@@ -179,8 +183,6 @@ Je cultive mes champignons à partir de résidus agricoles bio, collectés tout 
 En consommant mes champignons, vous optez pour une alimentation saine, locale et respectueuse de l'environnement. Vous soutenez aussi une agriculture à taille humaine, qui met la qualité et la durabilité au premier plan.
 
 Suivez-moi sur les réseaux sociaux : https://www.facebook.com/profile.php?id=61557937844171
-
-
 
 **Maria Irazoki, pain fermier**
 
