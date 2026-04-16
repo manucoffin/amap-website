@@ -165,3 +165,23 @@ Des travaux d'amélioration viennent d'avoir lieu :
 Reste à investir dans des vis à grain et autres containers pour limiter les charges portées chaque jour. Le but est de gagner en temps et en fatigue, pour améliorer le suivi des animaux. 
 
 Les ventes vont bien et les marges ont été corrigées. La production de céréales est toujours juste pour l'autonomie alimentaire des volailles. Pour y remédier, des choix techniques ont été pris à l'automne dernier, notamment en faisant intervenir un service extérieur (entreprise de travaux agricoles) pour le labour et le semis des céréales (semis plus précis, à la bonne date, dans de bonnes conditions), j'espère voir le résultat à la récolte cet été. Merci pour votre engagement
+
+
+
+**Manel Arfaoui, Myss'Champi**
+
+![](/uploads/manel.jpg)
+
+Je suis ravie de vous présenter mon entreprise Myss’Champi, située dans la commune du Lude. Je suis spécialisée dans la culture de champignons bio : pleurotes, shiitakés, pleurotes du panicaut, hydne hérisson, et bien d'autres encore !
+
+Mon exploitation est une ferme paysanne qui privilégie les circuits courts pour la vente de mes produits, car je crois en l'importance de la proximité avec mes clients. Et puis, quoi de mieux que de savoir d'où viennent les bons produits que l'on déguste ?
+
+Je cultive mes champignons à partir de résidus agricoles bio, collectés tout près de mon site de fabrication. Cette valorisation de déchets agricoles bénéficie à la régénération de nos sols en étant réintégrés sous forme de composte mycorhizé.
+
+En consommant mes champignons, vous optez pour une alimentation saine, locale et respectueuse de l'environnement. Vous soutenez aussi une agriculture à taille humaine, qui met la qualité et la durabilité au premier plan.
+
+Suivez-moi sur les réseaux sociaux : https://www.facebook.com/profile.php?id=61557937844171
+
+ 
+
+<!--EndFragment-->
