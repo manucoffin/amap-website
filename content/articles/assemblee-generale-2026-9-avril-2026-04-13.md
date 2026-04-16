@@ -118,8 +118,6 @@ Réussir à faire installer les producteurs en rond pour les distributions : fai
 
 **ELECTIONS DU CONSEIL D'ADMINISTRATION, réélu à l'unanimité**
 
-
-
 **TOUR DES FERMES**
 
 **Le bol d'herbe**
@@ -191,3 +189,9 @@ Le moment est venu pour moi , de passer la main et la passion du pain à quelqu'
 Cela fait 25 ans que ce métier me façonne auprès de vous, toutes-tous les croqueurs de pain. Le lien tissé, chaque jeudi, meme si ce n'est que quelques instants par semaine, m'a donné le courage de continuer malgré certaines traversées difficiles, car vous m'avez toujours soutenue. Je vous en suis vraiment reconnaissante.
 
 Je serai encore parmi vous jusqu'en décembre. D'ici là, on a encore quelques sourires à partager et quelques pains à manger.
+
+
+
+**Thomas Lecomte, ferme de la Gagnerie**
+
+![](/uploads/thomas-lecomte.jpeg)
