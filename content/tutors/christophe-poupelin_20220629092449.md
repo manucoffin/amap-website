@@ -6,7 +6,7 @@ firstname: Christophe
 address: 8 rue Cailleteau, La Bohalle
 postcode: "49800"
 city: Loire-Authion
-phone: 02 41 54 35 52
+phone: "0682616712"
 email: christophe.poupelin@orange.fr
 photoUrl: /uploads/images/img_20220728_075451.jpg
 ---
