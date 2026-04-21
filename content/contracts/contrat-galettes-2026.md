@@ -5,5 +5,5 @@ tutors:
   - Hdw50xgS1
 producer: ped66L5OJ
 photoUrl: /uploads/images/galette.png
-documentPath: /uploads/files/contrat-galette-2026.pdf
+documentPath: /uploads/files/contrat-galettes-2026.pdf
 ---
