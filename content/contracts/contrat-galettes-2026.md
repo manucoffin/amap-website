@@ -1,6 +1,6 @@
 ---
 title: Contrat galettes 2026
-description: Contrat de galettes de sarrasin 2026 !
+description: Contrat des galettes de sarrasin 2026 !
 tutors:
   - Hdw50xgS1
 producer: ped66L5OJ
