@@ -21,7 +21,7 @@ description: >-
 
 
   L’adhésion et le chèque à l’ordre de l’AMAP de la Goutte d'eau peuvent être apportés sous le préau ou envoyés à la trésorière dont les coordonnées paraissent en bas du bulletin.
-documentPath: /uploads/files/bulletin-adh-2024.pdf
+documentPath: /uploads/files/bul-adh-2026.pdf
 ---
 
 L’adhésion est valable sur une année civile, du 1er janvier au 31 décembre.
