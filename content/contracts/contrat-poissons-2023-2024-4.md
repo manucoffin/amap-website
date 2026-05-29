@@ -5,9 +5,9 @@ description: >+
 
   Joindre un chèque de 15€ au nom de l'AMAP pour le transport Doué-Brain.
 
-  Précisions pour le contrat 2025-2026 :
+  Précisions pour le contrat 2026-2027 :
 
-  La prise en compte des nouvelles mesures de limitation de la pêche :
+  La prise en compte des  mesures de limitation de la pêche :
 
   La nouvelle saison sera similaire à celle  qui va se terminer.
 
