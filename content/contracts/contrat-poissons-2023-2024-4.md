@@ -1,5 +1,5 @@
 ---
-title: Contrat poissons 2025-2026
+title: Contrat poissons 2026-2027
 description: >+
   Colis de poissons de saison pêchés au large de l'Ile d'Yeu.
 
@@ -21,7 +21,7 @@ description: >+
   Il faudra encore 3 chèques de 36 euros pour janvier, février, mars. Pour les autres mois : chacun choisit son nombre de chèques. 
 
 
-  Date de remise des contrats et chèques  : le  6 septembre.
+  Date de remise des contrats et chèques  : le  3 septembre.
 
 
 
@@ -29,34 +29,34 @@ description: >+
   Les dates de livraison des colis poissons  sont les jeudis :
 
 
-  25 septembre 2025
+  24 septembre 2026
 
 
-  30 octobre
+  29 octobre
 
 
-  27 novembre
+  26 novembre
 
 
-  18 décembre
+  17 décembre
 
 
-  29 janvier 2026
+  28 janvier 2027
 
 
-  26 février
+  25 février
 
 
-  26 mars
+  25 mars
 
 
-  30 avril
+  29 avril
 
 
-  28 mai
+  27 mai
 
 
-  25 juin
+  24 juin
 
 
   Pour mieux comprendre les grands enjeux de la pêche, aujourd’hui, ci-dessous le lien pour un article de l’association Pleine mer :
@@ -67,5 +67,5 @@ tutors:
   - LOeJTIWoR
 producer: zNUar7t1u
 photoUrl: /uploads/images/_mg_4642.jpg
-documentPath: /uploads/files/1-sud-loire-contratpoisson-2025-2026.pdf
+documentPath: /uploads/files/1-sud-loire-contrat-poisson-2026-2027.pdf
 ---
