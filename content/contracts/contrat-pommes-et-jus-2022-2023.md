@@ -1,9 +1,9 @@
 ---
-title: Contrat pommes et jus 2025-2026
+title: Contrat pommes et jus 2026-2027
 description: >-
   Bonjour à toutes et tous, amateurs de pommes 😃
 
-  Voici le contrat pommes et jus pour la saison qui arrive (1ère distribution le 4 septembre).
+  Voici le contrat pommes et jus pour la saison qui arrive (1ère distribution le 3 septembre).
 
 
   Sachez que même si vous ne prenez pas de pommes tout de suite , vous pouvez dès à présent retourner votre contrat complété, pour permettre à Bertrand de s’organiser, de prévoir.
@@ -11,13 +11,13 @@ description: >-
 
   Le format ne change pas (distribution mensuelle, 1er jeudi du mois, de septembre à février, (n'oubliez pas votre contenant), 
 
-  les prix non plus!
+  Les prix non plus!
 
   Vous trouverez des pommes en mélange (sucrées, acidulées), 
 
-  des pommes à compote, 
+  Des pommes à compote, 
 
-  du jus et du pétillant ;)
+  Du jus et du pétillant ;)
 
 
   A vos contrats et à très vite!
@@ -35,5 +35,5 @@ tutors:
   - wdBMCuZQN
 producer: -ZgSHRz9q
 photoUrl: /uploads/images/pommes.jpg
-documentPath: /uploads/files/pommes-2025-2026-contrat.pdf
+documentPath: /uploads/files/pommes-2026-2027-contrat.pdf
 ---
