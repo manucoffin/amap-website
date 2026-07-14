@@ -17,7 +17,7 @@ description: >-
 
   Des pommes à compote, 
 
-  Du jus et du pétillant ;)
+  Du jus et du pétillant dès septembre ;)
 
 
   A vos contrats et à très vite!
