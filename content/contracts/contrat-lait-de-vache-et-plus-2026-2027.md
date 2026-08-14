@@ -6,6 +6,6 @@ tutors:
   - xHCQrXtQs
   - _UO0bbYt3
 producer: 8tgPaypw9
-photoUrl: /uploads/images/images.jpg
+photoUrl: /uploads/images/meuh.jpg
 documentPath: /uploads/files/contrat_produits_laitiers_26-27.pdf
 ---
