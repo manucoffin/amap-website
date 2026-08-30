@@ -4,6 +4,6 @@ lastname: Buffeteau
 firstname: Justin/Gérard
 address: ""
 phone: 06 07 53 70 96
-email: justin.amap.lgde@gmail.com
+email: justin.amap.lgde@lilo.org
 photoUrl: /uploads/images/img_6921.jpg
 ---
