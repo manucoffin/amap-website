@@ -1,7 +1,7 @@
 ---
-title: Contrat farines 2025-2026
+title: Contrat farines 2026-2027
 description: >-
-  Le contrat farine 2025 2026 est en ligne.
+  Le contrat farine 2026 2027 est en ligne !!
 
 
   Rappel :
@@ -11,5 +11,5 @@ tutors:
   - KiFLVG1ma
 producer: hEorfTyhr
 photoUrl: /uploads/images/farine.jpg
-documentPath: /uploads/files/2025-2026-contrat-farine.pdf
+documentPath: /uploads/files/2026-2027-contrat-farine.pdf
 ---
