@@ -1,5 +1,5 @@
 ---
-title: Contrat Légumes hiver 2025- 2026
+title: Contrat Légumes hiver 2026- 2027
 description: Veuillez télécharger le  contrat et l'apporter sur le lieu de
   distribution ou en l'envoyant au tuteur dont les coordonnées paraissent sur le
   contrat.
