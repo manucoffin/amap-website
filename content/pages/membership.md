@@ -14,14 +14,14 @@ description: >-
   Cette adhésion est destinée à couvrir les frais de fonctionnement de l’association.
 
 
-  Elle doit être obligatoirement payée avant la signature du premier contrat et en début d’année civile pour les producteurs.
+  **Elle doit être obligatoirement payée avant la signature du premier contrat et en début d’année civile pour les producteurs.**
 
 
   En cas de partage de paniers, chaque "co-panier" adhère individuellement à l’association.
 
 
   L’adhésion et le chèque à l’ordre de l’AMAP de la Goutte d'eau peuvent être apportés sous le préau ou envoyés à la trésorière dont les coordonnées paraissent en bas du bulletin.
-documentPath: /uploads/files/bul-adh-2026.pdf
+documentPath: /uploads/files/bul-adh-2027.pdf
 ---
 
 L’adhésion est valable sur une année civile, du 1er janvier au 31 décembre.
